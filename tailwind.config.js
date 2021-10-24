@@ -4,8 +4,25 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        wh: {
+          // $wh-1: #011640;
+          // $wh-2: #1f5aa6;
+          // $wh-3: #63b0f2;
+          // $wh-4: #080808;
+          // $wh-5: #1df23d;
+          // $bh-silver: #A6ABBD;
+          // $bh-gold: #F1A208;
+
+          bluDarkest: "#011640",
+          bluLight: "#63b0f2",
+          bluDark01: "#00458f",
+          bluDark02: "#003b7a",
+          green: "#17bf52",
+          greenLight: "#1df23d",
+          silver: "#A6ABBD",
+          gold: "#F1A208",
+        },
         matisse: {
-          DEFAULT: "#1F5AA6",
           50: "#B9D2F2",
           100: "#A3C4EE",
           200: "#78A8E6",
