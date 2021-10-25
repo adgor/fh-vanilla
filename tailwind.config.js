@@ -19,6 +19,7 @@ module.exports = {
           bluDark02: "#003b7a",
           green: "#17bf52",
           greenLight: "#1df23d",
+          greenDarken: "#12913E",
           silver: "#A6ABBD",
           gold: "#F1A208",
         },
