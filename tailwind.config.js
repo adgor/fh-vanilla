@@ -22,6 +22,7 @@ module.exports = {
           greenDarken: "#12913E",
           silver: "#A6ABBD",
           gold: "#F1A208",
+          light: "#e9eff6",
         },
         matisse: {
           50: "#B9D2F2",
@@ -67,6 +68,7 @@ module.exports = {
       display: ["group-hover"],
       transform: ["hover", "group-hover"],
       rotate: ["group-hover"],
+      boxShadow: ["active"],
     },
   },
   plugins: [],
