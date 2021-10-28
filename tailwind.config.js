@@ -21,7 +21,9 @@ module.exports = {
           greenLight: "#1df23d",
           greenDarken: "#12913E",
           silver: "#A6ABBD",
+          silverDarken: "#959aaa",
           gold: "#F1A208",
+          goldDarken: "#d99207",          
           light: "#e9eff6",
         },
         matisse: {
