@@ -1,9 +1,21 @@
 module.exports = {
-  purge: [],
+  purge: ["./**/*.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
+        icon: {
+          dark: "#6F8BA4",
+          darkest: "#3B566E",
+          centosPurple: "#932279",
+          centosYellow: "#EFA724",
+          centosTeget: "#262577",
+          centosGreen: "#9CCD2A",
+          ubuntu: "#DD4814",
+          fedoraBlue: "#294172",
+          fedoraLight: "#3C6EB4",
+          debian: "#A80030",
+        },
         wh: {
           // $wh-1: #011640;
           // $wh-2: #1f5aa6;
@@ -23,7 +35,7 @@ module.exports = {
           silver: "#A6ABBD",
           silverDarken: "#959aaa",
           gold: "#F1A208",
-          goldDarken: "#d99207",          
+          goldDarken: "#d99207",
           light: "#e9eff6",
         },
         matisse: {
