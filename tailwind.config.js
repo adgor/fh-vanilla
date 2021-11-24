@@ -83,6 +83,7 @@ module.exports = {
       transform: ["hover", "group-hover"],
       rotate: ["group-hover"],
       boxShadow: ["active"],
+      translate: ["active", "group-hover"],
     },
   },
   plugins: [],
