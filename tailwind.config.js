@@ -15,6 +15,7 @@ module.exports = {
           fedoraBlue: "#294172",
           fedoraLight: "#3C6EB4",
           debian: "#A80030",
+          windows: "#00ADEF",
         },
         wh: {
           // $wh-1: #011640;
