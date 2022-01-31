@@ -1,6 +1,9 @@
 module.exports = {
-  purge: ["./**/*.html"],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    // Example content paths...
+    "./**/*.html",
+    "./assets/js/**/*.{js,jsx,ts}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -76,15 +79,6 @@ module.exports = {
           900: "#06582f",
         },
       },
-    },
-  },
-  variants: {
-    extend: {
-      display: ["group-hover"],
-      transform: ["hover", "group-hover"],
-      rotate: ["group-hover"],
-      boxShadow: ["active"],
-      translate: ["active", "group-hover"],
     },
   },
   plugins: [],
