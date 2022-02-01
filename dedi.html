@@ -729,16 +729,16 @@
           class="grid grid-cols-2 gap-3 row-gap-5 sm:row-gap-10 lg:grid-cols-1 sm:mx-auto"
         >
           <div
-            class="flex flex-col py-8 transition-colors duration-200 border border-solid rounded shadow px-9 lg:hover:bg-wh-bluDarkest group lg:px-9 lg:flex-row lg:justify-between lg:items-center lg:border-none lg:bg-zircon-500 border-zircon-600 text-wh-bluDarkest lg:hover:text-white"
+            class="flex flex-col px-4 py-8 transition-colors duration-200 border border-solid rounded shadow lg:hover:bg-wh-bluDarkest group lg:px-9 lg:flex-row lg:justify-between lg:items-center lg:border-none lg:bg-zircon-500 border-zircon-600 text-wh-bluDarkest lg:hover:text-white"
           >
             <div
               class="flex items-center justify-between pb-3 border-b border-solid lg:items-start lg:flex-col lg:border-b-0 border-zircon-600"
             >
-              <div class="text-lg font-bold">
+              <div class="font-bold md:text-lg">
                 Start 1 <br />
                 XS SATA
               </div>
-              <div class="mt-4">
+              <div class="lg:mt-4">
                 <img
                   src="./assets/images/icons/vi-xeon-3rd-gen.png"
                   alt="intel xeon logo"
@@ -750,22 +750,25 @@
             >
               <div>
                 <div class="mt-4 font-bold">CPU</div>
-                <div>
+                <div class="text-sm md:text-base">
                   <p>Intel Xeon D-2123iT</p>
-                  <p>4 c/8 t - 2.2 GHz/3 GHz</p>
+                  <p>
+                    4 c/8 t - <br class="sm:hidden" />
+                    2.2 GHz/3 GHz
+                  </p>
                   <p>3 GHz Turbo Boost</p>
                 </div>
               </div>
               <div>
                 <div class="mt-4 font-bold">RAM</div>
-                <div>
+                <div class="text-sm md:text-base">
                   <p>16 GB</p>
                   <p>DDR4 ECC</p>
                 </div>
               </div>
               <div>
                 <div class="mt-4 font-bold">SSD</div>
-                <div>
+                <div class="text-sm md:text-base">
                   <p>512 GB</p>
                   <p>(2 x 512 GB SSD)</p>
                 </div>
@@ -786,7 +789,7 @@
               </div>
               <a
                 href="/"
-                class="inline-flex items-center justify-center w-full px-8 py-3 mt-5 text-sm font-bold tracking-wide text-white transition-shadow duration-300 rounded hover:shadow-lg hover:shadow-matisse-500/30 bg-matisse-500"
+                class="inline-flex items-center justify-center w-full px-6 py-3 mt-5 text-xs font-medium tracking-wide text-white transition-shadow duration-300 rounded md:px-8 md:font-bold md:text-sm hover:shadow-lg hover:shadow-matisse-500/30 bg-matisse-500"
               >
                 Buy Start XS
               </a>
