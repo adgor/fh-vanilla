@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
+    "dev": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch",
     "build": "vite build"
   },
   "keywords": [],
