@@ -9,17 +9,17 @@
   </head>
   <body>
     <!-- Navigation -->
-    <div class="w-full h-full">
+    <div class="h-full w-full">
       <!-- Code block starts -->
       <nav role="navigation" class="hidden bg-white shadow xl:block">
-        <div class="container px-6 py-2 mx-auto xl:py-0">
+        <div class="container mx-auto px-6 py-2 xl:py-0">
           <div class="flex items-center">
             <div class="inset-y-0 left-0 flex items-center xl:hidden">
               <div
-                class="inline-flex items-center justify-center p-2 text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-100 focus:outline-none"
+                class="inline-flex items-center justify-center rounded-md p-2 text-gray-700 transition duration-150 ease-in-out hover:text-gray-100 focus:outline-none"
               >
                 <div
-                  class="hidden text-gray-700 close-m-menu"
+                  class="close-m-menu hidden text-gray-700"
                   onclick="MenuHandler(this,false)"
                 >
                   <svg
@@ -42,7 +42,7 @@
               </div>
             </div>
             <button
-              class="flex items-center justify-end w-full rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-matisse-700 sm:w-auto sm:items-stretch sm:justify-start"
+              class="flex w-full items-center justify-end rounded-md focus:outline-none focus:ring-2 focus:ring-matisse-700 focus:ring-offset-2 sm:w-auto sm:items-stretch sm:justify-start"
             >
               <div class="flex items-center">
                 <svg
@@ -68,23 +68,23 @@
               </div>
             </button>
 
-            <div class="flex justify-between w-full">
-              <div class="hidden xl:flex md:mr-6 xl:mr-16">
+            <div class="flex w-full justify-between">
+              <div class="hidden md:mr-6 xl:mr-16 xl:flex">
                 <a
                   href="/"
-                  class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                  class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                 >
                   Home
                 </a>
-                <div class="relative cursor-pointer group dropdown">
+                <div class="group dropdown relative cursor-pointer">
                   <a
-                    class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                    class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                   >
                     Hosting
                     <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="w-4 h-4 group-hover:transform group-hover:rotate-180"
+                        class="h-4 w-4 group-hover:rotate-180 group-hover:transform"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -97,24 +97,24 @@
                     </span>
                   </a>
                   <div
-                    class="absolute hidden w-screen h-auto max-w-md inset-y-14 group-hover:block dropdown-menu"
+                    class="dropdown-menu absolute inset-y-14 hidden h-auto w-screen max-w-md group-hover:block"
                   >
-                    <div class="inline-block w-16 ml-6 -mb-2 overflow-hidden">
+                    <div class="ml-6 -mb-2 inline-block w-16 overflow-hidden">
                       <div
-                        class="w-3 h-3 origin-bottom-left transform rotate-45 bg-white"
+                        class="h-3 w-3 origin-bottom-left rotate-45 transform bg-white"
                       ></div>
                     </div>
                     <!-- <ul class="top-0 w-48 px-6 py-8 bg-white shadow"> -->
                     <div
-                      class="relative grid w-auto gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8"
+                      class="relative grid w-auto gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8"
                     >
                       <a
                         href="/shared-hosting.html"
-                        class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                       >
                         <!-- Heroicon name: outline/chart-bar -->
                         <svg
-                          class="flex-shrink-0 w-6 h-6 text-matisse-500"
+                          class="h-6 w-6 flex-shrink-0 text-matisse-500"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -139,11 +139,11 @@
                       </a>
                       <a
                         href="business-hosting.html"
-                        class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                       >
                         <!-- Heroicon name: outline/cursor-click -->
                         <svg
-                          class="flex-shrink-0 w-6 h-6 text-matisse-500"
+                          class="h-6 w-6 flex-shrink-0 text-matisse-500"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -169,11 +169,11 @@
                       </a>
                       <a
                         href="email-hosting.html"
-                        class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                       >
                         <!-- Heroicon name: outline/shield-check -->
                         <svg
-                          class="flex-shrink-0 w-6 h-6 text-matisse-500"
+                          class="h-6 w-6 flex-shrink-0 text-matisse-500"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -201,15 +201,15 @@
                     <!-- </ul> -->
                   </div>
                 </div>
-                <div class="relative cursor-pointer group dropdown">
+                <div class="group dropdown relative cursor-pointer">
                   <a
-                    class="flex items-center px-3 py-6 text-sm leading-5 transition duration-150 ease-in-out bg-gray-100 border-b-2 border-transparent focus:text-matisse-700 border-matisse-700 text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                    class="flex items-center border-b-2 border-transparent border-matisse-700 bg-gray-100 px-3 py-6 text-sm leading-5 text-matisse-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                   >
                     Virtual Servers
                     <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="w-4 h-4 group-hover:transform group-hover:rotate-180"
+                        class="h-4 w-4 group-hover:rotate-180 group-hover:transform"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -223,24 +223,24 @@
                   </a>
 
                   <div
-                    class="absolute hidden w-screen h-auto max-w-md inset-y-14 group-hover:block dropdown-menu"
+                    class="dropdown-menu absolute inset-y-14 hidden h-auto w-screen max-w-md group-hover:block"
                   >
-                    <div class="inline-block w-16 ml-6 -mb-2 overflow-hidden">
+                    <div class="ml-6 -mb-2 inline-block w-16 overflow-hidden">
                       <div
-                        class="w-3 h-3 origin-bottom-left transform rotate-45 bg-white"
+                        class="h-3 w-3 origin-bottom-left rotate-45 transform bg-white"
                       ></div>
                     </div>
                     <!-- <ul class="top-0 w-48 px-6 py-8 bg-white shadow"> -->
                     <div
-                      class="relative grid w-auto gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8"
+                      class="relative grid w-auto gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8"
                     >
                       <a
                         href="vps-linux.html"
-                        class="flex items-start p-3 -m-3 rounded-lg bg-gray-50"
+                        class="-m-3 flex items-start rounded-lg bg-gray-50 p-3"
                       >
                         <!-- Heroicon name: outline/chart-bar -->
                         <svg
-                          class="flex-shrink-0 w-6 h-6 text-matisse-500"
+                          class="h-6 w-6 flex-shrink-0 text-matisse-500"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -267,11 +267,11 @@
 
                       <a
                         href="vps-windows.html"
-                        class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                       >
                         <!-- Heroicon name: outline/cursor-click -->
                         <svg
-                          class="flex-shrink-0 w-6 h-6 text-matisse-500"
+                          class="h-6 w-6 flex-shrink-0 text-matisse-500"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -301,41 +301,41 @@
                 </div>
                 <a
                   href="dedicated-servers.html"
-                  class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                  class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                 >
                   Dedicated Servers
                 </a>
                 <a
                   href="domains.html"
-                  class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                  class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                 >
                   Domains
                 </a>
                 <a
                   href="web-design.html"
-                  class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                  class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                 >
                   Web Design
                 </a>
                 <a
                   href="affiliates.html"
-                  class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                  class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                 >
                   Affiliates
                 </a>
               </div>
               <div
-                class="items-center justify-end hidden md:flex md:flex-1 lg:w-0"
+                class="hidden items-center justify-end md:flex md:flex-1 lg:w-0"
               >
                 <a
                   href="#"
-                  class="text-sm font-medium text-gray-500 whitespace-nowrap hover:text-gray-900"
+                  class="whitespace-nowrap text-sm font-medium text-gray-500 hover:text-gray-900"
                 >
                   Sign in
                 </a>
                 <a
                   href="#"
-                  class="inline-flex items-center justify-center px-4 py-2 ml-8 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-matisse-600 whitespace-nowrap hover:bg-matisse-700"
+                  class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-matisse-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-matisse-700"
                 >
                   Sign up
                 </a>
@@ -346,7 +346,7 @@
       </nav>
       <nav>
         <div
-          class="top-0 flex items-center justify-between w-full px-6 py-4 text-pink-600 bg-white xl:hidden"
+          class="top-0 flex w-full items-center justify-between bg-white px-6 py-4 text-pink-600 xl:hidden"
         >
           <div
             aria-label="logo"
@@ -373,7 +373,7 @@
             <button
               id="menu"
               aria-label="open menu"
-              class="text-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600"
+              class="rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600"
               onclick="sidebarHandler(true)"
             >
               <svg
@@ -398,21 +398,21 @@
         </div>
         <!--Mobile responsive sidebar-->
         <div
-          class="absolute top-0 z-50 w-full h-full transform -translate-x-full xl:hidden"
+          class="absolute top-0 z-50 h-full w-full -translate-x-full transform xl:hidden"
           id="mobile-nav"
         >
           <div
-            class="w-full h-full bg-gray-800 opacity-50"
+            class="h-full w-full bg-gray-800 opacity-50"
             onclick="sidebarHandler(false)"
           ></div>
           <div
-            class="fixed top-0 z-40 flex-col justify-between w-64 h-screen pb-4 overflow-y-auto transition duration-150 ease-in-out bg-white shadow xl:hidden"
+            class="fixed top-0 z-40 h-screen w-64 flex-col justify-between overflow-y-auto bg-white pb-4 shadow transition duration-150 ease-in-out xl:hidden"
           >
             <div class="h-full px-6">
-              <div class="flex flex-col justify-between w-full h-full">
+              <div class="flex h-full w-full flex-col justify-between">
                 <div>
-                  <div class="flex items-center justify-between w-full mt-6">
-                    <div class="flex items-center justify-between w-full">
+                  <div class="mt-6 flex w-full items-center justify-between">
+                    <div class="flex w-full items-center justify-between">
                       <div class="flex items-center">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -438,7 +438,7 @@
                       <button
                         id="cross"
                         aria-label="close menu"
-                        class="text-gray-800 rounded-md focus:outline-none focus:ring-2"
+                        class="rounded-md text-gray-800 focus:outline-none focus:ring-2"
                         onclick="sidebarHandler(false)"
                       >
                         <svg
@@ -461,22 +461,22 @@
                     </div>
                   </div>
                   <!-- mobile nav links -->
-                  <div class="flex flex-col mt-6">
+                  <div class="mt-6 flex flex-col">
                     <a
                       href="/"
-                      class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                     >
                       Home
                     </a>
-                    <div class="relative cursor-pointer group dropdown">
+                    <div class="group dropdown relative cursor-pointer">
                       <a
-                        class="flex items-center px-3 py-6 text-sm leading-5 transition duration-150 ease-in-out bg-gray-100 border-b-2 border-transparent focus:text-matisse-700 border-matisse-700 text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                        class="flex items-center border-b-2 border-transparent border-matisse-700 bg-gray-100 px-3 py-6 text-sm leading-5 text-matisse-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                       >
                         Hosting
                         <span>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="w-4 h-4 group-hover:transform group-hover:rotate-180"
+                            class="h-4 w-4 group-hover:rotate-180 group-hover:transform"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                           >
@@ -489,16 +489,16 @@
                         </span>
                       </a>
                       <div
-                        class="relative hidden h-auto group-hover:block dropdown-menu"
+                        class="dropdown-menu relative hidden h-auto group-hover:block"
                       >
                         <div class="relative grid w-auto gap-6 px-5 py-4">
                           <a
                             href="/shared-hosting.html"
-                            class="flex items-start p-3 -m-3 rounded-lg bg-gray-50"
+                            class="-m-3 flex items-start rounded-lg bg-gray-50 p-3"
                           >
                             <!-- Heroicon name: outline/chart-bar -->
                             <svg
-                              class="flex-shrink-0 w-6 h-6 text-matisse-500"
+                              class="h-6 w-6 flex-shrink-0 text-matisse-500"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
                               viewBox="0 0 24 24"
@@ -518,11 +518,11 @@
                           </a>
                           <a
                             href="/business-hosting.html"
-                            class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                            class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                           >
                             <!-- Heroicon name: outline/cursor-click -->
                             <svg
-                              class="flex-shrink-0 w-6 h-6 text-matisse-500"
+                              class="h-6 w-6 flex-shrink-0 text-matisse-500"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
                               viewBox="0 0 24 24"
@@ -544,11 +544,11 @@
                           </a>
                           <a
                             href="email-hosting.html"
-                            class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                            class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                           >
                             <!-- Heroicon name: outline/shield-check -->
                             <svg
-                              class="flex-shrink-0 w-6 h-6 text-matisse-500"
+                              class="h-6 w-6 flex-shrink-0 text-matisse-500"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
                               viewBox="0 0 24 24"
@@ -571,15 +571,15 @@
                         </div>
                       </div>
                     </div>
-                    <div class="relative cursor-pointer group dropdown">
+                    <div class="group dropdown relative cursor-pointer">
                       <a
-                        class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                        class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                       >
                         Virtual Servers
                         <span>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="w-4 h-4 group-hover:transform group-hover:rotate-180"
+                            class="h-4 w-4 group-hover:rotate-180 group-hover:transform"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                           >
@@ -592,16 +592,16 @@
                         </span>
                       </a>
                       <div
-                        class="relative hidden h-auto group-hover:block dropdown-menu"
+                        class="dropdown-menu relative hidden h-auto group-hover:block"
                       >
                         <div class="relative grid w-auto gap-6 px-5 py-2">
                           <a
                             href="/vps-linux.html"
-                            class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                            class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                           >
                             <!-- Heroicon name: outline/chart-bar -->
                             <svg
-                              class="flex-shrink-0 w-6 h-6 text-matisse-500"
+                              class="h-6 w-6 flex-shrink-0 text-matisse-500"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
                               viewBox="0 0 24 24"
@@ -621,11 +621,11 @@
                           </a>
                           <a
                             href="vps-windows.html"
-                            class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                            class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                           >
                             <!-- Heroicon name: outline/cursor-click -->
                             <svg
-                              class="flex-shrink-0 w-6 h-6 text-matisse-500"
+                              class="h-6 w-6 flex-shrink-0 text-matisse-500"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
                               viewBox="0 0 24 24"
@@ -648,25 +648,25 @@
                     </div>
                     <a
                       href="dedicated-servers.html"
-                      class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                     >
                       Dedicated Servers
                     </a>
                     <a
                       href="domains.html"
-                      class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                     >
                       Domains
                     </a>
                     <a
                       href="web-design.html"
-                      class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                     >
                       Web Design
                     </a>
                     <a
                       href="affiliates.html"
-                      class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                     >
                       Affiliates
                     </a>
@@ -677,12 +677,12 @@
                     <div class="mt-6">
                       <a
                         href="#"
-                        class="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700"
+                        class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
                       >
                         Sign up
                       </a>
                       <p
-                        class="mt-6 text-base font-medium text-center text-gray-500"
+                        class="mt-6 text-center text-base font-medium text-gray-500"
                       >
                         Existing customer?
                         <a
@@ -707,9 +707,9 @@
     <!-- Pricing -->
     <section>
       <div
-        class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+        class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
       >
-        <table class="w-full text-left whitespace-no-wrap table-auto">
+        <table class="whitespace-no-wrap w-full table-auto text-left">
           <caption class="sr-only">
             Pricing plan comparison
           </caption>
@@ -735,7 +735,7 @@
               </th>
             </tr>
           </thead>
-          <tbody class="space-y-6 text-left divide-y divide-zircon-600">
+          <tbody class="space-y-6 divide-y divide-zircon-600 text-left">
             <tr>
               <th scope="row">
                 <h3 class="py-8">Pricing</h3>
@@ -749,7 +749,7 @@
                 <div class="pr-4">
                   <a
                     href="/"
-                    class="inline-flex items-center justify-center w-full py-2 mt-4 mb-2 font-medium tracking-wide text-white transition duration-300 rounded rounde hover:shadow-lg bg-wh-green hover:bg-wh-greenDarken focus:shadow-outline focus:outline-none"
+                    class="rounde focus:shadow-outline mt-4 mb-2 inline-flex w-full items-center justify-center rounded bg-wh-green py-2 font-medium tracking-wide text-white transition duration-300 hover:bg-wh-greenDarken hover:shadow-lg focus:outline-none"
                   >
                     Buy Basic
                   </a>
@@ -764,7 +764,7 @@
                 <div class="pr-4">
                   <a
                     href="/"
-                    class="inline-flex items-center justify-center w-full py-2 mt-4 mb-2 font-medium tracking-wide text-white transition duration-300 rounded rounde hover:shadow-lg bg-wh-green hover:bg-wh-greenDarken focus:shadow-outline focus:outline-none"
+                    class="rounde focus:shadow-outline mt-4 mb-2 inline-flex w-full items-center justify-center rounded bg-wh-green py-2 font-medium tracking-wide text-white transition duration-300 hover:bg-wh-greenDarken hover:shadow-lg focus:outline-none"
                   >
                     Buy Essential
                   </a>
@@ -779,7 +779,7 @@
                 <div class="pr-4">
                   <a
                     href="/"
-                    class="inline-flex items-center justify-center w-full py-2 mt-4 mb-2 font-medium tracking-wide text-white transition duration-300 rounded rounde hover:shadow-lg bg-wh-green hover:bg-wh-greenDarken focus:shadow-outline focus:outline-none"
+                    class="rounde focus:shadow-outline mt-4 mb-2 inline-flex w-full items-center justify-center rounded bg-wh-green py-2 font-medium tracking-wide text-white transition duration-300 hover:bg-wh-greenDarken hover:shadow-lg focus:outline-none"
                   >
                     Buy Professional
                   </a>
@@ -794,7 +794,7 @@
                 <div class="pr-4">
                   <a
                     href="/"
-                    class="inline-flex items-center justify-center w-full py-2 mt-4 mb-2 font-medium tracking-wide text-white transition duration-300 rounded rounde hover:shadow-lg bg-wh-green hover:bg-wh-greenDarken focus:shadow-outline focus:outline-none"
+                    class="rounde focus:shadow-outline mt-4 mb-2 inline-flex w-full items-center justify-center rounded bg-wh-green py-2 font-medium tracking-wide text-white transition duration-300 hover:bg-wh-greenDarken hover:shadow-lg focus:outline-none"
                   >
                     Buy Premium
                   </a>
@@ -809,7 +809,7 @@
                 <div class="pr-4">
                   <a
                     href="/"
-                    class="inline-flex items-center justify-center w-full py-2 mt-4 mb-2 font-medium tracking-wide text-white transition duration-300 rounded rounde hover:shadow-lg bg-wh-green hover:bg-wh-greenDarken focus:shadow-outline focus:outline-none"
+                    class="rounde focus:shadow-outline mt-4 mb-2 inline-flex w-full items-center justify-center rounded bg-wh-green py-2 font-medium tracking-wide text-white transition duration-300 hover:bg-wh-greenDarken hover:shadow-lg focus:outline-none"
                   >
                     Buy Enterprise
                   </a>
@@ -916,7 +916,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Not included in Free plan"
-                  class="w-5 h-5 text-gray-500"
+                  class="h-5 w-5 text-gray-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -931,7 +931,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Standard plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -946,7 +946,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Premium plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -961,7 +961,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Premium plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -976,7 +976,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Premium plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -996,7 +996,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Standard plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1011,7 +1011,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Standard plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1026,7 +1026,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Premium plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1041,7 +1041,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Premium plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1056,7 +1056,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Premium plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1076,7 +1076,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Standard plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1091,7 +1091,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Standard plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1106,7 +1106,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Premium plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1121,7 +1121,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Premium plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1136,7 +1136,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Premium plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1156,7 +1156,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Standard plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1171,7 +1171,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Standard plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1186,7 +1186,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Premium plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1201,7 +1201,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Premium plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1216,7 +1216,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Premium plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1236,7 +1236,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Standard plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1251,7 +1251,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Standard plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1266,7 +1266,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Premium plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1281,7 +1281,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Premium plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1296,7 +1296,7 @@
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-label="Included in Premium plan"
-                  class="w-5 h-5 text-emerald-500"
+                  class="h-5 w-5 text-emerald-500"
                 >
                   <path
                     fill-rule="evenodd"
@@ -1312,7 +1312,7 @@
                 <div class="pr-4">
                   <a
                     href="/"
-                    class="inline-flex items-center justify-center w-full py-2 mt-4 mb-2 font-medium tracking-wide text-white transition duration-300 rounded rounde hover:shadow-lg bg-wh-green hover:bg-wh-greenDarken focus:shadow-outline focus:outline-none"
+                    class="rounde focus:shadow-outline mt-4 mb-2 inline-flex w-full items-center justify-center rounded bg-wh-green py-2 font-medium tracking-wide text-white transition duration-300 hover:bg-wh-greenDarken hover:shadow-lg focus:outline-none"
                   >
                     Buy Basic
                   </a>
@@ -1322,7 +1322,7 @@
                 <div class="pr-4">
                   <a
                     href="/"
-                    class="inline-flex items-center justify-center w-full py-2 mt-4 mb-2 font-medium tracking-wide text-white transition duration-300 rounded rounde hover:shadow-lg bg-wh-green hover:bg-wh-greenDarken focus:shadow-outline focus:outline-none"
+                    class="rounde focus:shadow-outline mt-4 mb-2 inline-flex w-full items-center justify-center rounded bg-wh-green py-2 font-medium tracking-wide text-white transition duration-300 hover:bg-wh-greenDarken hover:shadow-lg focus:outline-none"
                   >
                     Buy Essential
                   </a>
@@ -1332,7 +1332,7 @@
                 <div class="pr-4">
                   <a
                     href="/"
-                    class="inline-flex items-center justify-center w-full py-2 mt-4 mb-2 font-medium tracking-wide text-white transition duration-300 rounded rounde hover:shadow-lg bg-wh-green hover:bg-wh-greenDarken focus:shadow-outline focus:outline-none"
+                    class="rounde focus:shadow-outline mt-4 mb-2 inline-flex w-full items-center justify-center rounded bg-wh-green py-2 font-medium tracking-wide text-white transition duration-300 hover:bg-wh-greenDarken hover:shadow-lg focus:outline-none"
                   >
                     Buy Professional
                   </a>
@@ -1342,7 +1342,7 @@
                 <div class="pr-4">
                   <a
                     href="/"
-                    class="inline-flex items-center justify-center w-full py-2 mt-4 mb-2 font-medium tracking-wide text-white transition duration-300 rounded rounde hover:shadow-lg bg-wh-green hover:bg-wh-greenDarken focus:shadow-outline focus:outline-none"
+                    class="rounde focus:shadow-outline mt-4 mb-2 inline-flex w-full items-center justify-center rounded bg-wh-green py-2 font-medium tracking-wide text-white transition duration-300 hover:bg-wh-greenDarken hover:shadow-lg focus:outline-none"
                   >
                     Buy Premium
                   </a>
@@ -1352,7 +1352,7 @@
                 <div class="pr-4">
                   <a
                     href="/"
-                    class="inline-flex items-center justify-center w-full py-2 mt-4 mb-2 font-medium tracking-wide text-white transition duration-300 rounded rounde hover:shadow-lg bg-wh-green hover:bg-wh-greenDarken focus:shadow-outline focus:outline-none"
+                    class="rounde focus:shadow-outline mt-4 mb-2 inline-flex w-full items-center justify-center rounded bg-wh-green py-2 font-medium tracking-wide text-white transition duration-300 hover:bg-wh-greenDarken hover:shadow-lg focus:outline-none"
                   >
                     Buy Enterprise
                   </a>
@@ -1368,13 +1368,13 @@
     <!-- Hosting Features -->
     <section class="bg-zircon-500">
       <div
-        class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+        class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
       >
         <div
-          class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-4xl md:mb-12"
+          class="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-4xl"
         >
           <h2
-            class="max-w-4xl mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
+            class="mb-6 max-w-4xl font-sans text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
           >
             Website Hosting Features
           </h2>
@@ -1382,13 +1382,13 @@
             These are the core features that come with all of our hosting plans.
           </p>
         </div>
-        <div class="grid gap-5 row-gap-5 lg:grid-cols-3">
+        <div class="row-gap-5 grid gap-5 lg:grid-cols-3">
           <div
-            class="relative p-px overflow-hidden transition duration-300 transform border shadow-sm rounded-2xl hover:scale-105 group hover:shadow-xl"
+            class="group relative transform overflow-hidden rounded-2xl border p-px shadow-sm transition duration-300 hover:scale-105 hover:shadow-xl"
           >
-            <div class="relative p-5 bg-white rounded-sm">
-              <div class="flex flex-col lg:items-center lg:flex-row">
-                <div class="flex items-center mb-4 mr-2 lg:mb-0">
+            <div class="relative rounded-sm bg-white p-5">
+              <div class="flex flex-col lg:flex-row lg:items-center">
+                <div class="mb-4 mr-2 flex items-center lg:mb-0">
                   <svg
                     width="50"
                     height="50"
@@ -1418,11 +1418,11 @@
             </div>
           </div>
           <div
-            class="relative p-px overflow-hidden transition duration-300 transform border shadow-sm rounded-2xl hover:scale-105 group hover:shadow-xl"
+            class="group relative transform overflow-hidden rounded-2xl border p-px shadow-sm transition duration-300 hover:scale-105 hover:shadow-xl"
           >
-            <div class="relative p-5 bg-white rounded-sm">
-              <div class="flex flex-col lg:items-center lg:flex-row">
-                <div class="flex items-center mb-4 mr-2 lg:mb-0">
+            <div class="relative rounded-sm bg-white p-5">
+              <div class="flex flex-col lg:flex-row lg:items-center">
+                <div class="mb-4 mr-2 flex items-center lg:mb-0">
                   <svg
                     width="50"
                     height="50"
@@ -1452,11 +1452,11 @@
             </div>
           </div>
           <div
-            class="relative p-px overflow-hidden transition duration-300 transform border shadow-sm rounded-2xl hover:scale-105 group hover:shadow-xl"
+            class="group relative transform overflow-hidden rounded-2xl border p-px shadow-sm transition duration-300 hover:scale-105 hover:shadow-xl"
           >
-            <div class="relative p-5 bg-white rounded-sm">
-              <div class="flex flex-col lg:items-center lg:flex-row">
-                <div class="flex items-center mb-4 mr-2 lg:mb-0">
+            <div class="relative rounded-sm bg-white p-5">
+              <div class="flex flex-col lg:flex-row lg:items-center">
+                <div class="mb-4 mr-2 flex items-center lg:mb-0">
                   <svg
                     width="50"
                     height="50"
@@ -1486,11 +1486,11 @@
             </div>
           </div>
           <div
-            class="relative p-px overflow-hidden transition duration-300 transform border shadow-sm rounded-2xl hover:scale-105 group hover:shadow-xl"
+            class="group relative transform overflow-hidden rounded-2xl border p-px shadow-sm transition duration-300 hover:scale-105 hover:shadow-xl"
           >
-            <div class="relative p-5 bg-white rounded-sm">
-              <div class="flex flex-col lg:items-center lg:flex-row">
-                <div class="flex items-center mb-4 mr-2 lg:mb-0">
+            <div class="relative rounded-sm bg-white p-5">
+              <div class="flex flex-col lg:flex-row lg:items-center">
+                <div class="mb-4 mr-2 flex items-center lg:mb-0">
                   <svg
                     width="50"
                     height="50"
@@ -1520,11 +1520,11 @@
             </div>
           </div>
           <div
-            class="relative p-px overflow-hidden transition duration-300 transform border shadow-sm rounded-2xl hover:scale-105 group hover:shadow-xl"
+            class="group relative transform overflow-hidden rounded-2xl border p-px shadow-sm transition duration-300 hover:scale-105 hover:shadow-xl"
           >
-            <div class="relative p-5 bg-white rounded-sm">
-              <div class="flex flex-col lg:items-center lg:flex-row">
-                <div class="flex items-center mb-4 mr-2 lg:mb-0">
+            <div class="relative rounded-sm bg-white p-5">
+              <div class="flex flex-col lg:flex-row lg:items-center">
+                <div class="mb-4 mr-2 flex items-center lg:mb-0">
                   <svg
                     width="50"
                     height="50"
@@ -1554,11 +1554,11 @@
             </div>
           </div>
           <div
-            class="relative p-px overflow-hidden transition duration-300 transform border shadow-sm rounded-2xl hover:scale-105 group hover:shadow-xl"
+            class="group relative transform overflow-hidden rounded-2xl border p-px shadow-sm transition duration-300 hover:scale-105 hover:shadow-xl"
           >
-            <div class="relative p-5 bg-white rounded-sm">
-              <div class="flex flex-col lg:items-center lg:flex-row">
-                <div class="flex items-center mb-4 mr-2 lg:mb-0">
+            <div class="relative rounded-sm bg-white p-5">
+              <div class="flex flex-col lg:flex-row lg:items-center">
+                <div class="mb-4 mr-2 flex items-center lg:mb-0">
                   <svg
                     width="50"
                     height="50"
@@ -1590,11 +1590,11 @@
             </div>
           </div>
           <div
-            class="relative p-px overflow-hidden transition duration-300 transform border shadow-sm rounded-2xl hover:scale-105 group hover:shadow-xl"
+            class="group relative transform overflow-hidden rounded-2xl border p-px shadow-sm transition duration-300 hover:scale-105 hover:shadow-xl"
           >
-            <div class="relative p-5 bg-white rounded-sm">
-              <div class="flex flex-col lg:items-center lg:flex-row">
-                <div class="flex items-center mb-4 mr-2 lg:mb-0">
+            <div class="relative rounded-sm bg-white p-5">
+              <div class="flex flex-col lg:flex-row lg:items-center">
+                <div class="mb-4 mr-2 flex items-center lg:mb-0">
                   <svg
                     width="50"
                     height="50"
@@ -1624,11 +1624,11 @@
             </div>
           </div>
           <div
-            class="relative p-px overflow-hidden transition duration-300 transform border shadow-sm rounded-2xl hover:scale-105 group hover:shadow-xl"
+            class="group relative transform overflow-hidden rounded-2xl border p-px shadow-sm transition duration-300 hover:scale-105 hover:shadow-xl"
           >
-            <div class="relative p-5 bg-white rounded-sm">
-              <div class="flex flex-col lg:items-center lg:flex-row">
-                <div class="flex items-center mb-4 mr-2 lg:mb-0">
+            <div class="relative rounded-sm bg-white p-5">
+              <div class="flex flex-col lg:flex-row lg:items-center">
+                <div class="mb-4 mr-2 flex items-center lg:mb-0">
                   <svg
                     width="50"
                     ansght="50"
@@ -1658,11 +1658,11 @@
             </div>
           </div>
           <div
-            class="relative p-px overflow-hidden transition duration-300 transform border shadow-sm rounded-2xl hover:scale-105 group hover:shadow-xl"
+            class="group relative transform overflow-hidden rounded-2xl border p-px shadow-sm transition duration-300 hover:scale-105 hover:shadow-xl"
           >
-            <div class="relative p-5 bg-white rounded-sm">
-              <div class="flex flex-col lg:items-center lg:flex-row">
-                <div class="flex items-center mb-4 mr-2 lg:mb-0">
+            <div class="relative rounded-sm bg-white p-5">
+              <div class="flex flex-col lg:flex-row lg:items-center">
+                <div class="mb-4 mr-2 flex items-center lg:mb-0">
                   <svg
                     width="50"
                     height="50"
@@ -1700,13 +1700,13 @@
 
     <!-- Why VPS -->
     <div
-      class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+      class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
     >
       <div
-        class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12"
+        class="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-2xl"
       >
         <h2
-          class="max-w-2xl mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
+          class="mb-6 max-w-2xl font-sans text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
         >
           Why to Choose VPS Hosting
         </h2>
@@ -1714,10 +1714,10 @@
           Superior performance, superior uptime.
         </p>
       </div>
-      <div class="grid gap-8 row-gap-8 lg:grid-cols-4">
+      <div class="row-gap-8 grid gap-8 lg:grid-cols-4">
         <div class="sm:text-center">
           <div
-            class="flex items-center justify-center w-16 h-16 sm:mx-auto sm:w-24 sm:h-24"
+            class="flex h-16 w-16 items-center justify-center sm:mx-auto sm:h-24 sm:w-24"
           >
             <svg
               width="66"
@@ -1734,14 +1734,14 @@
           <h6 class="mb-2 font-semibold leading-5 text-gray-900">
             Powerful hardware
           </h6>
-          <p class="max-w-md mb-3 text-sm text-gray-500 sm:mx-auto">
+          <p class="mb-3 max-w-md text-sm text-gray-500 sm:mx-auto">
             You will get High-Performance hosting with dedicated CPU and RAM and
             blazing fast NVMe disks.
           </p>
         </div>
         <div class="sm:text-center">
           <div
-            class="flex items-center justify-center w-16 h-16 sm:mx-auto sm:w-24 sm:h-24"
+            class="flex h-16 w-16 items-center justify-center sm:mx-auto sm:h-24 sm:w-24"
           >
             <svg
               width="64"
@@ -1762,14 +1762,14 @@
           <h6 class="mb-2 font-semibold leading-5 text-gray-900">
             Easy Upgrade
           </h6>
-          <p class="max-w-md mb-3 text-sm text-gray-500 sm:mx-auto">
+          <p class="mb-3 max-w-md text-sm text-gray-500 sm:mx-auto">
             We will backup your sites daily so you can rest easy should you ever
             need to recover your data.
           </p>
         </div>
         <div class="sm:text-center">
           <div
-            class="flex items-center justify-center w-16 h-16 sm:mx-auto sm:w-24 sm:h-24"
+            class="flex h-16 w-16 items-center justify-center sm:mx-auto sm:h-24 sm:w-24"
           >
             <svg
               width="64"
@@ -1790,7 +1790,7 @@
           <h6 class="mb-2 font-semibold leading-5 text-gray-900">
             Multiple Linux Distros
           </h6>
-          <p class="max-w-md mb-3 text-sm text-gray-500 sm:mx-auto">
+          <p class="mb-3 max-w-md text-sm text-gray-500 sm:mx-auto">
             One of the best parts about having a Business Hosting you will get a
             Powerful & Complete solution for your business without technical
             pain.
@@ -1798,7 +1798,7 @@
         </div>
         <div class="sm:text-center">
           <div
-            class="flex items-center justify-center w-16 h-16 sm:mx-auto sm:w-24 sm:h-24"
+            class="flex h-16 w-16 items-center justify-center sm:mx-auto sm:h-24 sm:w-24"
           >
             <svg
               width="64"
@@ -1823,7 +1823,7 @@
           <h6 class="mb-2 font-semibold leading-5 text-gray-900">
             Full root access
           </h6>
-          <p class="max-w-md mb-3 text-sm text-gray-500 sm:mx-auto">
+          <p class="mb-3 max-w-md text-sm text-gray-500 sm:mx-auto">
             FidaHost understands importance of your work, priority support is
             provided on all our business plans and you can contact us by phone,
             live chat or ticket.
@@ -1831,7 +1831,7 @@
         </div>
         <div class="sm:text-center">
           <div
-            class="flex items-center justify-center w-16 h-16 sm:mx-auto sm:w-24 sm:h-24"
+            class="flex h-16 w-16 items-center justify-center sm:mx-auto sm:h-24 sm:w-24"
           >
             <svg
               width="66"
@@ -1848,14 +1848,14 @@
           <h6 class="mb-2 font-semibold leading-5 text-gray-900">
             Top-Level Security
           </h6>
-          <p class="max-w-md mb-3 text-sm text-gray-500 sm:mx-auto">
+          <p class="mb-3 max-w-md text-sm text-gray-500 sm:mx-auto">
             You will get High-Performance hosting with dedicated CPU and RAM and
             blazing fast NVMe disks.
           </p>
         </div>
         <div class="sm:text-center">
           <div
-            class="flex items-center justify-center w-16 h-16 sm:mx-auto sm:w-24 sm:h-24"
+            class="flex h-16 w-16 items-center justify-center sm:mx-auto sm:h-24 sm:w-24"
           >
             <svg
               width="64"
@@ -1876,14 +1876,14 @@
           <h6 class="mb-2 font-semibold leading-5 text-gray-900">
             Guaranteed Rescources
           </h6>
-          <p class="max-w-md mb-3 text-sm text-gray-500 sm:mx-auto">
+          <p class="mb-3 max-w-md text-sm text-gray-500 sm:mx-auto">
             We will backup your sites daily so you can rest easy should you ever
             need to recover your data.
           </p>
         </div>
         <div class="sm:text-center">
           <div
-            class="flex items-center justify-center w-16 h-16 sm:mx-auto sm:w-24 sm:h-24"
+            class="flex h-16 w-16 items-center justify-center sm:mx-auto sm:h-24 sm:w-24"
           >
             <svg
               width="64"
@@ -1904,7 +1904,7 @@
           <h6 class="mb-2 font-semibold leading-5 text-gray-900">
             Dedicated IP
           </h6>
-          <p class="max-w-md mb-3 text-sm text-gray-500 sm:mx-auto">
+          <p class="mb-3 max-w-md text-sm text-gray-500 sm:mx-auto">
             -.4 One of the best parts about having a Business Hosting you will
             get a Powerful & Complete solution for your business without
             technical pain.
@@ -1912,7 +1912,7 @@
         </div>
         <div class="sm:text-center">
           <div
-            class="flex items-center justify-center w-16 h-16 sm:mx-auto sm:w-24 sm:h-24"
+            class="flex h-16 w-16 items-center justify-center sm:mx-auto sm:h-24 sm:w-24"
           >
             <svg
               width="64"
@@ -1937,7 +1937,7 @@
           <h6 class="mb-2 font-semibold leading-5 text-gray-900">
             Free Daily Backups
           </h6>
-          <p class="max-w-md mb-3 text-sm text-gray-500 sm:mx-auto">
+          <p class="mb-3 max-w-md text-sm text-gray-500 sm:mx-auto">
             FidaHost understands importance of your work, priority support is
             provided on all our business plans and you can contact us by phone,
             live chat or ticket.
@@ -1950,10 +1950,10 @@
     <!-- Linux lineup -->
     <section class="bg-zircon-500">
       <div
-        class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+        class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
       >
         <div class="flex flex-col justify-between lg:flex-row">
-          <div class="max-w-md pr-16 mb-10">
+          <div class="mb-10 max-w-md pr-16">
             <h5 class="mb-6 text-3xl font-extrabold leading-none">
               Choose a wide lineup of Linux OS's
             </h5>
@@ -1963,14 +1963,14 @@
               corrupti doloremque omnis reprehenderit.
             </p>
           </div>
-          <div class="flex flex-col max-w-2xl">
-            <div class="grid gap-1 row-gap-5 sm:grid-cols-2">
+          <div class="flex max-w-2xl flex-col">
+            <div class="row-gap-5 grid gap-1 sm:grid-cols-2">
               <div
-                class="relative overflow-hidden transition duration-300 transform border rounded hover:shadow-lg hover:border-matisse-500 group"
+                class="group relative transform overflow-hidden rounded border transition duration-300 hover:border-matisse-500 hover:shadow-lg"
               >
-                <div class="relative py-8 bg-white rounded-sm w-80 px-9">
-                  <div class="flex flex-col lg:items-center lg:flex-row">
-                    <div class="flex items-center justify-center mr-2">
+                <div class="relative w-80 rounded-sm bg-white py-8 px-9">
+                  <div class="flex flex-col lg:flex-row lg:items-center">
+                    <div class="mr-2 flex items-center justify-center">
                       <svg
                         width="60"
                         height="60"
@@ -1978,19 +1978,19 @@
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          class="transition duration-200 text-icon-dark group-hover:text-icon-centosPurple"
+                          class="text-icon-dark transition duration-200 group-hover:text-icon-centosPurple"
                           d="m25.28 27.807 2.163 2.15-2.163 2.151H10.055v7.165L.771 29.958l9.284-9.16v7.009H25.28ZM31.972 9.51h18.5v18.499h-18.5v-18.5Z"
                         />
                         <path
-                          class="transition duration-200 text-icon-dark group-hover:text-icon-centosYellow"
+                          class="text-icon-dark transition duration-200 group-hover:text-icon-centosYellow"
                           d="m32.174 25.28-2.15 2.163-2.15-2.164V10.055h-7.166L30.023.77l9.158 9.285h-7.008V25.28Zm-.202 6.692h18.499v18.5H31.972v-18.5Z"
                         />
                         <path
-                          class="transition duration-200 text-icon-dark group-hover:text-icon-centosTeget"
+                          class="text-icon-dark transition duration-200 group-hover:text-icon-centosTeget"
                           d="m34.7 32.174-2.163-2.15 2.163-2.15h15.225v-7.166l9.285 9.316-9.285 9.158v-7.008H34.7ZM9.51 31.972h18.499v18.5h-18.5v-18.5Z"
                         />
                         <path
-                          class="transition duration-200 text-icon-dark group-hover:text-icon-centosGreen"
+                          class="text-icon-dark transition duration-200 group-hover:text-icon-centosGreen"
                           d="m27.806 34.701 2.15-2.163 2.151 2.163v15.225h7.165l-9.316 9.285-9.158-9.285h7.008V34.701ZM9.509 9.51h18.499v18.499h-18.5v-18.5Z"
                         />
                         <path
@@ -2012,11 +2012,11 @@
                 </div>
               </div>
               <div
-                class="relative overflow-hidden transition duration-300 transform border rounded hover:shadow-lg hover:border-matisse-500 group"
+                class="group relative transform overflow-hidden rounded border transition duration-300 hover:border-matisse-500 hover:shadow-lg"
               >
-                <div class="relative py-8 bg-white rounded-sm px-9">
-                  <div class="flex flex-col lg:items-center lg:flex-row">
-                    <div class="flex items-center justify-center mr-2">
+                <div class="relative rounded-sm bg-white py-8 px-9">
+                  <div class="flex flex-col lg:flex-row lg:items-center">
+                    <div class="mr-2 flex items-center justify-center">
                       <svg
                         width="60"
                         height="60"
@@ -2024,7 +2024,7 @@
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          class="transition duration-200 text-icon-dark group-hover:text-icon-ubuntu"
+                          class="text-icon-dark transition duration-200 group-hover:text-icon-ubuntu"
                           d="M60 30c0 16.568-13.43 30-30 30C13.432 60 0 46.568 0 30 0 13.431 13.432 0 30 0c16.57 0 30 13.431 30 30Z"
                         />
                         <path
@@ -2042,11 +2042,11 @@
                 </div>
               </div>
               <div
-                class="relative overflow-hidden transition duration-300 transform border rounded hover:shadow-lg hover:border-matisse-500 group"
+                class="group relative transform overflow-hidden rounded border transition duration-300 hover:border-matisse-500 hover:shadow-lg"
               >
-                <div class="relative py-8 bg-white rounded-sm px-9">
-                  <div class="flex flex-col lg:items-center lg:flex-row">
-                    <div class="flex items-center justify-center mr-2">
+                <div class="relative rounded-sm bg-white py-8 px-9">
+                  <div class="flex flex-col lg:flex-row lg:items-center">
+                    <div class="mr-2 flex items-center justify-center">
                       <svg
                         width="60"
                         height="60"
@@ -2054,11 +2054,11 @@
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          class="transition duration-200 text-icon-dark group-hover:text-icon-fedoraBlue"
+                          class="text-icon-dark transition duration-200 group-hover:text-icon-fedoraBlue"
                           d="M60 30C60 13.433 46.568 0 30 0 13.438 0 .012 13.42 0 29.98v23.216a6.82 6.82 0 0 0 6.82 6.803h23.192C46.575 59.993 60 46.565 60 30.001Z"
                         />
                         <path
-                          class="transition duration-200 text-icon-darkest group-hover:text-icon-fedoraLight"
+                          class="text-icon-darkest transition duration-200 group-hover:text-icon-fedoraLight"
                           d="M38.807 7.104c-7.76 0-14.073 6.312-14.073 14.073v7.47h-7.438c-7.76 0-14.073 6.313-14.073 14.072 0 7.76 6.313 14.073 14.073 14.073 7.76 0 14.073-6.313 14.073-14.073v-7.47h7.438c7.76 0 14.074-6.313 14.074-14.072 0-7.76-6.314-14.073-14.074-14.073Zm-14.02 35.615c0 4.13-3.36 7.49-7.491 7.49-4.13 0-7.49-3.36-7.49-7.49 0-4.13 3.36-7.49 7.49-7.49h7.438v.02h.052v7.47Zm14.02-14.052H31.37v-.02h-.052v-7.47c0-4.13 3.36-7.491 7.49-7.491 4.13 0 7.491 3.36 7.491 7.49 0 4.131-3.36 7.491-7.49 7.491Z"
                         />
                         <path
@@ -2076,11 +2076,11 @@
                 </div>
               </div>
               <div
-                class="relative overflow-hidden transition duration-300 transform border rounded hover:shadow-lg hover:border-matisse-500 group"
+                class="group relative transform overflow-hidden rounded border transition duration-300 hover:border-matisse-500 hover:shadow-lg"
               >
-                <div class="relative py-8 bg-white rounded-sm px-9">
-                  <div class="flex flex-col lg:items-center lg:flex-row">
-                    <div class="flex items-center justify-center mr-2">
+                <div class="relative rounded-sm bg-white py-8 px-9">
+                  <div class="flex flex-col lg:flex-row lg:items-center">
+                    <div class="mr-2 flex items-center justify-center">
                       <svg
                         width="49"
                         height="60"
@@ -2089,7 +2089,7 @@
                       >
                         <g
                           clip-path="url(#a)"
-                          class="transition duration-200 text-icon-dark group-hover:text-icon-debian"
+                          class="text-icon-dark transition duration-200 group-hover:text-icon-debian"
                         >
                           <path
                             d="M28.92 31.69c-.993.013.188.512 1.486.711.338-.263.663-.543.973-.838-.808.198-1.63.202-2.459.127M34.255 30.36c.592-.817 1.023-1.711 1.175-2.636-.133.66-.49 1.228-.827 1.829-1.858 1.17-.175-.695-.002-1.403-1.997 2.514-.274 1.508-.346 2.21M36.223 25.236c.12-1.79-.352-1.224-.51-.54.185.095.331 1.26.51.54M25.152.774c.53.095 1.146.168 1.06.294.58-.127.711-.244-1.06-.294M26.212 1.068l-.375.078.349-.031.026-.047Z"
@@ -2133,17 +2133,17 @@
               Are you interested in Windows VPS?
               <button
                 type="button"
-                class="flex items-center w-auto ml-1 font-medium group text-matisse-600 hover:text-matisse-500"
+                class="group ml-1 flex w-auto items-center font-medium text-matisse-600 hover:text-matisse-500"
                 aria-controls="filter-section-0"
                 aria-expanded="false"
               >
                 See our Plans
                 <span
-                  class="flex items-center ml-1 duration-700 ease-in-out transform group-hover:translate-x-1"
+                  class="ml-1 flex transform items-center duration-700 ease-in-out group-hover:translate-x-1"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="w-4 h-4"
+                    class="h-4 w-4"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -2163,27 +2163,27 @@
     <!-- End of Linux lineup -->
 
     <!-- VPS-level control -->
-    <div class="py-12 bg-white">
-      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div class="bg-white py-12">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="lg:text-center">
           <p
             class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl"
           >
             Top uses for VPS-level control
           </p>
-          <p class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
+          <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
             Get the best hosting service at the price you can
           </p>
         </div>
 
         <div class="mt-10">
           <dl
-            class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10"
+            class="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0"
           >
             <div class="relative">
               <dt>
                 <div
-                  class="absolute flex items-center justify-center w-12 h-12 text-white rounded-md bg-matisse-500"
+                  class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white"
                 >
                   <svg
                     width="24"
@@ -2210,7 +2210,7 @@
             <div class="relative">
               <dt>
                 <div
-                  class="absolute flex items-center justify-center w-12 h-12 text-white rounded-md bg-matisse-500"
+                  class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white"
                 >
                   <svg
                     width="24"
@@ -2237,7 +2237,7 @@
             <div class="relative">
               <dt>
                 <div
-                  class="absolute flex items-center justify-center w-12 h-12 text-white rounded-md bg-matisse-500"
+                  class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white"
                 >
                   <svg
                     width="24"
@@ -2264,7 +2264,7 @@
             <div class="relative">
               <dt>
                 <div
-                  class="absolute flex items-center justify-center w-12 h-12 text-white rounded-md bg-matisse-500"
+                  class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white"
                 >
                   <svg
                     width="24"
@@ -2297,7 +2297,7 @@
     <!-- Need more Power CTA -->
     <div class="bg-zircon-500">
       <div
-        class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between"
+        class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:flex lg:items-center lg:justify-between lg:py-16 lg:px-8"
       >
         <h2
           class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"
@@ -2307,19 +2307,19 @@
             >Check our Dedicated servers plans.</span
           >
         </h2>
-        <div class="flex mt-8 lg:mt-0 lg:flex-shrink-0">
+        <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
           <div class="inline-flex rounded-md shadow">
             <a
               href="#"
-              class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white transition duration-200 border border-transparent rounded-md border-matisse-500 bg-matisse-600 hover:bg-matisse-700"
+              class="inline-flex items-center justify-center rounded-md border border-transparent border-matisse-500 bg-matisse-600 px-5 py-3 text-base font-medium text-white transition duration-200 hover:bg-matisse-700"
             >
               Get started
             </a>
           </div>
-          <div class="inline-flex ml-3 rounded-md shadow">
+          <div class="ml-3 inline-flex rounded-md shadow">
             <a
               href="#"
-              class="inline-flex items-center justify-center px-5 py-3 font-medium transition duration-200 border rounded text-matisse-500 border-matisse-500 hover:bg-wh-light focus:shadow-outline focus:outline-none"
+              class="focus:shadow-outline inline-flex items-center justify-center rounded border border-matisse-500 px-5 py-3 font-medium text-matisse-500 transition duration-200 hover:bg-wh-light focus:outline-none"
             >
               Learn more
             </a>
@@ -2333,19 +2333,19 @@
     <div class="relative">
       <img
         src="./assets/images/overlay-bg.jpg"
-        class="absolute inset-0 object-cover w-full h-full"
+        class="absolute inset-0 h-full w-full object-cover"
         alt=""
       />
       <div class="relative bg-gray-900 bg-opacity-75">
         <div
-          class="py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:py-20"
+          class="mx-auto py-16 sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:py-20"
         >
           <div class="relative w-full xl:px-8">
-            <div class="flex bg-white rounded shadow-2xl p-7 sm:p-10">
-              <div class="relative w-1/2 px-4 mx-auto">
+            <div class="flex rounded bg-white p-7 shadow-2xl sm:p-10">
+              <div class="relative mx-auto w-1/2 px-4">
                 <div class="mb-0 lg:max-w-lg lg:pr-8 xl:pr-6">
                   <h3
-                    class="pb-5 text-2xl font-extrabold text-gray-800 xl:text-5xl md:text-3xl"
+                    class="pb-5 text-2xl font-extrabold text-gray-800 md:text-3xl xl:text-5xl"
                   >
                     Need Some Help?
                   </h3>
@@ -2359,7 +2359,7 @@
                     <div class="flex items-center text-matisse-500">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="w-5 h-5 mr-2"
+                        class="mr-2 h-5 w-5"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -2375,7 +2375,7 @@
                     <div class="flex items-center text-matisse-500">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="w-5 h-5 mr-2"
+                        class="mr-2 h-5 w-5"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -2464,23 +2464,23 @@
                 <div class="mx-auto">
                   <div class="pb-5">
                     <h3
-                      class="px-4 text-2xl font-extrabold text-gray-800 xl:text-5xl md:text-3xl"
+                      class="px-4 text-2xl font-extrabold text-gray-800 md:text-3xl xl:text-5xl"
                     >
                       FAQ
                     </h3>
                   </div>
                   <!-- component -->
-                  <div class="flex flex-wrap -mx-2 sm:mx-auto sm:mb-2">
+                  <div class="-mx-2 flex flex-wrap sm:mx-auto sm:mb-2">
                     <div class="w-full px-4 text-white">
                       <details class="mb-4 cursor-pointer">
                         <summary
-                          class="px-4 py-2 font-semibold rounded-md bg-matisse-500"
+                          class="rounded-md bg-matisse-500 px-4 py-2 font-semibold"
                         >
                           What makes FidaHost different
                         </summary>
 
                         <span
-                          class="relative block w-full h-full px-4 py-2 rounded-b-md bg-zircon-500 text-matisse-600"
+                          class="relative block h-full w-full rounded-b-md bg-zircon-500 px-4 py-2 text-matisse-600"
                         >
                           FidaHost has remained one of the top trusted website
                           hosting providers since 2009. With over 2 000 websites
@@ -2491,13 +2491,13 @@
                       </details>
                       <details class="mb-4 cursor-pointer">
                         <summary
-                          class="px-4 py-2 font-semibold rounded-md bg-matisse-500"
+                          class="rounded-md bg-matisse-500 px-4 py-2 font-semibold"
                         >
                           Can I transfer my existing domain name to FH?
                         </summary>
 
                         <span
-                          class="relative block w-full h-full px-4 py-2 rounded-b-md bg-zircon-500 text-matisse-600"
+                          class="relative block h-full w-full rounded-b-md bg-zircon-500 px-4 py-2 text-matisse-600"
                         >
                           Lorem ipsum, dolor sit amet consectetur adipisicing
                           elit. Atque ipsum veritatis incidunt enim voluptates
@@ -2508,13 +2508,13 @@
                       </details>
                       <details class="mb-4 cursor-pointer">
                         <summary
-                          class="px-4 py-2 font-semibold rounded-md bg-matisse-500"
+                          class="rounded-md bg-matisse-500 px-4 py-2 font-semibold"
                         >
                           How do I migrate to FidaHost?
                         </summary>
 
                         <span
-                          class="relative block w-full h-full px-4 py-2 rounded-b-md bg-zircon-500 text-matisse-600"
+                          class="relative block h-full w-full rounded-b-md bg-zircon-500 px-4 py-2 text-matisse-600"
                         >
                           Lorem ipsum, dolor sit amet consectetur adipisicing
                           elit. Atque ipsum veritatis incidunt enim voluptates
@@ -2525,13 +2525,13 @@
                       </details>
                       <details class="mb-4 cursor-pointer">
                         <summary
-                          class="px-4 py-2 font-semibold rounded-md bg-matisse-500"
+                          class="rounded-md bg-matisse-500 px-4 py-2 font-semibold"
                         >
                           How do I migrate to FidaHost?
                         </summary>
 
                         <span
-                          class="relative block w-full h-full px-4 py-2 rounded-b-md bg-zircon-500 text-matisse-600"
+                          class="relative block h-full w-full rounded-b-md bg-zircon-500 px-4 py-2 text-matisse-600"
                         >
                           Lorem ipsum, dolor sit amet consectetur adipisicing
                           elit. Atque ipsum veritatis incidunt enim voluptates
@@ -2542,13 +2542,13 @@
                       </details>
                       <details class="mb-4 cursor-pointer">
                         <summary
-                          class="px-4 py-2 font-semibold rounded-md bg-matisse-500"
+                          class="rounded-md bg-matisse-500 px-4 py-2 font-semibold"
                         >
                           How do I migrate to FidaHost?
                         </summary>
 
                         <span
-                          class="relative block w-full h-full px-4 py-2 rounded-b-md bg-zircon-500 text-matisse-600"
+                          class="relative block h-full w-full rounded-b-md bg-zircon-500 px-4 py-2 text-matisse-600"
                         >
                           Lorem ipsum, dolor sit amet consectetur adipisicing
                           elit. Atque ipsum veritatis incidunt enim voluptates
@@ -2570,12 +2570,12 @@
 
     <!-- Footer -->
     <div
-      class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
+      class="mx-auto px-4 pt-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8"
     >
-      <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-5">
+      <div class="row-gap-6 mb-8 grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
         <div class="sm:col-span-2">
           <button
-            class="flex items-center justify-end w-full rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-matisse-700 sm:w-auto sm:items-stretch sm:justify-start"
+            class="flex w-full items-center justify-end rounded-md focus:outline-none focus:ring-2 focus:ring-matisse-700 focus:ring-offset-2 sm:w-auto sm:items-stretch sm:justify-start"
           >
             <div class="flex items-center">
               <svg
@@ -2620,7 +2620,7 @@
               href="/#"
               aria-label="Shared hosting"
               title="Shared hosting"
-              class="transition-colors duration-300 hover:text-matisse-500 text-matisse-800"
+              class="text-matisse-800 transition-colors duration-300 hover:text-matisse-500"
               >Shared hosting</a
             >
           </div>
@@ -2629,7 +2629,7 @@
               href="/#"
               aria-label="WordPress hosting"
               title="WordPress hosting"
-              class="transition-colors duration-300 hover:text-matisse-500 text-matisse-800"
+              class="text-matisse-800 transition-colors duration-300 hover:text-matisse-500"
               >WordPress hosting</a
             >
           </div>
@@ -2638,7 +2638,7 @@
               href="/#"
               aria-label="VPS hosting"
               title="VPS hosting"
-              class="transition-colors duration-300 hover:text-matisse-500 text-matisse-800"
+              class="text-matisse-800 transition-colors duration-300 hover:text-matisse-500"
               >VPS hosting</a
             >
           </div>
@@ -2647,7 +2647,7 @@
               href="/#"
               aria-label="Dedicated hosting"
               title="Dedicated hosting"
-              class="transition-colors duration-300 hover:text-matisse-500 text-matisse-800"
+              class="text-matisse-800 transition-colors duration-300 hover:text-matisse-500"
               >Dedicated hosting</a
             >
           </div>
@@ -2656,7 +2656,7 @@
               href="/#"
               aria-label="Reseller hosting"
               title="Reseller hosting"
-              class="transition-colors duration-300 hover:text-matisse-500 text-matisse-800"
+              class="text-matisse-800 transition-colors duration-300 hover:text-matisse-500"
               >Reseller hosting</a
             >
           </div>
@@ -2671,7 +2671,7 @@
               href="tel:850-123-5021"
               aria-label="Our phone"
               title="Our phone"
-              class="transition-colors duration-300 text-matisse-400 hover:text-matisse-800"
+              class="text-matisse-400 transition-colors duration-300 hover:text-matisse-800"
               >850-123-5021</a
             >
           </div>
@@ -2681,7 +2681,7 @@
               href="mailto:info@lorem.mail"
               aria-label="Our email"
               title="Our email"
-              class="transition-colors duration-300 text-matisse-400 hover:text-matisse-800"
+              class="text-matisse-400 transition-colors duration-300 hover:text-matisse-800"
               >info@lorem.mail</a
             >
           </div>
@@ -2693,7 +2693,7 @@
               rel="noopener noreferrer"
               aria-label="Our address"
               title="Our address"
-              class="transition-colors duration-300 text-matisse-400 hover:text-matisse-800"
+              class="text-matisse-400 transition-colors duration-300 hover:text-matisse-800"
             >
               312 Lovely Street, NY
             </a>
@@ -2754,7 +2754,7 @@
           <span class="text-base font-bold tracking-wide text-gray-900"
             >Payment accepted</span
           >
-          <div class="flex items-center w-full mt-1 space-x-1">
+          <div class="mt-1 flex w-full items-center space-x-1">
             <svg
               width="50"
               height="32"
@@ -2841,7 +2841,7 @@
         </div>
       </div>
       <div
-        class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row"
+        class="flex flex-col-reverse justify-between border-t pt-5 pb-10 lg:flex-row"
       >
         <div class="text-sm text-gray-600">
           &copy; Copyright <strong><span>FidaHost</span></strong>
@@ -2851,7 +2851,7 @@
           All Rights Reserved
         </div>
         <ul
-          class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row"
+          class="mb-3 flex flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-5 lg:mb-0"
         >
           <li>
             <a

@@ -9,17 +9,17 @@
   </head>
   <body>
     <!-- Navigation -->
-    <div class="w-full h-full">
+    <div class="h-full w-full">
       <!-- Code block starts -->
       <nav role="navigation" class="hidden bg-white shadow xl:block">
-        <div class="container px-6 py-2 mx-auto xl:py-0">
+        <div class="container mx-auto px-6 py-2 xl:py-0">
           <div class="flex items-center">
             <div class="inset-y-0 left-0 flex items-center xl:hidden">
               <div
-                class="inline-flex items-center justify-center p-2 text-gray-700 transition duration-150 ease-in-out rounded-md hover:text-gray-100 focus:outline-none"
+                class="inline-flex items-center justify-center rounded-md p-2 text-gray-700 transition duration-150 ease-in-out hover:text-gray-100 focus:outline-none"
               >
                 <div
-                  class="hidden text-gray-700 close-m-menu"
+                  class="close-m-menu hidden text-gray-700"
                   onclick="MenuHandler(this,false)"
                 >
                   <svg
@@ -42,7 +42,7 @@
               </div>
             </div>
             <button
-              class="flex items-center justify-end w-full rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-matisse-700 sm:w-auto sm:items-stretch sm:justify-start"
+              class="flex w-full items-center justify-end rounded-md focus:outline-none focus:ring-2 focus:ring-matisse-700 focus:ring-offset-2 sm:w-auto sm:items-stretch sm:justify-start"
             >
               <div class="flex items-center">
                 <svg
@@ -68,23 +68,23 @@
               </div>
             </button>
 
-            <div class="flex justify-between w-full">
-              <div class="hidden xl:flex md:mr-6 xl:mr-16">
+            <div class="flex w-full justify-between">
+              <div class="hidden md:mr-6 xl:mr-16 xl:flex">
                 <a
                   href="/"
-                  class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                  class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                 >
                   Home
                 </a>
-                <div class="relative cursor-pointer group dropdown">
+                <div class="group dropdown relative cursor-pointer">
                   <a
-                    class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                    class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                   >
                     Hosting
                     <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="w-4 h-4 group-hover:transform group-hover:rotate-180"
+                        class="h-4 w-4 group-hover:rotate-180 group-hover:transform"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -97,24 +97,24 @@
                     </span>
                   </a>
                   <div
-                    class="absolute hidden w-screen h-auto max-w-md inset-y-14 group-hover:block dropdown-menu"
+                    class="dropdown-menu absolute inset-y-14 hidden h-auto w-screen max-w-md group-hover:block"
                   >
-                    <div class="inline-block w-16 ml-6 -mb-2 overflow-hidden">
+                    <div class="ml-6 -mb-2 inline-block w-16 overflow-hidden">
                       <div
-                        class="w-3 h-3 origin-bottom-left transform rotate-45 bg-white"
+                        class="h-3 w-3 origin-bottom-left rotate-45 transform bg-white"
                       ></div>
                     </div>
                     <!-- <ul class="top-0 w-48 px-6 py-8 bg-white shadow"> -->
                     <div
-                      class="relative grid w-auto gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8"
+                      class="relative grid w-auto gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8"
                     >
                       <a
                         href="/shared-hosting.html"
-                        class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                       >
                         <!-- Heroicon name: outline/chart-bar -->
                         <svg
-                          class="flex-shrink-0 w-6 h-6 text-matisse-500"
+                          class="h-6 w-6 flex-shrink-0 text-matisse-500"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -139,11 +139,11 @@
                       </a>
                       <a
                         href="/business-hosting.html"
-                        class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                       >
                         <!-- Heroicon name: outline/cursor-click -->
                         <svg
-                          class="flex-shrink-0 w-6 h-6 text-matisse-500"
+                          class="h-6 w-6 flex-shrink-0 text-matisse-500"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -169,11 +169,11 @@
                       </a>
                       <a
                         href="/email-hosting.html"
-                        class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                       >
                         <!-- Heroicon name: outline/shield-check -->
                         <svg
-                          class="flex-shrink-0 w-6 h-6 text-matisse-500"
+                          class="h-6 w-6 flex-shrink-0 text-matisse-500"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -201,15 +201,15 @@
                     <!-- </ul> -->
                   </div>
                 </div>
-                <div class="relative cursor-pointer group dropdown">
+                <div class="group dropdown relative cursor-pointer">
                   <a
-                    class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                    class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                   >
                     Virtual Servers
                     <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="w-4 h-4 group-hover:transform group-hover:rotate-180"
+                        class="h-4 w-4 group-hover:rotate-180 group-hover:transform"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -223,24 +223,24 @@
                   </a>
 
                   <div
-                    class="absolute hidden w-screen h-auto max-w-md inset-y-14 group-hover:block dropdown-menu"
+                    class="dropdown-menu absolute inset-y-14 hidden h-auto w-screen max-w-md group-hover:block"
                   >
-                    <div class="inline-block w-16 ml-6 -mb-2 overflow-hidden">
+                    <div class="ml-6 -mb-2 inline-block w-16 overflow-hidden">
                       <div
-                        class="w-3 h-3 origin-bottom-left transform rotate-45 bg-white"
+                        class="h-3 w-3 origin-bottom-left rotate-45 transform bg-white"
                       ></div>
                     </div>
                     <!-- <ul class="top-0 w-48 px-6 py-8 bg-white shadow"> -->
                     <div
-                      class="relative grid w-auto gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8"
+                      class="relative grid w-auto gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8"
                     >
                       <a
                         href="/vps-linux.html"
-                        class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                       >
                         <!-- Heroicon name: outline/chart-bar -->
                         <svg
-                          class="flex-shrink-0 w-6 h-6 text-matisse-500"
+                          class="h-6 w-6 flex-shrink-0 text-matisse-500"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -267,11 +267,11 @@
 
                       <a
                         href="/vps-windows.html"
-                        class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                       >
                         <!-- Heroicon name: outline/cursor-click -->
                         <svg
-                          class="flex-shrink-0 w-6 h-6 text-matisse-500"
+                          class="h-6 w-6 flex-shrink-0 text-matisse-500"
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
@@ -301,41 +301,41 @@
                 </div>
                 <a
                   href="/dedicated-servers.html"
-                  class="flex items-center px-3 py-6 text-sm leading-5 transition duration-150 ease-in-out bg-gray-100 border-b-2 border-transparent focus:text-matisse-700 border-matisse-700 text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                  class="flex items-center border-b-2 border-transparent border-matisse-700 bg-gray-100 px-3 py-6 text-sm leading-5 text-matisse-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                 >
                   Dedicated Servers
                 </a>
                 <a
                   href="/domains.html"
-                  class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                  class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                 >
                   Domains
                 </a>
                 <a
                   href="/web-design.html"
-                  class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                  class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                 >
                   Web Design
                 </a>
                 <a
                   href="/affiliates.html"
-                  class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                  class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                 >
                   Affiliates
                 </a>
               </div>
               <div
-                class="items-center justify-end hidden md:flex md:flex-1 lg:w-0"
+                class="hidden items-center justify-end md:flex md:flex-1 lg:w-0"
               >
                 <a
                   href="#"
-                  class="text-sm font-medium text-gray-500 whitespace-nowrap hover:text-gray-900"
+                  class="whitespace-nowrap text-sm font-medium text-gray-500 hover:text-gray-900"
                 >
                   Sign in
                 </a>
                 <a
                   href="#"
-                  class="inline-flex items-center justify-center px-4 py-2 ml-8 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-matisse-600 whitespace-nowrap hover:bg-matisse-700"
+                  class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-matisse-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-matisse-700"
                 >
                   Sign up
                 </a>
@@ -346,7 +346,7 @@
       </nav>
       <nav>
         <div
-          class="top-0 flex items-center justify-between w-full px-6 py-4 text-pink-600 bg-white xl:hidden"
+          class="top-0 flex w-full items-center justify-between bg-white px-6 py-4 text-pink-600 xl:hidden"
         >
           <div
             aria-label="logo"
@@ -373,7 +373,7 @@
             <button
               id="menu"
               aria-label="open menu"
-              class="text-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600"
+              class="rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600"
               onclick="sidebarHandler(true)"
             >
               <svg
@@ -398,21 +398,21 @@
         </div>
         <!--Mobile responsive sidebar-->
         <div
-          class="absolute top-0 z-50 w-full h-full transform -translate-x-full xl:hidden"
+          class="absolute top-0 z-50 h-full w-full -translate-x-full transform xl:hidden"
           id="mobile-nav"
         >
           <div
-            class="w-full h-full bg-gray-800 opacity-50"
+            class="h-full w-full bg-gray-800 opacity-50"
             onclick="sidebarHandler(false)"
           ></div>
           <div
-            class="fixed top-0 z-40 flex-col justify-between w-64 h-screen pb-4 overflow-y-auto transition duration-150 ease-in-out bg-white shadow xl:hidden"
+            class="fixed top-0 z-40 h-screen w-64 flex-col justify-between overflow-y-auto bg-white pb-4 shadow transition duration-150 ease-in-out xl:hidden"
           >
             <div class="h-full px-6">
-              <div class="flex flex-col justify-between w-full h-full">
+              <div class="flex h-full w-full flex-col justify-between">
                 <div>
-                  <div class="flex items-center justify-between w-full mt-6">
-                    <div class="flex items-center justify-between w-full">
+                  <div class="mt-6 flex w-full items-center justify-between">
+                    <div class="flex w-full items-center justify-between">
                       <div class="flex items-center">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -438,7 +438,7 @@
                       <button
                         id="cross"
                         aria-label="close menu"
-                        class="text-gray-800 rounded-md focus:outline-none focus:ring-2"
+                        class="rounded-md text-gray-800 focus:outline-none focus:ring-2"
                         onclick="sidebarHandler(false)"
                       >
                         <svg
@@ -461,22 +461,22 @@
                     </div>
                   </div>
                   <!-- mobile nav links -->
-                  <div class="flex flex-col mt-6">
+                  <div class="mt-6 flex flex-col">
                     <a
                       href="/"
-                      class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                     >
                       Home
                     </a>
-                    <div class="relative cursor-pointer group dropdown">
+                    <div class="group dropdown relative cursor-pointer">
                       <a
-                        class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                        class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                       >
                         Hosting
                         <span>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            class="w-4 h-4 group-hover:transform group-hover:rotate-180"
+                            class="h-4 w-4 group-hover:rotate-180 group-hover:transform"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                           >
@@ -489,16 +489,16 @@
                         </span>
                       </a>
                       <div
-                        class="relative hidden h-auto group-hover:block dropdown-menu"
+                        class="dropdown-menu relative hidden h-auto group-hover:block"
                       >
                         <div class="relative grid w-auto gap-6 px-5 py-2">
                           <a
                             href="/shared-hosting.html"
-                            class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                            class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                           >
                             <!-- Heroicon name: outline/chart-bar -->
                             <svg
-                              class="flex-shrink-0 w-6 h-6 text-matisse-500"
+                              class="h-6 w-6 flex-shrink-0 text-matisse-500"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
                               viewBox="0 0 24 24"
@@ -518,11 +518,11 @@
                           </a>
                           <a
                             href="/business-hosting.html"
-                            class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                            class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                           >
                             <!-- Heroicon name: outline/cursor-click -->
                             <svg
-                              class="flex-shrink-0 w-6 h-6 text-matisse-500"
+                              class="h-6 w-6 flex-shrink-0 text-matisse-500"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
                               viewBox="0 0 24 24"
@@ -544,11 +544,11 @@
                           </a>
                           <a
                             href="/email-hosting.html"
-                            class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                            class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                           >
                             <!-- Heroicon name: outline/shield-check -->
                             <svg
-                              class="flex-shrink-0 w-6 h-6 text-matisse-500"
+                              class="h-6 w-6 flex-shrink-0 text-matisse-500"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
                               viewBox="0 0 24 24"
@@ -571,15 +571,15 @@
                         </div>
                       </div>
                     </div>
-                    <div class="relative cursor-pointer group dropdown">
+                    <div class="group dropdown relative cursor-pointer">
                       <a
-                        class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2ngorder-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                        class="border-b-2ngorder-transparent flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                       >
                         Virtual Servers
                         <span>
                           <svg
                             xmlns="http://wg-5w3.org/2000/svg"
-                            class="w-4 h-4 group-hover:transform group-hover:rotate-180"
+                            class="h-4 w-4 group-hover:rotate-180 group-hover:transform"
                             viewBox="0 0 20 20"
                             fill="currentColor"
                           >
@@ -593,16 +593,16 @@
                         </span>
                       </a>
                       <div
-                        class="relative hidden h-auto group-hover:block dropdown-menu"
+                        class="dropdown-menu relative hidden h-auto group-hover:block"
                       >
                         <div class="relative grid w-auto gap-6 px-5 py-2">
                           <a
                             href="/vps-linux.html"
-                            class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                            class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                           >
                             <!-- Heroicon name: outline/chart-bar -->
                             <svg
-                              class="flex-shrink-0 w-6 h-6 text-matisse-500"
+                              class="h-6 w-6 flex-shrink-0 text-matisse-500"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
                               viewBox="0 0 24 24"
@@ -622,11 +622,11 @@
                           </a>
                           <a
                             href="/vps-windows.html"
-                            class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50"
+                            class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                           >
                             <!-- Heroicon name: outline/cursor-click -->
                             <svg
-                              class="flex-shrink-0 w-6 h-6 text-matisse-500"
+                              class="h-6 w-6 flex-shrink-0 text-matisse-500"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
                               viewBox="0 0 24 24"
@@ -649,25 +649,25 @@
                     </div>
                     <a
                       href="/dedicated-servers.html"
-                      class="flex items-center px-3 py-6 text-sm leading-5 transition duration-150 ease-in-out bg-gray-100 border-b-2 border-transparent focus:text-matisse-700 border-matisse-700 text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                      class="flex items-center border-b-2 border-transparent border-matisse-700 bg-gray-100 px-3 py-6 text-sm leading-5 text-matisse-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                     >
                       Dedicated Servers
                     </a>
                     <a
                       href="/domains.html"
-                      class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                     >
                       Domains
                     </a>
                     <a
                       href="/web-design.html"
-                      class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                     >
                       Web Design
                     </a>
                     <a
                       href="/affiliates.html"
-                      class="flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out border-b-2 border-transparent focus:text-matisse-700 focus:border-matisse-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                     >
                       Affiliates
                     </a>
@@ -678,12 +678,12 @@
                     <div class="mt-6">
                       <a
                         href="#"
-                        class="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700"
+                        class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
                       >
                         Sign up
                       </a>
                       <p
-                        class="mt-6 text-base font-medium text-center text-gray-500"
+                        class="mt-6 text-center text-base font-medium text-gray-500"
                       >
                         Existing customer?
                         <a
@@ -708,13 +708,13 @@
     <!-- Pricing -->
     <section>
       <div
-        class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-lg md:px-24 lg:px-8 lg:py-20"
+        class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-lg lg:px-8 lg:py-20"
       >
         <div
-          class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-4xl md:mb-12"
+          class="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-4xl"
         >
           <h2
-            class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
+            class="mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
           >
             Our Products
           </h2>
@@ -726,13 +726,13 @@
           </p>
         </div>
         <div
-          class="grid grid-cols-2 gap-3 row-gap-5 sm:row-gap-10 lg:grid-cols-1 sm:mx-auto"
+          class="row-gap-5 sm:row-gap-10 grid grid-cols-2 gap-3 sm:mx-auto lg:grid-cols-1"
         >
           <div
-            class="flex flex-col px-4 py-8 transition-colors duration-200 border border-solid rounded shadow lg:hover:bg-wh-bluDarkest group lg:px-9 lg:flex-row lg:justify-between lg:items-center lg:border-none lg:bg-zircon-500 border-zircon-600 text-wh-bluDarkest lg:hover:text-white"
+            class="group flex flex-col rounded border border-solid border-zircon-600 px-4 py-8 text-wh-bluDarkest shadow transition-colors duration-200 lg:flex-row lg:items-center lg:justify-between lg:border-none lg:bg-zircon-500 lg:px-9 lg:hover:bg-wh-bluDarkest lg:hover:text-white"
           >
             <div
-              class="flex items-center justify-between pb-3 border-b border-solid lg:items-start lg:flex-col lg:border-b-0 border-zircon-600"
+              class="flex items-center justify-between border-b border-solid border-zircon-600 pb-3 lg:flex-col lg:items-start lg:border-b-0"
             >
               <div class="font-bold md:text-lg">
                 Start 1 <br />
@@ -746,7 +746,7 @@
               </div>
             </div>
             <div
-              class="py-3 text-center lg:flex lg:space-x-24 lg:text-left lg:flex-row lg:group-hover:text-white text-icon-darkest"
+              class="py-3 text-center text-icon-darkest lg:flex lg:flex-row lg:space-x-24 lg:text-left lg:group-hover:text-white"
             >
               <div>
                 <div class="mt-4 font-bold">CPU</div>
@@ -775,9 +775,9 @@
               </div>
             </div>
             <div>
-              <div class="flex items-start justify-center mt-3">
+              <div class="mt-3 flex items-start justify-center">
                 <div
-                  class="mr-1 text-4xl font-bold lg:group-hover:text-white text-wh-bluDarkest"
+                  class="mr-1 text-4xl font-bold text-wh-bluDarkest lg:group-hover:text-white"
                 >
                   $0.99
                 </div>
@@ -789,17 +789,17 @@
               </div>
               <a
                 href="/"
-                class="inline-flex items-center justify-center w-full px-6 py-3 mt-5 text-xs font-medium tracking-wide text-white transition-shadow duration-300 rounded md:px-8 md:font-bold md:text-sm hover:shadow-matisse-500/30 bg-matisse-500"
+                class="mt-5 inline-flex w-full items-center justify-center rounded bg-matisse-500 px-6 py-3 text-xs font-medium tracking-wide text-white transition-shadow duration-300 hover:shadow-matisse-500/30 md:px-8 md:text-sm md:font-bold"
               >
                 Buy Start XS
               </a>
             </div>
           </div>
           <div
-            class="flex flex-col px-4 py-8 transition-colors duration-200 border border-solid rounded shadow lg:hover:bg-wh-bluDarkest group lg:px-9 lg:flex-row lg:justify-between lg:items-center lg:border-none lg:bg-zircon-500 border-zircon-600 text-wh-bluDarkest lg:hover:text-white"
+            class="group flex flex-col rounded border border-solid border-zircon-600 px-4 py-8 text-wh-bluDarkest shadow transition-colors duration-200 lg:flex-row lg:items-center lg:justify-between lg:border-none lg:bg-zircon-500 lg:px-9 lg:hover:bg-wh-bluDarkest lg:hover:text-white"
           >
             <div
-              class="flex items-center justify-between pb-3 border-b border-solid lg:items-start lg:flex-col lg:border-b-0 border-zircon-600"
+              class="flex items-center justify-between border-b border-solid border-zircon-600 pb-3 lg:flex-col lg:items-start lg:border-b-0"
             >
               <div class="font-bold md:text-lg">
                 Start 1 <br />
@@ -813,7 +813,7 @@
               </div>
             </div>
             <div
-              class="py-3 text-center lg:flex lg:space-x-24 lg:text-left lg:flex-row lg:group-hover:text-white text-icon-darkest"
+              class="py-3 text-center text-icon-darkest lg:flex lg:flex-row lg:space-x-24 lg:text-left lg:group-hover:text-white"
             >
               <div>
                 <div class="mt-4 font-bold">CPU</div>
@@ -842,9 +842,9 @@
               </div>
             </div>
             <div>
-              <div class="flex items-start justify-center mt-3">
+              <div class="mt-3 flex items-start justify-center">
                 <div
-                  class="mr-1 text-4xl font-bold lg:group-hover:text-white text-wh-bluDarkest"
+                  class="mr-1 text-4xl font-bold text-wh-bluDarkest lg:group-hover:text-white"
                 >
                   $0.99
                 </div>
@@ -856,7 +856,7 @@
               </div>
               <a
                 href="/"
-                class="inline-flex items-center justify-center w-full px-6 py-3 mt-5 text-xs font-medium tracking-wide text-white transition-shadow duration-300 rounded md:px-8 md:font-bold md:text-sm hover:shadow-matisse-500/30 bg-matisse-500"
+                class="mt-5 inline-flex w-full items-center justify-center rounded bg-matisse-500 px-6 py-3 text-xs font-medium tracking-wide text-white transition-shadow duration-300 hover:shadow-matisse-500/30 md:px-8 md:text-sm md:font-bold"
               >
                 Buy Start XS
               </a>
@@ -869,13 +869,13 @@
 
     <!-- Dedi Highlights -->
     <div
-      class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-lg md:px-24 lg:px-8 lg:py-20"
+      class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-lg lg:px-8 lg:py-20"
     >
       <div
-        class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-20"
+        class="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-20 lg:max-w-2xl"
       >
         <h2
-          class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
+          class="mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
         >
           Dedicated Server Highlights
         </h2>
@@ -885,10 +885,10 @@
       </div>
       <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <div
-          class="px-5 mb-10 text-center duration-300 transform rounded bg-zircon-500 hover:-translate-y-2"
+          class="mb-10 transform rounded bg-zircon-500 px-5 text-center duration-300 hover:-translate-y-2"
         >
           <div
-            class="flex items-center justify-center w-12 h-12 mx-auto -mt-5 text-white rounded-md shadow-md bg-matisse-500"
+            class="mx-auto -mt-5 flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white shadow-md"
           >
             <svg
               width="24"
@@ -915,10 +915,10 @@
           </p>
         </div>
         <div
-          class="px-5 mb-10 text-center duration-300 transform rounded bg-zircon-500 hover:-translate-y-2"
+          class="mb-10 transform rounded bg-zircon-500 px-5 text-center duration-300 hover:-translate-y-2"
         >
           <div
-            class="flex items-center justify-center w-12 h-12 mx-auto -mt-5 text-white rounded-md shadow-md bg-matisse-500"
+            class="mx-auto -mt-5 flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white shadow-md"
           >
             <svg
               width="24"
@@ -949,10 +949,10 @@
           </p>
         </div>
         <div
-          class="px-5 mb-10 text-center duration-300 transform rounded bg-zircon-500 hover:-translate-y-2"
+          class="mb-10 transform rounded bg-zircon-500 px-5 text-center duration-300 hover:-translate-y-2"
         >
           <div
-            class="flex items-center justify-center w-12 h-12 mx-auto -mt-5 text-white rounded-md shadow-md bg-matisse-500"
+            class="mx-auto -mt-5 flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white shadow-md"
           >
             <svg
               width="24"
@@ -979,10 +979,10 @@
           </p>
         </div>
         <div
-          class="px-5 mb-10 text-center duration-300 transform rounded bg-zircon-500 hover:-translate-y-2"
+          class="mb-10 transform rounded bg-zircon-500 px-5 text-center duration-300 hover:-translate-y-2"
         >
           <div
-            class="flex items-center justify-center w-12 h-12 mx-auto -mt-5 text-white rounded-md shadow-md bg-matisse-500"
+            class="mx-auto -mt-5 flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white shadow-md"
           >
             <svg
               width="23"
@@ -1005,10 +1005,10 @@
           </p>
         </div>
         <div
-          class="px-5 mb-10 text-center duration-300 transform rounded bg-zircon-500 hover:-translate-y-2"
+          class="mb-10 transform rounded bg-zircon-500 px-5 text-center duration-300 hover:-translate-y-2"
         >
           <div
-            class="flex items-center justify-center w-12 h-12 mx-auto -mt-5 text-white rounded-md shadow-md bg-matisse-500"
+            class="mx-auto -mt-5 flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white shadow-md"
           >
             <svg
               width="24"
@@ -1035,10 +1035,10 @@
           </p>
         </div>
         <div
-          class="px-5 mb-10 text-center duration-300 transform rounded bg-zircon-500 hover:-translate-y-2"
+          class="mb-10 transform rounded bg-zircon-500 px-5 text-center duration-300 hover:-translate-y-2"
         >
           <div
-            class="flex items-center justify-center w-12 h-12 mx-auto -mt-5 text-white rounded-md shadow-md bg-matisse-500"
+            class="mx-auto -mt-5 flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white shadow-md"
           >
             <svg
               width="24"
@@ -1069,10 +1069,10 @@
           </p>
         </div>
         <div
-          class="px-5 mb-10 text-center duration-300 transform rounded bg-zircon-500 hover:-translate-y-2"
+          class="mb-10 transform rounded bg-zircon-500 px-5 text-center duration-300 hover:-translate-y-2"
         >
           <div
-            class="flex items-center justify-center w-12 h-12 mx-auto -mt-5 text-white rounded-md shadow-md bg-matisse-500"
+            class="mx-auto -mt-5 flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white shadow-md"
           >
             <svg
               width="24"
@@ -1099,10 +1099,10 @@
           </p>
         </div>
         <div
-          class="px-5 mb-10 text-center duration-300 transform rounded bg-zircon-500 hover:-translate-y-2"
+          class="mb-10 transform rounded bg-zircon-500 px-5 text-center duration-300 hover:-translate-y-2"
         >
           <div
-            class="flex items-center justify-center w-12 h-12 mx-auto -mt-5 text-white rounded-md shadow-md bg-matisse-500"
+            class="mx-auto -mt-5 flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white shadow-md"
           >
             <svg
               width="23"
@@ -1131,13 +1131,13 @@
     <!-- Dedi os -->
     <section class="bg-zircon-500">
       <div
-        class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-lg md:px-24 lg:px-8 lg:py-20"
+        class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-lg lg:px-8 lg:py-20"
       >
         <div
-          class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-4xl md:mb-12"
+          class="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-4xl"
         >
           <h2
-            class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
+            class="mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
           >
             Operating Systems
           </h2>
@@ -1148,9 +1148,9 @@
             yours.
           </p>
         </div>
-        <div class="grid gap-2 row-gap-5 sm:grid-cols-6">
-          <div class="relative overflow-hidden border rounded">
-            <div class="relative px-4 py-8 bg-white rounded-sm">
+        <div class="row-gap-5 grid gap-2 sm:grid-cols-6">
+          <div class="relative overflow-hidden rounded border">
+            <div class="relative rounded-sm bg-white px-4 py-8">
               <div class="flex flex-col items-center">
                 <div class="flex items-center justify-center">
                   <svg
@@ -1191,8 +1191,8 @@
               </div>
             </div>
           </div>
-          <div class="relative overflow-hidden border rounded">
-            <div class="relative px-4 py-8 bg-white rounded-sm">
+          <div class="relative overflow-hidden rounded border">
+            <div class="relative rounded-sm bg-white px-4 py-8">
               <div class="flex flex-col items-center">
                 <div class="flex items-center justify-center">
                   <svg
@@ -1217,8 +1217,8 @@
               </div>
             </div>
           </div>
-          <div class="relative overflow-hidden border rounded">
-            <div class="relative px-4 py-8 bg-white rounded-sm">
+          <div class="relative overflow-hidden rounded border">
+            <div class="relative rounded-sm bg-white px-4 py-8">
               <div class="flex flex-col items-center">
                 <div class="flex items-center justify-center">
                   <svg
@@ -1247,8 +1247,8 @@
               </div>
             </div>
           </div>
-          <div class="relative overflow-hidden border rounded">
-            <div class="relative px-4 py-8 bg-white rounded-sm">
+          <div class="relative overflow-hidden rounded border">
+            <div class="relative rounded-sm bg-white px-4 py-8">
               <div class="flex flex-col items-center">
                 <div class="flex items-center justify-center">
                   <svg
@@ -1281,8 +1281,8 @@
               </div>
             </div>
           </div>
-          <div class="relative overflow-hidden border rounded">
-            <div class="relative px-4 py-8 bg-white rounded-sm">
+          <div class="relative overflow-hidden rounded border">
+            <div class="relative rounded-sm bg-white px-4 py-8">
               <div class="flex flex-col items-center">
                 <div class="flex items-center justify-center">
                   <svg
@@ -1303,8 +1303,8 @@
               </div>
             </div>
           </div>
-          <div class="relative overflow-hidden border rounded">
-            <div class="relative px-4 py-8 bg-white rounded-sm">
+          <div class="relative overflow-hidden rounded border">
+            <div class="relative rounded-sm bg-white px-4 py-8">
               <div class="flex flex-col items-center">
                 <div class="flex items-center justify-center">
                   <!-- <svg
@@ -1358,11 +1358,11 @@
 
     <!-- Enterprise Hardware -->
     <div
-      class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-lg md:px-24 lg:px-8 lg:py-20"
+      class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-lg lg:px-8 lg:py-20"
     >
-      <div class="grid gap-8 row-gap-8 lg:grid-cols-3">
+      <div class="row-gap-8 grid gap-8 lg:grid-cols-3">
         <div class="sm:text-center">
-          <div class="flex items-center justify-center mb-4">
+          <div class="mb-4 flex items-center justify-center">
             <svg
               width="64"
               height="64"
@@ -1387,7 +1387,7 @@
           </h6>
         </div>
         <div class="sm:text-center">
-          <div class="flex items-center justify-center mb-4">
+          <div class="mb-4 flex items-center justify-center">
             <svg
               width="64"
               height="64"
@@ -1419,7 +1419,7 @@
           </h6>
         </div>
         <div class="sm:text-center">
-          <div class="flex items-center justify-center mb-4">
+          <div class="mb-4 flex items-center justify-center">
             <svg
               width="64"
               height="64"
@@ -1456,13 +1456,13 @@
     <!-- Full or Self -->
     <div
       id="tabs-id"
-      class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-lg md:px-24 lg:px-8 lg:py-20"
+      class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-lg lg:px-8 lg:py-20"
     >
       <div
-        class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-4xl md:mb-12"
+        class="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-4xl"
       >
         <h2
-          class="max-w-3xl mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
+          class="mb-6 max-w-3xl font-sans text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
         >
           Full or Self-managed dedicated servers.
         </h2>
@@ -1471,10 +1471,10 @@
           choose between
         </p>
       </div>
-      <div class="grid gap-8 row-gap-5 mb-8 md:row-gap-8 lg:grid-cols-2">
-        <div class="relative flex flex-col w-full min-w-0 mb-6 break-words">
+      <div class="row-gap-5 md:row-gap-8 mb-8 grid gap-8 lg:grid-cols-2">
+        <div class="relative mb-6 flex w-full min-w-0 flex-col break-words">
           <div class="flex-auto">
-            <div class="tab-content text-icon-darkest tab-space">
+            <div class="tab-content tab-space text-icon-darkest">
               <div class="block" id="tab-full">
                 <p>
                   FidaHost offers the best managed dedicated server solutions to
@@ -1501,10 +1501,10 @@
             </div>
           </div>
         </div>
-        <ul class="grid grid-cols-2 gap-5 row-gap-5">
-          <li class="flex-auto mr-2 -mb-px text-center last:mr-0">
+        <ul class="row-gap-5 grid grid-cols-2 gap-5">
+          <li class="mr-2 -mb-px flex-auto text-center last:mr-0">
             <a
-              class="block px-5 py-8 text-xs font-bold leading-normal text-center border rounded shadow border-matisse-500"
+              class="block rounded border border-matisse-500 px-5 py-8 text-center text-xs font-bold leading-normal shadow"
               onclick="changeAtiveTab(event,'tab-full')"
             >
               <span class="flex flex-col items-center text-center">
@@ -1544,9 +1544,9 @@
               </span>
             </a>
           </li>
-          <li class="flex-auto mr-2 -mb-px text-center last:mr-0">
+          <li class="mr-2 -mb-px flex-auto text-center last:mr-0">
             <a
-              class="block px-5 py-8 text-xs font-bold leading-normal bg-white border rounded shadow border-zircon-300"
+              class="block rounded border border-zircon-300 bg-white px-5 py-8 text-xs font-bold leading-normal shadow"
               onclick="changeAtiveTab(event,'tab-self')"
             >
               <span class="flex flex-col items-center text-center">
@@ -1585,26 +1585,26 @@
     <!-- Not sure CTA -->
     <div class="bg-zircon-500">
       <div
-        class="px-4 py-12 mx-auto lg:max-w-screen-lg max-w-7xl sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between"
+        class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:flex lg:max-w-screen-lg lg:items-center lg:justify-between lg:py-16 lg:px-8"
       >
         <h2
           class="text-2xl font-bold tracking-tight text-matisse-700 sm:text-xl"
         >
           Not sure which bare metal server is right for you?
         </h2>
-        <div class="flex mt-8 lg:mt-0 lg:flex-shrink-0">
+        <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
           <div class="inline-flex rounded-md shadow">
             <a
               href="#"
-              class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white transition duration-200 border border-transparent rounded-md border-matisse-500 bg-matisse-600 hover:bg-matisse-700"
+              class="inline-flex items-center justify-center rounded-md border border-transparent border-matisse-500 bg-matisse-600 px-5 py-3 text-base font-medium text-white transition duration-200 hover:bg-matisse-700"
             >
               Get a quote
             </a>
           </div>
-          <div class="inline-flex ml-3 rounded-md shadow">
+          <div class="ml-3 inline-flex rounded-md shadow">
             <a
               href="#"
-              class="inline-flex items-center justify-center px-5 py-3 font-medium transition duration-200 border rounded text-matisse-500 border-matisse-500 hover:bg-wh-light focus:shadow-outline focus:outline-none"
+              class="focus:shadow-outline inline-flex items-center justify-center rounded border border-matisse-500 px-5 py-3 font-medium text-matisse-500 transition duration-200 hover:bg-wh-light focus:outline-none"
             >
               Contact us
             </a>
@@ -1618,19 +1618,19 @@
     <div class="relative">
       <img
         src="./assets/images/overlay-bg.jpg"
-        class="absolute inset-0 object-cover w-full h-full"
+        class="absolute inset-0 h-full w-full object-cover"
         alt=""
       />
       <div class="relative bg-gray-900 bg-opacity-75">
         <div
-          class="py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:py-20"
+          class="mx-auto py-16 sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:py-20"
         >
           <div class="relative w-full xl:px-8">
-            <div class="flex bg-white rounded shadow-2xl p-7 sm:p-10">
-              <div class="relative w-1/2 px-4 mx-auto">
+            <div class="flex rounded bg-white p-7 shadow-2xl sm:p-10">
+              <div class="relative mx-auto w-1/2 px-4">
                 <div class="mb-0 lg:max-w-lg lg:pr-8 xl:pr-6">
                   <h3
-                    class="pb-5 text-2xl font-extrabold text-gray-800 xl:text-5xl md:text-3xl"
+                    class="pb-5 text-2xl font-extrabold text-gray-800 md:text-3xl xl:text-5xl"
                   >
                     Need Some Help?
                   </h3>
@@ -1644,7 +1644,7 @@
                     <div class="flex items-center text-matisse-500">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="w-5 h-5 mr-2"
+                        class="mr-2 h-5 w-5"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -1660,7 +1660,7 @@
                     <div class="flex items-center text-matisse-500">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="w-5 h-5 mr-2"
+                        class="mr-2 h-5 w-5"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -1749,23 +1749,23 @@
                 <div class="mx-auto">
                   <div class="pb-5">
                     <h3
-                      class="px-4 text-2xl font-extrabold text-gray-800 xl:text-5xl md:text-3xl"
+                      class="px-4 text-2xl font-extrabold text-gray-800 md:text-3xl xl:text-5xl"
                     >
                       FAQ
                     </h3>
                   </div>
                   <!-- component -->
-                  <div class="flex flex-wrap -mx-2 sm:mx-auto sm:mb-2">
+                  <div class="-mx-2 flex flex-wrap sm:mx-auto sm:mb-2">
                     <div class="w-full px-4 text-white">
                       <details class="mb-4 cursor-pointer">
                         <summary
-                          class="px-4 py-2 font-semibold rounded-md bg-matisse-500"
+                          class="rounded-md bg-matisse-500 px-4 py-2 font-semibold"
                         >
                           What makes FidaHost different
                         </summary>
 
                         <span
-                          class="relative block w-full h-full px-4 py-2 rounded-b-md bg-zircon-500 text-matisse-600"
+                          class="relative block h-full w-full rounded-b-md bg-zircon-500 px-4 py-2 text-matisse-600"
                         >
                           FidaHost has remained one of the top trusted website
                           hosting providers since 2009. With over 2 000 websites
@@ -1776,13 +1776,13 @@
                       </details>
                       <details class="mb-4 cursor-pointer">
                         <summary
-                          class="px-4 py-2 font-semibold rounded-md bg-matisse-500"
+                          class="rounded-md bg-matisse-500 px-4 py-2 font-semibold"
                         >
                           Can I transfer my existing domain name to FH?
                         </summary>
 
                         <span
-                          class="relative block w-full h-full px-4 py-2 rounded-b-md bg-zircon-500 text-matisse-600"
+                          class="relative block h-full w-full rounded-b-md bg-zircon-500 px-4 py-2 text-matisse-600"
                         >
                           Lorem ipsum, dolor sit amet consectetur adipisicing
                           elit. Atque ipsum veritatis incidunt enim voluptates
@@ -1793,13 +1793,13 @@
                       </details>
                       <details class="mb-4 cursor-pointer">
                         <summary
-                          class="px-4 py-2 font-semibold rounded-md bg-matisse-500"
+                          class="rounded-md bg-matisse-500 px-4 py-2 font-semibold"
                         >
                           How do I migrate to FidaHost?
                         </summary>
 
                         <span
-                          class="relative block w-full h-full px-4 py-2 rounded-b-md bg-zircon-500 text-matisse-600"
+                          class="relative block h-full w-full rounded-b-md bg-zircon-500 px-4 py-2 text-matisse-600"
                         >
                           Lorem ipsum, dolor sit amet consectetur adipisicing
                           elit. Atque ipsum veritatis incidunt enim voluptates
@@ -1810,13 +1810,13 @@
                       </details>
                       <details class="mb-4 cursor-pointer">
                         <summary
-                          class="px-4 py-2 font-semibold rounded-md bg-matisse-500"
+                          class="rounded-md bg-matisse-500 px-4 py-2 font-semibold"
                         >
                           How do I migrate to FidaHost?
                         </summary>
 
                         <span
-                          class="relative block w-full h-full px-4 py-2 rounded-b-md bg-zircon-500 text-matisse-600"
+                          class="relative block h-full w-full rounded-b-md bg-zircon-500 px-4 py-2 text-matisse-600"
                         >
                           Lorem ipsum, dolor sit amet consectetur adipisicing
                           elit. Atque ipsum veritatis incidunt enim voluptates
@@ -1827,13 +1827,13 @@
                       </details>
                       <details class="mb-4 cursor-pointer">
                         <summary
-                          class="px-4 py-2 font-semibold rounded-md bg-matisse-500"
+                          class="rounded-md bg-matisse-500 px-4 py-2 font-semibold"
                         >
                           How do I migrate to FidaHost?
                         </summary>
 
                         <span
-                          class="relative block w-full h-full px-4 py-2 rounded-b-md bg-zircon-500 text-matisse-600"
+                          class="relative block h-full w-full rounded-b-md bg-zircon-500 px-4 py-2 text-matisse-600"
                         >
                           Lorem ipsum, dolor sit amet consectetur adipisicing
                           elit. Atque ipsum veritatis incidunt enim voluptates
@@ -1855,12 +1855,12 @@
 
     <!-- Footer -->
     <div
-      class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
+      class="mx-auto px-4 pt-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8"
     >
-      <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-5">
+      <div class="row-gap-6 mb-8 grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
         <div class="sm:col-span-2">
           <button
-            class="flex items-center justify-end w-full rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-matisse-700 sm:w-auto sm:items-stretch sm:justify-start"
+            class="flex w-full items-center justify-end rounded-md focus:outline-none focus:ring-2 focus:ring-matisse-700 focus:ring-offset-2 sm:w-auto sm:items-stretch sm:justify-start"
           >
             <div class="flex items-center">
               <svg
@@ -1905,7 +1905,7 @@
               href="/#"
               aria-label="Shared hosting"
               title="Shared hosting"
-              class="transition-colors duration-300 hover:text-matisse-500 text-matisse-800"
+              class="text-matisse-800 transition-colors duration-300 hover:text-matisse-500"
               >Shared hosting</a
             >
           </div>
@@ -1914,7 +1914,7 @@
               href="/#"
               aria-label="WordPress hosting"
               title="WordPress hosting"
-              class="transition-colors duration-300 hover:text-matisse-500 text-matisse-800"
+              class="text-matisse-800 transition-colors duration-300 hover:text-matisse-500"
               >WordPress hosting</a
             >
           </div>
@@ -1923,7 +1923,7 @@
               href="/#"
               aria-label="VPS hosting"
               title="VPS hosting"
-              class="transition-colors duration-300 hover:text-matisse-500 text-matisse-800"
+              class="text-matisse-800 transition-colors duration-300 hover:text-matisse-500"
               >VPS hosting</a
             >
           </div>
@@ -1932,7 +1932,7 @@
               href="/#"
               aria-label="Dedicated hosting"
               title="Dedicated hosting"
-              class="transition-colors duration-300 hover:text-matisse-500 text-matisse-800"
+              class="text-matisse-800 transition-colors duration-300 hover:text-matisse-500"
               >Dedicated hosting</a
             >
           </div>
@@ -1941,7 +1941,7 @@
               href="/#"
               aria-label="Reseller hosting"
               title="Reseller hosting"
-              class="transition-colors duration-300 hover:text-matisse-500 text-matisse-800"
+              class="text-matisse-800 transition-colors duration-300 hover:text-matisse-500"
               >Reseller hosting</a
             >
           </div>
@@ -1956,7 +1956,7 @@
               href="tel:850-123-5021"
               aria-label="Our phone"
               title="Our phone"
-              class="transition-colors duration-300 text-matisse-400 hover:text-matisse-800"
+              class="text-matisse-400 transition-colors duration-300 hover:text-matisse-800"
               >850-123-5021</a
             >
           </div>
@@ -1966,7 +1966,7 @@
               href="mailto:info@lorem.mail"
               aria-label="Our email"
               title="Our email"
-              class="transition-colors duration-300 text-matisse-400 hover:text-matisse-800"
+              class="text-matisse-400 transition-colors duration-300 hover:text-matisse-800"
               >info@lorem.mail</a
             >
           </div>
@@ -1978,7 +1978,7 @@
               rel="noopener noreferrer"
               aria-label="Our address"
               title="Our address"
-              class="transition-colors duration-300 text-matisse-400 hover:text-matisse-800"
+              class="text-matisse-400 transition-colors duration-300 hover:text-matisse-800"
             >
               312 Lovely Street, NY
             </a>
@@ -2039,7 +2039,7 @@
           <span class="text-base font-bold tracking-wide text-gray-900"
             >Payment accepted</span
           >
-          <div class="flex items-center w-full mt-1 space-x-1">
+          <div class="mt-1 flex w-full items-center space-x-1">
             <svg
               width="50"
               height="32"
@@ -2126,7 +2126,7 @@
         </div>
       </div>
       <div
-        class="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row"
+        class="flex flex-col-reverse justify-between border-t pt-5 pb-10 lg:flex-row"
       >
         <div class="text-sm text-gray-600">
           &copy; Copyright <strong><span>FidaHost</span></strong>
@@ -2136,7 +2136,7 @@
           All Rights Reserved
         </div>
         <ul
-          class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row"
+          class="mb-3 flex flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-5 lg:mb-0"
         >
           <li>
             <a
