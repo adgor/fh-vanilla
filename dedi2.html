@@ -1,0 +1,2146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="h-full w-full">
+      <!-- Code block starts -->
+      <nav role="navigation" class="hidden bg-white shadow xl:block">
+        <div class="container mx-auto px-6 py-2 xl:py-0">
+          <div class="flex items-center">
+            <div class="inset-y-0 left-0 flex items-center xl:hidden">
+              <div
+                class="inline-flex items-center justify-center rounded-md p-2 text-gray-700 transition duration-150 ease-in-out hover:text-gray-100 focus:outline-none"
+              >
+                <div
+                  class="close-m-menu hidden text-gray-700"
+                  onclick="MenuHandler(this,false)"
+                >
+                  <svg
+                    aria-label="Close"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <button
+              class="flex w-full items-center justify-end rounded-md focus:outline-none focus:ring-2 focus:ring-matisse-700 focus:ring-offset-2 sm:w-auto sm:items-stretch sm:justify-start"
+            >
+              <div class="flex items-center">
+                <svg
+                  id="logo"
+                  enable-background="new 0 0 300 300"
+                  height="44"
+                  viewBox="0 0 300 300"
+                  width="43"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <g>
+                    <path
+                      d="m234.735 35.532c-8.822 0-16 7.178-16 16s7.178 16 16 16 16-7.178 16-16-7.178-16-16-16zm0 24c-4.412 0-8-3.588-8-8s3.588-8 8-8 8 3.588 8 8-3.588 8-8 8zm-62.529-14c0-2.502 2.028-4.53 4.53-4.53s4.53 2.028 4.53 4.53c0 2.501-2.028 4.529-4.53 4.529s-4.53-2.027-4.53-4.529zm89.059 60c0 2.501-2.028 4.529-4.53 4.529s-4.53-2.028-4.53-4.529c0-2.502 2.028-4.53 4.53-4.53s4.53 2.029 4.53 4.53zm-40.522-5.459-88-51.064c-1.242-.723-2.773-.723-4.016 0l-88 51.064c-1.232.715-1.992 2.033-1.992 3.459v104c0 1.404.736 2.705 1.938 3.428l88 52.936c.635.381 1.35.572 2.062.572s1.428-.191 2.062-.572l88-52.936c1.201-.723 1.938-2.023 1.938-3.428v-104c0-1.426-.76-2.744-1.992-3.459zm-90.008-42.98 80.085 46.47-52.95 31.289-23.135-13.607v-21.713c0-2.209-1.791-4-4-4s-4 1.791-4 4v21.713l-26.027 15.309c-1.223.719-1.973 2.029-1.973 3.447v29.795l-52 30.727v-94.688zm0 198.707-80.189-48.237 51.467-30.412 24.723 14.539v19.842c0 2.209 1.791 4 4 4s4-1.791 4-4v-19.842l26.027-15.307c1.223-.719 1.973-2.029 1.973-3.447v-31.667l52-30.728v94.729z"
+                    />
+                  </g>
+                </svg>
+                <h2
+                  class="hidden px-3 text-base font-bold leading-normal text-gray-700 sm:block"
+                >
+                  FidaHost
+                </h2>
+              </div>
+            </button>
+
+            <div class="flex w-full justify-between">
+              <div class="hidden md:mr-6 xl:mr-16 xl:flex">
+                <a
+                  href="/"
+                  class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                >
+                  Home
+                </a>
+                <div class="group dropdown relative cursor-pointer">
+                  <a
+                    class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                  >
+                    Hosting
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4 group-hover:rotate-180 group-hover:transform"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                  <div
+                    class="dropdown-menu absolute inset-y-14 hidden h-auto w-screen max-w-md group-hover:block"
+                  >
+                    <div class="ml-6 -mb-2 inline-block w-16 overflow-hidden">
+                      <div
+                        class="h-3 w-3 origin-bottom-left rotate-45 transform bg-white"
+                      ></div>
+                    </div>
+                    <!-- <ul class="top-0 w-48 px-6 py-8 bg-white shadow"> -->
+                    <div
+                      class="relative grid w-auto gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8"
+                    >
+                      <a
+                        href="/shared-hosting.html"
+                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                      >
+                        <!-- Heroicon name: outline/chart-bar -->
+                        <svg
+                          class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                          />
+                        </svg>
+                        <div class="ml-4">
+                          <p class="text-base font-medium text-gray-900">
+                            Web Hosting
+                          </p>
+                          <p class="mt-1 text-sm text-gray-500">
+                            A Simple & Complete solution to start you website
+                          </p>
+                        </div>
+                      </a>
+                      <a
+                        href="/business-hosting.html"
+                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                      >
+                        <!-- Heroicon name: outline/cursor-click -->
+                        <svg
+                          class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
+                          />
+                        </svg>
+                        <div class="ml-4">
+                          <p class="text-base font-medium text-gray-900">
+                            Business Hosting
+                          </p>
+                          <p class="mt-1 text-sm text-gray-500">
+                            A Powerful & Complete solution for you business
+                            without technical pain
+                          </p>
+                        </div>
+                      </a>
+                      <a
+                        href="/email-hosting.html"
+                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                      >
+                        <!-- Heroicon name: outline/shield-check -->
+                        <svg
+                          class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                          />
+                        </svg>
+                        <div class="ml-4">
+                          <p class="text-base font-medium text-gray-900">
+                            Email Hosting
+                          </p>
+                          <p class="mt-1 text-sm text-gray-500">
+                            A simple & Professional Email Hosting Solution for
+                            your Business
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- </ul> -->
+                  </div>
+                </div>
+                <div class="group dropdown relative cursor-pointer">
+                  <a
+                    class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                  >
+                    Virtual Servers
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4 group-hover:rotate-180 group-hover:transform"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+
+                  <div
+                    class="dropdown-menu absolute inset-y-14 hidden h-auto w-screen max-w-md group-hover:block"
+                  >
+                    <div class="ml-6 -mb-2 inline-block w-16 overflow-hidden">
+                      <div
+                        class="h-3 w-3 origin-bottom-left rotate-45 transform bg-white"
+                      ></div>
+                    </div>
+                    <!-- <ul class="top-0 w-48 px-6 py-8 bg-white shadow"> -->
+                    <div
+                      class="relative grid w-auto gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8"
+                    >
+                      <a
+                        href="/vps-linux.html"
+                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                      >
+                        <!-- Heroicon name: outline/chart-bar -->
+                        <svg
+                          class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                          />
+                        </svg>
+                        <div class="ml-4">
+                          <p class="text-base font-medium text-gray-900">
+                            Linux VPS
+                          </p>
+                          <p class="mt-1 text-sm text-gray-500">
+                            Fast and affordable VPS hosting with Linux operating
+                            system
+                          </p>
+                        </div>
+                      </a>
+
+                      <a
+                        href="/vps-windows.html"
+                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                      >
+                        <!-- Heroicon name: outline/cursor-click -->
+                        <svg
+                          class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
+                          />
+                        </svg>
+                        <div class="ml-4">
+                          <p class="text-base font-medium text-gray-900">
+                            Windows VPS
+                          </p>
+                          <p class="mt-1 text-sm text-gray-500">
+                            Fast and affordable VPS hosting with Windows
+                            operating system
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- </ul> -->
+                  </div>
+                </div>
+                <a
+                  href="/dedicated-servers.html"
+                  class="flex items-center border-b-2 border-transparent border-matisse-700 bg-gray-100 px-3 py-6 text-sm leading-5 text-matisse-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                >
+                  Dedicated Servers
+                </a>
+                <a
+                  href="/domains.html"
+                  class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                >
+                  Domains
+                </a>
+                <a
+                  href="/web-design.html"
+                  class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                >
+                  Web Design
+                </a>
+                <a
+                  href="/affiliates.html"
+                  class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                >
+                  Affiliates
+                </a>
+              </div>
+              <div
+                class="hidden items-center justify-end md:flex md:flex-1 lg:w-0"
+              >
+                <a
+                  href="#"
+                  class="whitespace-nowrap text-sm font-medium text-gray-500 hover:text-gray-900"
+                >
+                  Sign in
+                </a>
+                <a
+                  href="#"
+                  class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-matisse-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-matisse-700"
+                >
+                  Sign up
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav>
+        <div
+          class="top-0 flex w-full items-center justify-between bg-white px-6 py-4 text-pink-600 xl:hidden"
+        >
+          <div
+            aria-label="logo"
+            role="img"
+            tabindex="0"
+            class="w-24 focus:outline-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="43"
+              height="44"
+              viewBox="0 0 43 44"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M37.8735 0C36.1688 0 34.7818 1.37956 34.7818 3.0751C34.7818 4.77063 36.1688 6.15019 37.8735 6.15019C39.5782 6.15019 40.9653 4.77063 40.9653 3.0751C40.9653 1.37956 39.5782 0 37.8735 0ZM37.8735 4.61264C37.021 4.61264 36.3277 3.92305 36.3277 3.0751C36.3277 2.22714 37.021 1.53755 37.8735 1.53755C38.7261 1.53755 39.4194 2.22714 39.4194 3.0751C39.4194 3.92305 38.7261 4.61264 37.8735 4.61264ZM26.6663 1.0513C26.1828 1.0513 25.7909 1.44107 25.7909 1.92193C25.7909 2.4028 26.1828 2.79238 26.6663 2.79238C27.1497 2.79238 27.5416 2.40261 27.5416 1.92193C27.5416 1.44107 27.1497 1.0513 26.6663 1.0513ZM43 13.4535C43 13.9342 42.6081 14.324 42.1247 14.324C41.6412 14.324 41.2493 13.9342 41.2493 13.4535C41.2493 12.9727 41.6412 12.5829 42.1247 12.5829C42.6081 12.5829 43 12.9729 43 13.4535ZM18.1654 2.59019L35.1698 12.4044C35.4079 12.5418 35.5548 12.7951 35.5548 13.0692V33.0573C35.5548 33.3273 35.4123 33.5772 35.1803 33.7161L18.1758 43.8901C18.0533 43.9633 17.915 44 17.7774 44C17.6398 44 17.5016 43.9633 17.3789 43.8901L0.374484 33.7161C0.142219 33.5772 0 33.3271 0 33.0573V13.0692C0 12.7951 0.146857 12.5418 0.384919 12.4044L17.3894 2.59019C17.6296 2.45124 17.9254 2.45124 18.1654 2.59019ZM17.7774 4.14388L33.2524 13.0751L23.0207 19.0887L18.5503 16.4735V12.3004C18.5503 11.8758 18.2042 11.5316 17.7774 11.5316C17.3505 11.5316 17.0044 11.8758 17.0044 12.3004V16.4735L11.9752 19.4158C11.7389 19.554 11.5939 19.8057 11.5939 20.0783V25.8047L1.54586 31.7102V13.5118L17.7774 4.14388ZM2.28227 33.0632L17.7774 42.3341L34.0091 32.6225V14.4162L23.961 20.322V26.4081C23.961 26.6807 23.8161 26.9325 23.5798 27.0706L18.5505 30.0125V33.826C18.5505 34.2506 18.2044 34.5948 17.7776 34.5948C17.3507 34.5948 17.0046 34.2506 17.0046 33.826V30.0125L12.2274 27.2182L2.28227 33.0632Z"
+                fill="#667EEA"
+              />
+            </svg>
+          </div>
+          <div class="flex items-center">
+            <button
+              id="menu"
+              aria-label="open menu"
+              class="rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600"
+              onclick="sidebarHandler(true)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-menu-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="18" x2="20" y2="18" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!--Mobile responsive sidebar-->
+        <div
+          class="absolute top-0 z-50 h-full w-full -translate-x-full transform xl:hidden"
+          id="mobile-nav"
+        >
+          <div
+            class="h-full w-full bg-gray-800 opacity-50"
+            onclick="sidebarHandler(false)"
+          ></div>
+          <div
+            class="fixed top-0 z-40 h-screen w-64 flex-col justify-between overflow-y-auto bg-white pb-4 shadow transition duration-150 ease-in-out xl:hidden"
+          >
+            <div class="h-full px-6">
+              <div class="flex h-full w-full flex-col justify-between">
+                <div>
+                  <div class="mt-6 flex w-full items-center justify-between">
+                    <div class="flex w-full items-center justify-between">
+                      <div class="flex items-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="43"
+                          height="44"
+                          viewBox="0 0 43 44"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M37.8735 0C36.1688 0 34.7818 1.37956 34.7818 3.0751C34.7818 4.77063 36.1688 6.15019 37.8735 6.15019C39.5782 6.15019 40.9653 4.77063 40.9653 3.0751C40.9653 1.37956 39.5782 0 37.8735 0ZM37.8735 4.61264C37.021 4.61264 36.3277 3.92305 36.3277 3.0751C36.3277 2.22714 37.021 1.53755 37.8735 1.53755C38.7261 1.53755 39.4194 2.22714 39.4194 3.0751C39.4194 3.92305 38.7261 4.61264 37.8735 4.61264ZM26.6663 1.0513C26.1828 1.0513 25.7909 1.44107 25.7909 1.92193C25.7909 2.4028 26.1828 2.79238 26.6663 2.79238C27.1497 2.79238 27.5416 2.40261 27.5416 1.92193C27.5416 1.44107 27.1497 1.0513 26.6663 1.0513ZM43 13.4535C43 13.9342 42.6081 14.324 42.1247 14.324C41.6412 14.324 41.2493 13.9342 41.2493 13.4535C41.2493 12.9727 41.6412 12.5829 42.1247 12.5829C42.6081 12.5829 43 12.9729 43 13.4535ZM18.1654 2.59019L35.1698 12.4044C35.4079 12.5418 35.5548 12.7951 35.5548 13.0692V33.0573C35.5548 33.3273 35.4123 33.5772 35.1803 33.7161L18.1758 43.8901C18.0533 43.9633 17.915 44 17.7774 44C17.6398 44 17.5016 43.9633 17.3789 43.8901L0.374484 33.7161C0.142219 33.5772 0 33.3271 0 33.0573V13.0692C0 12.7951 0.146857 12.5418 0.384919 12.4044L17.3894 2.59019C17.6296 2.45124 17.9254 2.45124 18.1654 2.59019ZM17.7774 4.14388L33.2524 13.0751L23.0207 19.0887L18.5503 16.4735V12.3004C18.5503 11.8758 18.2042 11.5316 17.7774 11.5316C17.3505 11.5316 17.0044 11.8758 17.0044 12.3004V16.4735L11.9752 19.4158C11.7389 19.554 11.5939 19.8057 11.5939 20.0783V25.8047L1.54586 31.7102V13.5118L17.7774 4.14388ZM2.28227 33.0632L17.7774 42.3341L34.0091 32.6225V14.4162L23.961 20.322V26.4081C23.961 26.6807 23.8161 26.9325 23.5798 27.0706L18.5505 30.0125V33.826C18.5505 34.2506 18.2044 34.5948 17.7776 34.5948C17.3507 34.5948 17.0046 34.2506 17.0046 33.826V30.0125L12.2274 27.2182L2.28227 33.0632Z"
+                            fill="#667EEA"
+                          ></path>
+                        </svg>
+                        <p
+                          tabindex="0"
+                          class="ml-3 text-base text-gray-800 focus:outline-none md:text-2xl"
+                        >
+                          FidaHost
+                        </p>
+                      </div>
+                      <button
+                        id="cross"
+                        aria-label="close menu"
+                        class="rounded-md text-gray-800 focus:outline-none focus:ring-2"
+                        onclick="sidebarHandler(false)"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-x"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z"></path>
+                          <line x1="18" y1="6" x2="6" y2="18"></line>
+                          <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <!-- mobile nav links -->
+                  <div class="mt-6 flex flex-col">
+                    <a
+                      href="/"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                    >
+                      Home
+                    </a>
+                    <div class="group dropdown relative cursor-pointer">
+                      <a
+                        class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                      >
+                        Hosting
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-4 w-4 group-hover:rotate-180 group-hover:transform"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                              clip-rule="evenodd"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                      <div
+                        class="dropdown-menu relative hidden h-auto group-hover:block"
+                      >
+                        <div class="relative grid w-auto gap-6 px-5 py-2">
+                          <a
+                            href="/shared-hosting.html"
+                            class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                          >
+                            <!-- Heroicon name: outline/chart-bar -->
+                            <svg
+                              class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                              />
+                            </svg>
+                            <div class="ml-4">
+                              <p class="text-base text-gray-900">Web Hosting</p>
+                            </div>
+                          </a>
+                          <a
+                            href="/business-hosting.html"
+                            class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                          >
+                            <!-- Heroicon name: outline/cursor-click -->
+                            <svg
+                              class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
+                              />
+                            </svg>
+                            <div class="ml-4">
+                              <p class="text-base text-gray-900">
+                                Business Hosting
+                              </p>
+                            </div>
+                          </a>
+                          <a
+                            href="/email-hosting.html"
+                            class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                          >
+                            <!-- Heroicon name: outline/shield-check -->
+                            <svg
+                              class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                              />
+                            </svg>
+                            <div class="ml-4">
+                              <p class="text-base text-gray-900">
+                                Email Hosting
+                              </p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="group dropdown relative cursor-pointer">
+                      <a
+                        class="border-b-2ngorder-transparent flex items-center px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                      >
+                        Virtual Servers
+                        <span>
+                          <svg
+                            xmlns="http://wg-5w3.org/2000/svg"
+                            class="h-4 w-4 group-hover:rotate-180 group-hover:transform"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            l
+                            <path
+                              fill-rule="evenodd"
+                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                              clip-rule="evenodd"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                      <div
+                        class="dropdown-menu relative hidden h-auto group-hover:block"
+                      >
+                        <div class="relative grid w-auto gap-6 px-5 py-2">
+                          <a
+                            href="/vps-linux.html"
+                            class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                          >
+                            <!-- Heroicon name: outline/chart-bar -->
+                            <svg
+                              class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                              />
+                            </svg>
+                            <div class="ml-4">
+                              <p class="text-base text-gray-900">Linux VPS</p>
+                            </div>
+                          </a>
+                          <a
+                            href="/vps-windows.html"
+                            class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                          >
+                            <!-- Heroicon name: outline/cursor-click -->
+                            <svg
+                              class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
+                              />
+                            </svg>
+                            <div class="ml-4">
+                              <p class="text-base text-gray-900">Windows VPS</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      href="/dedicated-servers.html"
+                      class="flex items-center border-b-2 border-transparent border-matisse-700 bg-gray-100 px-3 py-6 text-sm leading-5 text-matisse-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                    >
+                      Dedicated Servers
+                    </a>
+                    <a
+                      href="/domains.html"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                    >
+                      Domains
+                    </a>
+                    <a
+                      href="/web-design.html"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                    >
+                      Web Design
+                    </a>
+                    <a
+                      href="/affiliates.html"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                    >
+                      Affiliates
+                    </a>
+                  </div>
+                </div>
+                <div class="w-full pt-4">
+                  <div class="border-t border-gray-300">
+                    <div class="mt-6">
+                      <a
+                        href="#"
+                        class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                      >
+                        Sign up
+                      </a>
+                      <p
+                        class="mt-6 text-center text-base font-medium text-gray-500"
+                      >
+                        Existing customer?
+                        <a
+                          href="#"
+                          class="text-indigo-600 hover:text-indigo-500"
+                        >
+                          Sign in
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Code block ends -->
+    </div>
+    <!-- End of Navigation -->
+
+    <!-- Pricing -->
+    <section>
+      <div
+        class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
+      >
+        <div
+          class="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-4xl"
+        >
+          <h2
+            class="mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
+          >
+            Our Products
+          </h2>
+          <p class="text-base text-matisse-600 md:text-lg">
+            Personal website, freelancer, small or large company? We have
+            complete hosting solution for your needs.
+            <br />
+            Choose a service and get started at a great price.
+          </p>
+        </div>
+        <div
+          class="row-gap-5 sm:row-gap-10 grid grid-cols-2 gap-3 sm:mx-auto lg:grid-cols-1"
+        >
+          <div
+            class="group flex flex-col rounded border border-solid border-zircon-600 px-4 py-8 text-wh-bluDarkest shadow transition-colors duration-200 lg:flex-row lg:items-center lg:justify-between lg:border-none lg:bg-zircon-500 lg:px-9 lg:hover:bg-wh-bluDark02 lg:hover:text-white"
+          >
+            <div
+              class="border-b border-solid border-zircon-600 pb-4 text-center lg:border-b-0 lg:pb-0"
+            >
+              <div class="font-bold md:text-lg">Start 1 XS SATA</div>
+            </div>
+            <div
+              class="py-3 text-center text-icon-darkest lg:flex lg:flex-row lg:space-x-24 lg:text-left lg:group-hover:text-white"
+            >
+              <div>
+                <div class="mt-4 font-bold">CPU</div>
+                <div class="text-sm md:text-base">
+                  <p>Intel Xeon D-2123iT</p>
+                  <p>
+                    4 c/8 t - <br class="sm:hidden" />
+                    2.2 GHz/3 GHz
+                  </p>
+                  <p>3 GHz Turbo Boost</p>
+                </div>
+              </div>
+              <div>
+                <div class="mt-4 font-bold">RAM</div>
+                <div class="text-sm md:text-base">
+                  <p>16 GB</p>
+                  <p>DDR4 ECC</p>
+                </div>
+              </div>
+              <div>
+                <div class="mt-4 font-bold">SSD</div>
+                <div class="text-sm md:text-base">
+                  <p>512 GB</p>
+                  <p>(2 x 512 GB SSD)</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="mt-3 flex items-start justify-center">
+                <div
+                  class="mr-1 text-4xl font-bold text-wh-bluDarkest lg:group-hover:text-white"
+                >
+                  $0.99
+                </div>
+                <p
+                  class="mt-1 text-icon-darkest lg:group-hover:text-zircon-900"
+                >
+                  /mo
+                </p>
+              </div>
+              <a
+                href="/"
+                class="mt-5 inline-flex w-full items-center justify-center rounded bg-matisse-500 px-6 py-3 text-xs font-medium tracking-wide text-white transition-shadow duration-300 hover:shadow-matisse-500/30 md:px-8 md:text-sm md:font-bold"
+              >
+                Buy Start XS
+              </a>
+            </div>
+          </div>
+          <div
+            class="group flex flex-col rounded border border-solid border-zircon-600 px-4 py-8 text-wh-bluDarkest shadow transition-colors duration-200 lg:flex-row lg:items-center lg:justify-between lg:border-none lg:bg-zircon-500 lg:px-9 lg:hover:bg-wh-bluDarkest lg:hover:text-white"
+          >
+            <div
+              class="border-b border-solid border-zircon-600 pb-4 text-center lg:border-b-0"
+            >
+              <div class="font-bold md:text-lg">Start 1 XS SATA</div>
+            </div>
+            <div
+              class="py-3 text-center text-icon-darkest lg:flex lg:flex-row lg:space-x-24 lg:text-left lg:group-hover:text-white"
+            >
+              <div>
+                <div class="mt-4 font-bold">CPU</div>
+                <div class="text-sm md:text-base">
+                  <p>Intel Xeon D-2123iT</p>
+                  <p>
+                    4 c/8 t - <br class="sm:hidden" />
+                    2.2 GHz/3 GHz
+                  </p>
+                  <p>3 GHz Turbo Boost</p>
+                </div>
+              </div>
+              <div>
+                <div class="mt-4 font-bold">RAM</div>
+                <div class="text-sm md:text-base">
+                  <p>16 GB</p>
+                  <p>DDR4 ECC</p>
+                </div>
+              </div>
+              <div>
+                <div class="mt-4 font-bold">SSD</div>
+                <div class="text-sm md:text-base">
+                  <p>512 GB</p>
+                  <p>(2 x 512 GB SSD)</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="mt-3 flex items-start justify-center">
+                <div
+                  class="mr-1 text-4xl font-bold text-wh-bluDarkest lg:group-hover:text-white"
+                >
+                  $0.99
+                </div>
+                <p
+                  class="mt-1 text-icon-darkest lg:group-hover:text-zircon-900"
+                >
+                  /mo
+                </p>
+              </div>
+              <a
+                href="/"
+                class="mt-5 inline-flex w-full items-center justify-center rounded bg-matisse-500 px-6 py-3 text-xs font-medium tracking-wide text-white transition-shadow duration-300 hover:shadow-matisse-500/30 md:px-8 md:text-sm md:font-bold"
+              >
+                Buy Start XS
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Pricing -->
+
+    <!-- Dedi Highlights -->
+    <div
+      class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
+    >
+      <div
+        class="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-20 lg:max-w-2xl"
+      >
+        <h2
+          class="mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
+        >
+          Dedicated Server Highlights
+        </h2>
+        <p class="text-base text-icon-darkest md:text-lg">
+          Superior performance, superior uptime.
+        </p>
+      </div>
+      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <div
+          class="mb-10 transform rounded bg-zircon-500 px-5 text-center duration-300 hover:-translate-y-2"
+        >
+          <div
+            class="mx-auto -mt-5 flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white shadow-md"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 12.98L12.5 10.1229V5H10V11.3057L13.2325 15L15 12.98Z"
+                fill="white"
+              />
+              <path
+                d="M12 24C9.62663 24 7.30655 23.2962 5.33316 21.9776C3.35977 20.6591 1.8217 18.7849 0.913451 16.5922C0.00519937 14.3995 -0.232441 11.9867 0.230582 9.65892C0.693604 7.33115 1.83649 5.19295 3.51472 3.51472C5.19295 1.83649 7.33115 0.693604 9.65892 0.230582C11.9867 -0.232441 14.3995 0.00519937 16.5922 0.913451C18.7849 1.8217 20.6591 3.35977 21.9776 5.33316C23.2962 7.30655 24 9.62663 24 12C23.996 15.1814 22.7305 18.2313 20.4809 20.4809C18.2313 22.7305 15.1814 23.996 12 24V24ZM12 3C10.22 3 8.47991 3.52785 6.99987 4.51678C5.51983 5.50571 4.36628 6.91132 3.68509 8.55585C3.0039 10.2004 2.82567 12.01 3.17294 13.7558C3.5202 15.5016 4.37737 17.1053 5.63604 18.364C6.89472 19.6226 8.49836 20.4798 10.2442 20.8271C11.99 21.1743 13.7996 20.9961 15.4442 20.3149C17.0887 19.6337 18.4943 18.4802 19.4832 17.0001C20.4722 15.5201 21 13.78 21 12C20.9972 9.61391 20.0481 7.32634 18.3609 5.63911C16.6737 3.95189 14.3861 3.00278 12 3V3Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <h6 class="my-6 text-sm font-bold leading-5 text-matisse-700">
+            100% server control
+          </h6>
+          <p class="mb-6 text-sm text-icon-darkest">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+          </p>
+        </div>
+        <div
+          class="mb-10 transform rounded bg-zircon-500 px-5 text-center duration-300 hover:-translate-y-2"
+        >
+          <div
+            class="mx-auto -mt-5 flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white shadow-md"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 16.5V21C0 21.3978 0.158035 21.7794 0.43934 22.0607C0.720644 22.342 1.10218 22.5 1.5 22.5H22.5C22.8978 22.5 23.2794 22.342 23.5607 22.0607C23.842 21.7794 24 21.3978 24 21V16.5H0ZM21 20.25H18V18.75H21V20.25Z"
+                fill="white"
+              />
+              <path
+                d="M21.6302 8.52764C21.5368 8.22322 21.3461 7.95785 21.0873 7.77224C20.8286 7.58664 20.516 7.49105 20.1977 7.50014H14.2502V12.0001C14.2502 12.5969 14.0132 13.1692 13.5912 13.5911C13.1693 14.0131 12.597 14.2501 12.0002 14.2501C11.4035 14.2501 10.8312 14.0131 10.4092 13.5911C9.98729 13.1692 9.75023 12.5969 9.75023 12.0001V7.50014H3.80273C3.48987 7.4878 3.18152 7.57777 2.92438 7.75641C2.66724 7.93506 2.47534 8.19264 2.37773 8.49014C0.645235 13.2601 0.180234 14.5726 0.0527344 15.0001H23.9477C23.8277 14.5726 23.3552 13.2676 21.6302 8.52764Z"
+                fill="white"
+              />
+              <path
+                d="M8.2495 5.94012L11.2495 3.00012V12.0001C11.2495 12.199 11.3285 12.3898 11.4692 12.5304C11.6098 12.6711 11.8006 12.7501 11.9995 12.7501C12.1984 12.7501 12.3892 12.6711 12.5298 12.5304C12.6705 12.3898 12.7495 12.199 12.7495 12.0001V3.00012L15.7495 5.96262C15.8209 6.03058 15.905 6.08381 15.997 6.11927C16.089 6.15473 16.187 6.17172 16.2856 6.16929C16.3841 6.16685 16.4812 6.14502 16.5713 6.10506C16.6614 6.0651 16.7428 6.00777 16.8107 5.93637C16.8787 5.86496 16.9319 5.78087 16.9674 5.68889C17.0029 5.59691 17.0199 5.49885 17.0174 5.40031C17.015 5.30176 16.9932 5.20466 16.9532 5.11455C16.9132 5.02443 16.8559 4.94308 16.7845 4.87512L11.9995 0.120117L7.207 4.87512C7.09085 5.01805 7.03136 5.19873 7.03986 5.38271C7.04837 5.56669 7.12427 5.74111 7.2531 5.87273C7.38194 6.00434 7.5547 6.08395 7.73845 6.09638C7.92221 6.10881 8.10411 6.05319 8.2495 5.94012V5.94012Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <h6 class="mt-6 mb-5 text-sm font-bold leading-5 text-matisse-700">
+            100% Network Uptime SLA
+          </h6>
+          <p class="mb-6 text-sm text-icon-darkest">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+          </p>
+        </div>
+        <div
+          class="mb-10 transform rounded bg-zircon-500 px-5 text-center duration-300 hover:-translate-y-2"
+        >
+          <div
+            class="mx-auto -mt-5 flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white shadow-md"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.11779 11.4966H3.06787L8.8068 20.8135L23.564 0.317383H21.5141L8.8068 14.2914L5.11779 11.4966Z"
+                fill="white"
+              />
+              <path
+                d="M20.4548 20.8136C20.4548 21.0398 20.2714 21.2233 20.0447 21.2233H3.64808C3.53939 21.2233 3.43515 21.1801 3.35826 21.1033C3.28137 21.0265 3.23812 20.9223 3.23802 20.8136V4.41653C3.23802 4.18989 3.42182 4.00647 3.64808 4.00647H14.8611L17.098 1.54688H1.59854C1.38116 1.54718 1.17278 1.6337 1.01911 1.78745C0.865433 1.9412 0.779015 2.14962 0.778809 2.367V22.8627C0.778809 23.3164 1.14603 23.6829 1.59854 23.6829H22.0943C22.2019 23.683 22.3086 23.6618 22.4081 23.6207C22.5076 23.5795 22.598 23.5191 22.6741 23.443C22.7503 23.3668 22.8107 23.2764 22.8518 23.1769C22.893 23.0774 22.9141 22.9708 22.914 22.8631V6.9361L20.4548 10.3525V20.8136Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <h6 class="mt-6 mb-5 text-sm font-bold leading-5 text-matisse-700">
+            100% Customizable servers
+          </h6>
+          <p class="mb-6 text-sm text-icon-darkest">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+          </p>
+        </div>
+        <div
+          class="mb-10 transform rounded bg-zircon-500 px-5 text-center duration-300 hover:-translate-y-2"
+        >
+          <div
+            class="mx-auto -mt-5 flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white shadow-md"
+          >
+            <svg
+              width="23"
+              height="24"
+              viewBox="0 0 23 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.33385 3.20003H14.7338V4.80002H8.33385V3.20003ZM8.33385 12.8H14.7338V14.4H8.33385V12.8ZM8.33385 16H14.7338V17.6H8.33385V16ZM22.9578 24H0.109863L2.10986 16H5.13386V1.60003C5.13253 1.38932 5.17503 1.18064 5.25866 0.987229C5.34186 0.795229 5.45546 0.625629 5.59626 0.47523C5.74015 0.323456 5.91468 0.204015 6.10826 0.12483C6.30642 0.0420743 6.5191 -0.000352036 6.73385 3.00551e-05H16.3338C16.5446 -0.00129495 16.7532 0.0412043 16.9466 0.12483C17.1386 0.20803 17.3082 0.32163 17.4586 0.46243C17.6104 0.606328 17.7299 0.780853 17.809 0.974429C17.8922 1.17443 17.9338 1.38403 17.9338 1.60003V16H20.9578L22.9578 24V24ZM6.73385 19.2H16.3338V1.60003H6.73385V19.2ZM20.9098 22.4L19.7098 17.6H17.9338V20.8H5.13386V17.6H3.35786L2.15786 22.4H20.9098V22.4Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <h6 class="mt-6 mb-5 text-sm font-bold leading-5 text-matisse-700">
+            100% Dedicated Resources
+          </h6>
+          <p class="mb-6 text-sm text-icon-darkest">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+          </p>
+        </div>
+        <div
+          class="mb-10 transform rounded bg-zircon-500 px-5 text-center duration-300 hover:-translate-y-2"
+        >
+          <div
+            class="mx-auto -mt-5 flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white shadow-md"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 12.98L12.5 10.1229V5H10V11.3057L13.2325 15L15 12.98Z"
+                fill="white"
+              />
+              <path
+                d="M12 24C9.62663 24 7.30655 23.2962 5.33316 21.9776C3.35977 20.6591 1.8217 18.7849 0.913451 16.5922C0.00519937 14.3995 -0.232441 11.9867 0.230582 9.65892C0.693604 7.33115 1.83649 5.19295 3.51472 3.51472C5.19295 1.83649 7.33115 0.693604 9.65892 0.230582C11.9867 -0.232441 14.3995 0.00519937 16.5922 0.913451C18.7849 1.8217 20.6591 3.35977 21.9776 5.33316C23.2962 7.30655 24 9.62663 24 12C23.996 15.1814 22.7305 18.2313 20.4809 20.4809C18.2313 22.7305 15.1814 23.996 12 24V24ZM12 3C10.22 3 8.47991 3.52785 6.99987 4.51678C5.51983 5.50571 4.36628 6.91132 3.68509 8.55585C3.0039 10.2004 2.82567 12.01 3.17294 13.7558C3.5202 15.5016 4.37737 17.1053 5.63604 18.364C6.89472 19.6226 8.49836 20.4798 10.2442 20.8271C11.99 21.1743 13.7996 20.9961 15.4442 20.3149C17.0887 19.6337 18.4943 18.4802 19.4832 17.0001C20.4722 15.5201 21 13.78 21 12C20.9972 9.61391 20.0481 7.32634 18.3609 5.63911C16.6737 3.95189 14.3861 3.00278 12 3V3Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <h6 class="my-6 text-sm font-bold leading-5 text-matisse-700">
+            Bring Your Own Software
+          </h6>
+          <p class="mb-6 text-sm text-icon-darkest">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+          </p>
+        </div>
+        <div
+          class="mb-10 transform rounded bg-zircon-500 px-5 text-center duration-300 hover:-translate-y-2"
+        >
+          <div
+            class="mx-auto -mt-5 flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white shadow-md"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 16.5V21C0 21.3978 0.158035 21.7794 0.43934 22.0607C0.720644 22.342 1.10218 22.5 1.5 22.5H22.5C22.8978 22.5 23.2794 22.342 23.5607 22.0607C23.842 21.7794 24 21.3978 24 21V16.5H0ZM21 20.25H18V18.75H21V20.25Z"
+                fill="white"
+              />
+              <path
+                d="M21.6302 8.52764C21.5368 8.22322 21.3461 7.95785 21.0873 7.77224C20.8286 7.58664 20.516 7.49105 20.1977 7.50014H14.2502V12.0001C14.2502 12.5969 14.0132 13.1692 13.5912 13.5911C13.1693 14.0131 12.597 14.2501 12.0002 14.2501C11.4035 14.2501 10.8312 14.0131 10.4092 13.5911C9.98729 13.1692 9.75023 12.5969 9.75023 12.0001V7.50014H3.80273C3.48987 7.4878 3.18152 7.57777 2.92438 7.75641C2.66724 7.93506 2.47534 8.19264 2.37773 8.49014C0.645235 13.2601 0.180234 14.5726 0.0527344 15.0001H23.9477C23.8277 14.5726 23.3552 13.2676 21.6302 8.52764Z"
+                fill="white"
+              />
+              <path
+                d="M8.2495 5.94012L11.2495 3.00012V12.0001C11.2495 12.199 11.3285 12.3898 11.4692 12.5304C11.6098 12.6711 11.8006 12.7501 11.9995 12.7501C12.1984 12.7501 12.3892 12.6711 12.5298 12.5304C12.6705 12.3898 12.7495 12.199 12.7495 12.0001V3.00012L15.7495 5.96262C15.8209 6.03058 15.905 6.08381 15.997 6.11927C16.089 6.15473 16.187 6.17172 16.2856 6.16929C16.3841 6.16685 16.4812 6.14502 16.5713 6.10506C16.6614 6.0651 16.7428 6.00777 16.8107 5.93637C16.8787 5.86496 16.9319 5.78087 16.9674 5.68889C17.0029 5.59691 17.0199 5.49885 17.0174 5.40031C17.015 5.30176 16.9932 5.20466 16.9532 5.11455C16.9132 5.02443 16.8559 4.94308 16.7845 4.87512L11.9995 0.120117L7.207 4.87512C7.09085 5.01805 7.03136 5.19873 7.03986 5.38271C7.04837 5.56669 7.12427 5.74111 7.2531 5.87273C7.38194 6.00434 7.5547 6.08395 7.73845 6.09638C7.92221 6.10881 8.10411 6.05319 8.2495 5.94012V5.94012Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <h6 class="mt-6 mb-5 text-sm font-bold leading-5 text-matisse-700">
+            DDoS protection
+          </h6>
+          <p class="mb-6 text-sm text-icon-darkest">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+          </p>
+        </div>
+        <div
+          class="mb-10 transform rounded bg-zircon-500 px-5 text-center duration-300 hover:-translate-y-2"
+        >
+          <div
+            class="mx-auto -mt-5 flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white shadow-md"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.11779 11.4966H3.06787L8.8068 20.8135L23.564 0.317383H21.5141L8.8068 14.2914L5.11779 11.4966Z"
+                fill="white"
+              />
+              <path
+                d="M20.4548 20.8136C20.4548 21.0398 20.2714 21.2233 20.0447 21.2233H3.64808C3.53939 21.2233 3.43515 21.1801 3.35826 21.1033C3.28137 21.0265 3.23812 20.9223 3.23802 20.8136V4.41653C3.23802 4.18989 3.42182 4.00647 3.64808 4.00647H14.8611L17.098 1.54688H1.59854C1.38116 1.54718 1.17278 1.6337 1.01911 1.78745C0.865433 1.9412 0.779015 2.14962 0.778809 2.367V22.8627C0.778809 23.3164 1.14603 23.6829 1.59854 23.6829H22.0943C22.2019 23.683 22.3086 23.6618 22.4081 23.6207C22.5076 23.5795 22.598 23.5191 22.6741 23.443C22.7503 23.3668 22.8107 23.2764 22.8518 23.1769C22.893 23.0774 22.9141 22.9708 22.914 22.8631V6.9361L20.4548 10.3525V20.8136Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <h6 class="mt-6 mb-5 text-sm font-bold leading-5 text-matisse-700">
+            Unlimited Traffic
+          </h6>
+          <p class="mb-6 text-sm text-icon-darkest">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+          </p>
+        </div>
+        <div
+          class="mb-10 transform rounded bg-zircon-500 px-5 text-center duration-300 hover:-translate-y-2"
+        >
+          <div
+            class="mx-auto -mt-5 flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white shadow-md"
+          >
+            <svg
+              width="23"
+              height="24"
+              viewBox="0 0 23 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.33385 3.20003H14.7338V4.80002H8.33385V3.20003ZM8.33385 12.8H14.7338V14.4H8.33385V12.8ZM8.33385 16H14.7338V17.6H8.33385V16ZM22.9578 24H0.109863L2.10986 16H5.13386V1.60003C5.13253 1.38932 5.17503 1.18064 5.25866 0.987229C5.34186 0.795229 5.45546 0.625629 5.59626 0.47523C5.74015 0.323456 5.91468 0.204015 6.10826 0.12483C6.30642 0.0420743 6.5191 -0.000352036 6.73385 3.00551e-05H16.3338C16.5446 -0.00129495 16.7532 0.0412043 16.9466 0.12483C17.1386 0.20803 17.3082 0.32163 17.4586 0.46243C17.6104 0.606328 17.7299 0.780853 17.809 0.974429C17.8922 1.17443 17.9338 1.38403 17.9338 1.60003V16H20.9578L22.9578 24V24ZM6.73385 19.2H16.3338V1.60003H6.73385V19.2ZM20.9098 22.4L19.7098 17.6H17.9338V20.8H5.13386V17.6H3.35786L2.15786 22.4H20.9098V22.4Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <h6 class="mt-6 mb-5 text-sm font-bold leading-5 text-matisse-700">
+            Up to 10 Gbps Network
+          </h6>
+          <p class="mb-6 text-sm text-icon-darkest">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End of Dedi Highlights -->
+
+    <!-- Dedi os -->
+    <section class="bg-zircon-500">
+      <div
+        class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
+      >
+        <div
+          class="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-4xl"
+        >
+          <h2
+            class="mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
+          >
+            Operating Systems
+          </h2>
+          <p class="text-base text-icon-darkest md:text-lg">
+            Depending upon your needs and application requirements you will find
+            that we offer plenty of choices. <br />
+            Unix, Linux, and Windows, the choice of operating systems is truly
+            yours.
+          </p>
+        </div>
+        <div class="row-gap-5 grid gap-2 sm:grid-cols-6">
+          <div class="relative overflow-hidden rounded border">
+            <div class="relative rounded-sm bg-white px-4 py-8">
+              <div class="flex flex-col items-center">
+                <div class="flex items-center justify-center">
+                  <svg
+                    width="60"
+                    height="60"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="text-icon-centosPurple"
+                      d="m25.28 27.807 2.163 2.15-2.163 2.151H10.055v7.165L.771 29.958l9.284-9.16v7.009H25.28ZM31.972 9.51h18.5v18.499h-18.5v-18.5Z"
+                    />
+                    <path
+                      class="text-icon-centosYellow"
+                      d="m32.174 25.28-2.15 2.163-2.15-2.164V10.055h-7.166L30.023.77l9.158 9.285h-7.008V25.28Zm-.202 6.692h18.499v18.5H31.972v-18.5Z"
+                    />
+                    <path
+                      class="text-icon-centosTeget"
+                      d="m34.7 32.174-2.163-2.15 2.163-2.15h15.225v-7.166l9.285 9.316-9.285 9.158v-7.008H34.7ZM9.51 31.972h18.499v18.5h-18.5v-18.5Z"
+                    />
+                    <path
+                      class="text-icon-centosGreen"
+                      d="m27.806 34.701 2.15-2.163 2.151 2.163v15.225h7.165l-9.316 9.285-9.158-9.285h7.008V34.701ZM9.509 9.51h18.499v18.499h-18.5v-18.5Z"
+                    />
+                    <path
+                      d="M8.85 8.849h19.82v19.82H8.85V8.849Zm1.32 18.499h17.178V10.17H10.17v17.178Zm21.142-18.5h19.82V28.67h-19.82V8.849Zm1.321 18.5h17.178V10.17H32.633v17.178Zm-1.32 3.964h19.82v19.82h-19.82v-19.82Zm1.32 18.499h17.178V32.633H32.633v17.178ZM8.85 31.31h19.82v19.822H8.85V31.312Zm1.321 18.5h17.178V32.633H10.17v17.178Z"
+                      fill="#fff"
+                    />
+                    <path
+                      d="M14.107 44.006.09 29.99l14.016-14.015L28.122 29.99 14.107 44.006ZM1.96 29.99l12.147 12.147L26.253 29.99 14.107 17.844 1.96 29.99Zm28.03-1.868L15.976 14.106 29.991.091l14.015 14.015L29.99 28.122ZM17.845 14.106 29.99 26.253l12.147-12.147L29.991 1.96 17.843 14.106Zm28.03 29.9L31.86 29.99l14.016-14.015L59.89 29.99 45.875 44.006ZM33.729 29.99l12.147 12.147L58.02 29.99 45.875 17.844 33.728 29.99Zm-3.738 29.9L15.976 45.873 29.991 31.86l14.015 14.015L29.99 59.89ZM17.845 45.873 29.99 58.02l12.147-12.146-12.146-12.146-12.147 12.146Z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </div>
+                <h6 class="mt-4 font-bold leading-5 text-matisse-700">
+                  CentOS
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="relative overflow-hidden rounded border">
+            <div class="relative rounded-sm bg-white px-4 py-8">
+              <div class="flex flex-col items-center">
+                <div class="flex items-center justify-center">
+                  <svg
+                    width="60"
+                    height="60"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="text-icon-ubuntu"
+                      d="M60 30c0 16.568-13.43 30-30 30C13.432 60 0 46.568 0 30 0 13.431 13.432 0 30 0c16.57 0 30 13.431 30 30Z"
+                    />
+                    <path
+                      d="M9.601 25.994a4.005 4.005 0 1 0-.001 8.01 4.005 4.005 0 0 0 .001-8.01ZM38.2 44.2a4.003 4.003 0 0 0-1.466 5.47 4.003 4.003 0 0 0 5.47 1.465 4.003 4.003 0 1 0-4.004-6.935ZM18.302 30c0-3.958 1.966-7.455 4.974-9.572l-2.928-4.905a17.438 17.438 0 0 0-7.196 10.114A5.617 5.617 0 0 1 15.226 30c0 1.76-.81 3.33-2.074 4.362a17.426 17.426 0 0 0 7.196 10.116l2.928-4.906A11.68 11.68 0 0 1 18.302 30ZM30 18.3c6.112 0 11.126 4.686 11.652 10.662l5.708-.084a17.346 17.346 0 0 0-5.17-11.285 5.617 5.617 0 0 1-4.803-.39 5.608 5.608 0 0 1-2.739-3.97A17.45 17.45 0 0 0 30 12.6a17.338 17.338 0 0 0-7.71 1.8l2.782 4.988a11.654 11.654 0 0 1 4.929-1.088Zm0 23.4a11.655 11.655 0 0 1-4.928-1.089l-2.783 4.987a17.4 17.4 0 0 0 12.36 1.169 5.612 5.612 0 0 1 2.739-3.971 5.611 5.611 0 0 1 4.802-.39 17.347 17.347 0 0 0 5.17-11.285l-5.709-.084c-.525 5.978-5.54 10.663-11.651 10.663Zm8.197-25.9a4.004 4.004 0 1 0 4.006-6.937 4.004 4.004 0 0 0-4.006 6.937Z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </div>
+                <h6 class="mt-4 font-bold leading-5 text-matisse-700">
+                  Ubuntu
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="relative overflow-hidden rounded border">
+            <div class="relative rounded-sm bg-white px-4 py-8">
+              <div class="flex flex-col items-center">
+                <div class="flex items-center justify-center">
+                  <svg
+                    width="60"
+                    height="60"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="text-icon-fedoraBlue"
+                      d="M60 30C60 13.433 46.568 0 30 0 13.438 0 .012 13.42 0 29.98v23.216a6.82 6.82 0 0 0 6.82 6.803h23.192C46.575 59.993 60 46.565 60 30.001Z"
+                    />
+                    <path
+                      class="text-icon-fedoraLight"
+                      d="M38.807 7.104c-7.76 0-14.073 6.312-14.073 14.073v7.47h-7.438c-7.76 0-14.073 6.313-14.073 14.072 0 7.76 6.313 14.073 14.073 14.073 7.76 0 14.073-6.313 14.073-14.073v-7.47h7.438c7.76 0 14.074-6.313 14.074-14.072 0-7.76-6.314-14.073-14.074-14.073Zm-14.02 35.615c0 4.13-3.36 7.49-7.491 7.49-4.13 0-7.49-3.36-7.49-7.49 0-4.13 3.36-7.49 7.49-7.49h7.438v.02h.052v7.47Zm14.02-14.052H31.37v-.02h-.052v-7.47c0-4.13 3.36-7.491 7.49-7.491 4.13 0 7.491 3.36 7.491 7.49 0 4.131-3.36 7.491-7.49 7.491Z"
+                    />
+                    <path
+                      d="M41.919 7.53c-1.093-.285-1.931-.418-3.11-.418-7.777 0-14.081 6.304-14.081 14.08v7.463h-5.897c-1.838 0-3.324 1.445-3.323 3.28a3.27 3.27 0 0 0 3.288 3.275h4.883c.58 0 1.05.47 1.05 1.048v6.458a7.433 7.433 0 0 1-7.433 7.42c-1.388 0-1.732-.182-2.68-.182-1.992 0-3.324 1.335-3.324 3.17 0 1.52 1.302 2.825 2.894 3.241 1.092.286 1.93.42 3.11.42 7.776 0 14.08-6.305 14.08-14.08v-7.463h5.897c1.84 0 3.325-1.445 3.324-3.28a3.27 3.27 0 0 0-3.289-3.276h-4.882a1.048 1.048 0 0 1-1.05-1.048V21.18a7.433 7.433 0 0 1 7.432-7.42c1.389 0 1.733.182 2.68.182 1.992 0 3.325-1.335 3.325-3.17 0-1.52-1.302-2.825-2.895-3.242Z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </div>
+                <h6 class="mt-4 font-bold leading-5 text-matisse-700">
+                  Fedora
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="relative overflow-hidden rounded border">
+            <div class="relative rounded-sm bg-white px-4 py-8">
+              <div class="flex flex-col items-center">
+                <div class="flex items-center justify-center">
+                  <svg
+                    width="49"
+                    height="60"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#a)" class="text-icon-debian">
+                      <path
+                        d="M28.92 31.69c-.993.013.188.512 1.486.711.338-.263.663-.543.973-.838-.808.198-1.63.202-2.459.127M34.255 30.36c.592-.817 1.023-1.711 1.175-2.636-.133.66-.49 1.228-.827 1.829-1.858 1.17-.175-.695-.002-1.403-1.997 2.514-.274 1.508-.346 2.21M36.223 25.236c.12-1.79-.352-1.224-.51-.54.185.095.331 1.26.51.54M25.152.774c.53.095 1.146.168 1.06.294.58-.127.711-.244-1.06-.294M26.212 1.068l-.375.078.349-.031.026-.047Z"
+                      />
+                      <path
+                        d="M42.75 25.915c.06 1.607-.47 2.387-.947 3.767l-.859.43c-.703 1.364.068.866-.435 1.952-1.097.975-3.33 3.053-4.044 3.242-.522-.011.353-.615.467-.852-1.469 1.009-1.178 1.514-3.425 2.127l-.066-.146c-5.54 2.607-13.237-2.559-13.136-9.607-.059.447-.168.335-.29.516-.287-3.626 1.674-7.269 4.98-8.756 3.235-1.601 7.027-.944 9.344 1.215-1.273-1.667-3.806-3.434-6.808-3.268-2.94.046-5.691 1.915-6.61 3.944-1.506.948-1.68 3.656-2.337 4.151-.884 6.492 1.661 9.296 5.965 12.595.678.457.191.527.283.874-1.43-.67-2.74-1.68-3.817-2.918.572.836 1.188 1.65 1.985 2.288-1.348-.457-3.15-3.268-3.675-3.382 2.324 4.162 9.43 7.299 13.152 5.742-1.722.064-3.91.036-5.844-.68-.813-.418-1.917-1.284-1.72-1.446C29.99 39.6 35.237 39.14 39.63 35.618c1.118-.87 2.34-2.352 2.692-2.372-.531.799.09.384-.317 1.09 1.114-1.797-.484-.731 1.151-3.102l.604.831c-.225-1.49 1.852-3.301 1.641-5.66.476-.72.532.776.026 2.435.701-1.84.185-2.136.365-3.655.195.51.45 1.053.581 1.592-.457-1.779.47-2.995.698-4.03-.225-.1-.705.787-.815-1.314.017-.913.255-.478.346-.703-.179-.103-.649-.802-.935-2.144.207-.315.554.817.836.864-.181-1.067-.494-1.88-.506-2.7-.824-1.722-.292.23-.96-.739-.878-2.736.727-.635.836-1.878 1.33 1.927 2.088 4.912 2.435 6.149-.265-1.508-.694-2.969-1.218-4.382.404.17-.65-3.102.525-.935-1.255-4.62-5.373-8.936-9.161-10.96.463.423 1.049.956.838 1.04-1.883-1.122-1.552-1.21-1.822-1.684-1.535-.624-1.635.05-2.652.002-2.893-1.535-3.45-1.372-6.112-2.333l.121.566c-1.916-.638-2.233.242-4.304.002-.126-.098.664-.356 1.314-.45-1.853.244-1.766-.366-3.58.067.448-.314.92-.521 1.397-.788-1.511.092-3.607.88-2.96.164-2.465 1.1-6.842 2.643-9.298 4.946l-.078-.516c-1.125 1.351-4.908 4.035-5.209 5.785l-.3.07c-.586.992-.965 2.116-1.43 3.136-.766 1.305-1.123.502-1.014.707C1.86 17.773 1.111 20.34.465 22.445c.46.689.011 4.145.185 6.912-.756 13.663 9.59 26.929 20.898 29.992 1.658.593 4.123.57 6.22.631-2.474-.707-2.794-.375-5.204-1.215-1.738-.819-2.12-1.753-3.35-2.822l.487.861c-2.415-.854-1.405-1.057-3.369-1.68l.52-.68c-.782-.058-2.072-1.318-2.425-2.016l-.856.034c-1.03-1.27-1.577-2.184-1.537-2.892l-.277.492c-.314-.538-3.785-4.76-1.984-3.777-.334-.306-.78-.498-1.261-1.374l.366-.42c-.866-1.114-1.595-2.543-1.54-3.02.463.625.784.742 1.101.848-2.188-5.43-2.311-.299-3.969-5.527l.351-.028c-.269-.405-.432-.845-.648-1.276l.152-1.521c-1.575-1.822-.44-7.746-.213-10.996.157-1.32 1.315-2.728 2.196-4.933l-.537-.093c1.025-1.788 5.855-7.183 8.092-6.905 1.083-1.361-.216-.005-.427-.348 2.38-2.463 3.128-1.74 4.734-2.183 1.732-1.028-1.487.4-.666-.392 2.995-.765 2.123-1.74 6.029-2.127.412.234-.956.362-1.3.666 2.495-1.22 7.895-.943 11.403.678 4.07 1.902 8.643 7.524 8.823 12.814l.205.056c-.104 2.102.322 4.534-.416 6.768l.503-1.057"
+                      />
+                      <path
+                        d="m18.072 33.054-.139.697c.653.887 1.172 1.848 2.006 2.542-.6-1.172-1.046-1.656-1.867-3.24ZM19.617 32.993c-.346-.382-.55-.842-.78-1.3.22.805.668 1.497 1.085 2.201l-.305-.901ZM46.94 27.054l-.145.366a17.668 17.668 0 0 1-1.732 5.528 17.361 17.361 0 0 0 1.878-5.894ZM25.348.297C26.02.051 27 .162 27.713 0c-.93.078-1.854.124-2.767.242l.402.055ZM1.757 12.842c.155 1.433-1.079 1.99.273 1.045.724-1.633-.283-.451-.273-1.045ZM.168 19.476c.312-.955.368-1.53.487-2.082-.86 1.1-.396 1.334-.487 2.082Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h48.454v60H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <h6 class="mt-4 font-bold leading-5 text-matisse-700">
+                  Debian
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="relative overflow-hidden rounded border">
+            <div class="relative rounded-sm bg-white px-4 py-8">
+              <div class="flex flex-col items-center">
+                <div class="flex items-center justify-center">
+                  <svg
+                    width="60"
+                    height="60"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m0 8.488 24.425-3.326.01 23.56-24.413.138L0 8.488Zm24.413 22.948.019 23.58L.019 51.66.018 31.277l24.395.158Zm2.961-26.71L59.759 0v28.422l-32.385.257V4.727Zm32.392 26.932L59.76 59.95l-32.385-4.57-.046-23.776 32.439.053Z"
+                      class="text-icon-windows"
+                    />
+                  </svg>
+                </div>
+                <h6 class="mt-4 font-bold leading-5 text-matisse-700">
+                  Windows
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="relative overflow-hidden rounded border">
+            <div class="relative rounded-sm bg-white px-4 py-8">
+              <div class="flex flex-col items-center">
+                <div class="flex items-center justify-center">
+                  <!-- <svg
+                    width="49"
+                    height="60"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g
+                      clip-path="url(#a)"
+                      class=" text-icon-debian"
+                    >
+                      <path
+                        d="M28.92 31.69c-.993.013.188.512 1.486.711.338-.263.663-.543.973-.838-.808.198-1.63.202-2.459.127M34.255 30.36c.592-.817 1.023-1.711 1.175-2.636-.133.66-.49 1.228-.827 1.829-1.858 1.17-.175-.695-.002-1.403-1.997 2.514-.274 1.508-.346 2.21M36.223 25.236c.12-1.79-.352-1.224-.51-.54.185.095.331 1.26.51.54M25.152.774c.53.095 1.146.168 1.06.294.58-.127.711-.244-1.06-.294M26.212 1.068l-.375.078.349-.031.026-.047Z"
+                      />
+                      <path
+                        d="M42.75 25.915c.06 1.607-.47 2.387-.947 3.767l-.859.43c-.703 1.364.068.866-.435 1.952-1.097.975-3.33 3.053-4.044 3.242-.522-.011.353-.615.467-.852-1.469 1.009-1.178 1.514-3.425 2.127l-.066-.146c-5.54 2.607-13.237-2.559-13.136-9.607-.059.447-.168.335-.29.516-.287-3.626 1.674-7.269 4.98-8.756 3.235-1.601 7.027-.944 9.344 1.215-1.273-1.667-3.806-3.434-6.808-3.268-2.94.046-5.691 1.915-6.61 3.944-1.506.948-1.68 3.656-2.337 4.151-.884 6.492 1.661 9.296 5.965 12.595.678.457.191.527.283.874-1.43-.67-2.74-1.68-3.817-2.918.572.836 1.188 1.65 1.985 2.288-1.348-.457-3.15-3.268-3.675-3.382 2.324 4.162 9.43 7.299 13.152 5.742-1.722.064-3.91.036-5.844-.68-.813-.418-1.917-1.284-1.72-1.446C29.99 39.6 35.237 39.14 39.63 35.618c1.118-.87 2.34-2.352 2.692-2.372-.531.799.09.384-.317 1.09 1.114-1.797-.484-.731 1.151-3.102l.604.831c-.225-1.49 1.852-3.301 1.641-5.66.476-.72.532.776.026 2.435.701-1.84.185-2.136.365-3.655.195.51.45 1.053.581 1.592-.457-1.779.47-2.995.698-4.03-.225-.1-.705.787-.815-1.314.017-.913.255-.478.346-.703-.179-.103-.649-.802-.935-2.144.207-.315.554.817.836.864-.181-1.067-.494-1.88-.506-2.7-.824-1.722-.292.23-.96-.739-.878-2.736.727-.635.836-1.878 1.33 1.927 2.088 4.912 2.435 6.149-.265-1.508-.694-2.969-1.218-4.382.404.17-.65-3.102.525-.935-1.255-4.62-5.373-8.936-9.161-10.96.463.423 1.049.956.838 1.04-1.883-1.122-1.552-1.21-1.822-1.684-1.535-.624-1.635.05-2.652.002-2.893-1.535-3.45-1.372-6.112-2.333l.121.566c-1.916-.638-2.233.242-4.304.002-.126-.098.664-.356 1.314-.45-1.853.244-1.766-.366-3.58.067.448-.314.92-.521 1.397-.788-1.511.092-3.607.88-2.96.164-2.465 1.1-6.842 2.643-9.298 4.946l-.078-.516c-1.125 1.351-4.908 4.035-5.209 5.785l-.3.07c-.586.992-.965 2.116-1.43 3.136-.766 1.305-1.123.502-1.014.707C1.86 17.773 1.111 20.34.465 22.445c.46.689.011 4.145.185 6.912-.756 13.663 9.59 26.929 20.898 29.992 1.658.593 4.123.57 6.22.631-2.474-.707-2.794-.375-5.204-1.215-1.738-.819-2.12-1.753-3.35-2.822l.487.861c-2.415-.854-1.405-1.057-3.369-1.68l.52-.68c-.782-.058-2.072-1.318-2.425-2.016l-.856.034c-1.03-1.27-1.577-2.184-1.537-2.892l-.277.492c-.314-.538-3.785-4.76-1.984-3.777-.334-.306-.78-.498-1.261-1.374l.366-.42c-.866-1.114-1.595-2.543-1.54-3.02.463.625.784.742 1.101.848-2.188-5.43-2.311-.299-3.969-5.527l.351-.028c-.269-.405-.432-.845-.648-1.276l.152-1.521c-1.575-1.822-.44-7.746-.213-10.996.157-1.32 1.315-2.728 2.196-4.933l-.537-.093c1.025-1.788 5.855-7.183 8.092-6.905 1.083-1.361-.216-.005-.427-.348 2.38-2.463 3.128-1.74 4.734-2.183 1.732-1.028-1.487.4-.666-.392 2.995-.765 2.123-1.74 6.029-2.127.412.234-.956.362-1.3.666 2.495-1.22 7.895-.943 11.403.678 4.07 1.902 8.643 7.524 8.823 12.814l.205.056c-.104 2.102.322 4.534-.416 6.768l.503-1.057"
+                      />
+                      <path
+                        d="m18.072 33.054-.139.697c.653.887 1.172 1.848 2.006 2.542-.6-1.172-1.046-1.656-1.867-3.24ZM19.617 32.993c-.346-.382-.55-.842-.78-1.3.22.805.668 1.497 1.085 2.201l-.305-.901ZM46.94 27.054l-.145.366a17.668 17.668 0 0 1-1.732 5.528 17.361 17.361 0 0 0 1.878-5.894ZM25.348.297C26.02.051 27 .162 27.713 0c-.93.078-1.854.124-2.767.242l.402.055ZM1.757 12.842c.155 1.433-1.079 1.99.273 1.045.724-1.633-.283-.451-.273-1.045ZM.168 19.476c.312-.955.368-1.53.487-2.082-.86 1.1-.396 1.334-.487 2.082Z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h48.454v60H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg> -->
+                  <svg
+                    width="60"
+                    height="60"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.5 27.5h20v-20h-20v20Zm5-15h10v10h-10v-10Zm20-5v20h20v-20h-20Zm15 15h-10v-10h10v10Zm-40 30h20v-20h-20v20Zm5-15h10v10h-10v-10Zm32.5-5h-5V40h-7.5v5H40v7.5h5V45h7.5v-5H45v-7.5Z"
+                      class="text-icon-darkest"
+                    />
+                  </svg>
+                </div>
+                <h6 class="mt-4 font-bold leading-5 text-matisse-700">
+                  Custom ISO
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Dedi os -->
+
+    <!-- Full or Self -->
+    <div
+      id="tabs-id"
+      class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
+    >
+      <div
+        class="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-4xl"
+      >
+        <h2
+          class="mb-6 max-w-3xl font-sans text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
+        >
+          Full or Self-managed dedicated servers.
+        </h2>
+        <p class="text-base text-icon-darkest md:text-lg">
+          FidaHost have two primary options for dedicated servers and you can
+          choose between
+        </p>
+      </div>
+      <div class="row-gap-5 md:row-gap-8 mb-8 grid gap-8 lg:grid-cols-2">
+        <ul class="row-gap-5 grid grid-cols-2 gap-5">
+          <li class="mr-2 -mb-px flex-auto text-center last:mr-0">
+            <a
+              class="block rounded border border-matisse-500 px-5 py-8 text-center text-xs font-bold leading-normal shadow"
+              onclick="changeAtiveTab(event,'tab-full')"
+            >
+              <span class="flex flex-col items-center text-center">
+                <svg
+                  width="64"
+                  height="64"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M45.3337 6.66699H10.667C9.60613 6.66699 8.58871 7.08842 7.83857 7.83857C7.08842 8.58871 6.66699 9.60613 6.66699 10.667V45.3337C6.66699 46.3945 7.08842 47.4119 7.83857 48.1621C8.58871 48.9122 9.60613 49.3337 10.667 49.3337H45.3337C46.3945 49.3337 47.4119 48.9122 48.1621 48.1621C48.9122 47.4119 49.3337 46.3945 49.3337 45.3337V10.667C49.3337 9.60613 48.9122 8.58871 48.1621 7.83857C47.4119 7.08842 46.3945 6.66699 45.3337 6.66699Z"
+                    fill="#2F88FF"
+                    stroke="#1F5AA6"
+                    stroke-width="4"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M58.6672 17.3359V55.9999C58.6672 56.7072 58.3863 57.3855 57.8862 57.8856C57.3861 58.3857 56.7078 58.6666 56.0006 58.6666H17.3379"
+                    stroke="#1F5AA6"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.334 27.315L25.334 34.6817L38.6673 20.959"
+                    stroke="white"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+                <span class="mt-4 font-bold leading-5 text-matisse-700">
+                  Full Server
+                </span>
+              </span>
+            </a>
+          </li>
+          <li class="mr-2 -mb-px flex-auto text-center last:mr-0">
+            <a
+              class="block rounded border border-zircon-300 bg-white px-5 py-8 text-xs font-bold leading-normal shadow"
+              onclick="changeAtiveTab(event,'tab-self')"
+            >
+              <span class="flex flex-col items-center text-center">
+                <svg
+                  width="64"
+                  height="64"
+                  viewBox="0 0 64 64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M36 46H32V42C31.9984 40.4092 31.3658 38.884 30.2409 37.7591C29.116 36.6342 27.5908 36.0016 26 36H18C16.4092 36.0016 14.884 36.6342 13.7591 37.7591C12.6342 38.884 12.0016 40.4092 12 42V46H8V42C8.00318 39.3488 9.05776 36.8071 10.9324 34.9324C12.8071 33.0578 15.3488 32.0032 18 32H26C28.6512 32.0032 31.1929 33.0578 33.0676 34.9324C34.9422 36.8071 35.9968 39.3488 36 42V46Z"
+                    fill="#1F5AA6"
+                  />
+                  <path
+                    d="M22 12C23.1867 12 24.3467 12.3519 25.3334 13.0112C26.3201 13.6705 27.0892 14.6075 27.5433 15.7039C27.9974 16.8003 28.1162 18.0067 27.8847 19.1705C27.6532 20.3344 27.0818 21.4035 26.2426 22.2426C25.4035 23.0818 24.3344 23.6532 23.1705 23.8847C22.0067 24.1162 20.8003 23.9974 19.7039 23.5433C18.6075 23.0892 17.6705 22.3201 17.0112 21.3334C16.3519 20.3467 16 19.1867 16 18C16 16.4087 16.6321 14.8826 17.7574 13.7574C18.8826 12.6321 20.4087 12 22 12V12ZM22 8C20.0222 8 18.0888 8.58649 16.4443 9.6853C14.7998 10.7841 13.5181 12.3459 12.7612 14.1732C12.0043 16.0004 11.8063 18.0111 12.1922 19.9509C12.578 21.8907 13.5304 23.6725 14.9289 25.0711C16.3275 26.4696 18.1093 27.422 20.0491 27.8079C21.9889 28.1937 23.9996 27.9957 25.8268 27.2388C27.6541 26.4819 29.2159 25.2002 30.3147 23.5557C31.4135 21.9112 32 19.9778 32 18C32 15.3478 30.9464 12.8043 29.0711 10.9289C27.1957 9.05357 24.6522 8 22 8V8Z"
+                    fill="#1F5AA6"
+                  />
+                  <path d="M4 52H60V56H4V52Z" fill="#1F5AA6" />
+                  <path
+                    d="M44 8V12H53.172L40 25.172L42.828 28L56 14.828V24H60V8H44Z"
+                    fill="#1F5AA6"
+                  />
+                </svg>
+                <span class="mt-4 font-bold leading-5 text-matisse-700">
+                  Self-managed server
+                </span>
+              </span>
+            </a>
+          </li>
+        </ul>
+        <div class="relative mb-6 flex w-full min-w-0 flex-col break-words">
+          <div class="flex-auto">
+            <div class="tab-content tab-space text-icon-darkest">
+              <div class="block" id="tab-full">
+                <p>
+                  FidaHost offers the best managed dedicated server solutions to
+                  support your business needs. You can choose between Linux or
+                  Windows operating systems and we will take care of all the
+                  server related responsibilities like core updates, maintenance
+                  and other requests you may have excluding custom made
+                  software/scripts installation and support.
+                </p>
+              </div>
+              <div class="hidden" id="tab-self">
+                <p>
+                  If you’re more of a DIY-er you can go with a self-managed
+                  option. With this option you have to take care of all the
+                  server responsibilities and maintenance tasks, whereas,
+                  FidaHost only takes care of the physical server hardware and
+                  its availability. Things like installing scripts and software,
+                  troubleshooting configuration issues, setting up firewall
+                  rules, etc. are all up to the client. Many of our clients have
+                  years of experience working with servers and have no problems
+                  with this.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Full or Self -->
+
+    <!-- Enterprise Hardware -->
+    <div
+      class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
+    >
+      <div class="row-gap-8 grid gap-8 lg:grid-cols-3">
+        <div class="sm:text-center">
+          <div class="mb-4 flex items-center justify-center">
+            <svg
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M16 16H20V24H16V16Z" fill="#1F5AA6" />
+              <path d="M16 28H20V36H16V28Z" fill="#1F5AA6" />
+              <path d="M28 16H32V24H28V16Z" fill="#1F5AA6" />
+              <path d="M28 28H32V36H28V28Z" fill="#1F5AA6" />
+              <path d="M16 40H20V48H16V40Z" fill="#1F5AA6" />
+              <path d="M28 40H32V48H28V40Z" fill="#1F5AA6" />
+              <path
+                d="M60 28C60 26.9391 59.5786 25.9217 58.8284 25.1716C58.0783 24.4214 57.0609 24 56 24H44V8C44 6.93913 43.5786 5.92172 42.8284 5.17157C42.0783 4.42143 41.0609 4 40 4H8C6.93913 4 5.92172 4.42143 5.17157 5.17157C4.42143 5.92172 4 6.93913 4 8V60H60V28ZM8 8H40V56H8V8ZM44 56V28H56V56H44Z"
+                fill="#1F5AA6"
+              />
+            </svg>
+          </div>
+          <h6 class="mb-2 font-semibold leading-5 text-matisse-700">
+            Enterprise Grade Hardware
+          </h6>
+        </div>
+        <div class="sm:text-center">
+          <div class="mb-4 flex items-center justify-center">
+            <svg
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_204454_3395)">
+                <path
+                  d="M32.2761 -8.13638e-06C33.3241 -8.13638e-06 34.3561 0.0679919 35.3161 0.227992C36.2616 0.351882 37.1944 0.557997 38.1041 0.843992C39.0161 1.11999 39.9081 1.46399 40.8001 1.89599C41.6681 2.30799 42.5601 2.81199 43.4521 3.35999C44.9601 4.31999 46.4441 5.09599 47.9561 5.71599C50.9327 6.90732 54.0802 7.61623 57.2801 7.81599C58.9041 7.93199 60.5721 7.99999 62.3081 7.99999V24C62.3081 27.04 61.9201 29.92 61.1441 32.664C60.3987 35.3688 59.3395 37.9772 57.9881 40.436C56.6424 42.8913 55.0502 45.2032 53.2361 47.336C51.3942 49.5172 49.3998 51.565 47.2681 53.464C45.1082 55.3686 42.8332 57.1386 40.4561 58.764C38.0801 60.412 35.6801 61.944 33.2801 63.336L32.3201 63.908L31.3601 63.336C28.8929 61.9076 26.483 60.3824 24.1361 58.764C21.7457 57.1569 19.4695 55.386 17.3241 53.464C15.1936 51.565 13.2006 49.5172 11.3601 47.336C9.55086 45.1942 7.95152 42.8836 6.58409 40.436C5.25582 37.9663 4.1977 35.3606 3.42809 32.664C2.64717 29.8429 2.26215 26.927 2.28409 24V7.99999C4.02409 7.99999 5.69209 7.93199 7.31609 7.81599C8.91473 7.70495 10.503 7.47633 12.0681 7.13199C13.6001 6.78799 15.1321 6.33199 16.6401 5.71599C18.2049 5.08445 19.7052 4.3035 21.1201 3.38399C22.8801 2.23999 24.6641 1.39599 26.4241 0.839992C28.3196 0.258918 30.2937 -0.0244542 32.2761 -8.13638e-06V-8.13638e-06ZM58.2841 11.932C55.2562 11.7851 52.2565 11.2789 49.3481 10.424C46.4551 9.56101 43.6995 8.29096 41.1641 6.65199C39.849 5.78878 38.4208 5.11169 36.9201 4.63999C35.421 4.18693 33.8621 3.96307 32.2961 3.97599C30.7185 3.96579 29.1481 4.18955 27.6361 4.63999C26.1332 5.09636 24.7068 5.7745 23.4041 6.65199C20.8643 8.2999 18.1016 9.57552 15.2001 10.44C12.3641 11.264 9.39609 11.768 6.28409 11.952V24.02C6.28409 26.672 6.62809 29.208 7.31609 31.652C8.017 34.0748 8.98283 36.4129 10.1961 38.624C11.4239 40.8581 12.871 42.9645 14.5161 44.912C16.1841 46.876 17.9641 48.704 19.8841 50.44C21.8041 52.18 23.8161 53.78 25.9201 55.264C28.0441 56.752 30.1721 58.1 32.2961 59.332C34.471 58.0659 36.5915 56.7087 38.6521 55.264C40.77 53.7847 42.7927 52.1735 44.7081 50.44C46.6281 48.704 48.4121 46.876 50.0801 44.912C51.7253 42.9646 53.1725 40.8583 54.4001 38.624C55.608 36.4156 56.5595 34.0765 57.2361 31.652C57.945 29.1704 58.2979 26.6008 58.2841 24.02V11.932V11.932Z"
+                  fill="#1F5AA6"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M47.1873 18.8362L45.4273 17.3242L43.8033 17.4642L26.3633 38.0562L20.4233 29.5762L18.8233 29.3042L16.9713 30.6282L16.6953 32.2282L24.3313 43.1322L25.1993 43.6122L27.0273 43.7242L27.9633 43.3162L47.3033 20.4562L47.1873 18.8362V18.8362Z"
+                  fill="#1F5AA6"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_204454_3395">
+                  <rect width="64" height="64" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <h6 class="mb-2 font-semibold leading-5 text-matisse-700">
+            Service You Can Trust
+          </h6>
+        </div>
+        <div class="sm:text-center">
+          <div class="mb-4 flex items-center justify-center">
+            <svg
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M55.9997 32.5867C55.9997 17.9467 44.6397 8 31.9997 8C19.493 8 7.99967 17.7333 7.99967 32.7467C6.39967 33.6533 5.33301 35.36 5.33301 37.3333V42.6667C5.33301 45.6 7.73301 48 10.6663 48C12.133 48 13.333 46.8 13.333 45.3333V32.5067C13.333 22.2933 21.1997 13.36 31.413 13.0667C33.9126 12.9906 36.402 13.4172 38.7338 14.3209C41.0655 15.2247 43.1921 16.5873 44.9876 18.328C46.783 20.0688 48.2108 22.1522 49.1862 24.4549C50.1617 26.7575 50.665 29.2326 50.6663 31.7333V50.6667H31.9997C30.533 50.6667 29.333 51.8667 29.333 53.3333C29.333 54.8 30.533 56 31.9997 56H50.6663C53.5997 56 55.9997 53.6 55.9997 50.6667V47.4133C57.573 46.5867 58.6663 44.96 58.6663 43.04V36.9067C58.6663 35.04 57.573 33.4133 55.9997 32.5867V32.5867Z"
+                fill="#1F5AA6"
+              />
+              <path
+                d="M23.9997 37.3333C25.4724 37.3333 26.6663 36.1394 26.6663 34.6667C26.6663 33.1939 25.4724 32 23.9997 32C22.5269 32 21.333 33.1939 21.333 34.6667C21.333 36.1394 22.5269 37.3333 23.9997 37.3333Z"
+                fill="#1F5AA6"
+              />
+              <path
+                d="M39.9997 37.3333C41.4724 37.3333 42.6663 36.1394 42.6663 34.6667C42.6663 33.1939 41.4724 32 39.9997 32C38.5269 32 37.333 33.1939 37.333 34.6667C37.333 36.1394 38.5269 37.3333 39.9997 37.3333Z"
+                fill="#1F5AA6"
+              />
+              <path
+                d="M48.0012 29.4133C47.3654 25.6644 45.4236 22.2612 42.5198 19.8063C39.6159 17.3515 35.9371 16.0031 32.1346 16C24.0546 16 15.3612 22.6933 16.0546 33.2C19.3429 31.8544 22.2472 29.716 24.5085 26.9754C26.7698 24.2349 28.3178 20.9774 29.0146 17.4933C32.5079 24.5067 39.6812 29.3333 48.0012 29.4133Z"
+                fill="#1F5AA6"
+              />
+            </svg>
+          </div>
+          <h6 class="mb-2 font-semibold leading-5 text-matisse-700">
+            24x7 Customer Support
+          </h6>
+        </div>
+      </div>
+    </div>
+    <!-- End of Enterprise Hardware -->
+
+    <!-- Not sure CTA -->
+    <div class="bg-zircon-500">
+      <div
+        class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:flex lg:max-w-screen-xl lg:items-center lg:justify-between lg:py-16 lg:px-8"
+      >
+        <h2
+          class="text-2xl font-bold tracking-tight text-matisse-700 sm:text-xl"
+        >
+          Not sure which bare metal server is right for you?
+        </h2>
+        <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+          <div class="inline-flex rounded-md shadow">
+            <a
+              href="#"
+              class="inline-flex items-center justify-center rounded-md border border-transparent border-matisse-500 bg-matisse-600 px-5 py-3 text-base font-medium text-white transition duration-200 hover:bg-matisse-700"
+            >
+              Get a quote
+            </a>
+          </div>
+          <div class="ml-3 inline-flex rounded-md shadow">
+            <a
+              href="#"
+              class="focus:shadow-outline inline-flex items-center justify-center rounded border border-matisse-500 px-5 py-3 font-medium text-matisse-500 transition duration-200 hover:bg-wh-light focus:outline-none"
+            >
+              Contact us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Not sure CTA -->
+
+    <!-- Help & FAQ -->
+    <div class="relative">
+      <img
+        src="./assets/images/overlay-bg.jpg"
+        class="absolute inset-0 h-full w-full object-cover"
+        alt=""
+      />
+      <div class="relative bg-gray-900 bg-opacity-75">
+        <div
+          class="mx-auto py-16 sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:py-20"
+        >
+          <div class="relative w-full xl:px-8">
+            <div class="flex rounded bg-white p-7 shadow-2xl sm:p-10">
+              <div class="relative mx-auto w-1/2 px-4">
+                <div class="mb-0 lg:max-w-lg lg:pr-8 xl:pr-6">
+                  <h3
+                    class="pb-5 text-2xl font-extrabold text-gray-800 md:text-3xl xl:text-5xl"
+                  >
+                    Need Some Help?
+                  </h3>
+                  <p class="mb-5 text-base text-matisse-700 md:text-lg">
+                    Whether it's helping you choose a domain name, walking you
+                    through our website builder, or configuring your cloud email
+                    system for your business, our experts are here to help.
+                    Please don't hesitate to contact us with your questions!
+                  </p>
+                  <div class="mb-8 space-y-2">
+                    <div class="flex items-center text-matisse-500">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="mr-2 h-5 w-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M2.003 5.884 10 9.882l7.997-3.998A2 2 0 0 0 16 4H4a2 2 0 0 0-1.997 1.884z"
+                        />
+                        <path
+                          d="m18 8.118-8 4-8-4V14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8.118z"
+                        />
+                      </svg>
+                      <span class="text-matisse-700">(617) 557-0089 </span>
+                    </div>
+                    <div class="flex items-center text-matisse-500">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="mr-2 h-5 w-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M2 3a1 1 0 0 1 1-1h2.153a1 1 0 0 1 .986.836l.74 4.435a1 1 0 0 1-.54 1.06l-1.548.773a11.037 11.037 0 0 0 6.105 6.105l.774-1.548a1 1 0 0 1 1.059-.54l4.435.74a1 1 0 0 1 .836.986V17a1 1 0 0 1-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                        />
+                      </svg>
+                      <span class="text-matisse-700"> contact@example.com</span>
+                    </div>
+                  </div>
+                  <div class="flex flex-col">
+                    <div class="mb-2 text-sm text-gray-600 md:mb-2">
+                      Follow us
+                    </div>
+                    <div class="flex items-center space-x-4">
+                      <div class="flex items-center">
+                        <a
+                          href="/"
+                          class="text-gray-600 transition-colors duration-300 hover:text-matisse-400"
+                        >
+                          <svg
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="h-5"
+                          >
+                            <path
+                              d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
+                            ></path>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="flex items-center">
+                        <a
+                          href="/"
+                          class="text-gray-600 transition-colors duration-300 hover:text-matisse-400"
+                        >
+                          <svg
+                            viewBox="0 0 30 30"
+                            fill="currentColor"
+                            class="h-6"
+                          >
+                            <circle cx="15" cy="15" r="4"></circle>
+                            <path
+                              d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z"
+                            ></path>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="flex items-center">
+                        <a
+                          href="/"
+                          class="text-gray-600 transition-colors duration-300 hover:text-matisse-400"
+                        >
+                          <svg
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="h-5"
+                          >
+                            <path
+                              d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
+                            ></path>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="flex items-center">
+                        <a
+                          href="/"
+                          class="text-gray-600 transition-colors duration-300 hover:text-matisse-400"
+                        >
+                          <svg
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            class="h-6"
+                          >
+                            <path
+                              d="M23.8,7.2c0,0-0.2-1.7-1-2.4c-0.9-1-1.9-1-2.4-1C17,3.6,12,3.6,12,3.6h0c0,0-5,0-8.4,0.2 c-0.5,0.1-1.5,0.1-2.4,1c-0.7,0.7-1,2.4-1,2.4S0,9.1,0,11.1v1.8c0,1.9,0.2,3.9,0.2,3.9s0.2,1.7,1,2.4c0.9,1,2.1,0.9,2.6,1 c1.9,0.2,8.2,0.2,8.2,0.2s5,0,8.4-0.3c0.5-0.1,1.5-0.1,2.4-1c0.7-0.7,1-2.4,1-2.4s0.2-1.9,0.2-3.9v-1.8C24,9.1,23.8,7.2,23.8,7.2z M9.5,15.1l0-6.7l6.5,3.4L9.5,15.1z"
+                            ></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-1/2">
+                <div class="mx-auto">
+                  <div class="pb-5">
+                    <h3
+                      class="px-4 text-2xl font-extrabold text-gray-800 md:text-3xl xl:text-5xl"
+                    >
+                      FAQ
+                    </h3>
+                  </div>
+                  <!-- component -->
+                  <div class="-mx-2 flex flex-wrap sm:mx-auto sm:mb-2">
+                    <div class="w-full px-4 text-white">
+                      <details class="mb-4 cursor-pointer">
+                        <summary
+                          class="rounded-md bg-matisse-500 px-4 py-2 font-semibold"
+                        >
+                          What makes FidaHost different
+                        </summary>
+
+                        <span
+                          class="relative block h-full w-full rounded-b-md bg-zircon-500 px-4 py-2 text-matisse-600"
+                        >
+                          FidaHost has remained one of the top trusted website
+                          hosting providers since 2009. With over 2 000 websites
+                          utilizing our platforms, we have maintained our
+                          commitment to providing the best in website hosting
+                          services and management tools.
+                        </span>
+                      </details>
+                      <details class="mb-4 cursor-pointer">
+                        <summary
+                          class="rounded-md bg-matisse-500 px-4 py-2 font-semibold"
+                        >
+                          Can I transfer my existing domain name to FH?
+                        </summary>
+
+                        <span
+                          class="relative block h-full w-full rounded-b-md bg-zircon-500 px-4 py-2 text-matisse-600"
+                        >
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Atque ipsum veritatis incidunt enim voluptates
+                          magni deleniti eius blanditiis nobis aliquid odit
+                          porro quod nesciunt maiores architecto perspiciatis
+                          fuga, dolorum et?
+                        </span>
+                      </details>
+                      <details class="mb-4 cursor-pointer">
+                        <summary
+                          class="rounded-md bg-matisse-500 px-4 py-2 font-semibold"
+                        >
+                          How do I migrate to FidaHost?
+                        </summary>
+
+                        <span
+                          class="relative block h-full w-full rounded-b-md bg-zircon-500 px-4 py-2 text-matisse-600"
+                        >
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Atque ipsum veritatis incidunt enim voluptates
+                          magni deleniti eius blanditiis nobis aliquid odit
+                          porro quod nesciunt maiores architecto perspiciatis
+                          fuga, dolorum et?
+                        </span>
+                      </details>
+                      <details class="mb-4 cursor-pointer">
+                        <summary
+                          class="rounded-md bg-matisse-500 px-4 py-2 font-semibold"
+                        >
+                          How do I migrate to FidaHost?
+                        </summary>
+
+                        <span
+                          class="relative block h-full w-full rounded-b-md bg-zircon-500 px-4 py-2 text-matisse-600"
+                        >
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Atque ipsum veritatis incidunt enim voluptates
+                          magni deleniti eius blanditiis nobis aliquid odit
+                          porro quod nesciunt maiores architecto perspiciatis
+                          fuga, dolorum et?
+                        </span>
+                      </details>
+                      <details class="mb-4 cursor-pointer">
+                        <summary
+                          class="rounded-md bg-matisse-500 px-4 py-2 font-semibold"
+                        >
+                          How do I migrate to FidaHost?
+                        </summary>
+
+                        <span
+                          class="relative block h-full w-full rounded-b-md bg-zircon-500 px-4 py-2 text-matisse-600"
+                        >
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Atque ipsum veritatis incidunt enim voluptates
+                          magni deleniti eius blanditiis nobis aliquid odit
+                          porro quod nesciunt maiores architecto perspiciatis
+                          fuga, dolorum et?
+                        </span>
+                      </details>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Help & FAQ -->
+
+    <!-- Footer -->
+    <div
+      class="mx-auto px-4 pt-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8"
+    >
+      <div class="row-gap-6 mb-8 grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
+        <div class="sm:col-span-2">
+          <button
+            class="flex w-full items-center justify-end rounded-md focus:outline-none focus:ring-2 focus:ring-matisse-700 focus:ring-offset-2 sm:w-auto sm:items-stretch sm:justify-start"
+          >
+            <div class="flex items-center">
+              <svg
+                id="logo"
+                enable-background="new 0 0 300 300"
+                height="44"
+                viewBox="0 0 300 300"
+                width="43"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <g>
+                  <path
+                    d="m234.735 35.532c-8.822 0-16 7.178-16 16s7.178 16 16 16 16-7.178 16-16-7.178-16-16-16zm0 24c-4.412 0-8-3.588-8-8s3.588-8 8-8 8 3.588 8 8-3.588 8-8 8zm-62.529-14c0-2.502 2.028-4.53 4.53-4.53s4.53 2.028 4.53 4.53c0 2.501-2.028 4.529-4.53 4.529s-4.53-2.027-4.53-4.529zm89.059 60c0 2.501-2.028 4.529-4.53 4.529s-4.53-2.028-4.53-4.529c0-2.502 2.028-4.53 4.53-4.53s4.53 2.029 4.53 4.53zm-40.522-5.459-88-51.064c-1.242-.723-2.773-.723-4.016 0l-88 51.064c-1.232.715-1.992 2.033-1.992 3.459v104c0 1.404.736 2.705 1.938 3.428l88 52.936c.635.381 1.35.572 2.062.572s1.428-.191 2.062-.572l88-52.936c1.201-.723 1.938-2.023 1.938-3.428v-104c0-1.426-.76-2.744-1.992-3.459zm-90.008-42.98 80.085 46.47-52.95 31.289-23.135-13.607v-21.713c0-2.209-1.791-4-4-4s-4 1.791-4 4v21.713l-26.027 15.309c-1.223.719-1.973 2.029-1.973 3.447v29.795l-52 30.727v-94.688zm0 198.707-80.189-48.237 51.467-30.412 24.723 14.539v19.842c0 2.209 1.791 4 4 4s4-1.791 4-4v-19.842l26.027-15.307c1.223-.719 1.973-2.029 1.973-3.447v-31.667l52-30.728v94.729z"
+                  />
+                </g>
+              </svg>
+              <h2
+                class="hidden px-3 text-base font-bold leading-normal text-gray-700 sm:block"
+              >
+                FidaHost
+              </h2>
+            </div>
+          </button>
+          <div class="mt-6 lg:max-w-sm">
+            <p class="text-sm text-gray-800">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+              rem aperiam.
+            </p>
+            <p class="mt-4 text-sm text-gray-800">
+              Eaque ipsa quae ab illo inventore veritatis et quasi architecto
+              beatae vitae dicta sunt explicabo.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-2 text-sm">
+          <p class="text-base font-bold tracking-wide text-gray-900">
+            Our Services
+          </p>
+          <div class="flex">
+            <a
+              href="/#"
+              aria-label="Shared hosting"
+              title="Shared hosting"
+              class="text-matisse-800 transition-colors duration-300 hover:text-matisse-500"
+              >Shared hosting</a
+            >
+          </div>
+          <div class="flex">
+            <a
+              href="/#"
+              aria-label="WordPress hosting"
+              title="WordPress hosting"
+              class="text-matisse-800 transition-colors duration-300 hover:text-matisse-500"
+              >WordPress hosting</a
+            >
+          </div>
+          <div class="flex">
+            <a
+              href="/#"
+              aria-label="VPS hosting"
+              title="VPS hosting"
+              class="text-matisse-800 transition-colors duration-300 hover:text-matisse-500"
+              >VPS hosting</a
+            >
+          </div>
+          <div class="flex">
+            <a
+              href="/#"
+              aria-label="Dedicated hosting"
+              title="Dedicated hosting"
+              class="text-matisse-800 transition-colors duration-300 hover:text-matisse-500"
+              >Dedicated hosting</a
+            >
+          </div>
+          <div class="flex">
+            <a
+              href="/#"
+              aria-label="Reseller hosting"
+              title="Reseller hosting"
+              class="text-matisse-800 transition-colors duration-300 hover:text-matisse-500"
+              >Reseller hosting</a
+            >
+          </div>
+        </div>
+        <div class="space-y-2 text-sm">
+          <p class="text-base font-bold tracking-wide text-gray-900">
+            Contacts
+          </p>
+          <div class="flex">
+            <p class="mr-1 text-gray-800">Phone:</p>
+            <a
+              href="tel:850-123-5021"
+              aria-label="Our phone"
+              title="Our phone"
+              class="text-matisse-400 transition-colors duration-300 hover:text-matisse-800"
+              >850-123-5021</a
+            >
+          </div>
+          <div class="flex">
+            <p class="mr-1 text-gray-800">Email:</p>
+            <a
+              href="mailto:info@lorem.mail"
+              aria-label="Our email"
+              title="Our email"
+              class="text-matisse-400 transition-colors duration-300 hover:text-matisse-800"
+              >info@lorem.mail</a
+            >
+          </div>
+          <div class="flex">
+            <p class="mr-1 text-gray-800">Address:</p>
+            <a
+              href="https://www.google.com/maps"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Our address"
+              title="Our address"
+              class="text-matisse-400 transition-colors duration-300 hover:text-matisse-800"
+            >
+              312 Lovely Street, NY
+            </a>
+          </div>
+          <div class="flex items-center space-x-4">
+            <div class="flex items-center">
+              <a
+                href="/"
+                class="text-gray-600 transition-colors duration-300 hover:text-matisse-400"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                  <path
+                    d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="flex items-center">
+              <a
+                href="/"
+                class="text-gray-600 transition-colors duration-300 hover:text-matisse-400"
+              >
+                <svg viewBox="0 0 30 30" fill="currentColor" class="h-6">
+                  <circle cx="15" cy="15" r="4"></circle>
+                  <path
+                    d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="flex items-center">
+              <a
+                href="/"
+                class="text-gray-600 transition-colors duration-300 hover:text-matisse-400"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
+                  <path
+                    d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="flex items-center">
+              <a
+                href="/"
+                class="text-gray-600 transition-colors duration-300 hover:text-matisse-400"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" class="h-6">
+                  <path
+                    d="M23.8,7.2c0,0-0.2-1.7-1-2.4c-0.9-1-1.9-1-2.4-1C17,3.6,12,3.6,12,3.6h0c0,0-5,0-8.4,0.2 c-0.5,0.1-1.5,0.1-2.4,1c-0.7,0.7-1,2.4-1,2.4S0,9.1,0,11.1v1.8c0,1.9,0.2,3.9,0.2,3.9s0.2,1.7,1,2.4c0.9,1,2.1,0.9,2.6,1 c1.9,0.2,8.2,0.2,8.2,0.2s5,0,8.4-0.3c0.5-0.1,1.5-0.1,2.4-1c0.7-0.7,1-2.4,1-2.4s0.2-1.9,0.2-3.9v-1.8C24,9.1,23.8,7.2,23.8,7.2z M9.5,15.1l0-6.7l6.5,3.4L9.5,15.1z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <span class="text-base font-bold tracking-wide text-gray-900"
+            >Payment accepted</span
+          >
+          <div class="mt-1 flex w-full items-center space-x-1">
+            <svg
+              width="50"
+              height="32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="50" height="32" rx="3" fill="#00579F"></rect>
+              <path
+                d="M22.467 21.535h-3.079L21.314 10.5h3.078l-1.925 11.035zM33.626 10.77a8.112 8.112 0 00-2.761-.47c-3.04 0-5.18 1.503-5.194 3.651-.025 1.585 1.533 2.465 2.698 2.994 1.19.54 1.596.892 1.596 1.374-.012.739-.963 1.08-1.849 1.08-1.229 0-1.887-.176-2.888-.587l-.406-.177-.43 2.478c.722.305 2.052.575 3.433.587 3.23 0 5.332-1.48 5.357-3.769.013-1.256-.81-2.219-2.584-3.005-1.076-.505-1.735-.845-1.735-1.362.012-.47.557-.95 1.773-.95 1-.024 1.736.198 2.293.422l.278.117.419-2.383zM37.717 17.626l1.229-3.088c-.013.024.253-.645.405-1.056l.215.95s.583 2.642.71 3.194h-2.56zm3.8-7.126h-2.381c-.735 0-1.293.2-1.61.916l-4.572 10.12h3.23l.646-1.656h3.953c.088.387.367 1.655.367 1.655H44L41.517 10.5zM16.817 10.5l-3.014 7.525-.33-1.526c-.557-1.761-2.305-3.674-4.256-4.626l2.762 9.65h3.255L20.072 10.5h-3.255z"
+                fill="#fff"
+              ></path>
+              <path
+                d="M11.003 10.5H6.051L6 10.723c3.863.916 6.422 3.123 7.473 5.776l-1.076-5.071c-.178-.705-.722-.905-1.394-.928z"
+                fill="#FAA61A"
+              ></path>
+            </svg>
+            <svg
+              width="50"
+              height="32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="50" height="32" rx="3" fill="#0F3560"></rect>
+              <path
+                d="M29.363 23.864h-8.749V8.141h8.75v15.723z"
+                fill="#FF5F00"
+              ></path>
+              <path
+                d="M21.174 16.001c0-3.19 1.494-6.03 3.82-7.862a9.956 9.956 0 00-6.18-2.138c-5.522 0-9.999 4.477-9.999 10s4.477 10 9.999 10c2.332 0 4.479-.799 6.18-2.138a9.983 9.983 0 01-3.82-7.862z"
+                fill="#EB001B"
+              ></path>
+              <path
+                d="M41.163 16.001c0 5.523-4.476 10-9.999 10a9.96 9.96 0 01-6.18-2.138 9.982 9.982 0 003.82-7.862c0-3.19-1.494-6.03-3.82-7.862a9.959 9.959 0 016.18-2.138c5.523 0 10 4.477 10 10z"
+                fill="#F79E1B"
+              ></path>
+              <path
+                d="M16.34 16.065c0-.437.285-.796.753-.796.447 0 .749.343.749.796 0 .452-.302.795-.749.795-.468 0-.754-.359-.754-.795zm2.011 0v-1.243h-.54v.302c-.172-.224-.432-.364-.785-.364-.697 0-1.243.546-1.243 1.305 0 .759.546 1.305 1.243 1.305.353 0 .613-.14.785-.365v.302h.54v-1.242zm18.26 0c0-.437.286-.796.754-.796.447 0 .749.343.749.796 0 .452-.302.795-.75.795-.467 0-.753-.359-.753-.795zm2.013 0v-2.24h-.541v1.299c-.172-.224-.432-.364-.785-.364-.697 0-1.244.546-1.244 1.305 0 .759.547 1.305 1.244 1.305.353 0 .613-.14.785-.365v.302h.54v-1.242zm-13.566-.822c.349 0 .572.219.63.603h-1.29c.058-.359.275-.603.66-.603zm.011-.483c-.728 0-1.238.53-1.238 1.305 0 .79.53 1.305 1.274 1.305.375 0 .718-.094 1.02-.349l-.266-.4c-.208.166-.473.26-.723.26-.348 0-.665-.161-.743-.609h1.845c.006-.067.011-.135.011-.207-.005-.775-.484-1.305-1.18-1.305zm6.525 1.305c0-.437.286-.796.754-.796.447 0 .748.343.748.796 0 .452-.301.795-.748.795-.468 0-.754-.359-.754-.795zm2.012 0v-1.243h-.54v.302c-.173-.224-.432-.364-.785-.364-.697 0-1.244.546-1.244 1.305 0 .759.547 1.305 1.244 1.305.353 0 .612-.14.784-.365v.302h.54v-1.242zm-5.064 0c0 .754.525 1.305 1.326 1.305.374 0 .624-.084.894-.297l-.26-.436a1.092 1.092 0 01-.65.223c-.431-.005-.749-.317-.749-.795 0-.479.317-.79.749-.796.234 0 .447.078.65.224l.26-.437c-.27-.213-.52-.296-.894-.296-.801 0-1.326.55-1.326 1.305zm6.967-1.305a.734.734 0 00-.655.364v-.302h-.536v2.485h.541v-1.393c0-.411.177-.64.53-.64.11 0 .224.016.338.063l.167-.51a1.152 1.152 0 00-.385-.067zm-14.485.26c-.26-.172-.619-.26-1.014-.26-.63 0-1.035.301-1.035.795 0 .405.302.655.858.733l.255.037c.297.041.436.12.436.26 0 .192-.197.301-.566.301-.374 0-.645-.12-.827-.26l-.254.421c.296.218.67.323 1.076.323.717 0 1.133-.338 1.133-.812 0-.436-.327-.665-.868-.743l-.255-.037c-.234-.03-.421-.077-.421-.244 0-.182.177-.29.473-.29.317 0 .624.119.775.212l.234-.436zm6.972-.26a.732.732 0 00-.655.364v-.302h-.535v2.485h.54v-1.393c0-.411.177-.64.53-.64.11 0 .224.016.338.063l.167-.51a1.15 1.15 0 00-.385-.067zm-4.612.062h-.883v-.754h-.547v.754h-.504v.494h.504v1.134c0 .576.224.92.863.92.235 0 .505-.073.676-.193l-.156-.463a1 1 0 01-.478.14c-.27 0-.358-.166-.358-.415v-1.123h.883v-.494zm-8.08 2.485v-1.56c0-.587-.373-.982-.977-.987-.317-.006-.644.093-.873.442-.172-.276-.442-.442-.822-.442-.265 0-.524.078-.727.369v-.307h-.541v2.485h.545V15.93c0-.432.24-.661.61-.661.358 0 .54.234.54.655v1.383h.546V15.93c0-.432.249-.661.608-.661.369 0 .546.234.546.655v1.383h.546z"
+                fill="#fff"
+              ></path>
+            </svg>
+            <svg
+              width="50"
+              height="32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="50" height="32" rx="3" fill="#082069"></rect>
+              <path
+                d="M14.874 20.9H12.8a.288.288 0 00-.284.243l-.839 5.315c-.016.105.065.2.171.2h.99a.288.288 0 00.284-.244l.226-1.433a.288.288 0 01.285-.244h.656c1.365 0 2.153-.66 2.359-1.97.093-.573.004-1.023-.264-1.338-.295-.346-.817-.529-1.511-.529zm.239 1.941c-.113.744-.682.744-1.231.744h-.313l.22-1.39a.173.173 0 01.17-.145h.144c.374 0 .727 0 .91.213.108.128.142.317.1.578zM21.07 22.817h-.993a.173.173 0 00-.17.145l-.044.278-.07-.1c-.215-.313-.694-.417-1.172-.417-1.097 0-2.034.83-2.216 1.996-.095.581.04 1.137.37 1.525.302.356.735.505 1.25.505.883 0 1.373-.568 1.373-.568l-.044.275c-.016.106.065.2.17.2h.895a.288.288 0 00.284-.243l.537-3.397a.172.172 0 00-.17-.2zm-1.384 1.931a1.106 1.106 0 01-1.12.948c-.288 0-.518-.092-.666-.268-.147-.174-.203-.421-.156-.697.09-.562.547-.955 1.112-.955.282 0 .511.093.662.27.151.179.211.428.168.702zM26.356 22.817h-.998a.289.289 0 00-.238.126l-1.376 2.026-.583-1.947a.289.289 0 00-.276-.205h-.98a.173.173 0 00-.165.228l1.1 3.224-1.034 1.458a.173.173 0 00.141.273h.996a.287.287 0 00.237-.124l3.317-4.788a.173.173 0 00-.141-.271zM29.658 20.9h-2.073a.288.288 0 00-.285.242l-.838 5.315c-.016.105.065.2.17.2h1.064a.202.202 0 00.2-.17l.237-1.507a.288.288 0 01.284-.244h.656c1.366 0 2.154-.66 2.36-1.97.093-.572.003-1.022-.265-1.337-.294-.347-.816-.53-1.51-.53zm.239 1.94c-.113.744-.681.744-1.231.744h-.313l.22-1.389a.172.172 0 01.17-.146h.144c.374 0 .727 0 .91.214.108.127.142.316.1.577zM35.853 22.817h-.992a.172.172 0 00-.17.145l-.044.278-.07-.1c-.215-.313-.693-.417-1.172-.417-1.096 0-2.033.83-2.215 1.996-.095.581.04 1.137.37 1.525.302.356.734.505 1.25.505.883 0 1.373-.568 1.373-.568l-.044.275c-.017.106.064.2.17.2h.895a.288.288 0 00.284-.243l.537-3.397a.173.173 0 00-.172-.2zm-1.383 1.931a1.106 1.106 0 01-1.12.948c-.288 0-.519-.092-.666-.268-.147-.174-.202-.421-.156-.697.09-.562.547-.955 1.112-.955.282 0 .51.093.662.27.152.179.212.428.168.702zM37.023 21.045l-.85 5.412c-.017.105.064.2.17.2h.855a.288.288 0 00.285-.244l.839-5.314a.173.173 0 00-.17-.2h-.958a.173.173 0 00-.17.146z"
+                fill="#fff"
+              ></path>
+              <path
+                opacity=".68"
+                d="M30.116 7.424c.164-1.049-.001-1.762-.568-2.408C28.924 4.305 27.796 4 26.353 4h-4.189a.6.6 0 00-.591.506l-1.745 11.06a.36.36 0 00.356.415h2.585l-.178 1.132c-.03.19.117.363.31.363h2.18a.524.524 0 00.518-.443l.021-.11.41-2.604.027-.144a.524.524 0 01.518-.443h.326c2.111 0 3.765-.857 4.248-3.338.202-1.037.097-1.902-.437-2.51a2.077 2.077 0 00-.596-.46z"
+                fill="#fff"
+              ></path>
+              <path
+                opacity=".7"
+                d="M30.116 7.424c.164-1.049-.001-1.762-.568-2.408C28.924 4.305 27.796 4 26.353 4h-4.189a.6.6 0 00-.591.506l-1.745 11.06a.36.36 0 00.356.415h2.585l.65-4.119-.02.13a.597.597 0 01.59-.507h1.229c2.413 0 4.303-.98 4.855-3.816.017-.084.03-.165.043-.245z"
+                fill="#fff"
+              ></path>
+              <path
+                d="M24.117 7.438a.524.524 0 01.517-.443h3.284c.389 0 .751.026 1.083.08a4.757 4.757 0 01.537.119l.124.038c.163.054.315.118.454.192.165-1.048-.001-1.762-.568-2.408C28.924 4.305 27.796 4 26.353 4h-4.189a.6.6 0 00-.591.506l-1.745 11.06a.36.36 0 00.356.415h2.585l.65-4.119.698-4.424z"
+                fill="#fff"
+              ></path>
+            </svg>
+            <svg
+              width="50"
+              height="32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="50" height="32" rx="3" fill="#F7931A"></rect>
+              <path
+                d="M14.331 22.531c.3 0 .56.054.777.16.22.106.4.25.545.43.143.182.25.394.318.638s.103.506.103.786c0 .432-.08.839-.239 1.223a3.065 3.065 0 01-1.626 1.677c-.373.165-.78.248-1.217.248l-.296-.005a4.328 4.328 0 01-.481-.041 5.647 5.647 0 01-.577-.113 2.882 2.882 0 01-.576-.206l1.62-6.81 1.452-.225-.58 2.416c.124-.056.25-.1.374-.13.125-.032.26-.048.403-.048zm-1.218 4.01c.219 0 .425-.053.619-.159.194-.106.361-.248.501-.426a2.15 2.15 0 00.455-1.308c0-.3-.05-.533-.15-.702-.1-.169-.285-.253-.553-.253-.088 0-.201.016-.342.046a.853.853 0 00-.38.198l-.617 2.566.098.019c.027.006.058.01.088.014.032.003.069.005.113.005h.168zM17.579 27.563h-1.387l1.171-4.927h1.396l-1.18 4.927zm.675-5.527a.86.86 0 01-.525-.173c-.157-.115-.235-.292-.235-.53 0-.13.027-.254.08-.37a.99.99 0 01.515-.501.93.93 0 01.37-.075.86.86 0 01.525.173c.156.116.234.293.234.53a.875.875 0 01-.08.37.977.977 0 01-.884.576zM19.975 21.408l1.452-.225-.357 1.453h1.555l-.28 1.142h-1.546l-.412 1.724c-.038.143-.06.277-.066.402a.736.736 0 00.047.324c.037.09.104.16.201.21.097.05.236.076.417.076.15 0 .295-.015.436-.043.14-.028.282-.066.426-.117l.103 1.068a4.99 4.99 0 01-.608.178 3.51 3.51 0 01-.778.075c-.431 0-.765-.064-1.003-.192a1.113 1.113 0 01-.506-.525 1.668 1.668 0 01-.131-.763 4.93 4.93 0 01.131-.909l.919-3.878zM22.564 25.595c0-.424.069-.825.206-1.2a2.95 2.95 0 01.591-.984c.255-.28.566-.502.933-.664a2.98 2.98 0 011.221-.244 3.057 3.057 0 011.359.29l-.478 1.088a4.464 4.464 0 00-.389-.136 1.69 1.69 0 00-.492-.061c-.462 0-.828.16-1.1.477-.272.319-.408.747-.408 1.284 0 .319.068.576.206.773.137.197.39.295.759.295a2.589 2.589 0 00.975-.196l.103 1.114c-.175.068-.369.13-.58.183a3.231 3.231 0 01-.76.08c-.387 0-.715-.057-.983-.169a1.874 1.874 0 01-.665-.454 1.712 1.712 0 01-.38-.67 2.749 2.749 0 01-.118-.806zM28.724 27.693c-.331 0-.619-.05-.862-.15a1.59 1.59 0 01-.604-.421 1.822 1.822 0 01-.36-.642 2.59 2.59 0 01-.122-.819c0-.375.06-.75.182-1.125.121-.375.301-.712.54-1.011.235-.3.527-.545.87-.736.343-.19.737-.286 1.18-.286.325 0 .61.05.858.15.246.1.448.241.609.422.158.181.278.395.36.642.08.246.121.52.121.82 0 .373-.06.749-.177 1.124a3.25 3.25 0 01-.525 1.011c-.23.3-.52.545-.866.735a2.46 2.46 0 01-1.204.286zm.693-4.01a.876.876 0 00-.543.178 1.53 1.53 0 00-.393.45c-.107.182-.186.38-.24.595-.053.216-.079.42-.079.614 0 .312.05.556.15.731.1.174.28.262.543.262.206 0 .387-.06.544-.178.155-.119.286-.269.393-.45.106-.18.186-.38.24-.595.052-.215.078-.42.078-.613 0-.312-.05-.556-.15-.731-.1-.174-.281-.262-.543-.262zM33.003 27.563h-1.388l1.171-4.927h1.397l-1.18 4.927zm.673-5.527a.86.86 0 01-.524-.173c-.156-.115-.234-.292-.234-.53 0-.13.027-.254.08-.37a.975.975 0 01.515-.501.923.923 0 01.37-.075.86.86 0 01.524.173c.156.116.235.293.235.53a.888.888 0 01-.08.37.974.974 0 01-.886.576zM35.186 22.86c.105-.031.223-.068.35-.108a5.187 5.187 0 01.965-.196c.197-.023.421-.034.67-.034.732 0 1.236.213 1.514.638.278.424.326 1.005.146 1.742l-.638 2.66h-1.396l.618-2.604c.038-.163.068-.32.09-.473.022-.153.02-.287-.006-.403a.482.482 0 00-.172-.281c-.092-.072-.23-.108-.417-.108-.181 0-.365.02-.553.057l-.909 3.812h-1.396l1.134-4.702zM31.302 12.673a6.495 6.495 0 11-12.605-3.144 6.495 6.495 0 0112.605 3.144z"
+                fill="#fff"
+              ></path>
+              <path
+                d="M27.864 10.175c.13-.864-.528-1.329-1.428-1.639l.291-1.17-.712-.178-.285 1.14c-.187-.047-.38-.09-.57-.134l.285-1.148-.712-.178-.292 1.17c-.155-.034-.307-.07-.455-.106v-.004l-.983-.245-.19.761s.53.121.518.129c.29.072.341.263.333.414l-.333 1.334c.02.005.046.013.074.024l-.075-.019-.466 1.87c-.036.087-.125.218-.327.168.007.01-.518-.129-.518-.129l-.354.816.928.231c.172.043.341.089.508.131l-.295 1.185.712.177.292-1.171c.195.052.383.101.568.147l-.291 1.166.713.178.295-1.182c1.216.23 2.13.137 2.514-.962.31-.886-.015-1.396-.655-1.729.466-.107.817-.414.91-1.046zm-1.628 2.284c-.22.885-1.711.407-2.194.287l.391-1.57c.483.121 2.033.36 1.803 1.283zm.22-2.296c-.2.805-1.441.396-1.844.296l.355-1.424c.403.1 1.699.288 1.49 1.128z"
+                fill="#F7931A"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col-reverse justify-between border-t pt-5 pb-10 lg:flex-row"
+      >
+        <div class="text-sm text-gray-600">
+          &copy; Copyright <strong><span>FidaHost</span></strong>
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          All Rights Reserved
+        </div>
+        <ul
+          class="mb-3 flex flex-col space-y-2 sm:flex-row sm:space-y-0 sm:space-x-5 lg:mb-0"
+        >
+          <li>
+            <a
+              href="/"
+              class="text-sm text-gray-600 transition-colors duration-300 hover:text-matisse-400"
+              >Privacy Policy</a
+            >
+          </li>
+          <li>
+            <a
+              href="/"
+              class="text-sm text-gray-600 transition-colors duration-300 hover:text-matisse-400"
+              >Terms &amp; Conditions</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End of Footer -->
+
+    <!-- JS scripts -->
+    <script src="/assets/js/main.js"></script>
+    <script type="text/javascript" src="/assets/js/dedi.js"></script>
+  </body>
+</html>
