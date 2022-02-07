@@ -1530,10 +1530,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 400;
 }
 
-.uppercase {
-  text-transform: uppercase;
-}
-
 .leading-normal {
   line-height: 1.5;
 }
@@ -2472,6 +2468,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:pr-8 {
     padding-right: 2rem;
+  }
+
+  .lg\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .lg\:text-left {
