@@ -1290,24 +1290,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(0 69 143 / var(--tw-bg-opacity));
 }
 
-.bg-matisse-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(120 168 230 / var(--tw-bg-opacity));
-}
-
 .bg-wh-bluDark02 {
   --tw-bg-opacity: 1;
   background-color: rgb(0 59 122 / var(--tw-bg-opacity));
 }
 
+.bg-matisse-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 168 230 / var(--tw-bg-opacity));
+}
+
 .bg-wh-green {
   --tw-bg-opacity: 1;
   background-color: rgb(23 191 82 / var(--tw-bg-opacity));
-}
-
-.bg-zinc-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(113 113 122 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-90 {
