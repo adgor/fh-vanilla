@@ -723,6 +723,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 4rem;
 }
 
+.ml-40 {
+  margin-left: 10rem;
+}
+
+.ml-20 {
+  margin-left: 5rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.ml-28 {
+  margin-left: 7rem;
+}
+
 .block {
   display: block;
 }
@@ -1221,19 +1245,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(251 252 254 / var(--tw-border-opacity));
 }
 
-.border-red-800 {
+.border-gray-800 {
   --tw-border-opacity: 1;
-  border-color: rgb(153 27 27 / var(--tw-border-opacity));
+  border-color: rgb(31 41 55 / var(--tw-border-opacity));
 }
 
 .border-matisse-200 {
   --tw-border-opacity: 1;
   border-color: rgb(120 168 230 / var(--tw-border-opacity));
-}
-
-.border-gray-800 {
-  --tw-border-opacity: 1;
-  border-color: rgb(31 41 55 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -1309,6 +1328,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-wh-green {
   --tw-bg-opacity: 1;
   background-color: rgb(23 191 82 / var(--tw-bg-opacity));
+}
+
+.bg-gray-900\/75 {
+  background-color: rgb(17 24 39 / 0.75);
+}
+
+.bg-gray-900\/80 {
+  background-color: rgb(17 24 39 / 0.8);
+}
+
+.bg-gray-900\/90 {
+  background-color: rgb(17 24 39 / 0.9);
+}
+
+.bg-gray-900\/10 {
+  background-color: rgb(17 24 39 / 0.1);
 }
 
 .bg-opacity-90 {
@@ -2274,6 +2309,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
+  .md\:inset-x-5 {
+    left: 1.25rem;
+    right: 1.25rem;
+  }
+
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -2303,6 +2343,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 0.5rem;
   }
 
+  .md\:ml-4 {
+    margin-left: 1rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -2323,8 +2367,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
   .md\:justify-center {
     justify-content: center;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
+  .md\:justify-evenly {
+    justify-content: space-evenly;
   }
 
   .md\:gap-x-8 {
@@ -2340,6 +2396,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-x-16 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(4rem * var(--tw-space-x-reverse));
+    margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:px-24 {
@@ -2429,6 +2491,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 0px;
   }
 
+  .lg\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .lg\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -2507,6 +2577,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .lg\:space-y-3 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+  }
+
   .lg\:divide-x > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-x-reverse: 0;
     border-right-width: calc(1px * var(--tw-divide-x-reverse));
@@ -2551,6 +2627,26 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-bottom: 4rem;
   }
 
+  .lg\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lg\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .lg\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
   .lg\:pr-8 {
     padding-right: 2rem;
   }
@@ -2565,6 +2661,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:text-center {
     text-align: center;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .lg\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .lg\:hover\:-translate-y-2:hover {
