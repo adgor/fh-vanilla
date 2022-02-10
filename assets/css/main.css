@@ -2298,12 +2298,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 0.5rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
   }
 
   .md\:grid {
     display: grid;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:max-w-full {
@@ -2386,6 +2394,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:font-bold {
     font-weight: 700;
+  }
+
+  .md\:font-semibold {
+    font-weight: 600;
   }
 }
 
