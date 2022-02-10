@@ -568,6 +568,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 0;
 }
 
+.order-1 {
+  order: 1;
+}
+
+.order-first {
+  order: -9999;
+}
+
 .-m-3 {
   margin: -0.75rem;
 }
@@ -869,6 +877,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-80 {
   width: 20rem;
+}
+
+.w-1 {
+  width: 0.25rem;
 }
 
 .min-w-0 {
@@ -2232,6 +2244,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding: 2.5rem;
   }
 
+  .sm\:p-1 {
+    padding: 0.25rem;
+  }
+
+  .sm\:p-4 {
+    padding: 1rem;
+  }
+
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -2250,6 +2270,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .sm\:text-center {
@@ -2273,6 +2298,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
+  .md\:order-2 {
+    order: 2;
+  }
+
+  .md\:order-last {
+    order: 9999;
+  }
+
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -2312,6 +2345,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:max-w-full {
@@ -2394,10 +2431,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:font-bold {
     font-weight: 700;
-  }
-
-  .md\:font-semibold {
-    font-weight: 600;
   }
 }
 
