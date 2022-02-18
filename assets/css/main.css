@@ -1485,24 +1485,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(184 186 190 / var(--tw-border-opacity));
 }
 
-.border-matisse-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(120 168 230 / var(--tw-border-opacity));
-}
-
 .border-gray-700 {
   --tw-border-opacity: 1;
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
 }
 
-.border-red-500 {
+.border-matisse-200 {
   --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
-}
-
-.border-gray-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+  border-color: rgb(120 168 230 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -1605,21 +1595,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(23 191 82 / var(--tw-bg-opacity));
 }
 
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-
-.bg-matisse-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 43 80 / var(--tw-bg-opacity));
-}
-
-.bg-matisse-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-90 {
   --tw-bg-opacity: 0.9;
 }
@@ -1640,10 +1615,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
 .bg-gradient-to-tr {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
@@ -1656,11 +1627,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .from-matisse-100 {
   --tw-gradient-from: #A3C4EE;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(163 196 238 / 0));
-}
-
-.from-matisse-600 {
-  --tw-gradient-from: #17437B;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(23 67 123 / 0));
 }
 
 .from-matisse-800 {
@@ -1676,20 +1642,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-to: transparent;
 }
 
-.to-matisse-400 {
-  --tw-gradient-to: #2771D1;
-}
-
 .to-matisse-900 {
   --tw-gradient-to: #000000;
-}
-
-.to-matisse-500 {
-  --tw-gradient-to: #1F5AA6;
-}
-
-.to-gray-500 {
-  --tw-gradient-to: #6b7280;
 }
 
 .bg-cover {
@@ -1960,11 +1914,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -2201,11 +2150,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
-.text-red-400 {
-  --tw-text-opacity: 1;
-  color: rgb(248 113 113 / var(--tw-text-opacity));
 }
 
 .line-through {
@@ -3174,6 +3118,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .lg\:py-28 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .lg\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .lg\:pr-8 {
