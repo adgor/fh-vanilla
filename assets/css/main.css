@@ -1635,6 +1635,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(185 210 242 / var(--tw-bg-opacity));
 }
 
+.bg-matisse-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 43 80 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-90 {
   --tw-bg-opacity: 0.9;
 }
@@ -2681,6 +2686,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .group:hover .group-hover\:text-matisse-200 {
   --tw-text-opacity: 1;
   color: rgb(120 168 230 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:text-matisse-700 {
+  --tw-text-opacity: 1;
+  color: rgb(15 43 80 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
