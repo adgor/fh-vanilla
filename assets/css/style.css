@@ -5,13 +5,13 @@
 .text-highlight-bottom {
   background-image: linear-gradient(
     to bottom,
-    rgba(214, 216, 229, 0.5) 0,
-    rgba(214, 216, 229, 0.5) 100%
+    rgba(245, 202, 153, 0.5) 0,
+    rgba(245, 202, 153, 0.5) 100%
   );
   background-repeat: repeat-x;
 }
 .highlight-position {
-  background-position-x: left;
   background-position-y: 1em;
+  background-position-x: left;
   background-size: 1em 0.2em;
 }
