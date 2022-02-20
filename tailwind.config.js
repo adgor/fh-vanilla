@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     // Example content paths...
@@ -6,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        miri: ["Helvetica", ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         icon: {
           dark: "#6F8BA4",

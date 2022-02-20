@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: "Helvetica";
+    src: url("/assets/fonts/roman.otf") format("otf");
+  }
+}
+
 @layer utilities {
   .animation-delay-2000 {
     animation-delay: 2s;
