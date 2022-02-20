@@ -1667,6 +1667,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(224 195 252 / 0));
 }
 
+.from-matisse-200 {
+  --tw-gradient-from: #78A8E6;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(120 168 230 / 0));
+}
+
 .via-matisse-700 {
   --tw-gradient-stops: var(--tw-gradient-from), #0F2B50, var(--tw-gradient-to, rgb(15 43 80 / 0));
 }
