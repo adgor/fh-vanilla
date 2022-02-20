@@ -1672,6 +1672,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(120 168 230 / 0));
 }
 
+.from-zircon-500 {
+  --tw-gradient-from: #f5f8fd;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(245 248 253 / 0));
+}
+
 .via-matisse-700 {
   --tw-gradient-stops: var(--tw-gradient-from), #0F2B50, var(--tw-gradient-to, rgb(15 43 80 / 0));
 }
