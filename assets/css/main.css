@@ -1510,6 +1510,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(39 113 209 / var(--tw-border-opacity));
 }
 
+.border-\[\#00A7F7\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 167 247 / var(--tw-border-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1648,6 +1653,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-matisse-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(15 43 80 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#00A4E8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 164 232 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#00A7F7\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 167 247 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-90 {
@@ -2243,6 +2258,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
+.text-\[\#00A4E8\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 164 232 / var(--tw-text-opacity));
+}
+
+.text-\[\#00A7F7\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 167 247 / var(--tw-text-opacity));
+}
+
 .line-through {
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
@@ -2488,6 +2513,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(39 113 209 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[\#00A4E8\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 164 232 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#00A7F7\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 167 247 / var(--tw-bg-opacity));
+}
+
 .hover\:text-gray-100:hover {
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
@@ -2716,6 +2751,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .group:hover .group-hover\:text-matisse-400 {
   --tw-text-opacity: 1;
   color: rgb(39 113 209 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:text-\[\#00A4E8\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 164 232 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:text-\[\#00A7F7\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 167 247 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
