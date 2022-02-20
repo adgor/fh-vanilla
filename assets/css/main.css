@@ -1639,6 +1639,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
 
+.bg-gradient-to-l {
+  background-image: linear-gradient(to left, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
 .from-gray-900 {
   --tw-gradient-from: #111827;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(17 24 39 / 0));
@@ -1654,6 +1662,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(7 20 37 / 0));
 }
 
+.from-\[\#E0C3FC\] {
+  --tw-gradient-from: #E0C3FC;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(224 195 252 / 0));
+}
+
 .via-matisse-700 {
   --tw-gradient-stops: var(--tw-gradient-from), #0F2B50, var(--tw-gradient-to, rgb(15 43 80 / 0));
 }
@@ -1664,6 +1677,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .to-matisse-900 {
   --tw-gradient-to: #000000;
+}
+
+.to-white {
+  --tw-gradient-to: #fff;
+}
+
+.to-\[\#8EC5FC\] {
+  --tw-gradient-to: #8EC5FC;
 }
 
 .bg-cover {
