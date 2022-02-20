@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      textDecorationThickness: {
+        6: "16px",
+      },
       fontFamily: {
         miri: ["Helvetica", ...defaultTheme.fontFamily.sans],
       },

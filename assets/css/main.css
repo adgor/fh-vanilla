@@ -2229,11 +2229,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
-.underline {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-}
-
 .line-through {
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
