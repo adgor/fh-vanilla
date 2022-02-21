@@ -10,6 +10,744 @@
   </head>
   <body>
     <!-- Navigation -->
+    <div class="relative">
+      <div
+        class="relative bg-opacity-75 bg-gradient-to-r from-purple-700 to-[#84C0FC]"
+      >
+        <nav role="navigation" class="hidden xl:block">
+          <div class="container mx-auto px-6 py-2 xl:py-0">
+            <div class="flex items-center">
+              <div class="inset-y-0 left-0 flex items-center xl:hidden">
+                <div
+                  class="inline-flex items-center justify-center rounded-md p-2 text-white transition duration-150 ease-in-out hover:text-gray-300 focus:outline-none"
+                >
+                  <div
+                    class="close-m-menu hidden text-white"
+                    onclick="MenuHandler(this,false)"
+                  >
+                    <svg
+                      aria-label="Close"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <line x1="18" y1="6" x2="6" y2="18" />
+                      <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="flex w-full items-center justify-end rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto sm:items-stretch sm:justify-start"
+              >
+                <div class="flex items-center">
+                  <h2
+                    class="hidden px-3 text-base font-bold leading-normal text-white sm:block"
+                  >
+                    FidaHost
+                  </h2>
+                </div>
+              </button>
+
+              <div class="flex w-full justify-between">
+                <div class="hidden md:mr-6 xl:mr-16 xl:flex">
+                  <a
+                    href="/"
+                    class="hover:text-gray-200-300 flex items-center border-transparent px-3 py-6 leading-5 text-white transition duration-200"
+                  >
+                    Home
+                  </a>
+
+                  <div class="group dropdown relative cursor-pointer">
+                    <a
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-200 hover:text-gray-200 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                    >
+                      Hosting
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-4 w-4 group-hover:rotate-180 group-hover:transform"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </a>
+                    <div
+                      class="dropdown-menu absolute inset-y-14 hidden h-auto w-screen max-w-md group-hover:block"
+                    >
+                      <div class="ml-6 -mb-2 inline-block w-16 overflow-hidden">
+                        <div
+                          class="h-3 w-3 origin-bottom-left rotate-45 transform bg-white"
+                        ></div>
+                      </div>
+                      <!-- <ul class="top-0 w-48 px-6 py-8 bg-white shadow"> -->
+                      <div
+                        class="relative grid w-auto gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8"
+                      >
+                        <a
+                          href="/shared-hosting.html"
+                          class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                        >
+                          <!-- Heroicon name: outline/chart-bar -->
+                          <svg
+                            class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                            />
+                          </svg>
+                          <div class="ml-4">
+                            <p class="text-base font-medium text-gray-900">
+                              Web Hosting
+                            </p>
+                            <p class="mt-1 text-sm text-gray-500">
+                              A Simple & Complete solution to start you website
+                            </p>
+                          </div>
+                        </a>
+                        <a
+                          href="/business-hosting.html"
+                          class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                        >
+                          <!-- Heroicon name: outline/cursor-click -->
+                          <svg
+                            class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
+                            />
+                          </svg>
+                          <div class="ml-4">
+                            <p class="text-base font-medium text-gray-900">
+                              Business Hosting
+                            </p>
+                            <p class="mt-1 text-sm text-gray-500">
+                              A Powerful & Complete solution for you business
+                              without technical pain
+                            </p>
+                          </div>
+                        </a>
+                        <a
+                          href="/email-hosting.html"
+                          class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                        >
+                          <!-- Heroicon name: outline/shield-check -->
+                          <svg
+                            class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                            />
+                          </svg>
+                          <div class="ml-4">
+                            <p class="text-base font-medium text-gray-900">
+                              Email Hosting
+                            </p>
+                            <p class="mt-1 text-sm text-gray-500">
+                              A simple & Professional Email Hosting Solution for
+                              your Business
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- </ul> -->
+                    </div>
+                  </div>
+                  <div class="group dropdown relative cursor-pointer">
+                    <a
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-200 hover:text-gray-200 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                    >
+                      Virtual Servers
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-4 w-4 group-hover:rotate-180 group-hover:transform"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clip-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </a>
+
+                    <div
+                      class="dropdown-menu absolute inset-y-14 hidden h-auto w-screen max-w-md group-hover:block"
+                    >
+                      <div class="ml-6 -mb-2 inline-block w-16 overflow-hidden">
+                        <div
+                          class="h-3 w-3 origin-bottom-left rotate-45 transform bg-white"
+                        ></div>
+                      </div>
+                      <!-- <ul class="top-0 w-48 px-6 py-8 bg-white shadow"> -->
+                      <div
+                        class="relative grid w-auto gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8"
+                      >
+                        <a
+                          href="/vps-linux.html"
+                          class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                        >
+                          <!-- Heroicon name: outline/chart-bar -->
+                          <svg
+                            class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                            />
+                          </svg>
+                          <div class="ml-4">
+                            <p class="text-base font-medium text-gray-900">
+                              Linux VPS
+                            </p>
+                            <p class="mt-1 text-sm text-gray-500">
+                              Fast and affordable VPS hosting with Linux
+                              operating system
+                            </p>
+                          </div>
+                        </a>
+
+                        <a
+                          href="/vps-windows.html"
+                          class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                        >
+                          <!-- Heroicon name: outline/cursor-click -->
+                          <svg
+                            class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
+                            />
+                          </svg>
+                          <div class="ml-4">
+                            <p class="text-base font-medium text-gray-900">
+                              Windows VPS
+                            </p>
+                            <p class="mt-1 text-sm text-gray-500">
+                              Fast and affordable VPS hosting with Windows
+                              operating system
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- </ul> -->
+                    </div>
+                  </div>
+                  <a
+                    href="/dedicated-servers.html"
+                    class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-200 hover:text-gray-200 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                  >
+                    Dedicated Servers
+                  </a>
+                  <a
+                    href="/domains.html"
+                    class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-200 hover:text-gray-200 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                  >
+                    Domains
+                  </a>
+                </div>
+                <div
+                  class="hidden items-center justify-end md:flex md:flex-1 lg:w-0"
+                >
+                  <a
+                    href="#"
+                    class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-wh-light px-4 py-2 text-sm font-medium text-white shadow-sm hover:border-white hover:text-gray-100"
+                  >
+                    Sign in
+                  </a>
+                  <a
+                    href="#"
+                    class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-matisse-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-matisse-700"
+                  >
+                    Sign up
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <nav>
+          <div
+            class="top-0 flex w-full items-center justify-between bg-white px-6 py-4 text-pink-600 xl:hidden"
+          >
+            <div
+              aria-label="logo"
+              role="img"
+              tabindex="0"
+              class="w-24 focus:outline-none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="43"
+                height="44"
+                viewBox="0 0 43 44"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M37.8735 0C36.1688 0 34.7818 1.37956 34.7818 3.0751C34.7818 4.77063 36.1688 6.15019 37.8735 6.15019C39.5782 6.15019 40.9653 4.77063 40.9653 3.0751C40.9653 1.37956 39.5782 0 37.8735 0ZM37.8735 4.61264C37.021 4.61264 36.3277 3.92305 36.3277 3.0751C36.3277 2.22714 37.021 1.53755 37.8735 1.53755C38.7261 1.53755 39.4194 2.22714 39.4194 3.0751C39.4194 3.92305 38.7261 4.61264 37.8735 4.61264ZM26.6663 1.0513C26.1828 1.0513 25.7909 1.44107 25.7909 1.92193C25.7909 2.4028 26.1828 2.79238 26.6663 2.79238C27.1497 2.79238 27.5416 2.40261 27.5416 1.92193C27.5416 1.44107 27.1497 1.0513 26.6663 1.0513ZM43 13.4535C43 13.9342 42.6081 14.324 42.1247 14.324C41.6412 14.324 41.2493 13.9342 41.2493 13.4535C41.2493 12.9727 41.6412 12.5829 42.1247 12.5829C42.6081 12.5829 43 12.9729 43 13.4535ZM18.1654 2.59019L35.1698 12.4044C35.4079 12.5418 35.5548 12.7951 35.5548 13.0692V33.0573C35.5548 33.3273 35.4123 33.5772 35.1803 33.7161L18.1758 43.8901C18.0533 43.9633 17.915 44 17.7774 44C17.6398 44 17.5016 43.9633 17.3789 43.8901L0.374484 33.7161C0.142219 33.5772 0 33.3271 0 33.0573V13.0692C0 12.7951 0.146857 12.5418 0.384919 12.4044L17.3894 2.59019C17.6296 2.45124 17.9254 2.45124 18.1654 2.59019ZM17.7774 4.14388L33.2524 13.0751L23.0207 19.0887L18.5503 16.4735V12.3004C18.5503 11.8758 18.2042 11.5316 17.7774 11.5316C17.3505 11.5316 17.0044 11.8758 17.0044 12.3004V16.4735L11.9752 19.4158C11.7389 19.554 11.5939 19.8057 11.5939 20.0783V25.8047L1.54586 31.7102V13.5118L17.7774 4.14388ZM2.28227 33.0632L17.7774 42.3341L34.0091 32.6225V14.4162L23.961 20.322V26.4081C23.961 26.6807 23.8161 26.9325 23.5798 27.0706L18.5505 30.0125V33.826C18.5505 34.2506 18.2044 34.5948 17.7776 34.5948C17.3507 34.5948 17.0046 34.2506 17.0046 33.826V30.0125L12.2274 27.2182L2.28227 33.0632Z"
+                  fill="#667EEA"
+                />
+              </svg>
+            </div>
+            <div class="flex items-center">
+              <button
+                id="menu"
+                aria-label="open menu"
+                class="rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600"
+                onclick="sidebarHandler(true)"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-menu-2"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <line x1="4" y1="6" x2="20" y2="6" />
+                  <line x1="4" y1="12" x2="20" y2="12" />
+                  <line x1="4" y1="18" x2="20" y2="18" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!--Mobile responsive sidebar-->
+          <div
+            class="absolute top-0 z-50 h-full w-full -translate-x-full transform xl:hidden"
+            id="mobile-nav"
+          >
+            <div class="h-full w-full" onclick="sidebarHandler(false)"></div>
+            <div
+              class="fixed top-0 z-40 h-screen w-64 flex-col justify-between overflow-y-auto bg-white pb-4 shadow transition duration-150 ease-in-out xl:hidden"
+            >
+              <div class="h-full px-6">
+                <div class="flex h-full w-full flex-col justify-between">
+                  <div>
+                    <div class="mt-6 flex w-full items-center justify-between">
+                      <div class="flex w-full items-center justify-between">
+                        <div class="flex items-center">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="43"
+                            height="44"
+                            viewBox="0 0 43 44"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M37.8735 0C36.1688 0 34.7818 1.37956 34.7818 3.0751C34.7818 4.77063 36.1688 6.15019 37.8735 6.15019C39.5782 6.15019 40.9653 4.77063 40.9653 3.0751C40.9653 1.37956 39.5782 0 37.8735 0ZM37.8735 4.61264C37.021 4.61264 36.3277 3.92305 36.3277 3.0751C36.3277 2.22714 37.021 1.53755 37.8735 1.53755C38.7261 1.53755 39.4194 2.22714 39.4194 3.0751C39.4194 3.92305 38.7261 4.61264 37.8735 4.61264ZM26.6663 1.0513C26.1828 1.0513 25.7909 1.44107 25.7909 1.92193C25.7909 2.4028 26.1828 2.79238 26.6663 2.79238C27.1497 2.79238 27.5416 2.40261 27.5416 1.92193C27.5416 1.44107 27.1497 1.0513 26.6663 1.0513ZM43 13.4535C43 13.9342 42.6081 14.324 42.1247 14.324C41.6412 14.324 41.2493 13.9342 41.2493 13.4535C41.2493 12.9727 41.6412 12.5829 42.1247 12.5829C42.6081 12.5829 43 12.9729 43 13.4535ZM18.1654 2.59019L35.1698 12.4044C35.4079 12.5418 35.5548 12.7951 35.5548 13.0692V33.0573C35.5548 33.3273 35.4123 33.5772 35.1803 33.7161L18.1758 43.8901C18.0533 43.9633 17.915 44 17.7774 44C17.6398 44 17.5016 43.9633 17.3789 43.8901L0.374484 33.7161C0.142219 33.5772 0 33.3271 0 33.0573V13.0692C0 12.7951 0.146857 12.5418 0.384919 12.4044L17.3894 2.59019C17.6296 2.45124 17.9254 2.45124 18.1654 2.59019ZM17.7774 4.14388L33.2524 13.0751L23.0207 19.0887L18.5503 16.4735V12.3004C18.5503 11.8758 18.2042 11.5316 17.7774 11.5316C17.3505 11.5316 17.0044 11.8758 17.0044 12.3004V16.4735L11.9752 19.4158C11.7389 19.554 11.5939 19.8057 11.5939 20.0783V25.8047L1.54586 31.7102V13.5118L17.7774 4.14388ZM2.28227 33.0632L17.7774 42.3341L34.0091 32.6225V14.4162L23.961 20.322V26.4081C23.961 26.6807 23.8161 26.9325 23.5798 27.0706L18.5505 30.0125V33.826C18.5505 34.2506 18.2044 34.5948 17.7776 34.5948C17.3507 34.5948 17.0046 34.2506 17.0046 33.826V30.0125L12.2274 27.2182L2.28227 33.0632Z"
+                              fill="#667EEA"
+                            ></path>
+                          </svg>
+                          <p
+                            tabindex="0"
+                            class="ml-3 text-base text-gray-800 focus:outline-none md:text-2xl"
+                          >
+                            FidaHost
+                          </p>
+                        </div>
+                        <button
+                          id="cross"
+                          aria-label="close menu"
+                          class="rounded-md text-gray-800 focus:outline-none focus:ring-2"
+                          onclick="sidebarHandler(false)"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-x"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path stroke="none" d="M0 0h24v24H0z"></path>
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <!-- mobile nav links -->
+                    <div class="mt-6 flex flex-col">
+                      <a
+                        href="/"
+                        class="flex items-center border-b-2 border-transparent border-matisse-700 bg-gray-100 px-3 py-6 leading-5 text-matisse-700 transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                      >
+                        Home
+                      </a>
+                      <div class="group dropdown relative cursor-pointer">
+                        <a
+                          class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                        >
+                          Hosting
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-4 w-4 group-hover:rotate-180 group-hover:transform"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                        <div
+                          class="dropdown-menu relative hidden h-auto group-hover:block"
+                        >
+                          <div class="relative grid w-auto gap-6 px-5 py-2">
+                            <a
+                              href="/shared-hosting.html"
+                              class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                            >
+                              <!-- Heroicon name: outline/chart-bar -->
+                              <svg
+                                class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                                />
+                              </svg>
+                              <div class="ml-4">
+                                <p class="text-base text-gray-900">
+                                  Web Hosting
+                                </p>
+                              </div>
+                            </a>
+                            <a
+                              href="/business-hosting.html"
+                              class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                            >
+                              <!-- Heroicon name: outline/cursor-click -->
+                              <svg
+                                class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
+                                />
+                              </svg>
+                              <div class="ml-4">
+                                <p class="text-base text-gray-900">
+                                  Business Hosting
+                                </p>
+                              </div>
+                            </a>
+                            <a
+                              href="/email-hosting.html"
+                              class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                            >
+                              <!-- Heroicon name: outline/shield-check -->
+                              <svg
+                                class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                                />
+                              </svg>
+                              <div class="ml-4">
+                                <p class="text-base text-gray-900">
+                                  Email Hosting
+                                </p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="group dropdown relative cursor-pointer">
+                        <a
+                          class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                        >
+                          Virtual Servers
+                          <span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-4 w-4 group-hover:rotate-180 group-hover:transform"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"
+                              />
+                            </svg>
+                          </span>
+                        </a>
+                        <div
+                          class="dropdown-menu relative hidden h-auto group-hover:block"
+                        >
+                          <div class="relative grid w-auto gap-6 px-5 py-2">
+                            <a
+                              href="/vps-linux.html"
+                              class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                            >
+                              <!-- Heroicon name: outline/chart-bar -->
+                              <svg
+                                class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                                />
+                              </svg>
+                              <div class="ml-4">
+                                <p class="text-base text-gray-900">Linux VPS</p>
+                              </div>
+                            </a>
+                            <a
+                              href="/vps-windows.html"
+                              class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                            >
+                              <!-- Heroicon name: outline/cursor-click -->
+                              <svg
+                                class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
+                                />
+                              </svg>
+                              <div class="ml-4">
+                                <p class="text-base text-gray-900">
+                                  Windows VPS
+                                </p>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <a
+                        href="/dedicated-servers.html"
+                        class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                      >
+                        Dedicated Servers
+                      </a>
+                      <a
+                        href="/domains.html"
+                        class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                      >
+                        Domains
+                      </a>
+                      <a
+                        href="/web-design.html"
+                        class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                      >
+                        Web Design
+                      </a>
+                      <a
+                        href="/affiliates.html"
+                        class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                      >
+                        Affiliates
+                      </a>
+                    </div>
+                  </div>
+                  <div class="w-full pt-4">
+                    <div class="border-t border-gray-300">
+                      <div class="mt-6">
+                        <a
+                          href="#"
+                          class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                        >
+                          Sign up
+                        </a>
+                        <p
+                          class="mt-6 text-center text-base font-medium text-gray-500"
+                        >
+                          Existing customer?
+                          <a
+                            href="#"
+                            class="text-indigo-600 hover:text-indigo-500"
+                          >
+                            Sign in
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <svg
+          class="absolute inset-x-0 bottom-0 text-white"
+          viewBox="0 0 1160 163"
+        >
+          <path
+            fill="currentColor"
+            d="M-164 13L-104 39.7C-44 66 76 120 196 141C316 162 436 152 556 119.7C676 88 796 34 916 13C1036 -8 1156 2 1216 7.7L1276 13V162.5H1216C1156 162.5 1036 162.5 916 162.5C796 162.5 676 162.5 556 162.5C436 162.5 316 162.5 196 162.5C76 162.5 -44 162.5 -104 162.5H-164V13Z"
+          ></path>
+        </svg>
+        <div
+          class="relative mx-auto overflow-hidden px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
+        >
+          <div class="grid items-center gap-10 lg:grid-cols-2">
+            <div class="mb-12 w-full">
+              <h2
+                class="mb-6 max-w-lg font-miri text-3xl font-extrabold tracking-tight text-white sm:text-5xl"
+              >
+                Unmatched
+                <br />
+                <span class="relative inline-block px-2">
+                  <div
+                    class="absolute inset-0 -skew-x-12 transform bg-[#84C0FC]"
+                  ></div>
+                  <span class="relative leading-tight text-matisse-700"
+                    >Web Hosting</span
+                  > </span
+                ><br />
+                You Can Rely ON.
+              </h2>
+              <p class="mb-4 max-w-xl text-base text-gray-200 md:text-lg">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudan, totam rem aperiam, eaque ipsa
+                quae.
+              </p>
+              <p
+                class="mt-8 mb-4 max-w-xs text-base leading-7 text-wh-light md:text-lg"
+              >
+                Starting from <span class="line-through">$7.27 </span> $0.99/mo
+              </p>
+              <span class="group relative">
+                <div
+                  class="absolute inset-3 rounded-lg bg-[#84C0FC] blur-xl transition duration-200 group-hover:inset-0 group-hover:bg-[#84C0FC] group-hover:duration-1000"
+                ></div>
+                <a
+                  class="group relative inline-flex items-center rounded-lg bg-wh-light px-8 py-4 font-semibold capitalize leading-4 text-matisse-700"
+                  href="/#contact"
+                  >get started now<span class="ml-2 flex items-center"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="text-brand-jonquil h-4 w-4 transform duration-700 ease-in-out group-hover:translate-x-1"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path></svg></span
+                ></a>
+              </span>
+            </div>
+            <div class="w-full">
+              <img src="assets/svg/one.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="overflow-hidden bg-gray-900">
       <div
         class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
@@ -1407,7 +2145,7 @@
               <div class="flex items-center">
                 <div class="inset-y-0 left-0 flex items-center xl:hidden">
                   <div
-                    class="inline-flex items-center justify-center rounded-md p-2 text-gray-100 transition duration-150 ease-in-out hover:text-white focus:outline-none"
+                    class="inline-flex items-center justify-center rounded-md p-2 text-white transition duration-150 ease-in-out hover:text-white focus:outline-none"
                   >
                     <div
                       class="close-m-menu hidden text-gray-100"
@@ -1683,7 +2421,7 @@
                     </div>
                     <a
                       href="/dedicated-servers.html"
-                      class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-gray-200 transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                     >
                       Dedicated Servers
                     </a>
@@ -2023,7 +2761,7 @@
                         </div>
                         <a
                           href="/dedicated-servers.html"
-                          class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-gray-100 transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                          class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                         >
                           Dedicated Servers
                         </a>
