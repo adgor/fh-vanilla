@@ -884,6 +884,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 3rem;
 }
 
+.-mb-1 {
+  margin-bottom: -0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -1988,6 +1992,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1rem;
 }
 
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2303,6 +2311,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.text-\[\#F0FAFF\] {
+  --tw-text-opacity: 1;
+  color: rgb(240 250 255 / var(--tw-text-opacity));
 }
 
 .line-through {
