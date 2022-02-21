@@ -1644,6 +1644,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(23 191 82 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#06155a\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(6 21 90 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-90 {
   --tw-bg-opacity: 0.9;
 }
