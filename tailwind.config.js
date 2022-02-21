@@ -12,7 +12,7 @@ module.exports = {
         6: "16px",
       },
       fontFamily: {
-        miri: ["Helvetica"],
+        poppins: "'Poppins', sans-serif;",
       },
       colors: {
         icon: {
