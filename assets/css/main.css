@@ -1976,7 +1976,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .font-poppins {
-  font-family: 'Poppins', sans-serif;;
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-openSans {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .text-base {

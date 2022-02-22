@@ -12,7 +12,8 @@ module.exports = {
         6: "16px",
       },
       fontFamily: {
-        poppins: "'Poppins', sans-serif;",
+        poppins: "'Poppins', sans-serif",
+        openSans: "'Open Sans', sans-serif",
       },
       colors: {
         icon: {
