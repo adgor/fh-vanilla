@@ -20,11 +20,11 @@
     <div
       class="relative bg-gradient-to-r from-matisse-700 to-matisse-300 font-poppins"
     >
-      <nav role="navigation" class="hidden xl:block">
+      <nav role="navigation" class="relative z-50 hidden xl:block">
         <div
           class="container relative mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20 xl:py-0"
         >
-          <div class="flex items-center">
+          <div class="flex h-16 items-center">
             <div class="inset-y-0 left-0 flex items-center xl:hidden">
               <div
                 class="inline-flex items-center justify-center rounded-md p-2 text-white transition duration-150 ease-in-out hover:text-gray-300 focus:outline-none"
@@ -63,19 +63,18 @@
                 </h2>
               </div>
             </button>
-
-            <div class="flex w-full justify-between">
+            <div class="flex w-full items-center justify-between">
               <div class="hidden md:mr-6 xl:mr-16 xl:flex">
                 <a
                   href="/"
-                  class="flex items-center border-transparent px-3 py-6 font-medium leading-5 text-white transition duration-200 hover:text-gray-200"
+                  class="flex items-center px-3 py-2 font-medium leading-5 text-white transition duration-200"
                 >
                   Home
                 </a>
 
                 <div class="group dropdown relative cursor-pointer">
                   <a
-                    class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-200 hover:text-gray-200 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                    class="flex items-center px-3 py-2 font-medium leading-5 text-gray-300 transition duration-200 hover:text-white"
                   >
                     Hosting
                     <span>
@@ -94,7 +93,7 @@
                     </span>
                   </a>
                   <div
-                    class="dropdown-menu absolute inset-y-14 hidden h-auto w-screen max-w-md group-hover:block"
+                    class="dropdown-menu absolute -mt-3 hidden h-auto w-screen max-w-md group-hover:block"
                   >
                     <div class="ml-6 -mb-2 inline-block w-16 overflow-hidden">
                       <div
@@ -200,7 +199,7 @@
                 </div>
                 <div class="group dropdown relative cursor-pointer">
                   <a
-                    class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-200 hover:text-gray-200 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                    class="flex items-center px-3 py-2 font-medium leading-5 text-gray-300 transition duration-200 hover:text-white"
                   >
                     Virtual Servers
                     <span>
@@ -220,7 +219,7 @@
                   </a>
 
                   <div
-                    class="dropdown-menu absolute inset-y-14 hidden h-auto w-screen max-w-md group-hover:block"
+                    class="dropdown-menu absolute -mt-3 hidden h-auto w-screen max-w-md group-hover:block"
                   >
                     <div class="ml-6 -mb-2 inline-block w-16 overflow-hidden">
                       <div
@@ -298,13 +297,13 @@
                 </div>
                 <a
                   href="/dedicated-servers.html"
-                  class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-200 hover:text-gray-200 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                  class="flex items-center px-3 py-2 font-medium leading-5 text-gray-300 transition duration-200 hover:text-white"
                 >
                   Dedicated Servers
                 </a>
                 <a
                   href="/domains.html"
-                  class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-200 hover:text-gray-200 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                  class="flex items-center px-3 py-2 font-medium leading-5 text-gray-300 transition duration-200 hover:text-white"
                 >
                   Domains
                 </a>
