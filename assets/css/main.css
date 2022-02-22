@@ -1716,6 +1716,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(126 34 206 / 0));
 }
 
+.from-matisse-700 {
+  --tw-gradient-from: #0F2B50;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(15 43 80 / 0));
+}
+
 .from-matisse-100 {
   --tw-gradient-from: #A3C4EE;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(163 196 238 / 0));
@@ -1724,11 +1729,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .from-matisse-800 {
   --tw-gradient-from: #071425;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(7 20 37 / 0));
-}
-
-.from-matisse-700 {
-  --tw-gradient-from: #0F2B50;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(15 43 80 / 0));
 }
 
 .via-matisse-700 {
@@ -1743,16 +1743,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-to: #84C0FC;
 }
 
-.to-matisse-900 {
-  --tw-gradient-to: #000000;
-}
-
-.to-matisse-200 {
-  --tw-gradient-to: #78A8E6;
-}
-
 .to-matisse-300 {
   --tw-gradient-to: #4D8CDE;
+}
+
+.to-matisse-900 {
+  --tw-gradient-to: #000000;
 }
 
 .bg-cover {
@@ -1992,20 +1988,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: 'Poppins', sans-serif;
 }
 
-.font-openSans {
-  font-family: 'Open Sans', sans-serif;
-}
-
 .font-montserrat {
   font-family: 'Montserrat', sans-serif;
 }
 
-.font-roboto {
-  font-family: 'Roboto', sans-serif;
-}
-
-.font-inter {
-  font-family: 'Inter', sans-serif;
+.font-openSans {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .text-base {
@@ -2115,18 +2103,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-6 {
   line-height: 1.5rem;
-}
-
-.leading-10 {
-  line-height: 2.5rem;
-}
-
-.leading-snug {
-  line-height: 1.375;
-}
-
-.leading-loose {
-  line-height: 2;
 }
 
 .tracking-tight {
@@ -2548,6 +2524,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:bg-wh-bluDark02:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 59 122 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-matisse-50:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 210 242 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-wh-greenDarken:hover {

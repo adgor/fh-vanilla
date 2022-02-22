@@ -6,31 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
     <title>Home</title>
   </head>
-  <body class="font-openSans">
+  <body>
     <!-- Navigation -->
-    <div
-      class="relative bg-gradient-to-r from-matisse-700 to-matisse-300 font-poppins"
-    >
-      <nav role="navigation" class="hidden xl:block">
-        <div
-          class="container relative mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20 xl:py-0"
-        >
+    <div class="h-full w-full">
+      <!-- Code block starts -->
+      <nav role="navigation" class="hidden bg-white shadow xl:block">
+        <div class="container mx-auto px-6 py-2 xl:py-0">
           <div class="flex items-center">
             <div class="inset-y-0 left-0 flex items-center xl:hidden">
               <div
-                class="inline-flex items-center justify-center rounded-md p-2 text-white transition duration-150 ease-in-out hover:text-gray-300 focus:outline-none"
+                class="inline-flex items-center justify-center rounded-md p-2 text-gray-700 transition duration-150 ease-in-out hover:text-gray-100 focus:outline-none"
               >
                 <div
-                  class="close-m-menu hidden text-white"
+                  class="close-m-menu hidden text-gray-700"
                   onclick="MenuHandler(this,false)"
                 >
                   <svg
@@ -53,11 +43,26 @@
               </div>
             </div>
             <button
-              class="flex w-full items-center justify-end rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto sm:items-stretch sm:justify-start"
+              class="flex w-full items-center justify-end rounded-md focus:outline-none focus:ring-2 focus:ring-matisse-700 focus:ring-offset-2 sm:w-auto sm:items-stretch sm:justify-start"
             >
               <div class="flex items-center">
+                <svg
+                  id="logo"
+                  enable-background="new 0 0 300 300"
+                  height="44"
+                  viewBox="0 0 300 300"
+                  width="43"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <g>
+                    <path
+                      d="m234.735 35.532c-8.822 0-16 7.178-16 16s7.178 16 16 16 16-7.178 16-16-7.178-16-16-16zm0 24c-4.412 0-8-3.588-8-8s3.588-8 8-8 8 3.588 8 8-3.588 8-8 8zm-62.529-14c0-2.502 2.028-4.53 4.53-4.53s4.53 2.028 4.53 4.53c0 2.501-2.028 4.529-4.53 4.529s-4.53-2.027-4.53-4.529zm89.059 60c0 2.501-2.028 4.529-4.53 4.529s-4.53-2.028-4.53-4.529c0-2.502 2.028-4.53 4.53-4.53s4.53 2.029 4.53 4.53zm-40.522-5.459-88-51.064c-1.242-.723-2.773-.723-4.016 0l-88 51.064c-1.232.715-1.992 2.033-1.992 3.459v104c0 1.404.736 2.705 1.938 3.428l88 52.936c.635.381 1.35.572 2.062.572s1.428-.191 2.062-.572l88-52.936c1.201-.723 1.938-2.023 1.938-3.428v-104c0-1.426-.76-2.744-1.992-3.459zm-90.008-42.98 80.085 46.47-52.95 31.289-23.135-13.607v-21.713c0-2.209-1.791-4-4-4s-4 1.791-4 4v21.713l-26.027 15.309c-1.223.719-1.973 2.029-1.973 3.447v29.795l-52 30.727v-94.688zm0 198.707-80.189-48.237 51.467-30.412 24.723 14.539v19.842c0 2.209 1.791 4 4 4s4-1.791 4-4v-19.842l26.027-15.307c1.223-.719 1.973-2.029 1.973-3.447v-31.667l52-30.728v94.729z"
+                    />
+                  </g>
+                </svg>
                 <h2
-                  class="hidden text-base font-bold leading-normal text-white sm:block"
+                  class="hidden px-3 text-base font-bold leading-normal text-gray-700 sm:block"
                 >
                   FidaHost
                 </h2>
@@ -68,14 +73,32 @@
               <div class="hidden md:mr-6 xl:mr-16 xl:flex">
                 <a
                   href="/"
-                  class="flex items-center border-transparent px-3 py-6 font-medium leading-5 text-white transition duration-200 hover:text-gray-200"
+                  class="flex items-center border-b-2 border-transparent border-matisse-700 bg-gray-100 px-3 py-6 text-sm leading-5 text-matisse-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                 >
                   Home
+                </a>
+                <a
+                  href="/home.html"
+                  class="flex items-center border-transparent px-3 py-6 text-sm leading-5 text-matisse-700 transition duration-150 ease-in-out hover:bg-gray-100"
+                >
+                  Home 1
+                </a>
+                <a
+                  href="/home2.html"
+                  class="flex items-center border-transparent px-3 py-6 text-sm leading-5 text-matisse-700 transition duration-150 ease-in-out hover:bg-gray-100"
+                >
+                  Home 2
+                </a>
+                <a
+                  href="/home3.html"
+                  class="flex items-center border-transparent px-3 py-6 text-sm leading-5 text-matisse-700 transition duration-150 ease-in-out hover:bg-gray-100"
+                >
+                  Home 3
                 </a>
 
                 <div class="group dropdown relative cursor-pointer">
                   <a
-                    class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-200 hover:text-gray-200 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                    class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                   >
                     Hosting
                     <span>
@@ -200,7 +223,7 @@
                 </div>
                 <div class="group dropdown relative cursor-pointer">
                   <a
-                    class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-200 hover:text-gray-200 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                    class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                   >
                     Virtual Servers
                     <span>
@@ -298,15 +321,27 @@
                 </div>
                 <a
                   href="/dedicated-servers.html"
-                  class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-200 hover:text-gray-200 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                  class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                 >
                   Dedicated Servers
                 </a>
                 <a
                   href="/domains.html"
-                  class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-200 hover:text-gray-200 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                  class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                 >
                   Domains
+                </a>
+                <a
+                  href="/web-design.html"
+                  class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                >
+                  Web Design
+                </a>
+                <a
+                  href="/affiliates.html"
+                  class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                >
+                  Affiliates
                 </a>
               </div>
               <div
@@ -314,13 +349,13 @@
               >
                 <a
                   href="#"
-                  class="inline-flex items-center justify-center rounded-md border border-transparent bg-matisse-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-matisse-700"
+                  class="whitespace-nowrap text-sm font-medium text-gray-500 hover:text-gray-900"
                 >
                   Sign in
                 </a>
                 <a
                   href="#"
-                  class="ml-3 inline-flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-base font-medium text-matisse-600 shadow-sm hover:bg-matisse-50"
+                  class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-matisse-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-matisse-700"
                 >
                   Sign up
                 </a>
@@ -329,7 +364,6 @@
           </div>
         </div>
       </nav>
-
       <nav>
         <div
           class="top-0 flex w-full items-center justify-between bg-white px-6 py-4 text-pink-600 xl:hidden"
@@ -387,7 +421,10 @@
           class="absolute top-0 z-50 h-full w-full -translate-x-full transform xl:hidden"
           id="mobile-nav"
         >
-          <div class="h-full w-full" onclick="sidebarHandler(false)"></div>
+          <div
+            class="h-full w-full bg-gray-800 opacity-50"
+            onclick="sidebarHandler(false)"
+          ></div>
           <div
             class="fixed top-0 z-40 h-screen w-64 flex-col justify-between overflow-y-auto bg-white pb-4 shadow transition duration-150 ease-in-out xl:hidden"
           >
@@ -447,13 +484,13 @@
                   <div class="mt-6 flex flex-col">
                     <a
                       href="/"
-                      class="flex items-center border-b-2 border-transparent border-matisse-700 bg-gray-100 px-3 py-6 leading-5 text-matisse-700 transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                      class="flex items-center border-b-2 border-transparent border-matisse-700 bg-gray-100 px-3 py-6 text-sm leading-5 text-matisse-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                     >
                       Home
                     </a>
                     <div class="group dropdown relative cursor-pointer">
                       <a
-                        class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                        class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                       >
                         Hosting
                         <span>
@@ -556,7 +593,7 @@
                     </div>
                     <div class="group dropdown relative cursor-pointer">
                       <a
-                        class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                        class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                       >
                         Virtual Servers
                         <span>
@@ -631,25 +668,25 @@
                     </div>
                     <a
                       href="/dedicated-servers.html"
-                      class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                     >
                       Dedicated Servers
                     </a>
                     <a
                       href="/domains.html"
-                      class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                     >
                       Domains
                     </a>
                     <a
                       href="/web-design.html"
-                      class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                     >
                       Web Design
                     </a>
                     <a
                       href="/affiliates.html"
-                      class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
                     >
                       Affiliates
                     </a>
@@ -683,69 +720,12 @@
           </div>
         </div>
       </nav>
-      <div
-        class="relative mx-auto overflow-hidden px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
-      >
-        <div class="grid items-center gap-10 lg:grid-cols-2">
-          <div class="mb-12 w-full">
-            <h2
-              class="mb-6 max-w-lg text-3xl font-extrabold tracking-tight text-white sm:text-5xl"
-            >
-              Unmatched
-              <br />
-              <span class="relative inline-block px-2">
-                <div
-                  class="absolute inset-0 -skew-x-12 transform bg-[#84C0FC]"
-                ></div>
-                <span class="relative leading-tight text-matisse-700"
-                  >Web Hosting</span
-                > </span
-              ><br />
-
-              You Can Rely ON.
-            </h2>
-            <p class="mb-4 max-w-xl text-base text-gray-200 md:text-lg">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudan, totam rem aperiam, eaque ipsa quae.
-            </p>
-
-            <p
-              class="mt-8 mb-4 max-w-xs text-base leading-7 text-wh-light md:text-lg"
-            >
-              Starting from <span class="line-through">$7.27 </span> $0.99/mo
-            </p>
-            <span class="group relative">
-              <div
-                class="absolute inset-3 rounded-lg bg-[#84C0FC] blur-xl transition duration-200 group-hover:inset-0 group-hover:bg-[#84C0FC] group-hover:duration-1000"
-              ></div>
-              <a
-                class="group relative inline-flex items-center rounded-lg bg-wh-light px-8 py-4 font-semibold capitalize leading-4 text-matisse-700"
-                href="/#contact"
-                >get started now<span class="ml-2 flex items-center"
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="text-brand-jonquil h-4 w-4 transform duration-700 ease-in-out group-hover:translate-x-1"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    ></path></svg></span
-              ></a>
-            </span>
-          </div>
-          <div class="w-full">
-            <img src="assets/svg/Business_SVG.svg" alt="" />
-          </div>
-        </div>
-      </div>
+      <!-- Code block ends -->
     </div>
     <!-- End of Navigation -->
 
     <!-- Pricing -->
-    <section class="bg-[#F0FAFF] shadow">
+    <section class="bg-zircon-500 shadow">
       <div
         class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
       >
@@ -753,7 +733,7 @@
           class="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-4xl"
         >
           <h2
-            class="mb-6 max-w-lg text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
+            class="mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
           >
             Our Products
           </h2>
@@ -1012,7 +992,7 @@
           class="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-4xl"
         >
           <h2
-            class="mb-6 max-w-4xl text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
+            class="mb-6 max-w-4xl font-sans text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
           >
             Custom plans start at just $0.99 a month.
           </h2>
@@ -1020,7 +1000,7 @@
             Every plan includes free trial and all of our core features:
           </p>
         </div>
-        <div class="row-gap-5 grid gap-5 font-poppins lg:grid-cols-3">
+        <div class="row-gap-5 grid gap-5 lg:grid-cols-3">
           <div
             class="group relative transform overflow-hidden rounded-2xl border p-px shadow-sm transition duration-300 hover:scale-105 hover:shadow-xl"
           >
@@ -1046,7 +1026,7 @@
                     />
                   </svg>
                 </div>
-                <h6 class="font-bold text-matisse-700">
+                <h6 class="font-bold leading-5 text-matisse-700">
                   <span class="text-emerald-500">FREE</span> WORDPRESS INSTALL
                 </h6>
               </div>
@@ -1306,30 +1286,88 @@
     <!-- End of Custom Plans -->
 
     <!-- Domain  -->
-    <div class="bg-[#84C0FC]">
+    <!-- NOTE dont delete for below section if needed -->
+    <!-- <div class="relative ml-16 w-full max-w-2xl">
+            <div
+              class="absolute top-0 -left-4 -mt-10 h-32 w-64 rounded-full bg-purple-300 opacity-50 mix-blend-multiply blur-xl filter"
+            ></div>
+            <div
+              class="absolute -top-10 right-24 h-32 w-64 rounded-full bg-yellow-300 opacity-50 mix-blend-multiply blur-xl filter"
+            ></div>
+            <div
+              class="absolute left-20 -top-5 h-32 w-64 rounded-full bg-pink-300 opacity-50 mix-blend-multiply blur-xl filter"
+            ></div>
+          </div> -->
+    <!-- <div class="bg-gradient-to-b from-matisse-100 pb-20">
       <div
-        class="mx-auto px-4 py-16 shadow-2xl sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
+        class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
       >
         <div class="relative mx-auto">
           <div class="relative mb-10 md:mx-auto md:mb-12">
             <div class="flex items-center justify-between">
-              <div class="text-icon-darkest">
-                <p class="mb-2 font-semibold uppercase tracking-wider">
+              <div>
+                <p
+                  class="mb-2 font-semibold uppercase tracking-wider text-wh-bluDarkest"
+                >
                   DOMAIN NAMES
                 </p>
                 <h2
-                  class="mb-6 text-3xl font-extrabold tracking-tighter text-matisse-700 sm:text-6xl md:mx-auto"
+                  class="mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-wh-bluDarkest sm:text-6xl md:mx-auto"
                 >
-                  Every
-                  <span class="leading-tight text-matisse-500"
-                    >great website</span
-                  >
+                  Every great <span class="text-matisse-500">website</span>
                   <br />
-                  needs a
-                  <span class="text-matisse-500">great name</span>
+                  needs a great <span class="text-matisse-500">name</span>
                 </h2>
               </div>
-              <div class="text-base font-medium text-icon-darkest md:text-lg">
+              <div class="text-base font-medium text-wh-bluDarkest md:text-lg">
+                Your domain name is your website address. <br />
+                While .com names are the most popular, <br />
+                explore .org, .tech, .co and more.
+              </div>
+            </div>
+          </div>
+                    <form
+            class="relative mb-4 flex w-full flex-col items-center md:flex-row"
+          >
+            <input
+              placeholder="Search your perfect name ..."
+              required=""
+              type="text"
+              class="focus:shadow-outline mb-3 h-16 w-full flex-grow appearance-none rounded border border-zircon-500 bg-white px-7 text-xl text-icon-darkest shadow-sm transition duration-200 focus:border-matisse-400 focus:outline-none md:mr-2 md:mb-0"
+            />
+            <button
+              type="submit"
+              class="focus:shadow-outline inline-flex h-16 w-full items-center justify-center rounded bg-matisse-500 px-10 text-lg font-bold tracking-wide text-white shadow transition duration-200 hover:bg-matisse-600 focus:outline-none md:w-auto"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="bg-gray-900">
+      <div
+        class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
+      >
+        <div class="relative mx-auto">
+          <div class="relative mb-10 md:mx-auto md:mb-12">
+            <div class="flex items-center justify-between">
+              <div>
+                <p
+                  class="mb-2 font-semibold uppercase tracking-wider text-white"
+                >
+                  DOMAIN NAMES
+                </p>
+                <h2
+                  class="mb-6 font-sans text-3xl font-extrabold leading-none tracking-tight text-white sm:text-6xl md:mx-auto"
+                >
+                  Every great <span class="text-white">website</span>
+                  <br />
+                  needs a great <span class="text-white">name</span>
+                </h2>
+              </div>
+              <div class="text-base font-medium text-white md:text-lg">
                 Your domain name is your website address. <br />
                 While .com names are the most popular, <br />
                 explore .org, .tech, .co and more.
@@ -1344,7 +1382,7 @@
               placeholder="Search your perfect name ..."
               required=""
               type="text"
-              class="focus:shadow-outline mb-3 h-16 w-full flex-grow appearance-none rounded border border-zircon-700 px-7 text-xl text-icon-darkest shadow-sm transition duration-200 focus:border-matisse-400 focus:outline-none md:mr-2 md:mb-0"
+              class="focus:shadow-outline mb-3 h-16 w-full flex-grow appearance-none rounded border border-zircon-500 bg-white px-7 text-xl text-icon-darkest shadow-sm transition duration-200 focus:border-matisse-400 focus:outline-none md:mr-2 md:mb-0"
             />
             <button
               type="submit"
@@ -1359,28 +1397,321 @@
 
     <!-- End of Domain  -->
 
-    <!-- Transfer to FH -->
-    <section class="bg-[#F0FAFF]">
+    <!-- old Domain -->
+    <!-- 
+    <div
+      class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
+    >
       <div
-        class="mx-auto flex px-4 py-16 sm:max-w-xl md:max-w-full md:flex-row md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-40 lg:pb-28"
+        class="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-4xl"
       >
-        <div class="relative md:w-1/2">
+        <h2
+          class="mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
+        >
+          Choose a Domain
+        </h2>
+        <p class="text-base text-matisse-600 md:text-lg">
+          Search and Find Perfect Domain name now
+        </p>
+      </div>
+      <div class="flex w-full flex-col items-center">
+        <div
+          class="flex w-full max-w-md items-end justify-center sm:mx-auto xl:max-w-screen-lg"
+        >
+          <div class="mr-4 w-full text-left">
+            <input
+              type="text"
+              id="hero-field"
+              name="hero-field"
+              class="w-full rounded border border-gray-300 bg-gray-100 bg-opacity-50 px-3 py-1 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-matisse-500 focus:bg-transparent focus:ring-2 focus:ring-matisse-200"
+              placeholder="example.com"
+            />
+          </div>
+          <button
+            class="inline-flex rounded border-0 bg-matisse-500 px-6 py-2 text-lg text-white hover:bg-matisse-600 focus:outline-none"
+          >
+            Button
+          </button>
+        </div>
+
+        <div
+          class="mt-6 flex w-full max-w-md justify-between text-matisse-500 sm:mx-auto xl:max-w-screen-lg"
+        >
+          <a href="#">
+            <p>.com <span class="text-matisse-700">$9.99</span></p>
+          </a>
+
+          <a href="#">
+            <p>.net <span class="text-matisse-700">$12.99</span></p>
+          </a>
+
+          <a href="#">
+            <p>.org <span class="text-matisse-700">$12.99</span></p>
+          </a>
+
+          <a href="#">
+            <p>.info <span class="text-matisse-700">$12.99</span></p>
+          </a>
+
+          <a href="#">
+            <p>.top <span class="text-matisse-700">$1.99</span></p>
+          </a>
+
+          <a href="#">
+            <p>.eu <span class="text-matisse-700">$2.99</span></p>
+          </a>
+
+          <a href="#">
+            <p>.me <span class="text-matisse-700">$2.99</span></p>
+          </a>
+
+          <a href="#">
+            <p>.best <span class="text-matisse-700">$2.99</span></p>
+          </a>
+        </div>
+      </div>
+      <div
+        class="row-gap-5 mt-16 grid w-full max-w-md gap-8 sm:mx-auto lg:grid-cols-3 xl:max-w-screen-lg"
+      >
+        <div
+          class="group relative overflow-hidden rounded border shadow transition-shadow duration-300"
+        >
+          <div class="relative rounded-sm bg-white p-5">
+            <div class="flex flex-col lg:flex-row lg:items-center">
+              <div class="mb-4 mr-2 flex items-center justify-center lg:mb-0">
+                <svg
+                  width="43"
+                  height="33"
+                  viewBox="0 0 43 33"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M41.2466 12.2842H13.6344C12.8981 12.2842 12.3035 12.7935 12.3035 13.4222V20.4614C12.3035 21.0901 12.8981 21.5994 13.6344 21.5994H41.2466C41.983 21.5994 42.5776 21.0901 42.5776 20.4614V13.4222C42.5776 12.7935 41.983 12.2842 41.2466 12.2842ZM17.5156 18.6593C17.5156 19.0885 17.1665 19.4363 16.7386 19.4363C16.3107 19.4363 15.9616 19.0885 15.9616 18.6593V15.2243C15.9616 14.7964 16.3107 14.4486 16.7386 14.4486C17.1665 14.4486 17.5156 14.7964 17.5156 15.2243V18.6593ZM20.843 18.6593C20.843 19.0885 20.4938 19.4363 20.0633 19.4363C19.6354 19.4363 19.2889 19.0885 19.2889 18.6593V15.2243C19.2889 14.7964 19.6354 14.4486 20.0633 14.4486C20.4938 14.4486 20.843 14.7964 20.843 15.2243V18.6593ZM24.1716 18.6593C24.1716 19.0885 23.8225 19.4363 23.3919 19.4363C22.964 19.4363 22.6175 19.0885 22.6175 18.6593V15.2243C22.6175 14.7964 22.964 14.4486 23.3919 14.4486C23.8225 14.4486 24.1716 14.7964 24.1716 15.2243V18.6593ZM36.4256 18.7708C35.4136 18.7708 34.5946 17.9518 34.5946 16.9411C34.5946 15.9305 35.4123 15.1101 36.4256 15.1101C37.4363 15.1101 38.254 15.9305 38.254 16.9411C38.2527 17.9518 37.435 18.7708 36.4256 18.7708Z"
+                    fill="#1F5AA6"
+                  />
+                  <path
+                    d="M41.2466 23.0405H13.6344C12.8981 23.0405 12.3035 23.5511 12.3035 24.1785V31.2191C12.3035 31.8478 12.8981 32.357 13.6344 32.357H41.2466C41.983 32.357 42.5776 31.8478 42.5776 31.2191V24.1785C42.5776 23.5511 41.983 23.0405 41.2466 23.0405ZM17.5156 29.4169C17.5156 29.8461 17.1665 30.1926 16.7386 30.1926C16.3107 30.1926 15.9616 29.8448 15.9616 29.4169V25.982C15.9616 25.5528 16.3107 25.2049 16.7386 25.2049C17.1665 25.2049 17.5156 25.5528 17.5156 25.982V29.4169ZM20.843 29.4169C20.843 29.8461 20.4938 30.1926 20.0633 30.1926C19.6354 30.1926 19.2889 29.8448 19.2889 29.4169V25.982C19.2889 25.5528 19.6354 25.2049 20.0633 25.2049C20.4938 25.2049 20.843 25.5528 20.843 25.982V29.4169ZM24.1716 29.4169C24.1716 29.8461 23.8225 30.1926 23.3919 30.1926C22.964 30.1926 22.6175 29.8448 22.6175 29.4169V25.982C22.6175 25.5528 22.964 25.2049 23.3919 25.2049C23.8225 25.2049 24.1716 25.5528 24.1716 25.982V29.4169ZM36.4256 29.5298C35.4136 29.5298 34.5946 28.7095 34.5946 27.6988C34.5946 26.6881 35.4123 25.8691 36.4256 25.8691C37.4363 25.8691 38.254 26.6881 38.254 27.6988C38.254 28.7095 37.435 29.5298 36.4256 29.5298Z"
+                    fill="#1F5AA6"
+                  />
+                  <path
+                    d="M3.3833 24.0841V8.20614C3.3833 7.03009 4.27321 6.07586 5.37314 6.07586H30.8393C31.9393 6.07586 32.8292 7.03009 32.8292 8.20614V9.87571H35.6367V3.3405C35.6367 1.69324 34.3005 0.357056 32.6533 0.357056H3.55918C1.91455 0.357056 0.575745 1.69324 0.575745 3.3405V25.965C0.575745 27.6123 1.91455 28.9485 3.55918 28.9485H9.89489V26.2144H5.37182C4.2719 26.2144 3.3833 25.2602 3.3833 24.0841ZM14.5623 1.66305C15.2856 1.66305 15.867 2.24714 15.867 2.96904C15.867 3.68964 15.2856 4.27372 14.5623 4.27372C13.8417 4.27372 13.2577 3.69095 13.2577 2.96904C13.2577 2.24714 13.8417 1.66305 14.5623 1.66305ZM10.0248 1.66305C10.7454 1.66305 11.3295 2.24714 11.3295 2.96904C11.3295 3.68964 10.7454 4.27372 10.0248 4.27372C9.30424 4.27372 8.72015 3.68963 8.72015 2.96773C8.72015 2.24714 9.30424 1.66305 10.0248 1.66305ZM5.48733 1.66305C6.20792 1.66305 6.79201 2.24714 6.79201 2.96904C6.79201 3.68964 6.20792 4.27372 5.48733 4.27372C4.76673 4.27372 4.18265 3.68963 4.18265 2.96773C4.18265 2.24714 4.76673 1.66305 5.48733 1.66305Z"
+                    fill="#63B0F2"
+                  />
+                </svg>
+              </div>
+              <h6 class="font-semibold leading-5 text-matisse-700">
+                Free hosting lite package
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          class="group relative overflow-hidden rounded border shadow transition-shadow duration-300"
+        >
+          <div class="relative rounded-sm bg-white p-5">
+            <div class="flex flex-col lg:flex-row lg:items-center">
+              <div class="mb-4 mr-2 flex items-center justify-center lg:mb-0">
+                <svg
+                  width="35"
+                  height="32"
+                  viewBox="0 0 35 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M28.7383 0H5.2712C2.36455 0 0 2.36455 0 5.2712V20.962C0 23.8686 2.36455 26.2338 5.2712 26.2338H7.45485L12.6454 32L13.3384 31.1768C13.3617 31.1493 15.5771 28.5207 17.7094 26.2338H28.7377C31.6443 26.2338 34.0089 23.8686 34.0089 20.962V5.2712C34.0089 2.36455 31.6443 0 28.7383 0ZM32.1351 20.962C32.1351 22.8358 30.6108 24.3594 28.7383 24.3594H16.899L16.6215 24.6539C15.1022 26.2668 13.4937 28.1137 12.6032 29.1508L8.28969 24.3587H5.2712C3.39801 24.3587 1.87441 22.8345 1.87441 20.9613V5.2712C1.87441 3.39801 3.39862 1.8738 5.2712 1.8738H28.7377C30.6108 1.8738 32.1345 3.39801 32.1345 5.2712V20.962H32.1351Z"
+                    fill="#63B0F2"
+                  />
+                  <path
+                    d="M19.9309 5.3922C19.5025 5.07562 19.0007 4.84338 18.4244 4.69609C17.8487 4.5488 17.226 4.47485 16.5561 4.47485C15.8582 4.47485 15.181 4.55736 14.5265 4.72298C13.8713 4.8886 13.2669 5.13673 12.712 5.46798V8.71809C13.2516 8.24323 13.8243 7.88876 14.4287 7.65469C15.0337 7.42122 15.6168 7.30388 16.1784 7.30388C16.4376 7.30388 16.6735 7.34361 16.8855 7.42245C17.0976 7.5019 17.2779 7.60946 17.4252 7.74636C17.5731 7.88326 17.6862 8.04705 17.765 8.23773C17.8444 8.42841 17.8842 8.63559 17.8842 8.85866C17.8842 9.11779 17.8481 9.35369 17.776 9.56576C17.7039 9.77783 17.5963 9.98318 17.4521 10.1812C17.3078 10.3792 17.1337 10.5772 16.9289 10.7746C16.7242 10.9726 16.484 11.1872 16.2108 11.4176C15.9517 11.6333 15.7244 11.8515 15.5306 12.0709C15.3363 12.2903 15.1743 12.5207 15.0441 12.7621C14.9146 13.0035 14.818 13.2608 14.7526 13.534C14.6878 13.8078 14.6554 14.1097 14.6554 14.4409C14.6554 14.6499 14.6756 14.8712 14.7153 15.1053C14.7544 15.3393 14.8107 15.5496 14.8828 15.7372H17.7228C17.6434 15.615 17.5804 15.4634 17.534 15.2837C17.4869 15.104 17.4637 14.9274 17.4637 14.7551C17.4637 14.5033 17.4961 14.2784 17.5609 14.0797C17.6257 13.8817 17.7216 13.6947 17.8469 13.5187C17.9734 13.3427 18.1311 13.1642 18.3224 12.9839C18.5124 12.8043 18.7343 12.6099 18.9861 12.4009C19.3607 12.091 19.692 11.791 19.9798 11.4995C20.2677 11.2079 20.5085 10.9042 20.7034 10.587C20.8972 10.2704 21.0451 9.93368 21.1459 9.57737C21.2467 9.22107 21.2975 8.82321 21.2975 8.3844C21.2975 7.69319 21.1764 7.10098 20.9357 6.60839C20.6949 6.1158 20.3593 5.70877 19.9309 5.3922Z"
+                    fill="#1F5AA6"
+                  />
+                  <path
+                    d="M16.4596 16.9026C15.8839 16.9026 15.4048 17.0719 15.0234 17.4105C14.6414 17.749 14.4514 18.1701 14.4514 18.6737C14.4514 19.1632 14.6414 19.588 15.0234 19.948C15.4048 20.2939 15.8839 20.4662 16.4596 20.4662C17.0353 20.4662 17.5108 20.2969 17.8848 19.9584C18.2521 19.6198 18.4355 19.192 18.4355 18.6737C18.4355 18.1628 18.2485 17.7417 17.8738 17.4105C17.4998 17.0719 17.028 16.9026 16.4596 16.9026Z"
+                    fill="#1F5AA6"
+                  />
+                </svg>
+              </div>
+              <h6 class="font-semibold leading-5 text-matisse-700">
+                24x7 Dedicated Support
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          class="group relative overflow-hidden rounded border shadow transition-shadow duration-300"
+        >
+          <div class="relative rounded-sm bg-white p-5">
+            <div class="flex flex-col lg:flex-row lg:items-center">
+              <div class="mb-4 mr-2 flex items-center justify-center lg:mb-0">
+                <svg
+                  width="36"
+                  height="34"
+                  viewBox="0 0 36 34"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M32.8122 14.4094H2.62177C1.72979 14.4094 1 13.6796 1 12.7877V2.62177C1 1.72979 1.72979 1 2.62177 1H32.8165C33.7085 1 34.4382 1.72979 34.4382 2.62177V12.7877C34.434 13.6796 33.7042 14.4094 32.8122 14.4094Z"
+                    stroke="#63B0F2"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M8.26808 8.92531C8.94219 8.92531 9.48867 8.37884 9.48867 7.70472C9.48867 7.03061 8.94219 6.48413 8.26808 6.48413C7.59396 6.48413 7.04749 7.03061 7.04749 7.70472C7.04749 8.37884 7.59396 8.92531 8.26808 8.92531Z"
+                    stroke="#1F5AA6"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M13.7992 7.70471H20.2436"
+                    stroke="#1F5AA6"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M32.8122 33H2.62177C1.72979 33 1 32.2702 1 31.3783V21.2123C1 20.3204 1.72979 19.5906 2.62177 19.5906H32.8165C33.7085 19.5906 34.4382 20.3204 34.4382 21.2123V31.3783C34.434 32.2702 33.7042 33 32.8122 33Z"
+                    stroke="#63B0F2"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M8.26808 27.5159C8.94219 27.5159 9.48867 26.9694 9.48867 26.2953C9.48867 25.6212 8.94219 25.0747 8.26808 25.0747C7.59396 25.0747 7.04749 25.6212 7.04749 26.2953C7.04749 26.9694 7.59396 27.5159 8.26808 27.5159Z"
+                    stroke="#1F5AA6"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M13.7992 26.2953H20.2436"
+                    stroke="#1F5AA6"
+                    stroke-width="2"
+                    stroke-miterlimit="10"
+                  />
+                </svg>
+              </div>
+              <h6 class="font-semibold leading-5 text-matisse-700">
+                Free DNS Management
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          class="group relative overflow-hidden rounded border shadow transition-shadow duration-300"
+        >
+          <div class="relative rounded-sm bg-white p-5">
+            <div class="flex flex-col lg:flex-row lg:items-center">
+              <div class="mb-4 mr-2 flex items-center justify-center lg:mb-0">
+                <svg
+                  width="34"
+                  height="32"
+                  viewBox="0 0 34 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.9853 30.4691C14.3305 30.4691 12.5388 27.1976 11.7304 22.0301C13.0494 22.1579 14.4677 22.2288 15.9853 22.2288V20.702C14.4896 20.7042 12.9948 20.6236 11.508 20.461C11.187 17.4862 11.187 14.4859 11.508 11.5113C14.4827 11.1903 17.4829 11.1903 20.4575 11.5113C20.6205 12.9981 20.7007 14.4927 20.6986 15.9883H22.2305C22.2305 14.4614 22.1592 13.0431 22.0319 11.7334C27.1989 12.5512 30.4704 14.3431 30.4704 15.9883C30.47 16.9796 30.3689 17.9678 30.1681 18.9384L31.6666 19.2505C33.4609 10.5989 27.902 2.13084 19.2507 0.336555C10.5989 -1.45773 2.13084 4.10117 0.336554 12.7527C-1.45773 21.4044 4.10117 29.8723 12.7529 31.6666C15.4974 32.2358 18.3435 32.0741 21.0059 31.1972L20.5329 29.7458C19.066 30.2281 17.5301 30.4726 15.9853 30.4691ZM30.1683 13.0241C28.4947 11.7475 25.6909 10.6604 21.8426 10.1215C21.2943 6.27318 20.2165 3.4696 18.9401 1.79594C24.5788 2.983 28.9832 7.38961 30.1683 13.0289V13.0241ZM15.9853 1.49341C17.64 1.49341 19.4317 4.7649 20.2404 9.93239C18.9212 9.80482 17.5029 9.73375 15.9853 9.73375C14.4677 9.73375 13.0398 9.8046 11.7304 9.93239C12.5388 4.76512 14.3305 1.49819 15.9853 1.49819V1.49341ZM13.0307 1.79594C11.7541 3.4696 10.6667 6.27318 10.128 10.1215C6.2797 10.6698 3.47612 11.7478 1.80245 13.0241C2.98995 7.39005 7.39178 2.988 13.0259 1.80072L13.0307 1.79594ZM9.93869 11.7239C9.8109 13.0428 9.74005 14.4611 9.74005 15.9788C9.74005 17.4964 9.8109 18.924 9.93869 20.2337C4.77142 19.4156 1.49971 17.624 1.49971 15.9788C1.49971 14.3336 4.76664 12.5371 9.93869 11.7191V11.7239ZM1.80224 18.9384C3.47569 20.2148 6.27948 21.3021 10.1278 21.8413C10.6761 25.6896 11.7538 28.4931 13.0304 30.1666C7.39244 28.9815 2.98778 24.5766 1.80224 18.9384Z"
+                    fill="#63B0F2"
+                  />
+                  <path
+                    d="M19.9518 18.4514L23.5588 31.8073L25.9606 25.699L33.1325 24.6684L19.9518 18.4514Z"
+                    fill="#1F5AA6"
+                  />
+                </svg>
+              </div>
+              <h6 class="font-semibold leading-5 text-matisse-700">
+                Free Domain Forwarding
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          class="group relative overflow-hidden rounded border shadow transition-shadow duration-300"
+        >
+          <div class="relative rounded-sm bg-white p-5">
+            <div class="flex flex-col lg:flex-row lg:items-center">
+              <div class="mb-4 mr-2 flex items-center justify-center lg:mb-0">
+                <svg
+                  width="33"
+                  height="32"
+                  viewBox="0 0 33 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.9853 30.4691C14.3305 30.4691 12.5388 27.1976 11.7304 22.0301C13.0494 22.1579 14.4677 22.2288 15.9853 22.2288V20.702C14.4896 20.7042 12.9948 20.6236 11.508 20.461C11.187 17.4862 11.187 14.4859 11.508 11.5113C14.4827 11.1903 17.4829 11.1903 20.4575 11.5113C20.6205 12.9981 20.7007 14.4927 20.6986 15.9883H22.2305C22.2305 14.4614 22.1592 13.0431 22.0319 11.7334C27.1989 12.5512 30.4704 14.3431 30.4704 15.9883C30.47 16.9796 30.3689 17.9678 30.1681 18.9384L31.6666 19.2505C33.4609 10.5989 27.902 2.13084 19.2507 0.336555C10.5989 -1.45773 2.13084 4.10117 0.336554 12.7527C-1.45773 21.4044 4.10117 29.8723 12.7529 31.6666C15.4974 32.2358 18.3435 32.0741 21.0059 31.1972L20.5329 29.7458C19.066 30.2281 17.5301 30.4726 15.9853 30.4691ZM30.1683 13.0241C28.4947 11.7475 25.6909 10.6604 21.8426 10.1215C21.2943 6.27318 20.2165 3.4696 18.9401 1.79594C24.5788 2.983 28.9832 7.38961 30.1683 13.0289V13.0241ZM15.9853 1.49341C17.64 1.49341 19.4317 4.7649 20.2404 9.93239C18.9212 9.80482 17.5029 9.73375 15.9853 9.73375C14.4677 9.73375 13.0398 9.8046 11.7304 9.93239C12.5388 4.76512 14.3305 1.49819 15.9853 1.49819V1.49341ZM13.0307 1.79594C11.7541 3.4696 10.6667 6.27318 10.128 10.1215C6.2797 10.6698 3.47612 11.7478 1.80245 13.0241C2.98995 7.39005 7.39178 2.988 13.0259 1.80072L13.0307 1.79594ZM9.93869 11.7239C9.8109 13.0428 9.74005 14.4611 9.74005 15.9788C9.74005 17.4964 9.8109 18.924 9.93869 20.2337C4.77142 19.4156 1.49971 17.624 1.49971 15.9788C1.49971 14.3336 4.76664 12.5371 9.93869 11.7191V11.7239ZM1.80224 18.9384C3.47569 20.2148 6.27948 21.3021 10.1278 21.8413C10.6761 25.6896 11.7538 28.4931 13.0304 30.1666C7.39244 28.9815 2.98778 24.5766 1.80224 18.9384Z"
+                    fill="#63B0F2"
+                  />
+                  <path
+                    d="M24.5717 18L19 20.756V23.642C19 27.178 21.3317 30.2201 24.5715 31C27.8111 30.2199 30.1429 27.178 30.1429 23.642V20.756L24.5717 18ZM23.7615 26.5021L21.0127 23.98L21.651 23.2002L23.7372 25.124L27.7377 21.4059L28.376 22.1862L23.7615 26.5021Z"
+                    fill="#1F5AA6"
+                  />
+                </svg>
+              </div>
+              <h6 class="font-semibold leading-5 text-matisse-700">
+                Domain Theft Protection
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div
+          class="group relative overflow-hidden rounded border shadow transition-shadow duration-300"
+        >
+          <div class="relative rounded-sm bg-white p-5">
+            <div class="flex flex-col lg:flex-row lg:items-center">
+              <div class="mb-4 mr-2 flex items-center justify-center lg:mb-0">
+                <svg
+                  width="36"
+                  height="32"
+                  viewBox="0 0 36 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.9553 14.8346L32.9658 4.39544V17.8565C32.9658 18.6806 33.5152 19.23 34.3394 19.23C35.1635 19.23 35.7129 18.6806 35.7129 17.8565V4.12072C35.7129 1.78565 33.9273 0 31.5922 0H4.12072C1.78565 0 0 1.78565 0 4.12072V24.7243C0 27.0594 1.78565 28.8451 4.12072 28.8451H17.8565C18.6806 28.8451 19.23 28.2956 19.23 27.4715C19.23 26.6473 18.6806 26.0979 17.8565 26.0979H4.12072C3.29658 26.0979 2.74715 25.5485 2.74715 24.7243V4.39544L17.4444 14.8346C17.8565 15.2467 18.5433 15.2467 18.9553 14.8346ZM18.1312 12.0875L5.08223 2.74715H30.6307L18.1312 12.0875Z"
+                    fill="#63B0F2"
+                  />
+                  <path
+                    d="M34.335 25.5441L30.2142 21.4234C29.6648 20.874 28.8407 20.874 28.2912 21.4234C27.7418 21.9729 27.7418 22.797 28.2912 23.3464L31.4504 26.5057L28.2912 29.6649C27.7418 30.2143 27.7418 31.0384 28.2912 31.5879C28.8407 32.1373 29.6648 32.1373 30.2142 31.5879L34.335 27.4672C34.8844 26.9177 34.8844 26.0936 34.335 25.5441Z"
+                    fill="#1F5AA6"
+                  />
+                  <path
+                    d="M27.4672 25.5441L23.3464 21.4234C22.797 20.874 21.9729 20.874 21.4234 21.4234C20.874 21.9729 20.874 22.797 21.4234 23.3464L24.5826 26.5057L21.4234 29.6649C20.874 30.2143 20.874 31.0384 21.4234 31.5879C21.9729 32.1373 22.797 32.1373 23.3464 31.5879L27.4672 27.4672C28.0166 26.9177 28.0166 26.0936 27.4672 25.5441Z"
+                    fill="#1F5AA6"
+                  />
+                </svg>
+              </div>
+              <h6 class="font-semibold leading-5 text-matisse-700">
+                Free Mail Forward
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     -->
+    <!-- End of old Domain -->
+
+    <!-- Transfer to FH -->
+    <section>
+      <div
+        class="mx-auto flex px-4 py-16 sm:max-w-xl md:max-w-full md:flex-row-reverse md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
+      >
+        <div class="relative pl-20 md:w-1/2">
           <div class="relative">
-            <div class="flex items-center justify-center px-20">
+            <div class="flex items-center justify-center px-16">
               <div class="relative w-full max-w-lg">
                 <div
-                  class="absolute -top-14 -left-8 h-72 w-72 animate-blob rounded-full bg-purple-300 opacity-30 mix-blend-multiply blur-xl filter"
+                  class="absolute -top-14 -left-8 h-72 w-72 animate-blob rounded-full bg-purple-300 opacity-70 mix-blend-multiply blur-xl filter"
                 ></div>
                 <div
-                  class="animation-delay-2000 absolute -top-10 -right-10 h-72 w-72 animate-blob rounded-full bg-yellow-300 opacity-30 mix-blend-multiply blur-xl filter"
+                  class="animation-delay-2000 absolute -top-10 -right-10 h-72 w-72 animate-blob rounded-full bg-yellow-300 opacity-70 mix-blend-multiply blur-xl filter"
                 ></div>
                 <div
-                  class="animation-delay-4000 absolute -bottom-10 left-40 h-72 w-72 animate-blob rounded-full bg-pink-300 opacity-30 mix-blend-multiply blur-xl filter"
+                  class="animation-delay-4000 absolute -bottom-10 left-40 h-72 w-72 animate-blob rounded-full bg-pink-300 opacity-70 mix-blend-multiply blur-xl filter"
                 ></div>
                 <div
-                  class="animation-delay-2000 absolute -bottom-14 -left-10 h-72 w-72 animate-blob rounded-full bg-matisse-300 opacity-30 mix-blend-multiply blur-xl filter"
+                  class="animation-delay-2000 absolute -bottom-14 -left-10 h-72 w-72 animate-blob rounded-full bg-matisse-300 opacity-70 mix-blend-multiply blur-xl filter"
                 ></div>
-                <div class="relative rounded-xl bg-white px-14 py-14">
+                <div class="relative rounded-xl bg-white px-16 py-14">
                   <div
                     class="mb-8 flex w-full items-center justify-center text-matisse-500"
                   >
@@ -1408,6 +1739,38 @@
                     signing up. Your satisfaction is our top priority.
                   </p>
                 </div>
+                <!-- <div class="relative m-8 space-y-4">
+                  <div
+                    class="flex items-center justify-between space-x-8 rounded-lg bg-white p-5"
+                  >
+                    <div class="flex-1">
+                      <div class="h-4 w-48 rounded bg-gray-300"></div>
+                    </div>
+                    <div>
+                      <div class="h-6 w-24 rounded-lg bg-purple-300"></div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between space-x-8 rounded-lg bg-white p-5"
+                  >
+                    <div class="flex-1">
+                      <div class="h-4 w-56 rounded bg-gray-300"></div>
+                    </div>
+                    <div>
+                      <div class="h-6 w-20 rounded-lg bg-yellow-300"></div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between space-x-8 rounded-lg bg-white p-5"
+                  >
+                    <div class="flex-1">
+                      <div class="h-4 w-44 rounded bg-gray-300"></div>
+                    </div>
+                    <div>
+                      <div class="h-6 w-28 rounded-lg bg-pink-300"></div>
+                    </div>
+                  </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -1417,73 +1780,301 @@
             Transfering to <span class="text-matisse-500">FidaHost</span> is
             easy
           </h2>
-          <div class="mt-10">
-            <dl class="space-y-10">
-              <div class="relative">
-                <dt>
-                  <div
-                    class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white"
-                  >
-                    <svg
-                      width="24"
-                      height="24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M18.75 14.25c.621 0 1.151.22 1.59.66.44.439.66.969.66 1.59v2.25c0 .621-.22 1.151-.66 1.59-.439.44-.969.66-1.59.66H5.25c-.621 0-1.151-.22-1.59-.66-.44-.439-.66-.969-.66-1.59V16.5c0-.621.22-1.151.66-1.59.439-.44.969-.66 1.59-.66h5.625V12H5.25c-.621 0-1.151-.22-1.59-.66-.44-.439-.66-.969-.66-1.59V7.5c0-.621.22-1.151.66-1.59.439-.44.969-.66 1.59-.66h5.625V4.125c0-.316.108-.583.325-.8.217-.217.48-.325.791-.325.31 0 .577.108.8.325.223.217.334.484.334.8V5.25h5.625c.621 0 1.151.22 1.59.66.44.439.66.969.66 1.59v2.25c0 .621-.22 1.151-.66 1.59-.439.44-.969.66-1.59.66h-5.625v2.25h5.625ZM6.366 16.5c-.31 0-.574.111-.79.334-.218.223-.326.49-.326.8 0 .31.108.574.325.79.217.218.48.326.791.326.31 0 .577-.108.8-.325.223-.217.334-.48.334-.791 0-.31-.111-.577-.334-.8a1.091 1.091 0 0 0-.8-.334Zm0-9c-.31 0-.574.111-.79.334-.218.223-.326.49-.326.8 0 .31.108.574.325.79.217.218.48.326.791.326.31 0 .577-.108.8-.325.223-.217.334-.48.334-.791 0-.31-.111-.577-.334-.8a1.091 1.091 0 0 0-.8-.334Zm11.259 2.25c.305 0 .568-.108.791-.325.223-.217.334-.48.334-.791 0-.31-.111-.577-.334-.8a1.081 1.081 0 0 0-.791-.334h-6.75c-.316 0-.583.111-.8.334-.217.223-.325.49-.325.8 0 .31.108.574.325.79.217.218.484.326.8.326h6.75Zm-6.75 6.75c-.316 0-.583.111-.8.334-.217.223-.325.49-.325.8 0 .31.108.574.325.79.217.218.484.326.8.326h6.75c.305 0 .568-.108.791-.325.223-.217.334-.48.334-.791 0-.31-.111-.577-.334-.8a1.081 1.081 0 0 0-.791-.334h-6.75Z"
-                        fill="#fff"
-                      />
-                    </svg>
-                  </div>
-                  <p
-                    class="ml-16 text-2xl font-bold leading-5 text-matisse-700"
-                  >
-                    Free Domain Transfer
-                  </p>
-                </dt>
-                <dd class="mt-2 ml-16 text-base text-icon-darkest">
+          <hr class="mt-10 mb-6" />
+          <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
+            <div>
+              <h3 class="text-2xl font-bold leading-5 text-matisse-500">
+                Free Domain Transfer
+              </h3>
+              <div class="mt-4 text-icon-darkest">
+                <p>
                   Already have your domain name? Transfer it over to FidaHost
                   for free and set up your website on our powerful servers with
                   99.9% uptime, guaranteed.
-                </dd>
+                </p>
               </div>
-              <div class="relative">
-                <dt>
-                  <div
-                    class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-matisse-500 text-white"
-                  >
-                    <svg
-                      width="24"
-                      height="24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M18.75 14.25c.621 0 1.151.22 1.59.66.44.439.66.969.66 1.59v2.25c0 .621-.22 1.151-.66 1.59-.439.44-.969.66-1.59.66H5.25c-.621 0-1.151-.22-1.59-.66-.44-.439-.66-.969-.66-1.59V16.5c0-.621.22-1.151.66-1.59.439-.44.969-.66 1.59-.66h5.625V12H5.25c-.621 0-1.151-.22-1.59-.66-.44-.439-.66-.969-.66-1.59V7.5c0-.621.22-1.151.66-1.59.439-.44.969-.66 1.59-.66h5.625V4.125c0-.316.108-.583.325-.8.217-.217.48-.325.791-.325.31 0 .577.108.8.325.223.217.334.484.334.8V5.25h5.625c.621 0 1.151.22 1.59.66.44.439.66.969.66 1.59v2.25c0 .621-.22 1.151-.66 1.59-.439.44-.969.66-1.59.66h-5.625v2.25h5.625ZM6.366 16.5c-.31 0-.574.111-.79.334-.218.223-.326.49-.326.8 0 .31.108.574.325.79.217.218.48.326.791.326.31 0 .577-.108.8-.325.223-.217.334-.48.334-.791 0-.31-.111-.577-.334-.8a1.091 1.091 0 0 0-.8-.334Zm0-9c-.31 0-.574.111-.79.334-.218.223-.326.49-.326.8 0 .31.108.574.325.79.217.218.48.326.791.326.31 0 .577-.108.8-.325.223-.217.334-.48.334-.791 0-.31-.111-.577-.334-.8a1.091 1.091 0 0 0-.8-.334Zm11.259 2.25c.305 0 .568-.108.791-.325.223-.217.334-.48.334-.791 0-.31-.111-.577-.334-.8a1.081 1.081 0 0 0-.791-.334h-6.75c-.316 0-.583.111-.8.334-.217.223-.325.49-.325.8 0 .31.108.574.325.79.217.218.484.326.8.326h6.75Zm-6.75 6.75c-.316 0-.583.111-.8.334-.217.223-.325.49-.325.8 0 .31.108.574.325.79.217.218.484.326.8.326h6.75c.305 0 .568-.108.791-.325.223-.217.334-.48.334-.791 0-.31-.111-.577-.334-.8a1.081 1.081 0 0 0-.791-.334h-6.75Z"
-                        fill="#fff"
-                      />
-                    </svg>
-                  </div>
-                  <p
-                    class="ml-16 text-2xl font-bold leading-5 text-matisse-700"
-                  >
-                    Free Website Migration
-                  </p>
-                </dt>
-                <dd class="mt-2 ml-16 text-base text-icon-darkest">
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold leading-5 text-matisse-500">
+                Free Website Migration
+              </h3>
+              <div class="mt-4 text-icon-darkest">
+                <p>
                   Migrating your website from one host to another can be
                   daunting, but we’ll help you every step of the way to ensure
                   your website stays online and available.
-                </dd>
+                </p>
               </div>
-            </dl>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- <section>
+      <div
+        class="mx-auto flex px-4 py-16 sm:max-w-xl md:max-w-full md:flex-row-reverse md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
+      >
+        <div class="relative pl-20 md:w-1/2">
+          <div class="relative">
+            <div
+              class="absolute -inset-3 rounded-xl bg-matisse-300 opacity-30 blur"
+            ></div>
+            <div class="relative rounded-xl bg-gray-900 px-16 py-14">
+              <div class="mb-8 flex w-full items-center justify-center">
+                <svg
+                  width="64"
+                  height="64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M58 41.5V5.375A5.315 5.315 0 0052.785 0H5.215A5.315 5.315 0 000 5.375v45.59A5.05 5.05 0 005.04 56H44v6.33l6.35-2.765L52.28 64l7.315-3.185-1.93-4.435L64 53.63l-6-5.585V41.5zM48 6a2 2 0 110 4 2 2 0 010-4zm-8 0a2 2 0 110 4 2 2 0 010-4zm-8 0a2 2 0 110 4 2 2 0 010-4zm7 48H5.04A3.04 3.04 0 012 50.965V17h54v29.18L44 35v19h-5z"
+                    fill="#bfddfe"
+                  ></path>
+                  <path
+                    d="M52 28H30v2h22v-2zM52 22H30v2h22v-2zM26 22H6v16h20V22zm-3.915 2L16 28.735 9.915 24h12.17zM8 25.045L14.37 30 8 34.955v-9.91zM9.915 36L16 31.265 22.085 36H9.915zM24 34.955L17.63 30 24 25.045v9.91zM40 42H6v2h34v-2zM26 48H6v2h20v-2zM40 48H30v2h10v-2z"
+                    fill="#bfddfe"
+                  ></path>
+                </svg>
+              </div>
+              <div class="mb-4 flex flex-col text-center">
+                <h6 class="text-2xl font-bold leading-5 text-wh-light">
+                  No Love, No Pay
+                </h6>
+              </div>
+              <p class="text-gray-400">
+                Try us and love us, or get a refund within 30 days of signing
+                up. Your satisfaction is our top priority.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-1/2">
+          <h2 class="mb-6 text-4xl font-bold text-gray-900">
+            Transfering to FidaHost is easy
+          </h2>
+          <hr class="mt-10 mb-6" />
+          <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
+            <div>
+              <h3 class="text-2xl font-bold leading-5 text-matisse-500">
+                Free Domain Transfer
+              </h3>
+              <div class="mt-4 text-icon-darkest">
+                <p>
+                  Already have your domain name? Transfer it over to FidaHost
+                  for free and set up your website on our powerful servers with
+                  99.9% uptime, guaranteed.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold leading-5 text-matisse-500">
+                Free Website Migration
+              </h3>
+              <div class="mt-4 text-icon-darkest">
+                <p>
+                  Migrating your website from one host to another can be
+                  daunting, but we’ll help you every step of the way to ensure
+                  your website stays online and available.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
     <!-- End of Transfer to FH -->
+
+    <!-- FIXME -->
+    <!-- Transfer to FH -->
+    <!--     
+    <section class="image-intro-features section bg-gray-900 text-wh-light">
+      <div
+        class="mx-auto flex px-4 py-16 sm:max-w-xl md:max-w-full md:flex-row-reverse md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
+      >
+        <div class="md:ml-8 md:w-1/2">
+          <h2 class="mb-6 text-4xl font-bold">
+            Transfering to FidaHost is easy
+          </h2>
+          <hr class="mt-12 mb-6 opacity-20" />
+          <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
+            <div>
+              <h3 class="text-2xl font-bold leading-5 text-wh-light">
+                Free Domain Transfer
+              </h3>
+              <div class="mt-4 text-gray-400">
+                <p>
+                  Already have your domain name? Transfer it over to FidaHost
+                  for free and set up your website on our powerful servers with
+                  99.9% uptime, guaranteed.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold leading-5 text-wh-light">
+                Free Website Migration
+              </h3>
+              <div class="mt-4 text-gray-400">
+                <p>
+                  Migrating your website from one host to another can be
+                  daunting, but we’ll help you every step of the way to ensure
+                  your website stays online and available.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative pr-20 md:w-1/2">
+          <div class="relative">
+            <div
+              class="absolute -inset-1 rounded-xl bg-matisse-300 opacity-30 blur"
+            ></div>
+            <div class="relative rounded-xl bg-gray-900 px-16 py-14">
+              <div class="mb-8 flex w-full items-center justify-center">
+                <svg
+                  width="64"
+                  height="64"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M58 41.5V5.375A5.315 5.315 0 0052.785 0H5.215A5.315 5.315 0 000 5.375v45.59A5.05 5.05 0 005.04 56H44v6.33l6.35-2.765L52.28 64l7.315-3.185-1.93-4.435L64 53.63l-6-5.585V41.5zM48 6a2 2 0 110 4 2 2 0 010-4zm-8 0a2 2 0 110 4 2 2 0 010-4zm-8 0a2 2 0 110 4 2 2 0 010-4zm7 48H5.04A3.04 3.04 0 012 50.965V17h54v29.18L44 35v19h-5z"
+                    fill="#bfddfe"
+                  ></path>
+                  <path
+                    d="M52 28H30v2h22v-2zM52 22H30v2h22v-2zM26 22H6v16h20V22zm-3.915 2L16 28.735 9.915 24h12.17zM8 25.045L14.37 30 8 34.955v-9.91zM9.915 36L16 31.265 22.085 36H9.915zM24 34.955L17.63 30 24 25.045v9.91zM40 42H6v2h34v-2zM26 48H6v2h20v-2zM40 48H30v2h10v-2z"
+                    fill="#bfddfe"
+                  ></path>
+                </svg>
+              </div>
+              <div class="mb-4 flex flex-col text-center">
+                <h6 class="text-2xl font-bold leading-5 text-wh-light">
+                  No Love, No Pay
+                </h6>
+              </div>
+              <p class="text-gray-400">
+                Try us and love us, or get a refund within 30 days of signing
+                up. Your satisfaction is our top priority.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- End of Transfer to FH -->
+
+    <!-- FIXME -->
+    <!-- Traansfering -->
+    <!-- <section class="bg-matisse-500">
+      <div
+        class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
+      >
+        <div
+          class="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-2xl"
+        >
+          <h2
+            class="mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto"
+          >
+            Transfering to FidaHost is easy
+          </h2>
+        </div>
+        <div class="mb-8 grid gap-16 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="transform rounded bg-wh-bluDark01 p-5 py-10 text-center shadow-sm duration-300 hover:bg-wh-bluDark02"
+          >
+            <div class="mb-4 flex w-full items-center justify-center">
+              <svg
+                width="65"
+                height="64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.03 21.176C10.275 21.176.752 30.758.752 42.588.751 54.418 10.391 64 22.031 64 33.67 64 43.31 54.418 43.31 42.588c0-11.83-9.523-21.412-21.28-21.412zm13.99 12.54h-4.702c-.823-2.367-1.998-4.614-3.292-6.625 3.292 1.301 6.114 3.667 7.995 6.624zm-13.99-6.27c1.764 1.656 3.292 3.785 4.233 6.27h-8.582c1.175-2.485 2.586-4.614 4.35-6.27zm-5.878-.355c-1.41 2.01-2.586 4.14-3.291 6.624H8.158c1.881-2.957 4.703-5.323 7.994-6.624zM6.042 46.61c-.353-1.302-.47-2.603-.47-4.023 0-1.42.235-2.84.587-4.14h5.526a23.591 23.591 0 0 0-.353 4.14c0 1.301.118 2.72.235 4.022H6.042zm1.998 4.731h4.703a25.917 25.917 0 0 0 3.41 6.743 16.279 16.279 0 0 1-8.113-6.743zm13.99 6.388c-1.88-1.656-3.291-3.904-4.35-6.506h8.7c-.94 2.602-2.468 4.85-4.35 6.506zm-5.643-11.12a22.261 22.261 0 0 1-.352-4.022c0-1.42.117-2.84.352-4.14h11.287c.235 1.3.352 2.72.352 4.14 0 1.301-.117 2.72-.352 4.022H16.387zm11.64 11.475a25.917 25.917 0 0 0 3.409-6.743h4.702a16.28 16.28 0 0 1-8.112 6.743zm10.58-15.497c0 1.42-.235 2.72-.47 4.022h-5.643c.235-1.301.235-2.602.235-4.022a23.6 23.6 0 0 0-.353-4.14h5.526c.47 1.3.705 2.72.705 4.14z"
+                  fill="#bfddfe"
+                />
+                <path
+                  d="M45.31 34.07c.94 2.603 1.527 5.442 1.527 8.4 9.876-1.775 17.518-10.53 17.518-21.058C64.355 9.582 54.832 0 43.075 0 32.612 0 23.912 7.571 22.15 17.627c1.646 0 3.174.118 4.703.473.117-.237.117-.592.235-.828h5.643c-.118.828-.235 1.774-.235 2.72 1.646.829 3.291 1.775 4.702 2.84 0-.474-.117-.947-.117-1.42 0-1.42.117-2.839.352-4.14h11.286a23.6 23.6 0 0 1 .353 4.14c0 1.301-.117 2.721-.352 4.022H39.9c1.41 1.42 2.587 2.958 3.527 4.732h3.997a20.625 20.625 0 0 1-2.116 3.904zM33.787 12.54h-4.703c1.881-2.958 4.703-5.324 7.995-6.625-1.294 2.011-2.47 4.259-3.292 6.625zm5.055 0c1.058-2.485 2.469-4.614 4.232-6.27 1.764 1.656 3.292 3.785 4.233 6.27h-8.465zm20.221 4.732c.353 1.301.588 2.72.588 4.14 0 1.42-.235 2.721-.47 4.022h-5.643c.235-1.301.235-2.602.235-4.022a23.6 23.6 0 0 0-.353-4.14h5.643zM49.071 5.915c3.292 1.301 6.114 3.667 7.995 6.625h-4.703c-.823-2.366-1.881-4.614-3.292-6.625zm3.41 24.251h4.702a16.279 16.279 0 0 1-8.112 6.743 25.915 25.915 0 0 0 3.41-6.743zM7.57 17.272h11.168V9.937H7.57V6.743L.869 13.604l6.7 6.862v-3.194zM55.185 46.492H44.133v7.453h11.052v3.075l6.818-6.861-6.818-6.743v3.076z"
+                  fill="#bfddfe"
+                />
+              </svg>
+            </div>
+            <h6 class="mb-2 text-xl font-semibold leading-5 text-white">
+              Free Domain Transfer
+            </h6>
+            <p class="text-sm text-gray-200">
+              Already have your domain name? Transfer it over to FidaHost for
+              free and set up your website on our powerful servers with 99.9%
+              uptime, guaranteed.
+            </p>
+          </div>
+          <div
+            class="transform rounded bg-wh-bluDark01 p-5 py-10 text-center shadow-sm duration-300 hover:bg-wh-bluDark02"
+          >
+            <div class="mb-4 flex w-full items-center justify-center">
+              <svg
+                width="74"
+                height="64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M27.19 17.463v8.222h46.362v-8.222H27.19zm8.353 6.527h-1.934V21.7h1.934v2.29zm4.734 0h-1.934V21.7h1.934v2.29zm4.734 0h-1.934V21.7h1.934v2.29zm19.95-.126h-8.183v-2.29h8.182v2.29zM73.552 27.975V64H27.19V39.964h7.875l4.108 4.168 7.58-7.603-7.58-7.615-4.12 4.18H27.19v-5.12h46.362z"
+                  fill="#bfddfe"
+                ></path>
+                <path
+                  d="M47.094 10.512v4.66h-22.18v17.921h-3.539l-4.154-4.18-7.556 7.616 7.556 7.603 4.143-4.168h3.55v6.573H.72V10.512h46.374zM47.094 0H.72v8.222h46.374V0zM9.084 6.539H7.15v-2.29h1.935v2.29zm4.735 0h-1.935v-2.29h1.935v2.29zm4.734 0h-1.935v-2.29h1.935v2.29zM38.502 6.4H30.32v-2.29h8.182v2.29z"
+                  fill="#bfddfe"
+                ></path>
+                <path
+                  d="M43.532 36.529l-4.348 4.362-1.604-1.625 1.593-1.592H17.244l1.593 1.592-1.616 1.626-4.335-4.363 4.335-4.375 1.616 1.627-1.593 1.603h21.93L37.58 33.78l1.604-1.627 4.348 4.375z"
+                  fill="#bfddfe"
+                ></path>
+              </svg>
+            </div>
+            <h6 class="mb-2 text-xl font-semibold leading-5 text-white">
+              Free Website Migration
+            </h6>
+            <p class="text-sm text-gray-200">
+              Migrating your website from one host to another can be daunting,
+              but we’ll help you every step of the way to ensure your website
+              stays online and available.
+            </p>
+          </div>
+          <div
+            class="transform rounded bg-wh-bluDark01 p-5 py-10 text-center shadow-sm duration-300 hover:bg-wh-bluDark02"
+          >
+            <div class="mb-4 flex w-full items-center justify-center">
+              <svg
+                width="64"
+                height="64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M58 41.5V5.375A5.315 5.315 0 0052.785 0H5.215A5.315 5.315 0 000 5.375v45.59A5.05 5.05 0 005.04 56H44v6.33l6.35-2.765L52.28 64l7.315-3.185-1.93-4.435L64 53.63l-6-5.585V41.5zM48 6a2 2 0 110 4 2 2 0 010-4zm-8 0a2 2 0 110 4 2 2 0 010-4zm-8 0a2 2 0 110 4 2 2 0 010-4zm7 48H5.04A3.04 3.04 0 012 50.965V17h54v29.18L44 35v19h-5z"
+                  fill="#bfddfe"
+                ></path>
+                <path
+                  d="M52 28H30v2h22v-2zM52 22H30v2h22v-2zM26 22H6v16h20V22zm-3.915 2L16 28.735 9.915 24h12.17zM8 25.045L14.37 30 8 34.955v-9.91zM9.915 36L16 31.265 22.085 36H9.915zM24 34.955L17.63 30 24 25.045v9.91zM40 42H6v2h34v-2zM26 48H6v2h20v-2zM40 48H30v2h10v-2z"
+                  fill="#bfddfe"
+                ></path>
+              </svg>
+            </div>
+            <h6 class="mb-2 text-xl font-semibold leading-5 text-white">
+              No Love, No Pay
+            </h6>
+            <p class="text-sm text-gray-200">
+              Try us and love us, or get a refund within 30 days of signing up.
+              Your satisfaction is our top priority.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- End of Traansfering -->
 
     <!-- Why Us -->
     <div
@@ -1493,7 +2084,7 @@
         class="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-4xl"
       >
         <h2
-          class="mb-6 max-w-lg text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
+          class="mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-matisse-700 sm:text-4xl md:mx-auto"
         >
           Why us
         </h2>
@@ -3552,7 +4143,7 @@
                   </g>
                 </svg>
                 <h2
-                  class="hidden px-3 text-base font-bold leading-normal text-gray-100 sm:block"
+                  class="hidden px-3 text-base font-bold leading-normal text-gray-700 sm:block"
                 >
                   FidaHost
                 </h2>
