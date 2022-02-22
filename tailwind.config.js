@@ -16,6 +16,7 @@ module.exports = {
         openSans: "'Open Sans', sans-serif",
         montserrat: "'Montserrat', sans-serif",
         roboto: "'Roboto', sans-serif",
+        inter: "'Inter', sans-serif",
       },
       colors: {
         icon: {
