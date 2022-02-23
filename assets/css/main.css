@@ -2318,6 +2318,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(98 122 144 / var(--tw-text-opacity));
 }
 
+.text-\[\#243955\] {
+  --tw-text-opacity: 1;
+  color: rgb(36 57 85 / var(--tw-text-opacity));
+}
+
 .line-through {
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
