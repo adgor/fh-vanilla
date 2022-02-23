@@ -2482,6 +2482,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-left-radius: 0.75rem;
 }
 
+.hover\:border-4:hover {
+  border-width: 4px;
+}
+
 .hover\:border-matisse-500:hover {
   --tw-border-opacity: 1;
   border-color: rgb(31 90 166 / var(--tw-border-opacity));
@@ -2490,6 +2494,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:border-white:hover {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.hover\:border-zircon-900:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(120 122 124 / var(--tw-border-opacity));
+}
+
+.hover\:border-matisse-700:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(15 43 80 / var(--tw-border-opacity));
 }
 
 .hover\:bg-gray-100:hover {
