@@ -41,6 +41,8 @@ module.exports = {
           // $bh-silver: #A6ABBD;
           // $bh-gold: #F1A208;
 
+          aliceBlue:'#F0FAFF',
+          skyBlue:'#84C0FC',
           bluDarkest: "#011640",
           bluLight: "#63b0f2",
           bluDark01: "#00458f",
