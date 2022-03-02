@@ -21,7 +21,9 @@
   </head>
   <body class="font-openSans">
     <!-- Navigation & Hero -->
-    <div class="relative bg-wh-aliceBlue font-poppins">
+    <div
+      class="relative bg-gradient-to-r from-matisse-700 to-matisse-300 font-poppins"
+    >
       <nav role="navigation" class="relative z-50 hidden xl:block">
         <div
           class="container relative mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20 xl:py-0"
@@ -29,10 +31,10 @@
           <div class="flex h-16 items-center">
             <div class="inset-y-0 left-0 flex items-center xl:hidden">
               <div
-                class="inline-flex items-center justify-center rounded-md p-2 text-gray-600 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none"
+                class="inline-flex items-center justify-center rounded-md p-2 text-white transition duration-150 ease-in-out hover:text-gray-300 focus:outline-none"
               >
                 <div
-                  class="close-m-menu hidden text-gray-600"
+                  class="close-m-menu hidden text-white"
                   onclick="MenuHandler(this,false)"
                 >
                   <svg
@@ -55,11 +57,11 @@
               </div>
             </div>
             <button
-              class="flex w-full items-center justify-end rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto sm:items-stretch sm:justify-start"
+              class="flex w-full items-center justify-end rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto sm:items-stretch sm:justify-start"
             >
               <div class="mr-4 flex items-center">
                 <h2
-                  class="hidden text-base font-bold leading-normal text-matisse-700 sm:block"
+                  class="hidden text-base font-bold leading-normal text-white sm:block"
                 >
                   FidaHost
                 </h2>
@@ -68,11 +70,9 @@
             <div class="flex w-full items-center justify-between">
               <div class="hidden md:mr-6 xl:mr-16 xl:flex">
                 <div
-                  class="group dropdown relative cursor-pointer text-matisse-700 transition duration-300 hover:underline"
+                  class="group dropdown relative cursor-pointer text-white transition duration-300 hover:text-gray-300"
                 >
-                  <a
-                    class="flex items-center px-3 py-2 font-semibold leading-5"
-                  >
+                  <a class="flex items-center px-3 py-2 font-medium leading-5">
                     Hosting
                     <span>
                       <svg
@@ -195,11 +195,9 @@
                   </div>
                 </div>
                 <div
-                  class="group dropdown relative cursor-pointer text-matisse-700 transition duration-300 hover:underline"
+                  class="group dropdown relative cursor-pointer text-white transition duration-300 hover:text-gray-300"
                 >
-                  <a
-                    class="flex items-center px-3 py-2 font-semibold leading-5"
-                  >
+                  <a class="flex items-center px-3 py-2 font-medium leading-5">
                     Virtual Servers
                     <span>
                       <svg
@@ -309,13 +307,13 @@
                 </div>
                 <a
                   href="/dedicated-servers.html"
-                  class="flex items-center px-3 py-2 font-semibold leading-5 text-matisse-700 transition duration-300 hover:underline"
+                  class="flex items-center px-3 py-2 font-medium leading-5 text-white transition duration-300 hover:text-gray-300"
                 >
                   Dedicated Servers
                 </a>
                 <a
                   href="/domains.html"
-                  class="flex items-center px-3 py-2 font-semibold leading-5 text-matisse-700 transition duration-300 hover:underline"
+                  class="flex items-center px-3 py-2 font-medium leading-5 text-white transition duration-300 hover:text-gray-300"
                 >
                   Domains
                 </a>
@@ -325,7 +323,7 @@
               >
                 <a
                   href="#"
-                  class="inline-flex items-center justify-center rounded-md border border-transparent px-4 py-2 text-base font-semibold text-matisse-700 hover:underline"
+                  class="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-base font-medium text-matisse-600 shadow-sm hover:bg-matisse-50"
                 >
                   Sign in
                 </a>
@@ -340,6 +338,7 @@
           </div>
         </div>
       </nav>
+
       <nav>
         <div
           class="top-0 flex w-full items-center justify-between bg-white px-6 py-4 text-pink-600 xl:hidden"
@@ -693,25 +692,46 @@
           </div>
         </div>
       </nav>
-      <section class="mx-auto max-w-7xl px-4 pt-24 pb-16">
-        <div
-          class="mx-auto w-full text-left md:w-11/12 md:text-center xl:w-9/12"
-        >
-          <h1
-            class="mb-6 text-4xl font-extrabold leading-none tracking-normal text-matisse-700 md:text-6xl md:tracking-tight"
-          >
-            All your
-            <span
-              class="block w-full bg-gradient-to-r from-green-400 to-purple-500 bg-clip-text text-transparent lg:inline"
-              >website hosted</span
+      <div
+        class="relative mx-auto overflow-hidden px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
+      >
+        <div class="grid items-center lg:grid-cols-2">
+          <div class="w-full">
+            <h1
+              class="mb-6 text-4xl font-extrabold leading-none tracking-normal text-white md:text-6xl md:tracking-tight"
             >
-            in one single place.
-          </h1>
-          <p class="mb-6 px-0 text-lg text-matisse-600 md:text-xl lg:px-24">
-            Clear pricing backed by our unbeatable 30-Day Money-Back Guarantee.
-          </p>
+              All your website
+              <span class="relative inline-block px-2">
+                <div
+                  class="absolute inset-0 -skew-x-12 transform bg-wh-skyBlue"
+                ></div>
+                <span class="relative leading-tight text-matisse-700"
+                  >hosted</span
+                >
+              </span>
+              in one <br />
+              single place.
+            </h1>
+            <p class="px-0 text-lg text-white md:text-xl">
+              Clear pricing backed by our unbeatable 30-Day Money-Back
+              Guarantee.
+            </p>
+          </div>
+          <div class="mx-auto text-center">
+            <div class="relative mx-auto grid">
+              <h1
+                class="text-[320px] font-bold leading-tight text-white md:font-bold"
+              >
+                $9<span class="text-2xl font-medium"> /per month</span>
+              </h1>
+
+              <div class="-mt-14 text-2xl text-white">
+                Regular Price $10.99 *
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
     </div>
     <!-- End of Navigation -->
 
