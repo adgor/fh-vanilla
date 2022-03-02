@@ -1780,6 +1780,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(7 20 37 / 0));
 }
 
+.from-matisse-300 {
+  --tw-gradient-from: #4D8CDE;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(77 140 222 / 0));
+}
+
+.from-wh-skyBlue {
+  --tw-gradient-from: #84C0FC;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(132 192 252 / 0));
+}
+
 .via-matisse-700 {
   --tw-gradient-stops: var(--tw-gradient-from), #0F2B50, var(--tw-gradient-to, rgb(15 43 80 / 0));
 }
@@ -1810,6 +1820,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .to-matisse-900 {
   --tw-gradient-to: #000000;
+}
+
+.to-wh-skyBlue {
+  --tw-gradient-to: #84C0FC;
 }
 
 .bg-cover {
