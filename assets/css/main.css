@@ -898,6 +898,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: -4rem;
 }
 
+.-mt-4 {
+  margin-top: -1rem;
+}
+
 .block {
   display: block;
 }
@@ -1421,6 +1425,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .divide-zircon-600 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgb(221 223 228 / var(--tw-divide-opacity));
+}
+
+.place-self-center {
+  place-self: center;
 }
 
 .self-center {
