@@ -2119,6 +2119,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 280px;
 }
 
+.text-\[200px\] {
+  font-size: 200px;
+}
+
+.text-\[240px\] {
+  font-size: 240px;
+}
+
+.text-\[220px\] {
+  font-size: 220px;
+}
+
+.text-\[210px\] {
+  font-size: 210px;
+}
+
 .font-bold {
   font-weight: 700;
 }
