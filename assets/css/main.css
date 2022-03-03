@@ -592,6 +592,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
+.inset-x-3 {
+  left: 0.75rem;
+  right: 0.75rem;
+}
+
+.inset-x-4 {
+  left: 1rem;
+  right: 1rem;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -920,6 +930,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mr-20 {
   margin-right: 5rem;
+}
+
+.-mt-2 {
+  margin-top: -0.5rem;
+}
+
+.mr-36 {
+  margin-right: 9rem;
+}
+
+.mr-40 {
+  margin-right: 10rem;
+}
+
+.mr-44 {
+  margin-right: 11rem;
+}
+
+.mr-48 {
+  margin-right: 12rem;
 }
 
 .block {
