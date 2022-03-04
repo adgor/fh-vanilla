@@ -956,6 +956,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: auto;
 }
 
+.-mt-14 {
+  margin-top: -3.5rem;
+}
+
 .block {
   display: block;
 }
@@ -2011,6 +2015,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .fill-matisse-200 {
   fill: #78A8E6;
+}
+
+.fill-wh-skyBlue {
+  fill: #84C0FC;
 }
 
 .stroke-current {
