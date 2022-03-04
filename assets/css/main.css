@@ -952,6 +952,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 12rem;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .block {
   display: block;
 }
@@ -1142,6 +1146,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-8 {
   width: 2rem;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[410px\] {
+  width: 410px;
+}
+
+.w-\[420px\] {
+  width: 420px;
+}
+
+.w-\[425px\] {
+  width: 425px;
 }
 
 .min-w-0 {
@@ -1981,6 +2001,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   fill: #4D8CDE;
 }
 
+.fill-matisse-400 {
+  fill: #2771D1;
+}
+
+.fill-matisse-500 {
+  fill: #1F5AA6;
+}
+
+.fill-matisse-200 {
+  fill: #78A8E6;
+}
+
 .stroke-current {
   stroke: currentColor;
 }
@@ -2201,6 +2233,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pr-4 {
   padding-right: 1rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .text-left {
