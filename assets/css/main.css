@@ -1168,6 +1168,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 425px;
 }
 
+.w-\[440px\] {
+  width: 440px;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
