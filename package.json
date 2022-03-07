@@ -2,10 +2,9 @@
   "name": "fidahost",
   "version": "4.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "dev": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch",
-    "build": "vite build"
+    "dev": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +14,6 @@
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",
     "prettier-plugin-tailwindcss": "^0.1.5",
-    "tailwindcss": "^3.0.18",
-    "vite": "^2.7.13"
+    "tailwindcss": "^3.0.18"
   }
 }
