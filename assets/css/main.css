@@ -907,6 +907,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: -4rem;
 }
 
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
 .block {
   display: block;
 }
@@ -3194,6 +3198,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:ml-2 {
     margin-left: 0.5rem;
+  }
+
+  .md\:mb-14 {
+    margin-bottom: 3.5rem;
+  }
+
+  .md\:mb-16 {
+    margin-bottom: 4rem;
   }
 
   .md\:block {
