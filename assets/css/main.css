@@ -903,6 +903,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: -6rem;
 }
 
+.-mt-16 {
+  margin-top: -4rem;
+}
+
 .block {
   display: block;
 }
