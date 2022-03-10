@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- generated from tw -->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <!-- addes extra -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- End User css -->
+    <link rel="stylesheet" href="/assets/css/custom.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+  </head>
+  <body class="font-openSans">
+    <!-- Navigation & Hero -->
+    <div
+      class="relative bg-gradient-to-tr from-matisse-800 via-matisse-700 to-matisse-900 font-poppins"
+    >
+      <nav role="navigation" class="relative z-50 hidden xl:block">
+        <div
+          class="container relative mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20 xl:py-0"
+        >
+          <div class="flex h-16 items-center">
+            <div class="inset-y-0 left-0 flex items-center xl:hidden">
+              <div
+                class="inline-flex items-center justify-center rounded-md p-2 text-white transition duration-150 ease-in-out hover:text-gray-300 focus:outline-none"
+              >
+                <div
+                  class="close-m-menu hidden text-white"
+                  onclick="MenuHandler(this,false)"
+                >
+                  <svg
+                    aria-label="Close"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <button
+              class="flex w-full items-center justify-end rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto sm:items-stretch sm:justify-start"
+            >
+              <div class="mr-4 flex items-center">
+                <h2
+                  class="hidden text-base font-bold leading-normal text-white sm:block"
+                >
+                  FidaHost
+                </h2>
+              </div>
+            </button>
+            <div class="flex w-full items-center justify-between">
+              <div class="hidden md:mr-6 xl:mr-16 xl:flex">
+                <div
+                  class="group dropdown relative cursor-pointer text-white transition duration-300 hover:text-gray-300"
+                >
+                  <a class="flex items-center px-3 py-2 font-medium leading-5">
+                    Hosting
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4 group-hover:rotate-180 group-hover:transform"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+                  <div
+                    class="dropdown-menu absolute -mt-3 hidden h-auto w-screen max-w-md group-hover:block"
+                  >
+                    <div class="ml-6 -mb-2 inline-block w-16 overflow-hidden">
+                      <div
+                        class="h-3 w-3 origin-bottom-left rotate-45 transform bg-white"
+                      ></div>
+                    </div>
+                    <!-- <ul class="top-0 w-48 px-6 py-8 bg-white shadow"> -->
+                    <div
+                      class="relative grid w-auto gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8"
+                    >
+                      <a
+                        href="/web-hosting.html"
+                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                      >
+                        <!-- Heroicon name: outline/chart-bar -->
+                        <svg
+                          class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                          />
+                        </svg>
+                        <div class="ml-4">
+                          <p class="text-base font-medium text-gray-900">
+                            Web Hosting
+                          </p>
+                          <p class="mt-1 text-sm text-gray-500">
+                            A Simple & Complete solution to start you website
+                          </p>
+                        </div>
+                      </a>
+                      <a
+                        href="/business-hosting.html"
+                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                      >
+                        <!-- Heroicon name: outline/cursor-click -->
+                        <svg
+                          class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
+                          />
+                        </svg>
+                        <div class="ml-4">
+                          <p class="text-base font-medium text-gray-900">
+                            Business Hosting
+                          </p>
+                          <p class="mt-1 text-sm text-gray-500">
+                            A Powerful & Complete solution for you business
+                            without technical pain
+                          </p>
+                        </div>
+                      </a>
+                      <a
+                        href="/email-hosting.html"
+                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                      >
+                        <!-- Heroicon name: outline/shield-check -->
+                        <svg
+                          class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                          />
+                        </svg>
+                        <div class="ml-4">
+                          <p class="text-base font-medium text-gray-900">
+                            Email Hosting
+                          </p>
+                          <p class="mt-1 text-sm text-gray-500">
+                            A simple & Professional Email Hosting Solution for
+                            your Business
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- </ul> -->
+                  </div>
+                </div>
+                <div
+                  class="group dropdown relative cursor-pointer text-white transition duration-300 hover:text-gray-300"
+                >
+                  <a class="flex items-center px-3 py-2 font-medium leading-5">
+                    Virtual Servers
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4 group-hover:rotate-180 group-hover:transform"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </a>
+
+                  <div
+                    class="dropdown-menu absolute -mt-3 hidden h-auto w-screen max-w-md group-hover:block"
+                  >
+                    <div class="ml-6 -mb-2 inline-block w-16 overflow-hidden">
+                      <div
+                        class="h-3 w-3 origin-bottom-left rotate-45 transform bg-white"
+                      ></div>
+                    </div>
+                    <!-- <ul class="top-0 w-48 px-6 py-8 bg-white shadow"> -->
+                    <div
+                      class="relative grid w-auto gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8"
+                    >
+                      <a
+                        href="/vps-linux.html"
+                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-100"
+                      >
+                        <svg
+                          width="25"
+                          height="25"
+                          viewBox="0 0 25 25"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M13.0018 9.66265C12.588 9.66265 12.1737 9.44847 11.6587 8.96792L11.6136 8.92577C11.3496 8.67751 11.191 8.55248 10.9137 8.6332L10.7349 8.6854L10.6011 8.24898L10.7092 8.16987C10.8716 8.05058 11.0327 7.93004 11.1943 7.80986C11.5711 7.5286 11.9609 7.23765 12.3579 6.96768C12.7525 6.6997 13.2438 6.6997 13.6388 6.96768C14.0351 7.23657 14.4236 7.52626 14.7996 7.80665C14.9623 7.92791 15.1249 8.04935 15.2885 8.16899L15.4421 8.28146L15.2806 8.5012C15.2537 8.54102 15.2026 8.61528 15.0986 8.61528C15.0327 8.60721 14.9988 8.60398 14.9664 8.60398C14.7599 8.60398 14.6031 8.71681 14.3866 8.92471C13.854 9.4352 13.427 9.66265 13.0018 9.66265L13.0018 9.66265ZM11.2387 8.24789C11.5035 8.30367 11.6979 8.48664 11.8728 8.65095L11.9166 8.69184C12.3563 9.10244 12.6908 9.28523 13.0018 9.28523C13.322 9.28523 13.6684 9.08989 14.1253 8.6524C14.3054 8.47966 14.5018 8.30961 14.7621 8.24934C14.6995 8.2027 14.6367 8.15607 14.5741 8.10907C14.2012 7.83139 13.8158 7.5442 13.427 7.27979C13.1542 7.09449 12.8437 7.09449 12.5703 7.27979C12.1802 7.54491 11.794 7.83354 11.4203 8.11191C11.3599 8.15748 11.2996 8.20286 11.2388 8.24788L11.2387 8.24789Z"
+                            fill="#1F5AA6"
+                          />
+                          <path
+                            d="M10.8073 4.37524C10.377 4.37919 10.0532 4.70673 10.0536 5.1367C10.0543 5.56631 10.379 5.89296 10.8089 5.89654H10.815C11.2362 5.89654 11.5761 5.57061 11.5889 5.15484C11.5953 4.95196 11.5198 4.75859 11.3772 4.61114C11.2312 4.46136 11.0267 4.37526 10.8073 4.37526L10.8073 4.37524ZM10.8145 5.73509V5.73544V5.73509Z"
+                            fill="#1F5AA6"
+                          />
+                          <path
+                            d="M15.178 6.08547H15.1757C14.6521 6.08385 14.2227 5.65999 14.2185 5.14089C14.2146 4.62052 14.6397 4.19217 15.1667 4.18698C15.7079 4.18698 16.1233 4.58394 16.1342 5.1104C16.1398 5.37551 16.0446 5.62199 15.867 5.80389C15.6883 5.98541 15.444 6.08551 15.178 6.08551L15.178 6.08547ZM15.1689 4.56417C14.8519 4.5674 14.594 4.82463 14.5967 5.13744C14.599 5.45081 14.8591 5.70676 15.177 5.70768L15.1786 5.89657V5.70768C15.3425 5.70768 15.4912 5.64777 15.5981 5.53889C15.7038 5.43036 15.7608 5.28094 15.7572 5.11771C15.7506 4.79716 15.5031 4.56414 15.1689 4.56414L15.1689 4.56417Z"
+                            fill="#1F5AA6"
+                          />
+                          <path
+                            d="M19.0555 24.6442L19.003 24.6438C18.5244 24.6325 18.0458 24.6302 17.5672 24.6302L15.8937 24.6338C15.5742 24.6338 15.2544 24.6325 14.9354 24.6286C13.8811 24.6153 13.2868 24.2392 12.9666 23.3516C12.6279 24.2476 12.0175 24.6253 10.9431 24.6345C10.3488 24.6397 9.75612 24.6374 9.16186 24.6345C8.3803 24.6322 7.59804 24.6281 6.81652 24.6422H6.81527C6.35965 24.6422 5.7923 24.4812 5.50098 23.7152C5.27874 23.1313 5.48538 22.5672 6.05345 22.2052C6.34404 22.0204 6.63769 21.84 6.93292 21.6599C5.54148 20.4119 4.60962 18.8955 4.10344 17.0541C3.37735 17.3795 2.62356 17.4241 1.87308 17.1882C1.5477 17.0858 1.19649 16.9348 1.05657 16.5891C0.916658 16.2447 1.06303 15.896 1.20599 15.6313C1.53748 15.0165 1.94054 14.4246 2.33031 13.852C2.74288 13.2461 3.16927 12.6197 3.50201 11.9772C4.17539 10.6758 4.64268 9.20438 4.89056 7.60433C5.39784 4.32299 7.13331 2.21878 10.047 1.34996C10.8361 1.11444 11.7024 1 12.6953 1C13.2358 1 13.8096 1.03139 14.556 1.10243C18.2337 1.45167 20.6455 3.95362 21.1722 7.96661C21.4217 9.87231 22.155 11.684 23.4126 13.5051C23.8539 14.1435 24.2985 14.8303 24.8121 15.6655C25.0532 16.0569 25.0186 16.3626 24.9472 16.5498C24.8371 16.8379 24.5743 17.0456 24.166 17.167C23.8494 17.261 23.5066 17.3486 23.1491 17.3486H23.1487C22.7405 17.3486 22.3507 17.2417 21.8332 17.0304C21.351 18.8381 20.4007 20.3906 19.0024 21.6587C19.2451 21.8025 19.4866 21.9468 19.726 22.0946C20.4199 22.5233 20.6603 23.0621 20.44 23.6957C20.2891 24.1281 19.9271 24.6437 19.0556 24.6437L19.0555 24.6442ZM17.5673 23.6863C18.053 23.6863 18.5387 23.6892 19.0242 23.7L19.0556 23.7003C19.3793 23.7003 19.4755 23.5947 19.5478 23.3866C19.5903 23.2632 19.631 23.1468 19.2296 22.8983C18.9427 22.7211 18.6522 22.5491 18.3601 22.376L17.3657 21.7833L17.8984 21.3586C19.5812 20.0165 20.6099 18.3547 21.0418 16.277L21.1616 15.7005L21.6985 15.9436C22.4712 16.2932 22.8232 16.4053 23.1486 16.4053C23.3427 16.4053 23.5524 16.3655 23.8964 16.263C23.9619 16.2433 24.0065 16.2248 24.0354 16.2105C24.0286 16.1968 24.0198 16.1803 24.0076 16.161C23.503 15.3396 23.067 14.6666 22.6354 14.0418C21.2906 12.0947 20.5054 10.1476 20.2358 8.09009C19.963 6.0104 18.8503 2.45887 14.4669 2.04283C13.7513 1.97484 13.2051 1.94435 12.6953 1.94435C11.7952 1.94435 11.0171 2.04552 10.3166 2.25449C7.74667 3.02081 6.27653 4.81796 5.82288 7.74887C5.55938 9.45009 5.06019 11.0191 4.33942 12.4116C3.98103 13.1044 3.53816 13.7548 3.10999 14.3837C2.71626 14.9618 2.34459 15.508 2.03642 16.0797C2.00395 16.1403 1.98261 16.1863 1.96897 16.22C2.00879 16.2377 2.06817 16.2605 2.1566 16.2883C2.84127 16.5045 3.48705 16.3943 4.15359 15.95L4.72975 15.5667L4.87648 16.243C5.3366 18.3664 6.36834 20.0368 8.03098 21.3507L8.56049 21.769L7.54432 22.3931C7.21409 22.5947 6.88527 22.7952 6.56024 23.0022C6.3023 23.1662 6.34929 23.29 6.38338 23.38C6.48706 23.6528 6.59109 23.6991 6.78554 23.6991C7.59884 23.6851 8.37714 23.6878 9.1655 23.691C9.7553 23.6939 10.3452 23.6962 10.935 23.691C11.7319 23.6842 11.9752 23.495 12.1745 22.7267L12.2666 22.3735H13.6806L13.7678 22.7351C13.9466 23.4801 14.1893 23.6755 14.9475 23.685C15.2634 23.6889 15.5787 23.6902 15.8941 23.6902L17.5673 23.6863Z"
+                            fill="#1F5AA6"
+                          />
+                          <path
+                            d="M13 12.2067C10.8014 12.2067 9.01245 14.2037 9.01245 16.6582C9.01245 19.1128 10.8012 21.1098 13 21.1098C15.1986 21.1098 16.9875 19.1128 16.9875 16.6582C16.9875 14.2037 15.1988 12.2067 13 12.2067V12.2067ZM13 20.2877C11.2545 20.2877 9.83452 18.6592 9.83452 16.6582C9.83452 14.6573 11.2545 13.0287 13 13.0287C14.7455 13.0287 16.1655 14.6573 16.1655 16.6582C16.1655 18.6592 14.7455 20.2877 13 20.2877Z"
+                            fill="#1F5AA6"
+                          />
+                        </svg>
+
+                        <div class="ml-4">
+                          <p class="text-base font-medium text-gray-900">
+                            Linux VPS
+                          </p>
+                          <p class="mt-1 text-sm text-gray-500">
+                            Fast and affordable VPS hosting with Linux operating
+                            system
+                          </p>
+                        </div>
+                      </a>
+
+                      <a
+                        href="/vps-windows.html"
+                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-wh-aliceBlue"
+                      >
+                        <!-- Heroicon name: outline/cursor-click -->
+                        <svg
+                          class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
+                          />
+                        </svg>
+                        <div class="ml-4">
+                          <p class="text-base font-medium text-gray-900">
+                            Windows VPS
+                          </p>
+                          <p class="mt-1 text-sm text-gray-500">
+                            Fast and affordable VPS hosting with Windows
+                            operating system
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- </ul> -->
+                  </div>
+                </div>
+                <a
+                  href="/dedicated-servers.html"
+                  class="flex items-center px-3 py-2 font-medium leading-5 text-white transition duration-300 hover:text-gray-300"
+                >
+                  Dedicated Servers
+                </a>
+                <a
+                  href="/domains.html"
+                  class="flex items-center px-3 py-2 font-medium leading-5 text-white transition duration-300 hover:text-gray-300"
+                >
+                  Domains
+                </a>
+              </div>
+              <div
+                class="hidden items-center justify-end md:flex md:flex-1 lg:w-0"
+              >
+                <a
+                  href="#"
+                  class="inline-flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-base font-medium text-matisse-600 shadow-sm hover:bg-matisse-50"
+                >
+                  Sign in
+                </a>
+                <a
+                  href="#"
+                  class="ml-3 inline-flex items-center justify-center rounded-md border border-transparent bg-matisse-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-matisse-500"
+                >
+                  Sign up
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav>
+        <div
+          class="top-0 flex w-full items-center justify-between bg-white px-6 py-4 text-pink-600 xl:hidden"
+        >
+          <div
+            aria-label="logo"
+            role="img"
+            tabindex="0"
+            class="w-24 focus:outline-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="43"
+              height="44"
+              viewBox="0 0 43 44"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M37.8735 0C36.1688 0 34.7818 1.37956 34.7818 3.0751C34.7818 4.77063 36.1688 6.15019 37.8735 6.15019C39.5782 6.15019 40.9653 4.77063 40.9653 3.0751C40.9653 1.37956 39.5782 0 37.8735 0ZM37.8735 4.61264C37.021 4.61264 36.3277 3.92305 36.3277 3.0751C36.3277 2.22714 37.021 1.53755 37.8735 1.53755C38.7261 1.53755 39.4194 2.22714 39.4194 3.0751C39.4194 3.92305 38.7261 4.61264 37.8735 4.61264ZM26.6663 1.0513C26.1828 1.0513 25.7909 1.44107 25.7909 1.92193C25.7909 2.4028 26.1828 2.79238 26.6663 2.79238C27.1497 2.79238 27.5416 2.40261 27.5416 1.92193C27.5416 1.44107 27.1497 1.0513 26.6663 1.0513ZM43 13.4535C43 13.9342 42.6081 14.324 42.1247 14.324C41.6412 14.324 41.2493 13.9342 41.2493 13.4535C41.2493 12.9727 41.6412 12.5829 42.1247 12.5829C42.6081 12.5829 43 12.9729 43 13.4535ZM18.1654 2.59019L35.1698 12.4044C35.4079 12.5418 35.5548 12.7951 35.5548 13.0692V33.0573C35.5548 33.3273 35.4123 33.5772 35.1803 33.7161L18.1758 43.8901C18.0533 43.9633 17.915 44 17.7774 44C17.6398 44 17.5016 43.9633 17.3789 43.8901L0.374484 33.7161C0.142219 33.5772 0 33.3271 0 33.0573V13.0692C0 12.7951 0.146857 12.5418 0.384919 12.4044L17.3894 2.59019C17.6296 2.45124 17.9254 2.45124 18.1654 2.59019ZM17.7774 4.14388L33.2524 13.0751L23.0207 19.0887L18.5503 16.4735V12.3004C18.5503 11.8758 18.2042 11.5316 17.7774 11.5316C17.3505 11.5316 17.0044 11.8758 17.0044 12.3004V16.4735L11.9752 19.4158C11.7389 19.554 11.5939 19.8057 11.5939 20.0783V25.8047L1.54586 31.7102V13.5118L17.7774 4.14388ZM2.28227 33.0632L17.7774 42.3341L34.0091 32.6225V14.4162L23.961 20.322V26.4081C23.961 26.6807 23.8161 26.9325 23.5798 27.0706L18.5505 30.0125V33.826C18.5505 34.2506 18.2044 34.5948 17.7776 34.5948C17.3507 34.5948 17.0046 34.2506 17.0046 33.826V30.0125L12.2274 27.2182L2.28227 33.0632Z"
+                fill="#667EEA"
+              />
+            </svg>
+          </div>
+          <div class="flex items-center">
+            <button
+              id="menu"
+              aria-label="open menu"
+              class="rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600"
+              onclick="sidebarHandler(true)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-menu-2"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="18" x2="20" y2="18" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="absolute top-0 z-50 h-full w-full -translate-x-full transform xl:hidden"
+          id="mobile-nav"
+        >
+          <div class="h-full w-full" onclick="sidebarHandler(false)"></div>
+          <div
+            class="fixed top-0 z-40 h-screen w-64 flex-col justify-between overflow-y-auto bg-white pb-4 shadow transition duration-150 ease-in-out xl:hidden"
+          >
+            <div class="h-full px-6">
+              <div class="flex h-full w-full flex-col justify-between">
+                <div>
+                  <div class="mt-6 flex w-full items-center justify-between">
+                    <div class="flex w-full items-center justify-between">
+                      <div class="flex items-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="43"
+                          height="44"
+                          viewBox="0 0 43 44"
+                          fill="none"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M37.8735 0C36.1688 0 34.7818 1.37956 34.7818 3.0751C34.7818 4.77063 36.1688 6.15019 37.8735 6.15019C39.5782 6.15019 40.9653 4.77063 40.9653 3.0751C40.9653 1.37956 39.5782 0 37.8735 0ZM37.8735 4.61264C37.021 4.61264 36.3277 3.92305 36.3277 3.0751C36.3277 2.22714 37.021 1.53755 37.8735 1.53755C38.7261 1.53755 39.4194 2.22714 39.4194 3.0751C39.4194 3.92305 38.7261 4.61264 37.8735 4.61264ZM26.6663 1.0513C26.1828 1.0513 25.7909 1.44107 25.7909 1.92193C25.7909 2.4028 26.1828 2.79238 26.6663 2.79238C27.1497 2.79238 27.5416 2.40261 27.5416 1.92193C27.5416 1.44107 27.1497 1.0513 26.6663 1.0513ZM43 13.4535C43 13.9342 42.6081 14.324 42.1247 14.324C41.6412 14.324 41.2493 13.9342 41.2493 13.4535C41.2493 12.9727 41.6412 12.5829 42.1247 12.5829C42.6081 12.5829 43 12.9729 43 13.4535ZM18.1654 2.59019L35.1698 12.4044C35.4079 12.5418 35.5548 12.7951 35.5548 13.0692V33.0573C35.5548 33.3273 35.4123 33.5772 35.1803 33.7161L18.1758 43.8901C18.0533 43.9633 17.915 44 17.7774 44C17.6398 44 17.5016 43.9633 17.3789 43.8901L0.374484 33.7161C0.142219 33.5772 0 33.3271 0 33.0573V13.0692C0 12.7951 0.146857 12.5418 0.384919 12.4044L17.3894 2.59019C17.6296 2.45124 17.9254 2.45124 18.1654 2.59019ZM17.7774 4.14388L33.2524 13.0751L23.0207 19.0887L18.5503 16.4735V12.3004C18.5503 11.8758 18.2042 11.5316 17.7774 11.5316C17.3505 11.5316 17.0044 11.8758 17.0044 12.3004V16.4735L11.9752 19.4158C11.7389 19.554 11.5939 19.8057 11.5939 20.0783V25.8047L1.54586 31.7102V13.5118L17.7774 4.14388ZM2.28227 33.0632L17.7774 42.3341L34.0091 32.6225V14.4162L23.961 20.322V26.4081C23.961 26.6807 23.8161 26.9325 23.5798 27.0706L18.5505 30.0125V33.826C18.5505 34.2506 18.2044 34.5948 17.7776 34.5948C17.3507 34.5948 17.0046 34.2506 17.0046 33.826V30.0125L12.2274 27.2182L2.28227 33.0632Z"
+                            fill="#667EEA"
+                          ></path>
+                        </svg>
+                        <p
+                          tabindex="0"
+                          class="ml-3 text-base text-gray-800 focus:outline-none md:text-2xl"
+                        >
+                          FidaHost
+                        </p>
+                      </div>
+                      <button
+                        id="cross"
+                        aria-label="close menu"
+                        class="rounded-md text-gray-800 focus:outline-none focus:ring-2"
+                        onclick="sidebarHandler(false)"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-x"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z"></path>
+                          <line x1="18" y1="6" x2="6" y2="18"></line>
+                          <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="mt-6 flex flex-col">
+                    <a
+                      href="/"
+                      class="flex items-center border-b-2 border-transparent border-matisse-700 bg-gray-100 px-3 py-6 leading-5 text-matisse-700 transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                    >
+                      Home
+                    </a>
+                    <div class="group dropdown relative cursor-pointer">
+                      <a
+                        class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                      >
+                        Hosting
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-4 w-4 group-hover:rotate-180 group-hover:transform"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                              clip-rule="evenodd"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                      <div
+                        class="dropdown-menu relative hidden h-auto group-hover:block"
+                      >
+                        <div class="relative grid w-auto gap-6 px-5 py-2">
+                          <a
+                            href="/web-hosting.html"
+                            class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                          >
+                            <svg
+                              class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                              />
+                            </svg>
+                            <div class="ml-4">
+                              <p class="text-base text-gray-900">Web Hosting</p>
+                            </div>
+                          </a>
+                          <a
+                            href="/business-hosting.html"
+                            class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                          >
+                            <svg
+                              class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
+                              />
+                            </svg>
+                            <div class="ml-4">
+                              <p class="text-base text-gray-900">
+                                Business Hosting
+                              </p>
+                            </div>
+                          </a>
+                          <a
+                            href="/email-hosting.html"
+                            class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                          >
+                            <svg
+                              class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                              />
+                            </svg>
+                            <div class="ml-4">
+                              <p class="text-base text-gray-900">
+                                Email Hosting
+                              </p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="group dropdown relative cursor-pointer">
+                      <a
+                        class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                      >
+                        Virtual Servers
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-4 w-4 group-hover:rotate-180 group-hover:transform"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                              clip-rule="evenodd"
+                            />
+                          </svg>
+                        </span>
+                      </a>
+                      <div
+                        class="dropdown-menu relative hidden h-auto group-hover:block"
+                      >
+                        <div class="relative grid w-auto gap-6 px-5 py-2">
+                          <a
+                            href="/vps-linux.html"
+                            class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                          >
+                            <svg
+                              class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                              />
+                            </svg>
+                            <div class="ml-4">
+                              <p class="text-base text-gray-900">Linux VPS</p>
+                            </div>
+                          </a>
+                          <a
+                            href="/vps-windows.html"
+                            class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                          >
+                            <svg
+                              class="h-6 w-6 flex-shrink-0 text-matisse-500"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
+                              />
+                            </svg>
+                            <div class="ml-4">
+                              <p class="text-base text-gray-900">Windows VPS</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      href="/dedicated-servers.html"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                    >
+                      Dedicated Servers
+                    </a>
+                    <a
+                      href="/domains.html"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                    >
+                      Domains
+                    </a>
+                    <a
+                      href="/web-design.html"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                    >
+                      Web Design
+                    </a>
+                    <a
+                      href="/affiliates.html"
+                      class="flex items-center border-b-2 border-transparent px-3 py-6 leading-5 text-white transition duration-150 ease-in-out hover:text-white focus:border-matisse-700 focus:bg-gray-100 focus:text-matisse-700 focus:outline-none"
+                    >
+                      Affiliates
+                    </a>
+                  </div>
+                </div>
+                <div class="w-full pt-4">
+                  <div class="border-t border-gray-300">
+                    <div class="mt-6">
+                      <a
+                        href="#"
+                        class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                      >
+                        Sign up
+                      </a>
+                      <p
+                        class="mt-6 text-center text-base font-medium text-gray-500"
+                      >
+                        Existing customer?
+                        <a
+                          href="#"
+                          class="text-indigo-600 hover:text-indigo-500"
+                        >
+                          Sign in
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="mx-auto max-w-7xl p-20 px-4">
+        <div
+          class="mx-auto w-full text-left md:w-11/12 md:text-center xl:w-9/12"
+        >
+          <div class="relative mx-auto mb-1 w-20 text-center">
+            <svg
+              viewBox="0 0 80 91"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M56.9727 0.5H0V84.4598H22.4892V88.9577C22.4892 89.3552 22.6472 89.7368 22.9283 90.0179C23.2094 90.299 23.5909 90.457 23.9885 90.457H74.9641C75.3617 90.457 75.7432 90.299 76.0243 90.0179C76.3054 89.7368 76.4634 89.3552 76.4634 88.9577V38.8354L77.9975 36.3241L79.5731 33.7231C79.6628 33.5731 81.5864 30.2346 76.4607 26.6302V9.49552C76.4607 9.09795 76.3028 8.71643 76.021 8.43532C75.7399 8.15421 75.359 7.99624 74.9614 7.99624H56.9735L56.9727 0.5ZM74.6643 36.0407L55.9224 66.7272L53.3628 65.1663L72.1047 34.4918C73.027 35.0527 73.7539 35.4932 74.3449 35.8412L74.6643 36.0407ZM66.9831 31.3581L69.5319 32.9277L50.79 63.6022L48.2311 62.0427L66.9831 31.3581ZM61.247 34.9838H56.9727V31.9853H63.0797L61.247 34.9838ZM59.4151 37.9824L56.9727 41.981V37.9824H59.4151ZM47.2797 64.9695L50.5078 66.9413L53.7374 68.9112L45.5784 75.0147L47.2797 64.9695ZM65.2008 28.5069L64.9103 28.9868H56.9729V25.9883H66.729L65.2008 28.5069ZM2.99857 3.49891H53.9742V46.889L49.3411 54.4738H19.4908V57.4724H47.5094L44.8904 61.7588C44.8797 61.7769 44.8797 61.799 44.8697 61.817L44.869 61.8177C44.784 61.9643 44.7244 62.1243 44.6923 62.2909V62.3076L44.4928 63.4696H2.99954L2.99857 3.49891ZM2.99857 66.4688H43.9864L43.4797 69.4673H7.49693V72.4659H42.9725L42.0007 78.2127C41.8983 78.8178 42.1747 79.4235 42.6988 79.7434C43.2222 80.0627 43.8881 80.0306 44.3788 79.6625L53.9742 72.4839V81.4616H2.99857V66.4688ZM73.4648 87.4587H25.4878V84.4602H56.9727V73.9652H68.967V70.9666H56.9727V70.2397L57.3074 69.9908C57.3301 69.9727 57.3476 69.9486 57.369 69.9292H57.3683C57.4145 69.891 57.458 69.8495 57.4988 69.806C57.5463 69.7552 57.5898 69.7009 57.6293 69.644C57.6474 69.6186 57.6715 69.5992 57.6876 69.5704L58.6668 67.9681H68.9669V64.9695H60.4986L62.3305 61.9709H68.9668V58.9724H64.1691L66.0009 55.9738H68.9668V52.9752H67.8256L73.4646 43.7439L73.4648 87.4587ZM77.0109 32.1635L76.2144 33.484L68.5353 28.7962L69.2702 27.58C69.6163 27.1483 71.0366 26.8002 73.9387 28.5559C76.841 30.3115 77.1904 31.7297 77.011 32.1636L77.0109 32.1635ZM73.4648 10.9953V24.9506C72.0693 24.2679 70.4824 24.0819 68.967 24.4226V22.9895H56.9727V19.991H68.967V16.9924H56.9727V10.9953L73.4648 10.9953Z"
+                fill="white"
+              />
+              <path
+                d="M7.49634 75.4641H28.4863V78.4627H7.49634V75.4641Z"
+                fill="white"
+              />
+              <path
+                d="M37.4822 75.4641H40.4807V78.4627H37.4822V75.4641Z"
+                fill="white"
+              />
+              <path
+                d="M31.4849 75.4641H34.4834V78.4627H31.4849V75.4641Z"
+                fill="white"
+              />
+              <path
+                d="M8.99562 18.4914H47.977C48.3745 18.4914 48.7561 18.3334 49.0372 18.0523C49.3183 17.7712 49.4762 17.3897 49.4762 16.9921V7.99641C49.4762 7.59884 49.3183 7.21732 49.0372 6.93621C48.7561 6.6551 48.3745 6.49713 47.977 6.49713H8.99562C8.16767 6.49713 7.49634 7.16847 7.49634 7.99641V16.9921C7.49634 17.3897 7.6543 17.7712 7.93541 18.0523C8.21653 18.3334 8.59804 18.4914 8.99562 18.4914ZM10.4949 9.4957H46.4777V15.4928H10.4949V9.4957Z"
+                fill="white"
+              />
+              <path
+                d="M11.9943 24.4885C10.8016 24.4885 9.65701 24.9624 8.81381 25.8058C7.97061 26.6491 7.49658 27.7937 7.49658 28.9863C7.49658 30.1789 7.97046 31.3236 8.81381 32.1668C9.65716 33.01 10.8018 33.484 11.9943 33.484C13.1869 33.484 14.3317 33.0102 15.1749 32.1668C16.0181 31.3235 16.4921 30.1789 16.4921 28.9863C16.4921 27.7937 16.0182 26.6489 15.1749 25.8058C14.3315 24.9626 13.1869 24.4885 11.9943 24.4885ZM11.9943 30.4857C11.3879 30.4857 10.8411 30.1202 10.6095 29.56C10.3773 28.9998 10.5051 28.3552 10.9341 27.9262C11.3632 27.4971 12.0077 27.3693 12.568 27.6015C13.1282 27.8331 13.4936 28.38 13.4936 28.9864C13.4936 29.3839 13.3357 29.7655 13.0546 30.0466C12.7734 30.3277 12.3919 30.4857 11.9943 30.4857Z"
+                fill="white"
+              />
+              <path
+                d="M19.4907 27.4871H49.4764V30.4856H19.4907V27.4871Z"
+                fill="white"
+              />
+              <path
+                d="M11.9943 37.9821C10.8016 37.9821 9.65701 38.4559 8.81381 39.2993C7.97061 40.1426 7.49658 41.2872 7.49658 42.4798C7.49658 43.6724 7.97046 44.8172 8.81381 45.6604C9.65716 46.5035 10.8018 46.9776 11.9943 46.9776C13.1869 46.9776 14.3317 46.5037 15.1749 45.6604C16.0181 44.817 16.4921 43.6724 16.4921 42.4798C16.4921 41.2872 16.0182 40.1425 15.1749 39.2993C14.3315 38.4561 13.1869 37.9821 11.9943 37.9821ZM11.9943 43.9792C11.3879 43.9792 10.8411 43.6137 10.6095 43.0535C10.3773 42.4933 10.5051 41.8487 10.9341 41.4197C11.3632 40.9906 12.0077 40.8628 12.568 41.0951C13.1282 41.3267 13.4936 41.8735 13.4936 42.4799C13.4936 42.8775 13.3357 43.259 13.0546 43.5401C12.7734 43.8212 12.3919 43.9792 11.9943 43.9792Z"
+                fill="white"
+              />
+              <path
+                d="M19.4907 40.9807H49.4764V43.9792H19.4907V40.9807Z"
+                fill="white"
+              />
+              <path
+                d="M11.9943 51.4756C10.8016 51.4756 9.65701 51.9495 8.81381 52.7928C7.97061 53.6362 7.49658 54.7808 7.49658 55.9733C7.49658 57.1659 7.97046 58.3107 8.81381 59.1539C9.65716 59.9971 10.8018 60.4711 11.9943 60.4711C13.1869 60.4711 14.3317 59.9972 15.1749 59.1539C16.0181 58.3105 16.4921 57.1659 16.4921 55.9733C16.4921 54.7808 16.0182 53.636 15.1749 52.7928C14.3315 51.9496 13.1869 51.4756 11.9943 51.4756ZM11.9943 57.4727C11.3879 57.4727 10.8411 57.1073 10.6095 56.547C10.3773 55.9868 10.5051 55.3423 10.9341 54.9132C11.3632 54.4842 12.0077 54.3564 12.568 54.5886C13.1282 54.8202 13.4936 55.367 13.4936 55.9734C13.4936 56.371 13.3357 56.7525 13.0546 57.0336C12.7734 57.3148 12.3919 57.4727 11.9943 57.4727Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <p class="mb-6 px-0 leading-relaxed text-white lg:px-24">
+            AGREEMENTS & POLICIES
+          </p>
+          <h1
+            class="text-3xl font-extrabold tracking-wide text-white md:text-4xl"
+          >
+            Terms of Service
+          </h1>
+        </div>
+      </section>
+    </div>
+    <!-- End of Navigation & Hero -->
+    <div
+      class="container relative mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20 xl:py-0"
+    >
+      <div class="grid min-h-screen grid-flow-col">
+        <!-- side bar -->
+        <div>
+          <!-- Component Start -->
+          <div
+            class="sticky inset-0 inset-y-0 left-0 flex h-screen flex-col items-center overflow-hidden pt-6 text-icon-darkest"
+          >
+            <div class="w-full">
+              <div class="flex w-full flex-col items-center">
+                <a
+                  class="flex w-full items-center rounded py-4 px-4 text-2xl hover:text-matisse-500"
+                  href="#privacyPolicy"
+                >
+                  <span class="hidden font-medium md:block"
+                    >Privacy Policy</span
+                  >
+                </a>
+                <a
+                  class="flex w-full items-center rounded py-4 px-4 text-2xl hover:text-matisse-500"
+                  href="#privacyPolicy2"
+                >
+                  <span class="hidden font-medium md:block"
+                    >Privacy Policy 2</span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Component End  -->
+        </div>
+        <!-- content -->
+        <div class="col-span-2">
+          <section
+            id="privacyPolicy"
+            class="mx-auto max-w-7xl scroll-mt-10 px-4 py-6"
+          >
+            <div class="mb-10 text-left md:text-center">
+              <h1
+                class="mb-4 text-4xl font-bold leading-tight text-gray-900 md:text-5xl"
+              >
+                Privacy Policy
+              </h1>
+              <p class="mb-5 text-base text-gray-500 md:text-lg">
+                Last updated: 20th Dec 2020
+              </p>
+            </div>
+            <div class="proose prose-lg">
+              <h2 id="1legalnotices">1. Legal Notices</h2>
+
+              <p>
+                We, the Operators of this Website, provide it as a public
+                service to our users.
+              </p>
+
+              <p>
+                Please carefully review the following basic rules that govern
+                your use of the Website. Please note that your use of the
+                Website constitutes your unconditional agreement to follow and
+                be bound by these Terms and Conditions of Use. If you (the
+                "User") do not agree to them, do not use the Website, provide
+                any materials to the Website or download any materials from
+                them.
+              </p>
+
+              <p>
+                The Operators reserve the right to update or modify these Terms
+                and Conditions at any time without prior notice to User. Your
+                use of the Website following any such change constitutes your
+                unconditional agreement to follow and be bound by these Terms
+                and Conditions as changed. For this reason, we encourage you to
+                review these Terms and Conditions of Use whenever you use the
+                Website.
+              </p>
+
+              <p>
+                These Terms and Conditions of Use apply to the use of the
+                Website and do not extend to any linked third party sites. These
+                Terms and Conditions and our Privacy Policy, which are hereby
+                incorporated by reference, contain the entire agreement (the
+                “Agreement”) between you and the Operators with respect to the
+                Website. Any rights not expressly granted herein are reserved.
+              </p>
+
+              <h2 id="2permittedandprohibiteduses">
+                2. Permitted and Prohibited Uses
+              </h2>
+
+              <p>
+                You may use the the Website for the sole purpose of sharing and
+                exchanging ideas with other Users. You may not use the the
+                Website to violate any applicable local, state, national, or
+                international law, including without limitation any applicable
+                laws relating to antitrust or other illegal trade or business
+                practices, federal and state securities laws, regulations
+                promulgated by the U.S. Securities and Exchange Commission, any
+                rules of any national or other securities exchange, and any U.S.
+                laws, rules, and regulations governing the export and re-export
+                of commodities or technical data.
+              </p>
+
+              <p>
+                You may not upload or transmit any material that infringes or
+                misappropriates any person's copyright, patent, trademark, or
+                trade secret, or disclose via the the Website any information
+                the disclosure of which would constitute a violation of any
+                confidentiality obligations you may have.
+              </p>
+
+              <p>
+                You may not upload any viruses, worms, Trojan horses, or other
+                forms of harmful computer code, nor subject the Website's
+                network or servers to unreasonable traffic loads, or otherwise
+                engage in conduct deemed disruptive to the ordinary operation of
+                the Website.
+              </p>
+
+              <p>
+                You are strictly prohibited from communicating on or through the
+                Website any unlawful, harmful, offensive, threatening, abusive,
+                libelous, harassing, defamatory, vulgar, obscene, profane,
+                hateful, fraudulent, sexually explicit, racially, ethnically, or
+                otherwise objectionable material of any sort, including, but not
+                limited to, any material that encourages conduct that would
+                constitute a criminal offense, give rise to civil liability, or
+                otherwise violate any applicable local, state, national, or
+                international law.
+              </p>
+
+              <p>
+                You are expressly prohibited from compiling and using other
+                Users' personal information, including addresses, telephone
+                numbers, fax numbers, email addresses or other contact
+                information that may appear on the Website, for the purpose of
+                creating or compiling marketing and/or mailing lists and from
+                sending other Users unsolicited marketing materials, whether by
+                facsimile, email, or other technological means.
+              </p>
+
+              <p>
+                You also are expressly prohibited from distributing Users'
+                personal information to third-party parties for marketing
+                purposes. The Operators shall deem the compiling of marketing
+                and mailing lists using Users' personal information, the sending
+                of unsolicited marketing materials to Users, or the distribution
+                of Users' personal information to third parties for marketing
+                purposes as a material breach of these Terms and Conditions of
+                Use, and the Operators reserve the right to terminate or suspend
+                your access to and use of the Website and to suspend or revoke
+                your membership in the consortium without refund of any
+                membership dues paid.
+              </p>
+
+              <p>
+                The Operators note that unauthorized use of Users' personal
+                information in connection with unsolicited marketing
+                correspondence also may constitute violations of various state
+                and federal anti-spam statutes. The Operators reserve the right
+                to report the abuse of Users' personal information to the
+                appropriate law enforcement and government authorities, and the
+                Operators will fully cooperate with any authorities
+                investigating violations of these laws.
+              </p>
+
+              <h2 id="3usersubmissions">3. User Submissions</h2>
+
+              <p>
+                The Operators do not want to receive confidential or proprietary
+                information from you through the Website. Any material,
+                information, or other communication you transmit or post
+                ("Contributions") to the Website will be considered
+                non-confidential.
+              </p>
+
+              <p>
+                All contributions to this site are licensed by you under the MIT
+                License to anyone who wishes to use them, including the
+                Operators.
+              </p>
+
+              <p>
+                If you work for a company or at a University, it's likely that
+                you're not the copyright holder of anything you make, even in
+                your free time. Before making contributions to this site, get
+                written permission from your employer.
+              </p>
+
+              <h2 id="4userdiscussionlistsandforums">
+                4. User Discussion Lists and Forums
+              </h2>
+
+              <p>
+                The Operators may, but are not obligated to, monitor or review
+                any areas on the Website where users transmit or post
+                communications or communicate solely with each other, including
+                but not limited to user forums and email lists, and the content
+                of any such communications. The Operators, however, will have no
+                liability related to the content of any such communications,
+                whether or not arising under the laws of copyright, libel,
+                privacy, obscenity, or otherwise. The Operators may edit or
+                remove content on the the Website at their discretion at any
+                time.
+              </p>
+
+              <h2 id="5useofpersonallyidentifiableinformation">
+                5. Use of Personally Identifiable Information
+              </h2>
+
+              <p>
+                Information submitted to the Website is governed according to
+                the Operators’s current Privacy Policy and the stated license of
+                this website.
+              </p>
+
+              <p>
+                You agree to provide true, accurate, current, and complete
+                information when registering with the Website. It is your
+                responsibility to maintain and promptly update this account
+                information to keep it true, accurate, current, and complete. If
+                you provides any information that is fraudulent, untrue,
+                inaccurate, incomplete, or not current, or we have reasonable
+                grounds to suspect that such information is fraudulent, untrue,
+                inaccurate, incomplete, or not current, we reserve the right to
+                suspend or terminate your account without notice and to refuse
+                any and all current and future use of the Website.
+              </p>
+
+              <p>
+                Although sections of the Website may be viewed simply by
+                visiting the Website, in order to access some Content and/or
+                additional features offered at the Website, you may need to sign
+                on as a guest or register as a member. If you create an account
+                on the Website, you may be asked to supply your name, address, a
+                User ID and password. You are responsible for maintaining the
+                confidentiality of the password and account and are fully
+                responsible for all activities that occur in connection with
+                your password or account. You agree to immediately notify us of
+                any unauthorized use of either your password or account or any
+                other breach of security. You further agree that you will not
+                permit others, including those whose accounts have been
+                terminated, to access the Website using your account or User ID.
+                You grant the Operators and all other persons or entities
+                involved in the operation of the Website the right to transmit,
+                monitor, retrieve, store, and use your information in connection
+                with the operation of the Website and in the provision of
+                services to you. The Operators cannot and do not assume any
+                responsibility or liability for any information you submit, or
+                your or third parties’ use or misuse of information transmitted
+                or received using website. To learn more about how we protect
+                the privacy of the personal information in your account, please
+                visit our Privacy Policy.
+              </p>
+
+              <h2 id="6indemnification">6. Indemnification</h2>
+
+              <p>
+                You agree to defend, indemnify and hold harmless the Operators,
+                agents, vendors or suppliers from and against any and all
+                claims, damages, costs and expenses, including reasonable
+                attorneys' fees, arising from or related to your use or misuse
+                of the Website, including, without limitation, your violation of
+                these Terms and Conditions, the infringement by you, or any
+                other subscriber or user of your account, of any intellectual
+                property right or other right of any person or entity.
+              </p>
+
+              <h2 id="7termination">7. Termination</h2>
+
+              <p>
+                These Terms and Conditions of Use are effective until terminated
+                by either party. If you no longer agree to be bound by these
+                Terms and Conditions, you must cease use of the Website. If you
+                are dissatisfied with the Website, their content, or any of
+                these terms, conditions, and policies, your sole legal remedy is
+                to discontinue using the Website. The Operators reserve the
+                right to terminate or suspend your access to and use of the
+                Website, or parts of the Website, without notice, if we believe,
+                in our sole discretion, that such use (i) is in violation of any
+                applicable law; (ii) is harmful to our interests or the
+                interests, including intellectual property or other rights, of
+                another person or entity; or (iii) where the Operators have
+                reason to believe that you are in violation of these Terms and
+                Conditions of Use.
+              </p>
+
+              <h2 id="8warrantydisclaimer">8. WARRANTY DISCLAIMER</h2>
+
+              <p>
+                THE WEBSITE AND ASSOCIATED MATERIALS ARE PROVIDED ON AN "AS IS"
+                AND "AS AVAILABLE" BASIS. TO THE FULL EXTENT PERMISSIBLE BY
+                APPLICABLE LAW, THE OPERATORS DISCLAIM ALL WARRANTIES, EXPRESS
+                OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
+                MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, OR
+                NON-INFRINGEMENT OF INTELLECTUAL PROPERTY. THE OPERATORS MAKE NO
+                REPRESENTATIONS OR WARRANTY THAT THE WEBSITE WILL MEET YOUR
+                REQUIREMENTS, OR THAT YOUR USE OF THE WEBSITE WILL BE
+                UNINTERRUPTED, TIMELY, SECURE, OR ERROR FREE; NOR DO THE
+                OPERATORS MAKE ANY REPRESENTATION OR WARRANTY AS TO THE RESULTS
+                THAT MAY BE OBTAINED FROM THE USE OF THE WEBSITE. THE OPERATORS
+                MAKE NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR
+                IMPLIED, AS TO THE OPERATION OF THE WEBSITE OR THE INFORMATION,
+                CONTENT, MATERIALS, OR PRODUCTS INCLUDED ON THE WEBSITE.
+              </p>
+
+              <p>
+                IN NO EVENT SHALL THE OPERATORS OR ANY OF THEIR AGENTS, VENDORS
+                OR SUPPLIERS BE LIABLE FOR ANY DAMAGES WHATSOEVER (INCLUDING,
+                WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, BUSINESS
+                INTERRUPTION, LOSS OF INFORMATION) ARISING OUT OF THE USE,
+                MISUSE OF OR INABILITY TO USE THE WEBSITE, EVEN IF THE OPERATORS
+                HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THIS
+                DISCLAIMER CONSTITUTES AN ESSENTIAL PART OF THIS AGREEMENT.
+                BECAUSE SOME JURISDICTIONS PROHIBIT THE EXCLUSION OR LIMITATION
+                OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, THE ABOVE
+                LIMITATION MAY NOT APPLY TO YOU.
+              </p>
+
+              <p>
+                YOU UNDERSTAND AND AGREE THAT ANY CONTENT DOWNLOADED OR
+                OTHERWISE OBTAINED THROUGH THE USE OF THE WEBSITE IS AT YOUR OWN
+                DISCRETION AND RISK AND THAT YOU WILL BE SOLELY RESPONSIBLE FOR
+                ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA OR BUSINESS
+                INTERRUPTION THAT RESULTS FROM THE DOWNLOAD OF CONTENT. THE
+                OPERATORS SHALL NOT BE RESPONSIBLE FOR ANY LOSS OR DAMAGE
+                CAUSED, OR ALLEGED TO HAVE BEEN CAUSED, DIRECTLY OR INDIRECTLY,
+                BY THE INFORMATION OR IDEAS CONTAINED, SUGGESTED OR REFERENCED
+                IN OR APPEARING ON THE WEBSITE. YOUR PARTICIPATION IN THE
+                WEBSITE IS SOLELY AT YOUR OWN RISK. NO ADVICE OR INFORMATION,
+                WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE OPERATORS OR
+                THROUGH THE OPERATORS, THEIR EMPLOYEES, OR THIRD PARTIES SHALL
+                CREATE ANY WARRANTY NOT EXPRESSLY MADE HEREIN. YOU ACKNOWLEDGE,
+                BY YOUR USE OF THE THE WEBSITE, THAT YOUR USE OF THE WEBSITE IS
+                AT YOUR SOLE RISK.
+              </p>
+
+              <p>
+                LIABILITY LIMITATION. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                OR EQUITABLE THEORY, WHETHER IN TORT, CONTRACT, NEGLIGENCE,
+                STRICT LIABILITY OR OTHERWISE, SHALL THE OPERATORS OR ANY OF
+                THEIR AGENTS, VENDORS OR SUPPLIERS BE LIABLE TO USER OR TO ANY
+                OTHER PERSON FOR ANY INDIRECT, SPECIAL, INCIDENTAL OR
+                CONSEQUENTIAL LOSSES OR DAMAGES OF ANY NATURE ARISING OUT OF OR
+                IN CONNECTION WITH THE USE OF OR INABILITY TO USE THE THE
+                WEBSITE OR FOR ANY BREACH OF SECURITY ASSOCIATED WITH THE
+                TRANSMISSION OF SENSITIVE INFORMATION THROUGH THE WEBSITE OR FOR
+                ANY INFORMATION OBTAINED THROUGH THE WEBSITE, INCLUDING, WITHOUT
+                LIMITATION, DAMAGES FOR LOST PROFITS, LOSS OF GOODWILL, LOSS OR
+                CORRUPTION OF DATA, WORK STOPPAGE, ACCURACY OF RESULTS, OR
+                COMPUTER FAILURE OR MALFUNCTION, EVEN IF AN AUTHORIZED
+                REPRESENTATIVE OF THE OPERATORS HAS BEEN ADVISED OF OR SHOULD
+                HAVE KNOWN OF THE POSSIBILITY OF SUCH DAMAGES.
+              </p>
+
+              <p>
+                THE OPERATORS'S TOTAL CUMULATIVE LIABILITY FOR ANY AND ALL
+                CLAIMS IN CONNECTION WITH THE WEBSITE WILL NOT EXCEED FIVE U.S.
+                DOLLARS ($5.00). USER AGREES AND ACKNOWLEDGES THAT THE FOREGOING
+                LIMITATIONS ON LIABILITY ARE AN ESSENTIAL BASIS OF THE BARGAIN
+                AND THAT THE OPERATORS WOULD NOT PROVIDE THE WEBSITE ABSENT SUCH
+                LIMITATION.
+              </p>
+
+              <h2 id="9general">9. General</h2>
+
+              <p>
+                The Website is hosted in the United States. The Operators make
+                no claims that the Content on the Website is appropriate or may
+                be downloaded outside of the United States. Access to the
+                Content may not be legal by certain persons or in certain
+                countries. If you access the Website from outside the United
+                States, you do so at your own risk and are responsible for
+                compliance with the laws of your jurisdiction. The provisions of
+                the UN Convention on Contracts for the International Sale of
+                Goods will not apply to these Terms. A party may give notice to
+                the other party only in writing at that party's principal place
+                of business, attention of that party's principal legal officer,
+                or at such other address or by such other method as the party
+                shall specify in writing. Notice shall be deemed given upon
+                personal delivery or facsimile, or, if sent by certified mail
+                with postage prepaid, 5 business days after the date of mailing,
+                or, if sent by international overnight courier with postage
+                prepaid, 7 business days after the date of mailing. If any
+                provision herein is held to be unenforceable, the remaining
+                provisions will continue in full force without being affected in
+                any way. Further, the parties agree to replace such
+                unenforceable provision with an enforceable provision that most
+                closely approximates the intent and economic effect of the
+                unenforceable provision. Section headings are for reference
+                purposes only and do not define, limit, construe or describe the
+                scope or extent of such section. The failure of the Operators to
+                act with respect to a breach of this Agreement by you or others
+                does not constitute a waiver and shall not limit the Operators'
+                rights with respect to such breach or any subsequent breaches.
+                Any action or proceeding arising out of or related to this
+                Agreement or User's use of the Website must be brought in the
+                courts of Belgium, and you consent to the exclusive personal
+                jurisdiction and venue of such courts. Any cause of action you
+                may have with respect to your use of the Website must be
+                commenced within one (1) year after the claim or cause of action
+                arises. These Terms set forth the entire understanding and
+                agreement of the parties, and supersedes any and all oral or
+                written agreements or understandings between the parties, as to
+                their subject matter. The waiver of a breach of any provision of
+                this Agreement shall not be construed as a waiver of any other
+                or subsequent breach.
+              </p>
+
+              <h2 id="10linkstoothermaterials">10. Links to Other Materials</h2>
+
+              <p>
+                The Website may contain links to sites owned or operated by
+                independent third parties. These links are provided for your
+                convenience and reference only. We do not control such sites
+                and, therefore, we are not responsible for any content posted on
+                these sites. The fact that the Operators offer such links should
+                not be construed in any way as an endorsement, authorization, or
+                sponsorship of that site, its content or the companies or
+                products referenced therein, and the Operators reserve the right
+                to note its lack of affiliation, sponsorship, or endorsement on
+                the Website. If you decide to access any of the third party
+                sites linked to by the Website, you do this entirely at your own
+                risk. Because some sites employ automated search results or
+                otherwise link you to sites containing information that may be
+                deemed inappropriate or offensive, the Operators cannot be held
+                responsible for the accuracy, copyright compliance, legality, or
+                decency of material contained in third party sites, and you
+                hereby irrevocably waive any claim against us with respect to
+                such sites.
+              </p>
+
+              <h2 id="11notificationofpossiblecopyrightinfringement">
+                11. Notification Of Possible Copyright Infringement
+              </h2>
+
+              <p>
+                In the event you believe that material or content published on
+                the Website may infringe on your copyright or that of another,
+                please <a href="#">Contact Us</a>.
+              </p>
+            </div>
+          </section>
+          <section
+            id="privacyPolicy2"
+            class="mx-auto max-w-7xl scroll-mt-4 px-4 py-6"
+          >
+            <div class="mb-10 text-left md:text-center">
+              <h1
+                class="mb-4 text-4xl font-bold leading-tight text-gray-900 md:text-5xl"
+              >
+                2. Privacy Policy
+              </h1>
+              <p class="mb-5 text-base text-gray-500 md:text-lg">
+                Last updated: 20th Dec 2020
+              </p>
+            </div>
+            <div class="proose prose-lg">
+              <h2 id="1legalnotices">1. Legal Notices</h2>
+
+              <p>
+                We, the Operators of this Website, provide it as a public
+                service to our users.
+              </p>
+
+              <p>
+                Please carefully review the following basic rules that govern
+                your use of the Website. Please note that your use of the
+                Website constitutes your unconditional agreement to follow and
+                be bound by these Terms and Conditions of Use. If you (the
+                "User") do not agree to them, do not use the Website, provide
+                any materials to the Website or download any materials from
+                them.
+              </p>
+
+              <p>
+                The Operators reserve the right to update or modify these Terms
+                and Conditions at any time without prior notice to User. Your
+                use of the Website following any such change constitutes your
+                unconditional agreement to follow and be bound by these Terms
+                and Conditions as changed. For this reason, we encourage you to
+                review these Terms and Conditions of Use whenever you use the
+                Website.
+              </p>
+
+              <p>
+                These Terms and Conditions of Use apply to the use of the
+                Website and do not extend to any linked third party sites. These
+                Terms and Conditions and our Privacy Policy, which are hereby
+                incorporated by reference, contain the entire agreement (the
+                “Agreement”) between you and the Operators with respect to the
+                Website. Any rights not expressly granted herein are reserved.
+              </p>
+
+              <h2 id="2permittedandprohibiteduses">
+                2. Permitted and Prohibited Uses
+              </h2>
+
+              <p>
+                You may use the the Website for the sole purpose of sharing and
+                exchanging ideas with other Users. You may not use the the
+                Website to violate any applicable local, state, national, or
+                international law, including without limitation any applicable
+                laws relating to antitrust or other illegal trade or business
+                practices, federal and state securities laws, regulations
+                promulgated by the U.S. Securities and Exchange Commission, any
+                rules of any national or other securities exchange, and any U.S.
+                laws, rules, and regulations governing the export and re-export
+                of commodities or technical data.
+              </p>
+
+              <p>
+                You may not upload or transmit any material that infringes or
+                misappropriates any person's copyright, patent, trademark, or
+                trade secret, or disclose via the the Website any information
+                the disclosure of which would constitute a violation of any
+                confidentiality obligations you may have.
+              </p>
+
+              <p>
+                You may not upload any viruses, worms, Trojan horses, or other
+                forms of harmful computer code, nor subject the Website's
+                network or servers to unreasonable traffic loads, or otherwise
+                engage in conduct deemed disruptive to the ordinary operation of
+                the Website.
+              </p>
+
+              <p>
+                You are strictly prohibited from communicating on or through the
+                Website any unlawful, harmful, offensive, threatening, abusive,
+                libelous, harassing, defamatory, vulgar, obscene, profane,
+                hateful, fraudulent, sexually explicit, racially, ethnically, or
+                otherwise objectionable material of any sort, including, but not
+                limited to, any material that encourages conduct that would
+                constitute a criminal offense, give rise to civil liability, or
+                otherwise violate any applicable local, state, national, or
+                international law.
+              </p>
+
+              <p>
+                You are expressly prohibited from compiling and using other
+                Users' personal information, including addresses, telephone
+                numbers, fax numbers, email addresses or other contact
+                information that may appear on the Website, for the purpose of
+                creating or compiling marketing and/or mailing lists and from
+                sending other Users unsolicited marketing materials, whether by
+                facsimile, email, or other technological means.
+              </p>
+
+              <p>
+                You also are expressly prohibited from distributing Users'
+                personal information to third-party parties for marketing
+                purposes. The Operators shall deem the compiling of marketing
+                and mailing lists using Users' personal information, the sending
+                of unsolicited marketing materials to Users, or the distribution
+                of Users' personal information to third parties for marketing
+                purposes as a material breach of these Terms and Conditions of
+                Use, and the Operators reserve the right to terminate or suspend
+                your access to and use of the Website and to suspend or revoke
+                your membership in the consortium without refund of any
+                membership dues paid.
+              </p>
+
+              <p>
+                The Operators note that unauthorized use of Users' personal
+                information in connection with unsolicited marketing
+                correspondence also may constitute violations of various state
+                and federal anti-spam statutes. The Operators reserve the right
+                to report the abuse of Users' personal information to the
+                appropriate law enforcement and government authorities, and the
+                Operators will fully cooperate with any authorities
+                investigating violations of these laws.
+              </p>
+
+              <h2 id="3usersubmissions">3. User Submissions</h2>
+
+              <p>
+                The Operators do not want to receive confidential or proprietary
+                information from you through the Website. Any material,
+                information, or other communication you transmit or post
+                ("Contributions") to the Website will be considered
+                non-confidential.
+              </p>
+
+              <p>
+                All contributions to this site are licensed by you under the MIT
+                License to anyone who wishes to use them, including the
+                Operators.
+              </p>
+
+              <p>
+                If you work for a company or at a University, it's likely that
+                you're not the copyright holder of anything you make, even in
+                your free time. Before making contributions to this site, get
+                written permission from your employer.
+              </p>
+
+              <h2 id="4userdiscussionlistsandforums">
+                4. User Discussion Lists and Forums
+              </h2>
+
+              <p>
+                The Operators may, but are not obligated to, monitor or review
+                any areas on the Website where users transmit or post
+                communications or communicate solely with each other, including
+                but not limited to user forums and email lists, and the content
+                of any such communications. The Operators, however, will have no
+                liability related to the content of any such communications,
+                whether or not arising under the laws of copyright, libel,
+                privacy, obscenity, or otherwise. The Operators may edit or
+                remove content on the the Website at their discretion at any
+                time.
+              </p>
+
+              <h2 id="5useofpersonallyidentifiableinformation">
+                5. Use of Personally Identifiable Information
+              </h2>
+
+              <p>
+                Information submitted to the Website is governed according to
+                the Operators’s current Privacy Policy and the stated license of
+                this website.
+              </p>
+
+              <p>
+                You agree to provide true, accurate, current, and complete
+                information when registering with the Website. It is your
+                responsibility to maintain and promptly update this account
+                information to keep it true, accurate, current, and complete. If
+                you provides any information that is fraudulent, untrue,
+                inaccurate, incomplete, or not current, or we have reasonable
+                grounds to suspect that such information is fraudulent, untrue,
+                inaccurate, incomplete, or not current, we reserve the right to
+                suspend or terminate your account without notice and to refuse
+                any and all current and future use of the Website.
+              </p>
+
+              <p>
+                Although sections of the Website may be viewed simply by
+                visiting the Website, in order to access some Content and/or
+                additional features offered at the Website, you may need to sign
+                on as a guest or register as a member. If you create an account
+                on the Website, you may be asked to supply your name, address, a
+                User ID and password. You are responsible for maintaining the
+                confidentiality of the password and account and are fully
+                responsible for all activities that occur in connection with
+                your password or account. You agree to immediately notify us of
+                any unauthorized use of either your password or account or any
+                other breach of security. You further agree that you will not
+                permit others, including those whose accounts have been
+                terminated, to access the Website using your account or User ID.
+                You grant the Operators and all other persons or entities
+                involved in the operation of the Website the right to transmit,
+                monitor, retrieve, store, and use your information in connection
+                with the operation of the Website and in the provision of
+                services to you. The Operators cannot and do not assume any
+                responsibility or liability for any information you submit, or
+                your or third parties’ use or misuse of information transmitted
+                or received using website. To learn more about how we protect
+                the privacy of the personal information in your account, please
+                visit our Privacy Policy.
+              </p>
+
+              <h2 id="6indemnification">6. Indemnification</h2>
+
+              <p>
+                You agree to defend, indemnify and hold harmless the Operators,
+                agents, vendors or suppliers from and against any and all
+                claims, damages, costs and expenses, including reasonable
+                attorneys' fees, arising from or related to your use or misuse
+                of the Website, including, without limitation, your violation of
+                these Terms and Conditions, the infringement by you, or any
+                other subscriber or user of your account, of any intellectual
+                property right or other right of any person or entity.
+              </p>
+
+              <h2 id="7termination">7. Termination</h2>
+
+              <p>
+                These Terms and Conditions of Use are effective until terminated
+                by either party. If you no longer agree to be bound by these
+                Terms and Conditions, you must cease use of the Website. If you
+                are dissatisfied with the Website, their content, or any of
+                these terms, conditions, and policies, your sole legal remedy is
+                to discontinue using the Website. The Operators reserve the
+                right to terminate or suspend your access to and use of the
+                Website, or parts of the Website, without notice, if we believe,
+                in our sole discretion, that such use (i) is in violation of any
+                applicable law; (ii) is harmful to our interests or the
+                interests, including intellectual property or other rights, of
+                another person or entity; or (iii) where the Operators have
+                reason to believe that you are in violation of these Terms and
+                Conditions of Use.
+              </p>
+
+              <h2 id="8warrantydisclaimer">8. WARRANTY DISCLAIMER</h2>
+
+              <p>
+                THE WEBSITE AND ASSOCIATED MATERIALS ARE PROVIDED ON AN "AS IS"
+                AND "AS AVAILABLE" BASIS. TO THE FULL EXTENT PERMISSIBLE BY
+                APPLICABLE LAW, THE OPERATORS DISCLAIM ALL WARRANTIES, EXPRESS
+                OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF
+                MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, OR
+                NON-INFRINGEMENT OF INTELLECTUAL PROPERTY. THE OPERATORS MAKE NO
+                REPRESENTATIONS OR WARRANTY THAT THE WEBSITE WILL MEET YOUR
+                REQUIREMENTS, OR THAT YOUR USE OF THE WEBSITE WILL BE
+                UNINTERRUPTED, TIMELY, SECURE, OR ERROR FREE; NOR DO THE
+                OPERATORS MAKE ANY REPRESENTATION OR WARRANTY AS TO THE RESULTS
+                THAT MAY BE OBTAINED FROM THE USE OF THE WEBSITE. THE OPERATORS
+                MAKE NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR
+                IMPLIED, AS TO THE OPERATION OF THE WEBSITE OR THE INFORMATION,
+                CONTENT, MATERIALS, OR PRODUCTS INCLUDED ON THE WEBSITE.
+              </p>
+
+              <p>
+                IN NO EVENT SHALL THE OPERATORS OR ANY OF THEIR AGENTS, VENDORS
+                OR SUPPLIERS BE LIABLE FOR ANY DAMAGES WHATSOEVER (INCLUDING,
+                WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, BUSINESS
+                INTERRUPTION, LOSS OF INFORMATION) ARISING OUT OF THE USE,
+                MISUSE OF OR INABILITY TO USE THE WEBSITE, EVEN IF THE OPERATORS
+                HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THIS
+                DISCLAIMER CONSTITUTES AN ESSENTIAL PART OF THIS AGREEMENT.
+                BECAUSE SOME JURISDICTIONS PROHIBIT THE EXCLUSION OR LIMITATION
+                OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, THE ABOVE
+                LIMITATION MAY NOT APPLY TO YOU.
+              </p>
+
+              <p>
+                YOU UNDERSTAND AND AGREE THAT ANY CONTENT DOWNLOADED OR
+                OTHERWISE OBTAINED THROUGH THE USE OF THE WEBSITE IS AT YOUR OWN
+                DISCRETION AND RISK AND THAT YOU WILL BE SOLELY RESPONSIBLE FOR
+                ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA OR BUSINESS
+                INTERRUPTION THAT RESULTS FROM THE DOWNLOAD OF CONTENT. THE
+                OPERATORS SHALL NOT BE RESPONSIBLE FOR ANY LOSS OR DAMAGE
+                CAUSED, OR ALLEGED TO HAVE BEEN CAUSED, DIRECTLY OR INDIRECTLY,
+                BY THE INFORMATION OR IDEAS CONTAINED, SUGGESTED OR REFERENCED
+                IN OR APPEARING ON THE WEBSITE. YOUR PARTICIPATION IN THE
+                WEBSITE IS SOLELY AT YOUR OWN RISK. NO ADVICE OR INFORMATION,
+                WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM THE OPERATORS OR
+                THROUGH THE OPERATORS, THEIR EMPLOYEES, OR THIRD PARTIES SHALL
+                CREATE ANY WARRANTY NOT EXPRESSLY MADE HEREIN. YOU ACKNOWLEDGE,
+                BY YOUR USE OF THE THE WEBSITE, THAT YOUR USE OF THE WEBSITE IS
+                AT YOUR SOLE RISK.
+              </p>
+
+              <p>
+                LIABILITY LIMITATION. UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                OR EQUITABLE THEORY, WHETHER IN TORT, CONTRACT, NEGLIGENCE,
+                STRICT LIABILITY OR OTHERWISE, SHALL THE OPERATORS OR ANY OF
+                THEIR AGENTS, VENDORS OR SUPPLIERS BE LIABLE TO USER OR TO ANY
+                OTHER PERSON FOR ANY INDIRECT, SPECIAL, INCIDENTAL OR
+                CONSEQUENTIAL LOSSES OR DAMAGES OF ANY NATURE ARISING OUT OF OR
+                IN CONNECTION WITH THE USE OF OR INABILITY TO USE THE THE
+                WEBSITE OR FOR ANY BREACH OF SECURITY ASSOCIATED WITH THE
+                TRANSMISSION OF SENSITIVE INFORMATION THROUGH THE WEBSITE OR FOR
+                ANY INFORMATION OBTAINED THROUGH THE WEBSITE, INCLUDING, WITHOUT
+                LIMITATION, DAMAGES FOR LOST PROFITS, LOSS OF GOODWILL, LOSS OR
+                CORRUPTION OF DATA, WORK STOPPAGE, ACCURACY OF RESULTS, OR
+                COMPUTER FAILURE OR MALFUNCTION, EVEN IF AN AUTHORIZED
+                REPRESENTATIVE OF THE OPERATORS HAS BEEN ADVISED OF OR SHOULD
+                HAVE KNOWN OF THE POSSIBILITY OF SUCH DAMAGES.
+              </p>
+
+              <p>
+                THE OPERATORS'S TOTAL CUMULATIVE LIABILITY FOR ANY AND ALL
+                CLAIMS IN CONNECTION WITH THE WEBSITE WILL NOT EXCEED FIVE U.S.
+                DOLLARS ($5.00). USER AGREES AND ACKNOWLEDGES THAT THE FOREGOING
+                LIMITATIONS ON LIABILITY ARE AN ESSENTIAL BASIS OF THE BARGAIN
+                AND THAT THE OPERATORS WOULD NOT PROVIDE THE WEBSITE ABSENT SUCH
+                LIMITATION.
+              </p>
+
+              <h2 id="9general">9. General</h2>
+
+              <p>
+                The Website is hosted in the United States. The Operators make
+                no claims that the Content on the Website is appropriate or may
+                be downloaded outside of the United States. Access to the
+                Content may not be legal by certain persons or in certain
+                countries. If you access the Website from outside the United
+                States, you do so at your own risk and are responsible for
+                compliance with the laws of your jurisdiction. The provisions of
+                the UN Convention on Contracts for the International Sale of
+                Goods will not apply to these Terms. A party may give notice to
+                the other party only in writing at that party's principal place
+                of business, attention of that party's principal legal officer,
+                or at such other address or by such other method as the party
+                shall specify in writing. Notice shall be deemed given upon
+                personal delivery or facsimile, or, if sent by certified mail
+                with postage prepaid, 5 business days after the date of mailing,
+                or, if sent by international overnight courier with postage
+                prepaid, 7 business days after the date of mailing. If any
+                provision herein is held to be unenforceable, the remaining
+                provisions will continue in full force without being affected in
+                any way. Further, the parties agree to replace such
+                unenforceable provision with an enforceable provision that most
+                closely approximates the intent and economic effect of the
+                unenforceable provision. Section headings are for reference
+                purposes only and do not define, limit, construe or describe the
+                scope or extent of such section. The failure of the Operators to
+                act with respect to a breach of this Agreement by you or others
+                does not constitute a waiver and shall not limit the Operators'
+                rights with respect to such breach or any subsequent breaches.
+                Any action or proceeding arising out of or related to this
+                Agreement or User's use of the Website must be brought in the
+                courts of Belgium, and you consent to the exclusive personal
+                jurisdiction and venue of such courts. Any cause of action you
+                may have with respect to your use of the Website must be
+                commenced within one (1) year after the claim or cause of action
+                arises. These Terms set forth the entire understanding and
+                agreement of the parties, and supersedes any and all oral or
+                written agreements or understandings between the parties, as to
+                their subject matter. The waiver of a breach of any provision of
+                this Agreement shall not be construed as a waiver of any other
+                or subsequent breach.
+              </p>
+
+              <h2 id="10linkstoothermaterials">10. Links to Other Materials</h2>
+
+              <p>
+                The Website may contain links to sites owned or operated by
+                independent third parties. These links are provided for your
+                convenience and reference only. We do not control such sites
+                and, therefore, we are not responsible for any content posted on
+                these sites. The fact that the Operators offer such links should
+                not be construed in any way as an endorsement, authorization, or
+                sponsorship of that site, its content or the companies or
+                products referenced therein, and the Operators reserve the right
+                to note its lack of affiliation, sponsorship, or endorsement on
+                the Website. If you decide to access any of the third party
+                sites linked to by the Website, you do this entirely at your own
+                risk. Because some sites employ automated search results or
+                otherwise link you to sites containing information that may be
+                deemed inappropriate or offensive, the Operators cannot be held
+                responsible for the accuracy, copyright compliance, legality, or
+                decency of material contained in third party sites, and you
+                hereby irrevocably waive any claim against us with respect to
+                such sites.
+              </p>
+
+              <h2 id="11notificationofpossiblecopyrightinfringement">
+                11. Notification Of Possible Copyright Infringement
+              </h2>
+
+              <p>
+                In the event you believe that material or content published on
+                the Website may infringe on your copyright or that of another,
+                please <a href="#">Contact Us</a>.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
