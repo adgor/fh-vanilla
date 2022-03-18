@@ -1,21 +1,26 @@
-# TODO
+<!-- Before evry TODO item add @ and capitalized name of a page, ex: @HOME-, @VPS- etc.. -->
 
-This is the markdown todo file for project a.
-![Alt text](https://prnt.sc/yhpBpbINdyWO)
+### Content
 
-## Content
+- [ ] @GLOBAL- HERO IMAGE (Shkrimi left, paketat right)
+- [ ] @GLOBAL- Why US Sectioni
+- [ ] @GLOBAL- Need Some Help Sectioni
+- [ ] @GLOBAL- Footer
 
-Tasks related to new content.
+- [ ] @WEB- [cookie](https://prnt.sc/9_hUWMDizl71)
+- [ ] @HOME- Try Now - All Hosting Plans 3 months free [offer](https://prnt.sc/5LELs2t0jZe-)
+- [ ] @HOME- See [Fully backlit for](https://www.zsa.io/moonlander/) section to combine for Hero
 
-- [ ] Add readme file with newline #example
-  - [ ] Create Pull Request
+### Todo
 
-## Release
+- [ ] @404- v1 on [this](https://prnt.sc/2EuqzyMy0_32) section try [icon](https://thenounproject.com/icon/404-2157366)
+- [ ] @404- v1 on [this](https://prnt.sc/2EuqzyMy0_32) section try [icon](https://thenounproject.com/icon/404-2157358/)
+- [ ] @404- v1 on [this](https://prnt.sc/2EuqzyMy0_32) section try [icon](https://thenounproject.com/icon/404-2099077/)
+- [ ] @404- v2 after [this](https://prnt.sc/O08NzSvctetx) can add [this pricing package](https://prnt.sc/yhpBpbINdyWO)
 
-- [x] Init project repository
-      http://github.com/todo-md/todo-md
-- [ ] Publish project on GitHub @janikvonrotz
+### In Progress
 
-# DONE
+### Done ✓
 
-- [x] Create GitHub organization todo-md
+- [x] @GLOBAL- backgroud te ichet komplet mendoj te boet si ke home me gardient ose krejt color si ke BG \*Bh ene webhosting
+- [x] @GLOBAL- qeter basnej fontin ne te majte ta bojm si ne home
