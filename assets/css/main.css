@@ -2944,6 +2944,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(23 191 82 / var(--tw-text-opacity));
 }
 
+.text-matisse-300 {
+  --tw-text-opacity: 1;
+  color: rgb(77 140 222 / var(--tw-text-opacity));
+}
+
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
