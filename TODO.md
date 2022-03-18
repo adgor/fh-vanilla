@@ -2,12 +2,8 @@
 
 ### Content
 
-- [ ] @GLOBAL- HERO IMAGE (Shkrimi left, paketat right)  
-- [ ] @GLOBAL- Why US Sectioni  
-- [ ] @GLOBAL- Need Some Help Sectioni  
-- [ ] @GLOBAL- Footer  
-- [ ] @WEB- [cookie](https://prnt.sc/9_hUWMDizl71)  
 - [ ] @HOME- Try Now - All Hosting Plans 3 months free [offer](https://prnt.sc/5LELs2t0jZe-)  
+- [ ] @WEB- [cookie](https://prnt.sc/9_hUWMDizl71)  
 - [ ] @HOME- See [Fully backlit for](https://www.zsa.io/moonlander/) section to combine for Hero  
 
 ### Todo
@@ -18,6 +14,10 @@
 
 ### In Progress
 
+- [ ] @GLOBAL- HERO IMAGE (Shkrimi left, paketat right)  
+- [ ] @GLOBAL- Why US Sectioni  
+- [ ] @GLOBAL- Need Some Help Sectioni  
+- [ ] @GLOBAL- Footer  
 
 ### Done ✓
 
