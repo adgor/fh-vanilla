@@ -12,6 +12,9 @@
 
 ### Todo
 
+- [ ] @EMAIL- page  
+- [ ] Icona ke vps  
+- [ ] Ene kimi do icona ke menuja  
 
 ### In Progress
 

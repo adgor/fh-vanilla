@@ -53,4 +53,4 @@ agreed for overall content
 
 ### Web design
 
-1. Web design (🔍)
+1. Web design (se bojme ne ket faze)
