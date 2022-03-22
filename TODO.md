@@ -1,4 +1,3 @@
-<!-- Before evry TODO item add @ and capitalized name of a page, ex: @HOME-, @VPS- etc.. -->
 
 ### Content
 
