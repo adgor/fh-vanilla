@@ -1,4 +1,3 @@
-
 ### Content
 
 - [ ] @HOME- Try Now - All Hosting Plans 3 months free [offer](https://prnt.sc/5LELs2t0jZe-)  
@@ -20,6 +19,8 @@
 
 ### Done ✓
 
+- [x] @GLOBAL- try [pricing](https://prnt.sc/-PjyCi3UMu0B) like kohost  
+- [x] @TERMS- perfundoe komplet, dmth vendoe footerin  
 - [x] @404- v2 can add [this pricing package](https://prnt.sc/yhpBpbINdyWO) after [this](https://prnt.sc/O08NzSvctetx)  
 - [x] @404- v1 try [icon](https://thenounproject.com/icon/404-2157366) on [this](https://prnt.sc/2EuqzyMy0_32) section  
 - [x] @404- v1 try [icon](https://thenounproject.com/icon/404-2157358/) on [this](https://prnt.sc/2EuqzyMy0_32) section  
