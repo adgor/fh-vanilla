@@ -6,8 +6,12 @@
 
 ### Todo
 
-- [ ] @EMAIL- page  
-- [ ] Icona ke vps  
+- [ ] @EMAIL- [page](https://fidahost.supersite2.myorderbox.com/business-email)
+- [ ] @EMAIL- 1. Menu
+- [ ] @EMAIL- 2. Hero Image, pe ne mond ta perdorim ne formatin e web hosting en business hosting formatin. 
+- [ ] @EMAIL- 3. Tet ni order table si drejtkendesh, apo si te dush, pe "Price starting at $0.99/month ene ni buton get stareted now. (Kjo boet keshto sepse son e bojm konfigurimin ne HTML, pe te del ne WHMCS basnej per konfigurimet.
+- [ ] @EMAIL- 4. What's amazing about Business Email, identik meri te njejtat shkrime xhojat, se chato jen features skimi cish shtojme ose heqim.
+- [ ] @EMAIL- 5. Need some help ene faq ene footer, qe vetem se i kimi gati.
 - [ ] Ene kimi do icona ke menuja  
 
 ### In Progress
@@ -19,6 +23,7 @@
 
 ### Done ✓
 
+- [x] Icona ke vps  
 - [x] @GLOBAL- try [pricing](https://prnt.sc/-PjyCi3UMu0B) like kohost  
 - [x] @TERMS- perfundoe komplet, dmth vendoe footerin  
 - [x] @404- v2 can add [this pricing package](https://prnt.sc/yhpBpbINdyWO) after [this](https://prnt.sc/O08NzSvctetx)  
