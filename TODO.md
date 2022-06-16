@@ -7,6 +7,7 @@
 - [ ] @EMAIL- 4. What's amazing about Business Email, identik meri te njejtat shkrime xhojat, se chato jen features skimi cish shtojme ose heqim. me iconat tona
 - [ ] @EMAIL- 5. Need some help ene faq ene footer, qe vetem se i kimi gati.
 - [ ] Ene kimi do icona ke menuja
+- [ ] @OFFER- Countdown section "pic in drive"
 
 ### In Progress
 
