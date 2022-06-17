@@ -1,12 +1,10 @@
 ### Todo
 
+- [ ] 1. Svg ne homepage
+- [ ] 2. Iconat ke menu
+- [ ] 3. Email page
 - [ ] @EMAIL- [page](https://fidahost.supersite2.myorderbox.com/business-email)
-- [ ] @EMAIL- 1. Menu
-- [ ] @EMAIL- 2. Hero Image, pe ne mond ta perdorim ne formatin e web hosting en business hosting formatin.
-- [ ] @EMAIL- 3. Tet ni order table si drejtkendesh, apo si te dush, pe "Price starting at $0.99/month ene ni buton get stareted now. (Kjo boet keshto sepse son e bojm konfigurimin ne HTML, pe te del ne WHMCS basnej per konfigurimet) - Starting at 0.99$ si ato call action buttomns
-- [ ] @EMAIL- 4. What's amazing about Business Email, identik meri te njejtat shkrime xhojat, se chato jen features skimi cish shtojme ose heqim. me iconat tona
-- [ ] @EMAIL- 5. Need some help ene faq ene footer, qe vetem se i kimi gati.
-- [ ] Ene kimi do icona ke menuja
+- [ ] @ALL- Responsive
 - [ ] @OFFER- Countdown section "pic in drive"
 
 ### In Progress
@@ -18,12 +16,18 @@
 
 ### Content
 
-- [ ] @HOME- Try Now - All Hosting Plans 3 months free [offer](https://prnt.sc/5LELs2t0jZe-)
+- [ ] @HOME- Try Now  All Hosting Plans 3 months free [offer](https://prnt.sc/5LELs2t0jZe-)
 - [ ] @WEB- [cookie](https://prnt.sc/9_hUWMDizl71)
 - [ ] @HOME- See [Fully backlit for](https://www.zsa.io/moonlander/) section to combine for Hero
 
 ### Done ✓
 
+- [x] Ene kimi do icona ke menuja
+- [x] @EMAIL- 1. Menu
+- [x] @EMAIL- 2. Hero Image, pe ne mond ta perdorim ne formatin e web hosting en business hosting formatin.
+- [x] @EMAIL- 3. Tet ni order table si drejtkendesh, apo si te dush, pe "Price starting at $0.99/month ene ni buton get stareted now. (Kjo boet keshto sepse son e bojm konfigurimin ne HTML, pe te del ne WHMCS basnej per konfigurimet)  Starting at 0.99$ si ato call action buttomns
+- [x] @EMAIL- 4. What's amazing about Business Email, identik meri te njejtat shkrime xhojat, se chato jen features skimi cish shtojme ose heqim. me iconat tona
+- [x] @EMAIL- 5. Need some help ene faq ene footer, qe vetem se i kimi gati.
 - [x] Icona ke vps
 - [x] @GLOBAL- try [pricing](https://prnt.sc/-PjyCi3UMu0B) like kohost
 - [x] @TERMS- perfundoe komplet, dmth vendoe footerin
