@@ -1540,6 +1540,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 7rem;
 }
 
+.w-\[550px\] {
+  width: 550px;
+}
+
+.w-\[530px\] {
+  width: 530px;
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
