@@ -3711,6 +3711,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
+  .md\:left-0 {
+    left: 0px;
+  }
+
   .md\:order-last {
     order: 9999;
   }
@@ -3813,6 +3817,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 10rem;
   }
 
+  .md\:w-80 {
+    width: 20rem;
+  }
+
   .md\:max-w-full {
     max-width: 100%;
   }
@@ -3894,6 +3902,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:pr-8 {
     padding-right: 2rem;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 
   .md\:text-center {
