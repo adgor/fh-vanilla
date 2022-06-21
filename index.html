@@ -2858,7 +2858,7 @@
       >
         <div class="relative mx-auto">
           <div class="relative mb-10 md:mx-auto md:mb-12">
-            <div class="flex items-center justify-between">
+            <div class="flex md:items-center flex-col md:flex-row justify-between">
               <div class="text-icon-darkest">
                 <p class="mb-2 font-semibold uppercase tracking-wider">
                   DOMAIN NAMES
@@ -2876,8 +2876,8 @@
                 </h2>
               </div>
               <div class="text-base font-medium text-icon-darkest md:text-lg">
-                Your domain name is your website address. While <br />.com names
-                are the most popular, explore .org,<br />
+                Your domain name is your website address. While <br class="hidden md:block" />.com names
+                are the most popular, explore .org,<br class="hidden md:block"/>
                 .tech, .co and more.
               </div>
             </div>
@@ -2908,11 +2908,17 @@
     <!-- Transfer to FH -->
     <section class="bg-wh-aliceBlue">
       <div
-        class="mx-auto flex px-4 py-16 sm:max-w-xl md:max-w-full md:flex-row md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-40 lg:pb-28"
+        class="mx-auto flex flex-col px-4 py-16 sm:max-w-xl md:max-w-full md:flex-row md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-40 lg:pb-28"
       >
+          <h2
+            class="mb-12 text-3xl md:hidden text-center font-extrabold leading-none text-matisse-700 sm:text-4xl">
+            Transfering to <span class="text-matisse-500">FidaHost</span> is
+            easy
+          </h2>
+
         <div class="relative md:w-1/2">
           <div class="relative">
-            <div class="flex items-center justify-center px-20">
+            <div class="flex items-center justify-center md:px-20">
               <div class="relative w-full max-w-lg">
                 <div
                   class="absolute -top-14 -left-8 h-72 w-72 animate-blob rounded-full bg-purple-300 opacity-30 mix-blend-multiply blur-xl filter"
@@ -2960,13 +2966,13 @@
         </div>
         <div class="md:w-1/2">
           <h2
-            class="mb-6 text-3xl font-extrabold leading-none text-matisse-700 sm:text-4xl"
+            class="mb-6 text-3xl hidden md:block font-extrabold leading-none text-matisse-700 sm:text-4xl"
           >
             Transfering to <span class="text-matisse-500">FidaHost</span> is
             easy
           </h2>
 
-          <div class="mt-10">
+          <div class="mt-16 md:mt-10">
             <dl class="space-y-10">
               <div class="relative">
                 <dt>
@@ -3049,7 +3055,7 @@
       class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
     >
       <div
-        class="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-4xl"
+        class="mb-10 max-w-xl text-center md:mx-auto md:mb-12 lg:max-w-4xl"
       >
         <h2
           class="mb-6 max-w-lg text-3xl font-extrabold leading-none text-matisse-700 sm:text-4xl md:mx-auto"
