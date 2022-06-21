@@ -1835,6 +1835,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 3rem;
 }
 
+.gap-20 {
+  gap: 5rem;
+}
+
+.gap-40 {
+  gap: 10rem;
+}
+
 .gap-x-10 {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
@@ -3843,6 +3851,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:gap-8 {
     gap: 2rem;
+  }
+
+  .md\:gap-52 {
+    gap: 13rem;
   }
 
   .md\:gap-x-8 {
