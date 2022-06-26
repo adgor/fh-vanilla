@@ -1260,6 +1260,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: -5rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .-mt-36 {
   margin-top: -9rem;
 }
@@ -1280,10 +1284,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 3rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .ml-16 {
   margin-left: 4rem;
 }
@@ -1296,16 +1296,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 3rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .-mt-24 {
   margin-top: -6rem;
 }
 
 .ml-8 {
   margin-left: 2rem;
-}
-
-.mb-16 {
-  margin-bottom: 4rem;
 }
 
 .-mb-1 {
@@ -1520,10 +1520,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 66.666667%;
 }
 
-.w-80 {
-  width: 20rem;
-}
-
 .w-9 {
   width: 2.25rem;
 }
@@ -1538,6 +1534,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-28 {
   width: 7rem;
+}
+
+.w-80 {
+  width: 20rem;
 }
 
 .min-w-0 {
@@ -1811,10 +1811,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.5rem;
 }
 
-.gap-52 {
-  gap: 13rem;
-}
-
 .gap-4 {
   gap: 1rem;
 }
@@ -1827,20 +1823,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.25rem;
 }
 
+.gap-52 {
+  gap: 13rem;
+}
+
 .gap-16 {
   gap: 4rem;
 }
 
 .gap-12 {
   gap: 3rem;
-}
-
-.gap-20 {
-  gap: 5rem;
-}
-
-.gap-40 {
-  gap: 10rem;
 }
 
 .gap-x-10 {
@@ -2515,11 +2507,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.75rem;
 }
 
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
 .px-14 {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
@@ -2538,6 +2525,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-9 {
   padding-left: 2.25rem;
   padding-right: 2.25rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .px-16 {
@@ -2847,11 +2839,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(1 22 64 / var(--tw-text-opacity));
 }
 
-.text-wh-greenDarken {
-  --tw-text-opacity: 1;
-  color: rgb(18 145 62 / var(--tw-text-opacity));
-}
-
 .text-icon-centosPurple {
   --tw-text-opacity: 1;
   color: rgb(147 34 121 / var(--tw-text-opacity));
@@ -2955,6 +2942,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-wh-green {
   --tw-text-opacity: 1;
   color: rgb(23 191 82 / var(--tw-text-opacity));
+}
+
+.text-wh-greenDarken {
+  --tw-text-opacity: 1;
+  color: rgb(18 145 62 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -3711,10 +3703,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
-  .md\:left-0 {
-    left: 0px;
-  }
-
   .md\:order-last {
     order: 9999;
   }
@@ -3745,6 +3733,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: 5rem;
   }
 
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:mt-2 {
     margin-top: 0.5rem;
   }
@@ -3761,8 +3753,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 0.5rem;
   }
 
-  .md\:mb-0 {
-    margin-bottom: 0px;
+  .md\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .md\:ml-2 {
@@ -3771,10 +3763,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:ml-8 {
     margin-left: 2rem;
-  }
-
-  .md\:mt-10 {
-    margin-top: 2.5rem;
   }
 
   .md\:block {
@@ -3813,12 +3801,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 50%;
   }
 
-  .md\:w-40 {
-    width: 10rem;
-  }
-
   .md\:w-80 {
     width: 20rem;
+  }
+
+  .md\:w-40 {
+    width: 10rem;
   }
 
   .md\:max-w-full {
@@ -3885,6 +3873,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 6rem;
   }
 
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -3893,11 +3886,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .md\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
   }
 
   .md\:pr-8 {
