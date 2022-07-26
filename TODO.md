@@ -1,8 +1,18 @@
 ### Todo
 
+## Home
+- [ ] Test 2 Col & Everything you need ... 
+- [ ] FAQ responsive 
+
+## Web-hosting
+- [ ] Pricing tab space-y & text-center
+- [ ] App inst. text contrast H-p
+
+
+##Global
 - [ ] 1. Svg ne homepage
-- [ ] 2. Iconat ke menu
-- [ ] 3. Email page
+- [ ] 1. Iconat ke menu
+- [ ] 1. Email page
 - [ ] @EMAIL- [page](https://fidahost.supersite2.myorderbox.com/business-email)
 - [ ] @ALL- Responsive
 - [ ] @OFFER- Countdown section "pic in drive"
