@@ -2533,11 +2533,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 4rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -2574,6 +2569,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.25rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .pr-4 {
   padding-right: 1rem;
 }
@@ -2600,6 +2599,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-9 {
   padding-top: 2.25rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-left {
@@ -4098,10 +4101,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     justify-content: space-between;
   }
 
-  .lg\:gap-5 {
-    gap: 1.25rem;
-  }
-
   .lg\:space-y-3 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
@@ -4136,10 +4135,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:bg-zircon-500 {
     --tw-bg-opacity: 1;
     background-color: rgb(245 248 253 / var(--tw-bg-opacity));
-  }
-
-  .lg\:p-5 {
-    padding: 1.25rem;
   }
 
   .lg\:px-8 {
