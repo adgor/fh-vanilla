@@ -1,5 +1,6 @@
 ### Todo
-
+- ## VPS
+- [ ] Pricing responsive like dedi 
 - ## Global  
 - [ ] 1. Svg ne homepage  
 - [ ] 1. Iconat ke menu  
