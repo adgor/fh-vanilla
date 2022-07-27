@@ -1,7 +1,5 @@
 ### Todo
-- ## Web-hosting  
-- [ ] Pricing tab space-y & text-center  
-- [ ] App inst. text contrast H-p  
+
 - ## Global  
 - [ ] 1. Svg ne homepage  
 - [ ] 1. Iconat ke menu  
@@ -25,6 +23,8 @@
 
 ### Done ✓
 
+- [x] App inst. text contrast H-p  
+- [x] Pricing tab space-y & text-center  
 - [x] FAQ responsive  
 - [x] Test 2 Col & Everything you need ...  
 - [x] Ene kimi do icona ke menuja  
