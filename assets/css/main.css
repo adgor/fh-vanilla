@@ -1795,12 +1795,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 2.5rem;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-2 {
@@ -2561,6 +2561,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2.5rem;
 }
 
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -2569,12 +2573,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.25rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
-}
-
 .pr-4 {
   padding-right: 1rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .pb-20 {
@@ -2599,10 +2603,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-9 {
   padding-top: 2.25rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
 }
 
 .text-left {
@@ -2837,11 +2837,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(168 0 48 / var(--tw-text-opacity));
 }
 
-.text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-
 .text-wh-bluDarkest {
   --tw-text-opacity: 1;
   color: rgb(1 22 64 / var(--tw-text-opacity));
@@ -2880,6 +2875,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-icon-windows {
   --tw-text-opacity: 1;
   color: rgb(0 173 239 / var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .text-matisse-800 {
@@ -3660,6 +3660,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 1.5rem;
   }
 
+  .sm\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .sm\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -3839,6 +3844,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:flex-row-reverse {
     flex-direction: row-reverse;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
   }
 
   .md\:items-center {
@@ -4101,16 +4110,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     justify-content: space-between;
   }
 
-  .lg\:gap-8 {
-    gap: 2rem;
+  .lg\:gap-10 {
+    gap: 2.5rem;
   }
 
   .lg\:gap-3 {
     gap: 0.75rem;
-  }
-
-  .lg\:gap-10 {
-    gap: 2.5rem;
   }
 
   .lg\:space-y-3 > :not([hidden]) ~ :not([hidden]) {
@@ -4123,12 +4128,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     --tw-space-x-reverse: 0;
     margin-right: calc(6rem * var(--tw-space-x-reverse));
     margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .lg\:divide-x > :not([hidden]) ~ :not([hidden]) {
